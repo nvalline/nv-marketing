@@ -1,0 +1,20 @@
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__logoWrapper {
+		height: 2.8125rem;
+		width: 8.5rem;
+
+		> div {
+			position: unset !important;
+
+			.nav__logo {
+				position: relative !important;
+				width: 100%;
+				height: unset !important;
+			}
+		}
+	}
+}
