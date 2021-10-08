@@ -1,9 +1,16 @@
 import styles from '../../styles/header/Hamburger.module.scss';
 
-function Hamburger() {
+function Hamburger({ hamburgerIsActive, toggleHamburger }) {
 	return (
 		<div className={styles.hamburger}>
-			<button className={styles.hamburger__icon}>
+			<button
+				className={
+					hamburgerIsActive
+						? `${styles.hamburger__icon} ${styles.hamburger__icon___open}`
+						: styles.hamburger__icon
+				}
+				onClick={toggleHamburger}
+			>
 				<span></span>
 				<span></span>
 				<span></span>

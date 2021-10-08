@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/header/header';
 
-import homeStyles from '../styles/Home.module.scss';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
 	return (
@@ -14,7 +14,7 @@ export default function Home() {
 			</Head>
 
 			<Header />
-			<main className={homeStyles.main}>NV Marketing, LLC</main>
+			<main className={styles.main}>NV Marketing, LLC</main>
 		</>
 	);
 }

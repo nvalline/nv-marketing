@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Hamburger from './hamburger';
+import NavLinks from './navLinks';
 
 import logoImg from '../../public/images/nv_mktg_logo_white.svg';
 
@@ -24,6 +25,7 @@ function Nav(props) {
 				</Link>
 			</div>
 			<Hamburger {...props} />
+			<NavLinks />
 		</nav>
 	);
 }

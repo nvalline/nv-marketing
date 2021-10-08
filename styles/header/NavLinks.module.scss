@@ -1,0 +1,12 @@
+@import '../mixins';
+@import '../variables';
+
+.block {
+	a {
+		color: $primary-white;
+	}
+
+	@include breakpoint-down(medium) {
+		display: none;
+	}
+}
