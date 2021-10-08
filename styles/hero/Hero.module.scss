@@ -2,11 +2,14 @@
 
 .hero {
 	&__block {
+		margin: 0 auto;
 		padding: 6.25rem 3.5rem 0;
+		max-width: 34.375rem;
 		text-align: center;
 	}
 
 	&__title {
+		margin-bottom: 2.75rem;
 		font-family: $hero-narrow;
 		font-size: 1.3125rem;
 		font-weight: 400;
@@ -19,6 +22,8 @@
 	}
 
 	&__content {
+		margin-bottom: 2.75rem;
+		max-width: 28.125rem;
 		font-size: 0.875rem;
 	}
 
@@ -32,8 +37,8 @@
 		letter-spacing: 0.5px;
 
 		&:hover {
-			background-color: $primary-yellow-hover;
-			color: $primary-white;
+			// background-color: $primary-yellow-hover;
+			color: $primary-aqua;
 		}
 	}
 }
