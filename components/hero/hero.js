@@ -24,7 +24,7 @@ function Hero() {
 					type='button'
 					className={styles.hero__button}
 					onClick={handleBtnClick}
-					text='LEARN MORE'
+					text='learn more'
 				/>
 			</div>
 		</section>

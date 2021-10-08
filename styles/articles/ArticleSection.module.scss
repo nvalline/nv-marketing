@@ -1,0 +1,58 @@
+@import '../variables';
+
+.articleSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5.625rem 2.8125rem;
+	text-align: center;
+
+	.imageWrapper {
+		position: relative;
+		height: 10.375rem;
+		width: 15.625rem;
+		margin-bottom: 2.6875rem;
+		border-radius: 10px;
+		overflow: hidden;
+
+		> div {
+			position: unset !important;
+
+			&__img {
+				position: relative !important;
+				width: 100%;
+				height: unset !important;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 1.4375rem;
+		font-family: $blog-titles;
+		font-size: 1.125rem;
+		font-weight: 800;
+	}
+
+	&__desc {
+		margin-bottom: 2.1875rem;
+		font-family: $secondary-font;
+		font-size: 0.875rem;
+		font-weight: 400;
+	}
+
+	&__button {
+		padding: 0.8125rem 1.25rem;
+		border: none;
+		border-radius: 1.25rem;
+		background-color: $primary-yellow;
+		box-shadow: 0 2px 2px $box-shadow;
+		cursor: pointer;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+
+		&:hover {
+			// background-color: $primary-yellow-hover;
+			color: $primary-aqua;
+		}
+	}
+}
