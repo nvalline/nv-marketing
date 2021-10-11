@@ -1,0 +1,13 @@
+@import '../variables';
+
+.testimonials {
+	background-color: $primary-teal;
+
+	> h2 {
+		color: $primary-white;
+	}
+
+	> hr {
+		background-color: $primary-green;
+	}
+}

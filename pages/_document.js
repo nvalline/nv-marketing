@@ -9,7 +9,11 @@ class MyDocument extends Document {
 					<link rel='icon' href='/favicon.ico' />
 					{/* Fonts */}
 					<link rel='preconnect' href='https://fonts.googleapis.com' />
-					<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+					<link
+						rel='preconnect'
+						href='https://fonts.gstatic.com'
+						crossOrigin='true'
+					/>
 					<link
 						href='https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@400;700&family=Comfortaa:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap'
 						rel='stylesheet'

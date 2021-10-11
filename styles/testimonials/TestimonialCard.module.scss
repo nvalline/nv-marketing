@@ -1,0 +1,51 @@
+@import '../variables';
+
+.card {
+	max-width: 25.75rem;
+	padding: 0 1.5rem;
+
+	&:not(:last-child) {
+		margin-bottom: 2.1875rem;
+	}
+
+	&__quoteBlock {
+		min-height: 10.3125rem;
+		border-radius: 25px;
+		padding: 1.125rem;
+		background-color: rgba($color: $primary-white, $alpha: 0.25);
+		box-shadow: 4px 4px 4px $box-shadow;
+		margin-bottom: 1.3125rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__content {
+		font-size: 0.875rem;
+		color: $primary-black;
+		text-align: center;
+	}
+
+	&__block {
+		padding-left: 2.875rem;
+	}
+
+	&__name {
+		font-size: 0.875rem;
+		font-weight: 800;
+	}
+
+	&__subBlock {
+		display: flex;
+	}
+
+	&__position {
+		margin-right: 0.3rem;
+	}
+
+	&__position,
+	&__company {
+		font-size: 0.75rem;
+		color: $primary-green;
+	}
+}
