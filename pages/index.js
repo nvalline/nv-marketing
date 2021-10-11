@@ -4,6 +4,7 @@ import Hero from '../components/hero/hero';
 import Services from '../components/services/services';
 import ArticleSection from '../components/articles/articleSection';
 import Testimonials from '../components/testimonials/testimonials';
+import Projects from '../components/projects/projects';
 
 export default function Home() {
 	return (
@@ -21,6 +22,7 @@ export default function Home() {
 				<Services />
 				<ArticleSection />
 				<Testimonials />
+				<Projects />
 			</main>
 		</>
 	);

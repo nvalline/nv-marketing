@@ -1,0 +1,14 @@
+@import '../variables';
+
+.projects {
+	padding: 4.1875rem 3.875rem;
+	background-color: $primary-black;
+
+	> h2 {
+		color: $primary-white;
+	}
+
+	> hr {
+		background-color: $primary-teal;
+	}
+}
