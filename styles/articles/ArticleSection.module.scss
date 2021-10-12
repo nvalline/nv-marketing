@@ -12,6 +12,7 @@
 		height: 10.375rem;
 		width: 15.625rem;
 		margin-bottom: 2.6875rem;
+		box-shadow: 0 4px 4px $box-shadow;
 		border-radius: 10px;
 		overflow: hidden;
 
@@ -35,6 +36,7 @@
 
 	&__desc {
 		margin-bottom: 2.1875rem;
+		max-width: 32.5rem;
 		font-family: $secondary-font;
 		font-size: 0.875rem;
 		font-weight: 400;
