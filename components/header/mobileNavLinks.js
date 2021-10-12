@@ -1,8 +1,11 @@
 import Link from 'next/link';
+import { links } from '../../data/navLinks';
 
 import styles from '../../styles/header/MobileNavLinks.module.scss';
 
 function MobileNavLinks({ hamburgerIsActive }) {
+	const linksData = links;
+
 	return (
 		<div
 			className={
@@ -11,15 +14,13 @@ function MobileNavLinks({ hamburgerIsActive }) {
 					: `${styles.block} ${styles.block___fadeOut}`
 			}
 		>
-			<Link href='#'>
-				<a>Recent Projects</a>
-			</Link>
-			<Link href='#'>
-				<a>Articles</a>
-			</Link>
-			<Link href='#'>
-				<a>Contact</a>
-			</Link>
+			{linksData.map((link) => {
+				return (
+					<Link key={link.id} href={link.url}>
+						<a>{link.name}</a>
+					</Link>
+				);
+			})}
 		</div>
 	);
 }

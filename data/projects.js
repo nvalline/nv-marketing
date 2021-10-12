@@ -1,7 +1,7 @@
 export const projects = [
 	{
 		id: 1,
-		img: require('../public/images/barber.jpg'),
+		img: '/images/barber.jpg',
 		name: "Jeremy's Barbershop",
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',
@@ -9,7 +9,7 @@ export const projects = [
 	},
 	{
 		id: 2,
-		img: require('../public/images/yard.jpg'),
+		img: '/images/yard.jpg',
 		name: 'Valley Landscaping',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',
@@ -17,7 +17,7 @@ export const projects = [
 	},
 	{
 		id: 3,
-		img: require('../public/images/marina.jpg'),
+		img: '/images/marina.jpg',
 		name: 'Santa Marina Boatyard',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',

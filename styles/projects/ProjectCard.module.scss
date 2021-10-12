@@ -1,1 +1,58 @@
 @import '../variables';
+
+.card {
+	text-align: center;
+
+	&__imageWrapper {
+		position: relative;
+		height: 10.4375rem;
+		width: 15.625rem;
+		margin: 0 auto 1.6875rem;
+		// margin-bottom: 1.6875rem;
+		border-radius: 10px;
+		overflow: hidden;
+
+		> div {
+			position: unset !important;
+
+			&__image {
+				position: relative !important;
+				width: 100%;
+				height: unset !important;
+			}
+		}
+	}
+
+	&__name {
+		font-size: 1.125rem;
+		font-weight: 400;
+		color: $primary-white;
+	}
+
+	&__description {
+		max-width: 16.125rem;
+		margin: 0 auto;
+		padding: 1.375rem 0 1.6875rem;
+		font-family: $secondary-font;
+		font-size: 0.875rem;
+		font-weight: 400;
+		color: $primary-gray;
+	}
+
+	&__button {
+		margin-bottom: 2.875rem;
+		padding: 0.8125rem 1.6875rem;
+		border: none;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		background-color: $primary-teal;
+		color: $primary-white;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $primary-aqua;
+		}
+	}
+}

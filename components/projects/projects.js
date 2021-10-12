@@ -8,7 +8,7 @@ function Projects() {
 	const projectsData = projects;
 
 	return (
-		<section className={styles.projects}>
+		<section className={styles.projects} id='recent_projects'>
 			<SectionHeader title='recent projects' />
 			{projectsData.map((project) => {
 				return <ProjectCard key={project.id} {...project} />;
