@@ -1,0 +1,35 @@
+@import '../variables';
+
+.lowerCta {
+	border-top: 3px solid $primary-aqua;
+	border-bottom: 3px solid $primary-aqua;
+	padding: 4rem;
+	text-align: center;
+
+	> h2 {
+		max-width: 23.75rem;
+		font-size: 1.25rem;
+		font-weight: 800;
+		color: $primary-black;
+	}
+
+	> hr {
+		background-color: $primary-teal;
+	}
+
+	&__button {
+		border: none;
+		border-radius: 20px;
+		box-shadow: 0 2px 2px $box-shadow;
+		padding: 1.3125rem 1.5625rem;
+		background-color: $primary-yellow;
+		font-size: 1rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $primary-black;
+
+		&:hover {
+			color: $primary-aqua;
+		}
+	}
+}

@@ -5,6 +5,7 @@ import Services from '../components/services/services';
 import ArticleSection from '../components/articles/articleSection';
 import Testimonials from '../components/testimonials/testimonials';
 import Projects from '../components/projects/projects';
+import LowerCta from '../components/lowerCta/lowerCta';
 
 export default function Home() {
 	return (
@@ -23,6 +24,7 @@ export default function Home() {
 				<ArticleSection />
 				<Testimonials />
 				<Projects />
+				<LowerCta />
 			</main>
 		</>
 	);
