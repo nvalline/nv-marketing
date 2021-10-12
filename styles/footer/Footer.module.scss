@@ -1,0 +1,20 @@
+@import '../variables';
+
+.footer {
+	padding: 4rem 2.75rem;
+	background-color: $primary-black;
+
+	&__line {
+		margin: 1.3125rem auto;
+		height: 1px;
+		width: 9.375rem;
+		background-color: $primary-teal;
+		border: none;
+	}
+
+	&__links {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

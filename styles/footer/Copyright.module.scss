@@ -1,0 +1,12 @@
+@import '../variables';
+
+.copyright {
+	text-align: center;
+
+	> p {
+		font-size: 0.75rem;
+		font-weight: 400;
+		text-transform: capitalize;
+		color: $primary-white;
+	}
+}

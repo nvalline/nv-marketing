@@ -6,6 +6,7 @@ import ArticleSection from '../components/articles/articleSection';
 import Testimonials from '../components/testimonials/testimonials';
 import Projects from '../components/projects/projects';
 import LowerCta from '../components/lowerCta/lowerCta';
+import Footer from '../components/footer/footer';
 
 export default function Home() {
 	return (
@@ -26,6 +27,7 @@ export default function Home() {
 				<Projects />
 				<LowerCta />
 			</main>
+			<Footer />
 		</>
 	);
 }

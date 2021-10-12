@@ -1,0 +1,21 @@
+@import '../variables';
+
+.links {
+	> a {
+		display: flex;
+		flex-direction: column;
+		font-size: 0.875rem;
+		font-weight: 400;
+		text-transform: capitalize;
+		color: $primary-white;
+
+		&:not(:last-child) {
+			margin-bottom: 0.75rem;
+		}
+
+		&:hover {
+			text-decoration: underline;
+			color: $primary-gray;
+		}
+	}
+}
