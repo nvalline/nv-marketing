@@ -2,6 +2,24 @@
 @import '../variables';
 
 .hero {
+	&__ellipses {
+		background-image: url('/images/ellipses-sm.svg');
+		background-size: auto;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 254px;
+		width: 161px;
+		z-index: -1;
+
+		@include breakpoint-up(medium) {
+			background-image: url('/images/ellipses-md.svg');
+			height: 553px;
+			width: 576px;
+		}
+	}
+
 	&__block {
 		margin: 0 auto;
 		padding: 6.25rem 3.5rem 0;
@@ -10,7 +28,7 @@
 		text-align: center;
 
 		@include breakpoint-up(medium) {
-			padding: 10.25rem 3.5rem 0;
+			padding: 12.25rem 3.5rem 0;
 			height: 41.5rem;
 		}
 	}

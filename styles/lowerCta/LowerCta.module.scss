@@ -1,3 +1,4 @@
+@import '../mixins';
 @import '../variables';
 
 .lowerCta {
@@ -5,6 +6,11 @@
 	border-bottom: 3px solid $primary-aqua;
 	padding: 4rem;
 	text-align: center;
+
+	@include breakpoint-up(medium) {
+		border-top: 5px solid $primary-aqua;
+		border-bottom: 5px solid $primary-aqua;
+	}
 
 	> h2 {
 		margin: 0 auto;

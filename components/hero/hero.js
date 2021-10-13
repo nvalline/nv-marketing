@@ -1,5 +1,4 @@
 import Button from '../misc/buttons';
-import Ellipses from '../misc/ellipses';
 
 import styles from '../../styles/hero/Hero.module.scss';
 
@@ -10,7 +9,8 @@ function Hero() {
 
 	return (
 		<section className={styles.hero}>
-			<Ellipses />
+			{/* Ellipses background image */}
+			<div className={styles.hero__ellipses}></div>
 			<div className={styles.hero__block}>
 				<h1 className={styles.hero__title}>
 					We help businesses <span>expand</span> their{' '}
