@@ -1,3 +1,4 @@
+@import '../mixins';
 @import '../variables';
 
 .projects {
@@ -10,5 +11,17 @@
 
 	> hr {
 		background-color: $primary-teal;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		@include breakpoint-up(medium) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
 	}
 }

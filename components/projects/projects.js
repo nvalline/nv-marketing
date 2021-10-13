@@ -10,9 +10,11 @@ function Projects() {
 	return (
 		<section className={styles.projects} id='recent_projects'>
 			<SectionHeader title='recent projects' />
-			{projectsData.map((project) => {
-				return <ProjectCard key={project.id} {...project} />;
-			})}
+			<div className={styles.projects__block}>
+				{projectsData.map((project) => {
+					return <ProjectCard key={project.id} {...project} />;
+				})}
+			</div>
 		</section>
 	);
 }

@@ -15,6 +15,7 @@
 	}
 
 	> hr {
+		height: 3px;
 		background-color: $primary-teal;
 	}
 
@@ -31,6 +32,11 @@
 
 		&:hover {
 			color: $primary-aqua;
+		}
+
+		&:active {
+			background-color: $primary-aqua;
+			color: $primary-gray;
 		}
 	}
 }

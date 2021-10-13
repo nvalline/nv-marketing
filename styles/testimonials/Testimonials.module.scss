@@ -1,3 +1,4 @@
+@import '../mixins';
 @import '../variables';
 
 .testimonials {
@@ -8,6 +9,19 @@
 	}
 
 	> hr {
+		height: 3px;
 		background-color: $primary-green;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		@include breakpoint-up(medium) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
 	}
 }

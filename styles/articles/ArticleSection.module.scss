@@ -1,3 +1,4 @@
+@import '../mixins';
 @import '../variables';
 
 .articleSection {
@@ -40,6 +41,10 @@
 		font-family: $secondary-font;
 		font-size: 0.875rem;
 		font-weight: 400;
+
+		@include breakpoint-up(medium) {
+			max-width: 28.8889rem;
+		}
 	}
 
 	&__button {
@@ -54,6 +59,11 @@
 
 		&:hover {
 			color: $primary-aqua;
+		}
+
+		&:active {
+			background-color: $primary-aqua;
+			color: $primary-gray;
 		}
 	}
 }

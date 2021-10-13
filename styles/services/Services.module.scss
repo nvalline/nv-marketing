@@ -1,7 +1,17 @@
+@import '../mixins';
 @import '../variables';
 
 .services {
 	border-radius: 300% / 25%;
 	padding: 4.5rem 2.375rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: $primary-teal;
+
+	@include breakpoint-up(medium) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }

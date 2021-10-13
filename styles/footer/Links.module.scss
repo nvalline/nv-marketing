@@ -7,15 +7,15 @@
 		font-size: 0.875rem;
 		font-weight: 400;
 		text-transform: capitalize;
-		color: $primary-white;
+		color: $primary-gray;
 
 		&:not(:last-child) {
 			margin-bottom: 0.75rem;
 		}
 
 		&:hover {
-			text-decoration: underline;
-			color: $primary-gray;
+			border-bottom: 1px solid $primary-white;
+			color: $primary-white;
 		}
 	}
 }

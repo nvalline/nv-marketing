@@ -1,12 +1,13 @@
+@import '../mixins';
 @import '../variables';
 
 .card {
 	max-width: 25.75rem;
-	margin: 0 auto;
+	margin: 0.78125rem;
 	padding: 0 1.5rem;
 
-	&:not(:last-child) {
-		margin-bottom: 2.1875rem;
+	@include breakpoint-up(medium) {
+		max-width: 22.7778rem;
 	}
 
 	&__quoteBlock {

@@ -19,20 +19,23 @@ function ArticleSection() {
 					layout='fill'
 				/>
 			</div>
-			<h2 className={styles.articleSection__title}>
-				Tips To Expand Your Digital Presence
-			</h2>
-			<p className={styles.articleSection__desc}>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien rhoncus,
-				lobortis neque pellentesque. Maecenas erat turpis sapien semper nulla
-				risus. Venenatis cras sed quam sagittis, iaculis mauris in egestas.
-			</p>
-			<Button
-				type='button'
-				className={styles.articleSection__button}
-				onClick={handleArticleBtnClick}
-				text='read more'
-			/>
+			<div className={styles.articleSection__contentWrapper}>
+				<h2 className={styles.articleSection__title}>
+					Tips To Expand Your Digital Presence
+				</h2>
+				<p className={styles.articleSection__desc}>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien
+					rhoncus, lobortis neque pellentesque. Maecenas erat turpis sapien
+					semper nulla risus. Venenatis cras sed quam sagittis, iaculis mauris
+					in egestas.
+				</p>
+				<Button
+					type='button'
+					className={styles.articleSection__button}
+					onClick={handleArticleBtnClick}
+					text='read more'
+				/>
+			</div>
 		</section>
 	);
 }

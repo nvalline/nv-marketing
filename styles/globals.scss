@@ -1,3 +1,4 @@
+@import 'mixins';
 @import 'variables';
 
 html,
@@ -8,6 +9,10 @@ body {
 	line-height: 1.3;
 	letter-spacing: 0.5px;
 	color: $primary-black-text;
+
+	@include breakpoint-up(medium) {
+		font-size: 18px;
+	}
 }
 
 html {

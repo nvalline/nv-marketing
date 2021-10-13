@@ -8,6 +8,11 @@
 		height: 36.5rem;
 		max-width: 34.375rem;
 		text-align: center;
+
+		@include breakpoint-up(medium) {
+			padding: 10.25rem 3.5rem 0;
+			height: 41.5rem;
+		}
 	}
 
 	&__title {
@@ -40,8 +45,12 @@
 		text-transform: uppercase;
 
 		&:hover {
-			// background-color: $primary-yellow-hover;
 			color: $primary-aqua;
+		}
+
+		&:active {
+			background-color: $primary-aqua;
+			color: $primary-gray;
 		}
 	}
 }

@@ -7,8 +7,7 @@
 		position: relative;
 		height: 10.4375rem;
 		width: 15.625rem;
-		margin: 0 auto 1.6875rem;
-		// margin-bottom: 1.6875rem;
+		margin: 0 1.6875rem 1.6875rem;
 		border-radius: 10px;
 		overflow: hidden;
 
@@ -26,7 +25,7 @@
 	&__name {
 		font-size: 1.125rem;
 		font-weight: 400;
-		color: $primary-white;
+		color: $primary-gray;
 	}
 
 	&__description {
@@ -53,6 +52,11 @@
 
 		&:hover {
 			background-color: $primary-aqua;
+		}
+
+		&:active {
+			background-color: $primary-gray;
+			color: $primary-aqua;
 		}
 	}
 }
