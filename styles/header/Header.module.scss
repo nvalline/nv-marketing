@@ -2,11 +2,11 @@
 @import '../variables';
 
 .header {
-	padding: 1rem;
+	padding: 0.5rem 1rem;
 	box-shadow: 0 4px 4px $box-shadow;
 	background-color: $primary-black;
 
 	@include breakpoint-up(medium) {
-		padding: 1rem 2rem;
+		padding: 0.5rem 2rem;
 	}
 }

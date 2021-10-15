@@ -15,20 +15,31 @@
 
 		@include breakpoint-up(medium) {
 			background-image: url('/images/ellipses-md.svg');
-			height: 553px;
-			width: 576px;
+			height: 494px;
+			width: 542px;
+		}
+
+		@include breakpoint-up(large) {
+			background-image: url('/images/ellipses-lg.svg');
+			height: 754px;
+			width: 563px;
 		}
 	}
 
 	&__block {
 		margin: 0 auto;
 		padding: 6.25rem 3.5rem 0;
-		height: 83vh;
+		height: 85vh;
 		max-width: 34.375rem;
 		text-align: center;
 
 		@include breakpoint-up(medium) {
-			padding: 12.25rem 3.5rem 0;
+			padding: 11.25rem 3.5rem 0;
+			min-height: 700px;
+		}
+
+		@include breakpoint-up(large) {
+			margin: 0 auto 0 12%;
 		}
 	}
 
@@ -52,7 +63,7 @@
 	}
 
 	&__button {
-		padding: 1rem 1.25rem;
+		padding: 0.8125rem 1.25rem;
 		border: none;
 		border-radius: 1.25rem;
 		background-color: $primary-yellow;
@@ -60,6 +71,10 @@
 		cursor: pointer;
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
+
+		@include breakpoint-up(large) {
+			font-size: 0.9rem;
+		}
 
 		&:hover {
 			color: $primary-aqua;

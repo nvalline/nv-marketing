@@ -8,9 +8,12 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: $primary-teal;
+	box-shadow: 0 4px 4px $box-shadow;
+	background-color: $primary-aqua;
 
 	@include breakpoint-up(medium) {
+		border-radius: unset;
+		padding: 3rem 2.375rem;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}

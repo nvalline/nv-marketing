@@ -11,9 +11,10 @@
 	> a {
 		display: block;
 		text-align: center;
+		font-family: $primary-titles;
 		font-size: 1rem;
 		text-transform: capitalize;
-		color: $primary-white;
+		color: $primary-gray;
 		padding: 0.5rem 0;
 
 		&:not(:last-child) {

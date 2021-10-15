@@ -2,6 +2,7 @@
 @import '../variables';
 
 .testimonials {
+	box-shadow: 0 -4px 4px $box-shadow;
 	background-color: $primary-teal;
 
 	> h2 {

@@ -11,7 +11,7 @@ function NavLinks() {
 			{linksData.map((link) => {
 				return (
 					<Link key={link.id} href={link.url}>
-						<a>{link.name}</a>
+						<a className={styles.block__link}>{link.name}</a>
 					</Link>
 				);
 			})}

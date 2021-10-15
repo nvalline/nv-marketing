@@ -13,6 +13,10 @@ body {
 	@include breakpoint-up(medium) {
 		font-size: 18px;
 	}
+
+	@include breakpoint-up(large) {
+		font-size: 19px;
+	}
 }
 
 html {

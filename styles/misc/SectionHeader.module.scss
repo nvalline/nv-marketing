@@ -1,5 +1,8 @@
+@import '../variables';
+
 .title {
-	font-size: 1.25rem;
+	font-family: $primary-titles;
+	font-size: 1.35rem;
 	font-weight: 400;
 	text-align: center;
 	text-transform: capitalize;

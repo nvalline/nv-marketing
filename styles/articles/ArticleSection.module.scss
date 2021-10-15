@@ -8,6 +8,11 @@
 	padding: 5.625rem 2.8125rem;
 	text-align: center;
 
+	@include breakpoint-up(large) {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
 	.imageWrapper {
 		position: relative;
 		height: 10.375rem;
@@ -30,7 +35,7 @@
 
 	&__title {
 		margin-bottom: 1.4375rem;
-		font-family: $blog-titles;
+		font-family: $secondary-titles;
 		font-size: 1.125rem;
 		font-weight: 800;
 	}
@@ -56,6 +61,10 @@
 		cursor: pointer;
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
+
+		@include breakpoint-up(large) {
+			font-size: 0.9rem;
+		}
 
 		&:hover {
 			color: $primary-aqua;

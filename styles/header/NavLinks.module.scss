@@ -2,9 +2,20 @@
 @import '../variables';
 
 .block {
-	a {
-		text-transform: capitalize;
-		color: $primary-white;
+	&__link {
+		font-family: $primary-titles;
+		font-size: 0.9474rem;
+		font-weight: 400;
+		color: $primary-gray;
+
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+
+		&:hover {
+			border-bottom: 1px solid $primary-white;
+			color: $primary-white;
+		}
 	}
 
 	@include breakpoint-down(medium) {
