@@ -2,6 +2,7 @@
 @import '../variables';
 
 .hero {
+	// Hero ellipses styles
 	&__ellipses {
 		background-image: url('/images/ellipses-sm.svg');
 		background-size: auto;
@@ -26,6 +27,7 @@
 		}
 	}
 
+	// Hero content styles
 	&__block {
 		margin: 0 auto;
 		padding: 6.25rem 3.5rem 0;
@@ -83,6 +85,24 @@
 		&:active {
 			background-color: $primary-aqua;
 			color: $primary-gray;
+		}
+	}
+
+	// Hero image styles
+	&__imageWrapper {
+		height: 307.33px;
+		width: 470.56px;
+		position: absolute;
+		top: 273px;
+
+		> div {
+			position: unset !important;
+
+			.hero__image {
+				position: relative !important;
+				width: 100%;
+				height: unset !important;
+			}
 		}
 	}
 }

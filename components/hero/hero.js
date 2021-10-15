@@ -1,4 +1,7 @@
+import Image from 'next/image';
 import Button from '../misc/buttons';
+
+import heroImg from '../../public/images/consult.jpg';
 
 import styles from '../../styles/hero/Hero.module.scss';
 
@@ -11,6 +14,8 @@ function Hero() {
 		<section className={styles.hero}>
 			{/* Ellipses background image */}
 			<div className={styles.hero__ellipses}></div>
+
+			{/* Hero content block */}
 			<div className={styles.hero__block}>
 				<h1 className={styles.hero__title}>
 					We help businesses <span>expand</span> their{' '}
@@ -25,6 +30,16 @@ function Hero() {
 					className={styles.hero__button}
 					onClick={handleBtnClick}
 					text='learn more'
+				/>
+			</div>
+
+			{/* Hero Image */}
+			<div className={styles.hero__imageWrapper}>
+				<Image
+					src={heroImg}
+					alt='consult'
+					className={styles.hero__image}
+					layout='fill'
 				/>
 			</div>
 		</section>
