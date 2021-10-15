@@ -1,20 +1,18 @@
+@import '../mixins';
 @import '../variables';
 
 .links {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+
 	> a {
-		display: flex;
-		flex-direction: column;
+		padding: 2px;
 		font-family: $primary-titles;
 		font-size: 0.875rem;
 		font-weight: 400;
-		text-transform: capitalize;
 		color: $primary-gray;
-
-		// ! set height of links, add space-evenly, delete margin-bottom - GOAL: Get rid of hover movement
-
-		&:not(:last-child) {
-			margin-bottom: 0.75rem;
-		}
 
 		&:hover {
 			border-bottom: 1px solid $primary-white;

@@ -1,3 +1,4 @@
+@import '../mixins';
 @import '../variables';
 
 .logo {
@@ -17,5 +18,17 @@
 				height: unset !important;
 			}
 		}
+	}
+}
+
+.desktop {
+	@include breakpoint-down(medium) {
+		display: none;
+	}
+}
+
+.mobile {
+	@include breakpoint-up(large) {
+		display: none;
 	}
 }

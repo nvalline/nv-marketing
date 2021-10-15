@@ -10,14 +10,14 @@ function Testimonials() {
 
 	return (
 		<section className={styles.testimonials}>
-			<PixelBar position='top' margin='1.5' />
+			<PixelBar position='top' />
 			<SectionHeader title='client testimonials' />
 			<div className={styles.testimonials__block}>
 				{testimonialData.map((testimonial) => {
 					return <TestimonialCard key={testimonial.id} {...testimonial} />;
 				})}
 			</div>
-			<PixelBar position='bottom' margin='3.5625' />
+			<PixelBar position='bottom' />
 		</section>
 	);
 }

@@ -5,9 +5,15 @@ import logoImg from '../../public/images/nv_mktg_logo_white.svg';
 
 import styles from '../../styles/footer/Logo.module.scss';
 
-function Logo() {
+function Logo({ screen }) {
 	return (
-		<div className={styles.logo}>
+		<div
+			className={
+				screen === 'desktop'
+					? `${styles.logo} ${styles.desktop}`
+					: `${styles.logo} ${styles.mobile}`
+			}
+		>
 			<Link href='/'>
 				<a>
 					<div className={styles.logo__wrapper}>

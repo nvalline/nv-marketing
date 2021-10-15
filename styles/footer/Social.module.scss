@@ -1,11 +1,13 @@
 @import '../variables';
 
 .social {
+	width: 8rem;
 	height: 4.875rem;
 	padding: 0.3125rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: flex-end;
 
 	&__iconWrapper {
 		height: 1.5625rem;
