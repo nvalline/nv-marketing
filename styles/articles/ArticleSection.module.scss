@@ -22,6 +22,10 @@
 		border-radius: 10px;
 		overflow: hidden;
 
+		@include breakpoint-up(large) {
+			margin-bottom: 0;
+		}
+
 		> div {
 			position: unset !important;
 
@@ -33,22 +37,34 @@
 		}
 	}
 
+	&__contentWrapper {
+		max-width: 32.5rem;
+
+		@include breakpoint-up(medium) {
+			max-width: 28.8889rem;
+		}
+
+		@include breakpoint-up(large) {
+			max-width: 27.3684rem;
+		}
+	}
+
 	&__title {
 		margin-bottom: 1.4375rem;
 		font-family: $secondary-titles;
-		font-size: 1.125rem;
+		font-size: 1rem;
 		font-weight: 800;
 	}
 
 	&__desc {
 		margin-bottom: 2.1875rem;
-		max-width: 32.5rem;
 		font-family: $secondary-font;
 		font-size: 0.875rem;
 		font-weight: 400;
 
-		@include breakpoint-up(medium) {
-			max-width: 28.8889rem;
+		@include breakpoint-up(large) {
+			margin-bottom: 1.4375rem;
+			font-size: 0.8rem;
 		}
 	}
 
@@ -63,7 +79,8 @@
 		text-transform: uppercase;
 
 		@include breakpoint-up(large) {
-			font-size: 0.9rem;
+			padding: 0.8125rem 2.25rem;
+			font-size: 0.8rem;
 		}
 
 		&:hover {

@@ -4,10 +4,13 @@
 	> a {
 		display: flex;
 		flex-direction: column;
+		font-family: $primary-titles;
 		font-size: 0.875rem;
 		font-weight: 400;
 		text-transform: capitalize;
 		color: $primary-gray;
+
+		// ! set height of links, add space-evenly, delete margin-bottom - GOAL: Get rid of hover movement
 
 		&:not(:last-child) {
 			margin-bottom: 0.75rem;

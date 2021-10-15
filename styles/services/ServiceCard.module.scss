@@ -16,11 +16,20 @@
 		max-width: 22.7778rem;
 	}
 
+	@include breakpoint-up(large) {
+		max-width: 21.5789rem;
+	}
+
 	.iconWrapper {
 		position: relative;
 		height: 2.5rem;
 		width: 2.5rem;
 		margin-bottom: 1.25rem;
+
+		@include breakpoint-up(large) {
+			height: 3.1579rem;
+			width: 3.1579rem;
+		}
 
 		> div {
 			position: unset !important;
@@ -35,11 +44,11 @@
 
 	&__title {
 		margin-bottom: 1.25rem;
-		font-size: 1.125rem;
+		font-size: 1rem;
 		font-weight: 800;
 	}
 
 	&__desc {
-		font-size: 0.875rem;
+		font-size: 0.8rem;
 	}
 }

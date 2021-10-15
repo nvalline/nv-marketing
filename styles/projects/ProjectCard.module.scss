@@ -1,7 +1,21 @@
+@import '../mixins';
 @import '../variables';
 
 .card {
+	margin-bottom: 2.875rem;
 	text-align: center;
+
+	@include breakpoint-up(large) {
+		margin-bottom: 5.2632rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 35.4211rem;
+
+		&:nth-child(2) {
+			flex-direction: row-reverse;
+		}
+	}
 
 	&__imageWrapper {
 		position: relative;
@@ -10,6 +24,10 @@
 		margin: 0 1.6875rem 1.6875rem;
 		border-radius: 10px;
 		overflow: hidden;
+
+		@include breakpoint-up(large) {
+			margin: 0;
+		}
 
 		> div {
 			position: unset !important;
@@ -22,8 +40,12 @@
 		}
 	}
 
+	&__contentWrapper {
+		position: relative;
+	}
+
 	&__name {
-		font-size: 1.125rem;
+		font-size: 1em;
 		font-weight: 400;
 		color: $primary-gray;
 	}
@@ -33,22 +55,29 @@
 		margin: 0 auto;
 		padding: 1.375rem 0 1.6875rem;
 		font-family: $secondary-font;
-		font-size: 0.875rem;
+		font-size: 0.8rem;
 		font-weight: 400;
 		color: $primary-gray;
+
+		@include breakpoint-up(large) {
+			padding: 1.3158rem 0;
+		}
 	}
 
 	&__button {
-		margin-bottom: 2.875rem;
 		padding: 0.8125rem 1.6875rem;
 		border: none;
 		border-radius: 20px;
-		font-size: 0.875rem;
+		font-size: 0.8rem;
 		font-weight: 400;
 		text-transform: uppercase;
 		background-color: $primary-teal;
 		color: $primary-white;
 		cursor: pointer;
+
+		@include breakpoint-up(large) {
+			padding: 0.8rem 2rem;
+		}
 
 		&:hover {
 			background-color: $primary-aqua;

@@ -5,7 +5,8 @@ export const projects = [
 		name: "Jeremy's Barbershop",
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',
-		url: 'https://www.google.com'
+		url: 'https://www.google.com',
+		accent: 'left'
 	},
 	{
 		id: 2,
@@ -13,7 +14,8 @@ export const projects = [
 		name: 'Valley Landscaping',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',
-		url: 'https://www.google.com'
+		url: 'https://www.google.com',
+		accent: 'right'
 	},
 	{
 		id: 3,
@@ -21,6 +23,7 @@ export const projects = [
 		name: 'Santa Marina Boatyard',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',
-		url: 'https://www.google.com'
+		url: 'https://www.google.com',
+		accent: 'none'
 	}
 ];
