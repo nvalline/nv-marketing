@@ -9,4 +9,8 @@
 	@include breakpoint-up(medium) {
 		padding: 0.5rem 2rem;
 	}
+
+	@include breakpoint-up(xlarge) {
+		padding: 0.5rem 5rem;
+	}
 }

@@ -2,6 +2,13 @@
 @import '../variables';
 
 .hero {
+	&__page_container {
+		position: relative;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 75.7895rem;
+	}
+
 	// Hero ellipses styles
 	&__ellipses {
 		background-image: url('/images/ellipses-sm.svg');
@@ -104,7 +111,7 @@
 		height: 251.08px;
 		width: 375.01px;
 		position: absolute;
-		top: 13.3684rem;
+		top: 8.8421rem;
 		right: 15%;
 		border-radius: 10px;
 		overflow: hidden;
