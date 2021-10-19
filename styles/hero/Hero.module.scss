@@ -32,7 +32,7 @@
 		margin: 0 auto;
 		padding: 6.25rem 3.5rem 0;
 		height: 85vh;
-		max-width: 34.375rem;
+		max-width: 30.375rem;
 		text-align: center;
 
 		@include breakpoint-up(medium) {
@@ -41,7 +41,11 @@
 		}
 
 		@include breakpoint-up(large) {
-			margin: 0 auto 0 12%;
+			margin: 0 auto 0 7%;
+		}
+
+		@include breakpoint-up(xlarge) {
+			max-width: 34.375rem;
 		}
 	}
 
@@ -90,10 +94,24 @@
 
 	// Hero image styles
 	&__imageWrapper {
-		height: 307.33px;
-		width: 470.56px;
+		height: 251.08px;
+		width: 375.01px;
 		position: absolute;
-		top: 273px;
+		top: 13.3684rem;
+		right: 15%;
+		border-radius: 10px;
+		overflow: hidden;
+		transform: rotate(-5deg);
+		box-shadow: 4px 4px 4px $box-shadow;
+
+		@include breakpoint-down(large) {
+			display: none;
+		}
+
+		@include breakpoint-up(xlarge) {
+			height: 307.33px;
+			width: 470.56px;
+		}
 
 		> div {
 			position: unset !important;
