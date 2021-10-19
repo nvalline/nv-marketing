@@ -25,6 +25,12 @@
 			height: 754px;
 			width: 563px;
 		}
+
+		@include breakpoint-up(xlarge) {
+			background-image: url('/images/ellipses-xlg.svg');
+			height: 754px;
+			width: 563px;
+		}
 	}
 
 	// Hero content styles
@@ -45,6 +51,7 @@
 		}
 
 		@include breakpoint-up(xlarge) {
+			margin: 0 auto 0 5%;
 			max-width: 34.375rem;
 		}
 	}
@@ -111,6 +118,7 @@
 		@include breakpoint-up(xlarge) {
 			height: 307.33px;
 			width: 470.56px;
+			right: 13%;
 		}
 
 		> div {
