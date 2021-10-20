@@ -1,7 +1,7 @@
 import ServiceCard from './serviceCard';
-import { services } from '../../data/services';
+import { services } from '../../../data/services';
 
-import styles from '../../styles/services/Services.module.scss';
+import styles from '../../../styles/services/Services.module.scss';
 
 function Services() {
 	const serviceData = services;

@@ -1,7 +1,7 @@
-import SectionHeader from '../misc/sectionHeader';
-import Button from '../misc/buttons';
+import SectionHeader from '../../misc/sectionHeader';
+import Button from '../../misc/buttons';
 
-import styles from '../../styles/lowerCta/LowerCta.module.scss';
+import styles from '../../../styles/lowerCta/LowerCta.module.scss';
 
 function LowerCta() {
 	const handleBtnClick = () => {

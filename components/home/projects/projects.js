@@ -1,8 +1,8 @@
-import SectionHeader from '../misc/sectionHeader';
+import SectionHeader from '../../misc/sectionHeader';
 import ProjectCard from './projectCard';
-import { projects } from '../../data/projects';
+import { projects } from '../../../data/projects';
 
-import styles from '../../styles/projects/Projects.module.scss';
+import styles from '../../../styles/projects/Projects.module.scss';
 
 function Projects() {
 	const projectsData = projects;

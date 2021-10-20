@@ -1,9 +1,9 @@
-import PixelBar from '../misc/pixelBar';
-import SectionHeader from '../misc/sectionHeader';
+import PixelBar from '../../misc/pixelBar';
+import SectionHeader from '../../misc/sectionHeader';
 import TestimonialCard from './testimonialCard';
-import { testimonials } from '../../data/testimonials';
+import { testimonials } from '../../../data/testimonials';
 
-import styles from '../../styles/testimonials/Testimonials.module.scss';
+import styles from '../../../styles/testimonials/Testimonials.module.scss';
 
 function Testimonials() {
 	const testimonialData = testimonials;

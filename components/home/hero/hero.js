@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import Button from '../misc/buttons';
+import Button from '../../misc/buttons';
 
-import heroImg from '../../public/images/consult.jpg';
+import heroImg from '../../../public/images/consult.jpg';
 
-import styles from '../../styles/hero/Hero.module.scss';
+import styles from '../../../styles/hero/Hero.module.scss';
 
 function Hero() {
 	const handleBtnClick = () => {

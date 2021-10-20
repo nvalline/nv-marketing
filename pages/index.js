@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Header from '../components/header/header';
-import Hero from '../components/hero/hero';
-import Services from '../components/services/services';
-import Articles from '../components/articles/articleSection';
-import Testimonials from '../components/testimonials/testimonials';
-import Projects from '../components/projects/projects';
-import LowerCta from '../components/lowerCta/lowerCta';
+import Hero from '../components/home/hero/hero';
+import Services from '../components/home/services/services';
+import Articles from '../components/home/articles/articles';
+import Testimonials from '../components/home/testimonials/testimonials';
+import Projects from '../components/home/projects/projects';
+import LowerCta from '../components/home/lowerCta/lowerCta';
 import Footer from '../components/footer/footer';
 
 export default function Home() {
