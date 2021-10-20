@@ -9,6 +9,7 @@
 	left: 0;
 	height: 12rem;
 	background-color: $primary-black;
+	z-index: 4;
 
 	&___fadeIn {
 		animation: fade-in 200ms ease-in-out forwards;
