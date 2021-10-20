@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Header from '../components/header/header';
 import Hero from '../components/hero/hero';
 import Services from '../components/services/services';
-import ArticleSection from '../components/articles/articleSection';
+import Articles from '../components/articles/articleSection';
 import Testimonials from '../components/testimonials/testimonials';
 import Projects from '../components/projects/projects';
 import LowerCta from '../components/lowerCta/lowerCta';
@@ -22,7 +22,7 @@ export default function Home() {
 			<main>
 				<Hero />
 				<Services />
-				<ArticleSection />
+				<Articles />
 				<Testimonials />
 				<Projects />
 				<LowerCta />

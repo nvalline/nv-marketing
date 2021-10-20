@@ -10,6 +10,11 @@
 		max-width: 22.7778rem;
 	}
 
+	@include breakpoint-up(large) {
+		margin: 0.78125rem 0;
+		max-width: 21.6842rem;
+	}
+
 	&__quoteBlock {
 		min-height: 10.3125rem;
 		border-radius: 25px;

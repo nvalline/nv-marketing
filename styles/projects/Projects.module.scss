@@ -14,6 +14,7 @@
 	}
 
 	&__block {
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -22,6 +23,10 @@
 		@include breakpoint-up(medium) {
 			flex-direction: row;
 			flex-wrap: wrap;
+		}
+
+		@include breakpoint-up(large) {
+			max-width: 35.4211rem;
 		}
 	}
 }

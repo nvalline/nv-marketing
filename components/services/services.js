@@ -8,9 +8,11 @@ function Services() {
 
 	return (
 		<section className={styles.services}>
-			{serviceData.map((service) => {
-				return <ServiceCard key={service.id} {...service} />;
-			})}
+			<div className={styles.services__container}>
+				{serviceData.map((service) => {
+					return <ServiceCard key={service.id} {...service} />;
+				})}
+			</div>
 		</section>
 	);
 }

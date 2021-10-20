@@ -4,10 +4,6 @@
 .services {
 	border-radius: 300% / 25%;
 	padding: 4.5rem 2.375rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	box-shadow: 0 4px 4px $box-shadow;
 	background-color: $primary-aqua;
 
@@ -16,5 +12,19 @@
 		padding: 3rem 2.375rem;
 		flex-direction: row;
 		flex-wrap: wrap;
+	}
+
+	&__container {
+		margin: 0 auto;
+		max-width: 70.0716rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		@include breakpoint-up(medium) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
 	}
 }
