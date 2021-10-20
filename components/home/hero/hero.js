@@ -41,6 +41,7 @@ function Hero() {
 						alt='consult'
 						className={styles.hero__image}
 						layout='fill'
+						priority
 					/>
 				</div>
 			</div>
