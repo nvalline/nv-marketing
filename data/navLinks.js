@@ -11,7 +11,7 @@ export const links = [
 	},
 	{
 		id: 3,
-		url: '#',
+		url: '/contact',
 		name: 'Contact'
 	}
 ];

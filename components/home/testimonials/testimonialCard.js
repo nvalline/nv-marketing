@@ -1,4 +1,4 @@
-import styles from '../../../styles/testimonials/TestimonialCard.module.scss';
+import styles from '../../../styles/home/testimonials/TestimonialCard.module.scss';
 
 function TestimonialCard({ id, content, name, position, company }) {
 	return (

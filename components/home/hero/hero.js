@@ -3,7 +3,7 @@ import Button from '../../misc/buttons';
 
 import heroImg from '../../../public/images/consult.jpg';
 
-import styles from '../../../styles/hero/Hero.module.scss';
+import styles from '../../../styles/home/hero/Hero.module.scss';
 
 function Hero() {
 	const handleBtnClick = () => {

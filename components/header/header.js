@@ -13,11 +13,7 @@ function Header() {
 
 	// Toggle hamburger state
 	const toggleHamburger = () => {
-		if (hamburgerIsActive === true) {
-			setHamburgerIsActive(false);
-		} else {
-			setHamburgerIsActive(true);
-		}
+		setHamburgerIsActive(!hamburgerIsActive);
 	};
 
 	// Update hamburger state on route change

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Button from '../../misc/buttons';
 import articleImg from '../../../public/images/devices.jpg';
 
-import styles from '../../../styles/articles/ArticleSection.module.scss';
+import styles from '../../../styles/home/articles/ArticleSection.module.scss';
 
 function Articles() {
 	const handleArticleBtnClick = () => {

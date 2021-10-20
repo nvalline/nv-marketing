@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Button from '../../../components/misc/buttons';
 import CircleLine from '../../misc/circleLine';
 
-import styles from '../../../styles/projects/ProjectCard.module.scss';
+import styles from '../../../styles/home/projects/ProjectCard.module.scss';
 
 function ProjectCard({ id, img, name, description, url, accent }) {
 	return (

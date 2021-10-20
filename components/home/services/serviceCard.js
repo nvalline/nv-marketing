@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import styles from '../../../styles/services/ServiceCard.module.scss';
+import styles from '../../../styles/home/services/ServiceCard.module.scss';
 
 function ServiceCard({ id, title, description, img }) {
 	return (
