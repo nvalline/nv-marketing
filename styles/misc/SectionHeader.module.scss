@@ -1,7 +1,7 @@
-@import '../abstracts/variables';
+@use '../abstracts/variables' as v;
 
 .title {
-	font-family: $primary-titles;
+	font-family: v.$primary-titles;
 	font-size: 1.35rem;
 	font-weight: 400;
 	text-align: center;

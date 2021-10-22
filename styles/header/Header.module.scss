@@ -1,10 +1,10 @@
-@import '../abstracts/mixins';
-@import '../abstracts/variables';
+@use '../abstracts/variables' as v;
+@import '../abstracts/mixins/mixins';
 
 .header {
 	padding: 0.5rem 1rem;
-	box-shadow: 0 4px 4px $box-shadow;
-	background-color: $primary-black;
+	box-shadow: 0 4px 4px v.$box-shadow;
+	background-color: v.$primary-black;
 
 	@include breakpoint-up(medium) {
 		padding: 0.5rem 2rem;

@@ -1,7 +1,7 @@
-@import '../abstracts/variables';
+@use '../abstracts/variables' as v;
 
 .contactAccent {
 	height: 1.875rem;
 	width: 100vw;
-	background-color: $primary-teal;
+	background-color: v.$primary-teal;
 }

@@ -1,5 +1,5 @@
-@import '../abstracts/mixins';
-@import '../abstracts/variables';
+@use '../abstracts/variables' as v;
+@import '../abstracts/mixins/mixins';
 
 .hamburger {
 	&__icon {
@@ -9,7 +9,7 @@
 
 		> span {
 			display: block;
-			background-color: $primary-gray;
+			background-color: v.$primary-gray;
 			border-radius: 10px;
 			height: 2px;
 			width: 24px;

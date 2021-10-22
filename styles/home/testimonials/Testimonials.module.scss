@@ -1,18 +1,18 @@
-@import '../../abstracts/mixins';
-@import '../../abstracts/variables';
+@use '../../abstracts/variables' as v;
+@import '../../abstracts/mixins/mixins';
 
 .testimonials {
 	position: relative;
-	box-shadow: 0 -4px 4px $box-shadow;
-	background-color: $primary-teal;
+	box-shadow: 0 -4px 4px v.$box-shadow;
+	background-color: v.$primary-teal;
 
 	> h2 {
-		color: $primary-white;
+		color: v.$primary-white;
 	}
 
 	> hr {
 		height: 3px;
-		background-color: $primary-green;
+		background-color: v.$primary-green;
 	}
 
 	&__block {

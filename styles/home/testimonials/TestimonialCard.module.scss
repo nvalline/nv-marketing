@@ -1,5 +1,5 @@
-@import '../../abstracts/mixins';
-@import '../../abstracts/variables';
+@use '../../abstracts/variables' as v;
+@import '../../abstracts/mixins/mixins';
 
 .card {
 	max-width: 25.75rem;
@@ -19,8 +19,8 @@
 		min-height: 10.3125rem;
 		border-radius: 25px;
 		padding: 1.125rem;
-		background-color: rgba($color: $primary-white, $alpha: 0.25);
-		box-shadow: 4px 4px 4px $box-shadow;
+		background-color: rgba($color: v.$primary-white, $alpha: 0.25);
+		box-shadow: 4px 4px 4px v.$box-shadow;
 		margin-bottom: 1.3125rem;
 		display: flex;
 		justify-content: center;
@@ -29,7 +29,7 @@
 
 	&__content {
 		font-size: 0.8rem;
-		color: $primary-black;
+		color: v.$primary-black;
 		text-align: center;
 	}
 
@@ -53,6 +53,6 @@
 	&__position,
 	&__company {
 		font-size: 0.75rem;
-		color: $primary-green;
+		color: v.$primary-green;
 	}
 }

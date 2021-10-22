@@ -1,20 +1,20 @@
-@import '../abstracts/mixins';
-@import '../abstracts/variables';
+@use '../abstracts/variables' as v;
+@import '../abstracts/mixins/mixins';
 
 .block {
 	&__link {
-		font-family: $primary-titles;
+		font-family: v.$primary-titles;
 		font-size: 0.9474rem;
 		font-weight: 400;
-		color: $primary-gray;
+		color: v.$primary-gray;
 
 		&:not(:last-child) {
 			margin-right: 2rem;
 		}
 
 		&:hover {
-			border-bottom: 1px solid $primary-white;
-			color: $primary-white;
+			border-bottom: 1px solid v.$primary-white;
+			color: v.$primary-white;
 		}
 	}
 

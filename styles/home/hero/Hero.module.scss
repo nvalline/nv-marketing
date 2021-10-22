@@ -1,5 +1,5 @@
-@import '../../abstracts/mixins';
-@import '../../abstracts/variables';
+@use '../../abstracts/variables' as v;
+@import '../../abstracts/mixins/mixins';
 
 .hero {
 	&__page_container {
@@ -65,14 +65,14 @@
 
 	&__title {
 		margin-bottom: 2.75rem;
-		font-family: $hero-narrow;
+		font-family: v.$hero-narrow;
 		font-size: 1.3125rem;
 		font-weight: 400;
 		text-transform: capitalize;
 
 		> span {
-			font-family: $hero-bold;
-			color: $primary-orange;
+			font-family: v.$hero-bold;
+			color: v.$primary-orange;
 		}
 	}
 
@@ -86,8 +86,8 @@
 		padding: 0.8125rem 1.25rem;
 		border: none;
 		border-radius: 1.25rem;
-		background-color: $primary-yellow;
-		box-shadow: 0 2px 2px $box-shadow;
+		background-color: v.$primary-yellow;
+		box-shadow: 0 2px 2px v.$box-shadow;
 		cursor: pointer;
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
@@ -97,12 +97,12 @@
 		}
 
 		&:hover {
-			color: $primary-aqua;
+			color: v.$primary-aqua;
 		}
 
 		&:active {
-			background-color: $primary-aqua;
-			color: $primary-gray;
+			background-color: v.$primary-aqua;
+			color: v.$primary-gray;
 		}
 	}
 
@@ -116,7 +116,7 @@
 		border-radius: 10px;
 		overflow: hidden;
 		transform: rotate(-5deg);
-		box-shadow: 4px 4px 4px $box-shadow;
+		box-shadow: 4px 4px 4px v.$box-shadow;
 
 		@include breakpoint-down(large) {
 			display: none;

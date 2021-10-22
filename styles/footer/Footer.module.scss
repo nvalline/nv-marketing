@@ -1,14 +1,14 @@
-@import '../abstracts/variables';
+@use '../abstracts/variables' as v;
 
 .footer {
 	padding: 4rem 2.75rem;
-	background-color: $primary-black;
+	background-color: v.$primary-black;
 
 	&__line {
 		margin: 1.3125rem auto;
 		height: 1px;
 		width: 9.375rem;
-		background-color: $primary-green;
+		background-color: v.$primary-green;
 		border: none;
 	}
 

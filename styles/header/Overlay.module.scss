@@ -1,5 +1,5 @@
-@import '../abstracts/animations';
-@import '../abstracts/variables';
+@use '../abstracts/variables' as v;
+@use '../abstracts/animations/animations';
 
 .overlay {
 	opacity: 0;
@@ -8,7 +8,7 @@
 	right: 0;
 	left: 0;
 	height: 12rem;
-	background-color: $primary-black;
+	background-color: v.$primary-black;
 	z-index: 4;
 
 	&___fadeIn {

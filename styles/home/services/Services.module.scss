@@ -1,11 +1,11 @@
-@import '../../abstracts/mixins';
-@import '../../abstracts/variables';
+@use '../../abstracts/variables' as v;
+@import '../../abstracts/mixins/mixins';
 
 .services {
 	border-radius: 300% / 25%;
 	padding: 4.5rem 2.375rem;
-	box-shadow: 0 4px 4px $box-shadow;
-	background-color: $primary-aqua;
+	box-shadow: 0 4px 4px v.$box-shadow;
+	background-color: v.$primary-aqua;
 
 	@include breakpoint-up(medium) {
 		border-radius: unset;

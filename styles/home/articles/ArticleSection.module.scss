@@ -1,5 +1,5 @@
-@import '../../abstracts/mixins';
-@import '../../abstracts/variables';
+@use '../../abstracts/variables' as v;
+@import '../../abstracts/mixins/mixins';
 
 .articles {
 	&__container {
@@ -22,7 +22,7 @@
 		height: 10.375rem;
 		width: 15.625rem;
 		margin-bottom: 2.6875rem;
-		box-shadow: 0 4px 4px $box-shadow;
+		box-shadow: 0 4px 4px v.$box-shadow;
 		border-radius: 10px;
 		overflow: hidden;
 
@@ -55,14 +55,14 @@
 
 	&__title {
 		margin-bottom: 1.4375rem;
-		font-family: $secondary-titles;
+		font-family: v.$secondary-titles;
 		font-size: 1rem;
 		font-weight: 800;
 	}
 
 	&__desc {
 		margin-bottom: 2.1875rem;
-		font-family: $secondary-font;
+		font-family: v.$secondary-font;
 		font-size: 0.875rem;
 		font-weight: 400;
 
@@ -76,8 +76,8 @@
 		padding: 0.8125rem 1.25rem;
 		border: none;
 		border-radius: 1.25rem;
-		background-color: $primary-yellow;
-		box-shadow: 0 2px 2px $box-shadow;
+		background-color: v.$primary-yellow;
+		box-shadow: 0 2px 2px v.$box-shadow;
 		cursor: pointer;
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
@@ -88,12 +88,12 @@
 		}
 
 		&:hover {
-			color: $primary-aqua;
+			color: v.$primary-aqua;
 		}
 
 		&:active {
-			background-color: $primary-aqua;
-			color: $primary-gray;
+			background-color: v.$primary-aqua;
+			color: v.$primary-gray;
 		}
 	}
 }

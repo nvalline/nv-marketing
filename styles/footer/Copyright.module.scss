@@ -1,4 +1,4 @@
-@import '../abstracts/variables';
+@use '../abstracts/variables' as v;
 
 .copyright {
 	padding-top: 0.6rem;
@@ -8,6 +8,6 @@
 		font-size: 0.6rem;
 		font-weight: 400;
 		text-transform: capitalize;
-		color: $primary-gray;
+		color: v.$primary-gray;
 	}
 }

@@ -1,20 +1,20 @@
-@import '../../abstracts/variables';
+@use '../../abstracts/variables' as v;
 
 .details {
 	padding: 1.875rem 0;
-	background-color: $primary-aqua;
+	background-color: v.$primary-aqua;
 
 	&__block {
 		padding: 3.375rem 0 3.375rem 3.125rem;
 		border-radius: 0 100px 100px 0;
-		background-color: $primary-white;
+		background-color: v.$primary-white;
 	}
 
 	&__title {
-		font-family: $secondary-titles;
+		font-family: v.$secondary-titles;
 		font-size: 1.125rem;
 		font-weight: 400;
-		color: $primary-black;
+		color: v.$primary-black;
 		text-transform: capitalize;
 	}
 
@@ -23,23 +23,23 @@
 		height: 1px;
 		width: 9.375rem;
 		border: none;
-		background-color: $primary-teal;
+		background-color: v.$primary-teal;
 	}
 
 	&__label {
 		margin-top: 1.25rem;
-		font-family: $secondary-titles;
+		font-family: v.$secondary-titles;
 		font-size: 0.75rem;
 		font-weight: 400;
-		color: $primary-green;
+		color: v.$primary-green;
 		text-transform: capitalize;
 	}
 
 	&__info {
 		margin-top: 0.5rem;
-		font-family: $secondary-titles;
+		font-family: v.$secondary-titles;
 		font-size: 0.875rem;
 		font-weight: 400;
-		color: $primary-black;
+		color: v.$primary-black;
 	}
 }

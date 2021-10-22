@@ -1,5 +1,5 @@
-@import '../../abstracts/mixins';
-@import '../../abstracts/variables';
+@use '../../abstracts/variables' as v;
+@import '../../abstracts/mixins/mixins';
 
 .serviceCard {
 	display: flex;
@@ -9,7 +9,7 @@
 	margin: 0.78125rem;
 	padding: 1.6875rem;
 	max-width: 25.625rem;
-	background-color: $primary-white;
+	background-color: v.$primary-white;
 	text-align: center;
 
 	@include breakpoint-up(medium) {

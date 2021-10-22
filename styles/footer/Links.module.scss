@@ -1,5 +1,4 @@
-@import '../abstracts/mixins';
-@import '../abstracts/variables';
+@use '../abstracts/variables' as v;
 
 .links {
 	display: flex;
@@ -9,14 +8,14 @@
 
 	> a {
 		padding: 2px;
-		font-family: $primary-titles;
+		font-family: v.$primary-titles;
 		font-size: 0.875rem;
 		font-weight: 400;
-		color: $primary-gray;
+		color: v.$primary-gray;
 
 		&:hover {
-			border-bottom: 1px solid $primary-white;
-			color: $primary-white;
+			border-bottom: 1px solid v.$primary-white;
+			color: v.$primary-white;
 		}
 	}
 }

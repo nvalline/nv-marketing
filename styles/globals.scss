@@ -1,15 +1,15 @@
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@use './abstracts/variables' as v;
+@import './abstracts/mixins/mixins';
 
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: $primary-font;
+	font-family: v.$primary-font;
 	font-size: 16px;
 	line-height: 1.3;
 	letter-spacing: 0.5px;
-	color: $primary-black-text;
+	color: v.$primary-black-text;
 
 	@include breakpoint-up(medium) {
 		font-size: 18px;

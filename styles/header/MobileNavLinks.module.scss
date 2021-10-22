@@ -1,5 +1,5 @@
-@import '../abstracts/animations';
-@import '../abstracts/variables';
+@use '../abstracts/variables' as v;
+@use '../abstracts/animations/animations';
 
 .block {
 	opacity: 0;
@@ -12,10 +12,10 @@
 	> a {
 		display: block;
 		text-align: center;
-		font-family: $primary-titles;
+		font-family: v.$primary-titles;
 		font-size: 1rem;
 		text-transform: capitalize;
-		color: $primary-gray;
+		color: v.$primary-gray;
 		padding: 0.5rem 0;
 
 		&:not(:last-child) {
@@ -24,8 +24,8 @@
 	}
 
 	> a:hover {
-		border-bottom: solid 2px $primary-gray;
-		color: $primary-gray;
+		border-bottom: solid 2px v.$primary-gray;
+		color: v.$primary-gray;
 	}
 
 	&___fadeIn {
