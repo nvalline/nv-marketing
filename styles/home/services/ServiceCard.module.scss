@@ -44,11 +44,11 @@
 
 	&__title {
 		margin-bottom: 1.25rem;
-		@include font-size(16, v.$base-font-size-mobile);
+		@include font-size(16, v.$base-font-size);
 		font-weight: v.$bold;
 	}
 
 	&__desc {
-		@include font-size(13, v.$base-font-size-mobile);
+		@include font-size(13, v.$base-font-size);
 	}
 }

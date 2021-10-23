@@ -45,7 +45,7 @@
 	}
 
 	&__name {
-		@include font-size(16, v.$base-font-size-mobile);
+		@include font-size(16, v.$base-font-size);
 		font-weight: v.$regular;
 		color: v.$primary-gray;
 	}
@@ -55,7 +55,7 @@
 		margin: 0 auto;
 		padding: 1.375rem 0 1.6875rem;
 		font-family: v.$secondary-font;
-		@include font-size(11, v.$base-font-size-mobile);
+		@include font-size(11, v.$base-font-size);
 		font-weight: v.$regular;
 		color: v.$primary-gray;
 
@@ -68,7 +68,7 @@
 		padding: 0.8125rem 1.6875rem;
 		border: none;
 		border-radius: 20px;
-		@include font-size(13, v.$base-font-size-mobile);
+		@include font-size(13, v.$base-font-size);
 		font-weight: v.$regular;
 		text-transform: uppercase;
 		background-color: v.$primary-teal;

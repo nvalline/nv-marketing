@@ -10,7 +10,7 @@
 	> a {
 		padding: 2px;
 		font-family: v.$primary-titles;
-		@include font-size(14, v.$base-font-size-mobile);
+		@include font-size(14, v.$base-font-size);
 		font-weight: v.$regular;
 		color: v.$primary-gray;
 

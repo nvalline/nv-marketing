@@ -4,7 +4,7 @@
 .block {
 	&__link {
 		font-family: v.$primary-titles;
-		@include font-size(15, v.$base-font-size-mobile);
+		@include font-size(15, v.$base-font-size);
 		font-weight: v.$regular;
 		color: v.$primary-gray;
 

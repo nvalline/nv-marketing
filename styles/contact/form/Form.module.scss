@@ -18,7 +18,7 @@
 		border-radius: 5px;
 		background-color: v.$primary-white;
 		font-family: v.$secondary-titles;
-		@include font-size(14, v.$base-font-size-mobile);
+		@include font-size(14, v.$base-font-size);
 		font-weight: v.$regular;
 
 		&::placeholder {
@@ -34,7 +34,7 @@
 		border-radius: 5px;
 		background-color: v.$primary-white;
 		font-family: v.$secondary-titles;
-		@include font-size(14, v.$base-font-size-mobile);
+		@include font-size(14, v.$base-font-size);
 		font-weight: v.$regular;
 
 		&::placeholder {
@@ -51,7 +51,7 @@
 		background-color: v.$primary-yellow;
 		box-shadow: 0 2px 2px v.$box-shadow;
 		cursor: pointer;
-		@include font-size(16, v.$base-font-size-mobile);
+		@include font-size(16, v.$base-font-size);
 		color: v.$primary-black;
 		letter-spacing: 0.5px;
 		text-transform: uppercase;

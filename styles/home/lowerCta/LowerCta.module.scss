@@ -15,7 +15,7 @@
 	> h2 {
 		margin: 0 auto;
 		max-width: 23.75rem;
-		@include font-size(20, v.$base-font-size-mobile);
+		@include font-size(20, v.$base-font-size);
 		font-weight: v.$bold;
 		color: v.$primary-black;
 	}
@@ -31,7 +31,7 @@
 		box-shadow: 0 2px 2px v.$box-shadow;
 		padding: 1.075rem;
 		background-color: v.$primary-yellow;
-		@include font-size(16, v.$base-font-size-mobile);
+		@include font-size(16, v.$base-font-size);
 		font-weight: v.$regular;
 		text-transform: uppercase;
 		color: v.$primary-black;

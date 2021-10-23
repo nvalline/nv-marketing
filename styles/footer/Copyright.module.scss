@@ -6,7 +6,7 @@
 	text-align: center;
 
 	> p {
-		@include font-size(9, v.$base-font-size-mobile);
+		@include font-size(9, v.$base-font-size);
 		font-weight: v.$regular;
 		text-transform: capitalize;
 		color: v.$primary-gray;

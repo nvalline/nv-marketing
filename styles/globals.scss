@@ -6,7 +6,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: v.$primary-font;
-	@include font-size(16, v.$base-font-size-mobile);
+	@include font-size(16, v.$base-font-size);
 	line-height: 1.3;
 	letter-spacing: 0.5px;
 	color: v.$primary-black-text;

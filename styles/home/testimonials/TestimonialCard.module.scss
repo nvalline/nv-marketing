@@ -28,7 +28,7 @@
 	}
 
 	&__content {
-		@include font-size(13, v.$base-font-size-mobile);
+		@include font-size(13, v.$base-font-size);
 		color: v.$primary-black;
 		text-align: center;
 	}
@@ -38,7 +38,7 @@
 	}
 
 	&__name {
-		@include font-size(14, v.$base-font-size-mobile);
+		@include font-size(14, v.$base-font-size);
 		font-weight: v.$bold;
 	}
 
@@ -52,7 +52,7 @@
 
 	&__position,
 	&__company {
-		@include font-size(12, v.$base-font-size-mobile);
+		@include font-size(12, v.$base-font-size);
 		color: v.$primary-green;
 	}
 }

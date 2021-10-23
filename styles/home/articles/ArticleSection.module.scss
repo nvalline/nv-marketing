@@ -56,14 +56,14 @@
 	&__title {
 		margin-bottom: 1.4375rem;
 		font-family: v.$secondary-titles;
-		@include font-size(16, v.$base-font-size-mobile);
+		@include font-size(16, v.$base-font-size);
 		font-weight: v.$bold;
 	}
 
 	&__desc {
 		margin-bottom: 2.1875rem;
 		font-family: v.$secondary-font;
-		@include font-size(14, v.$base-font-size-mobile);
+		@include font-size(14, v.$base-font-size);
 		font-weight: v.$regular;
 
 		@include breakpoint-up(large) {

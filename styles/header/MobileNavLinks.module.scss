@@ -14,7 +14,7 @@
 		display: block;
 		text-align: center;
 		font-family: v.$primary-titles;
-		@include font-size(16, v.$base-font-size-mobile);
+		@include font-size(16, v.$base-font-size);
 		text-transform: capitalize;
 		color: v.$primary-gray;
 		padding: 0.5rem 0;
