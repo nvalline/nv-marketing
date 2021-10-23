@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/animations/animations';
+@use '../abstracts/mixins/mixins' as *;
 
 .block {
 	opacity: 0;
@@ -13,7 +14,7 @@
 		display: block;
 		text-align: center;
 		font-family: v.$primary-titles;
-		font-size: 1rem;
+		@include font-size(16, v.$base-font-size-mobile);
 		text-transform: capitalize;
 		color: v.$primary-gray;
 		padding: 0.5rem 0;

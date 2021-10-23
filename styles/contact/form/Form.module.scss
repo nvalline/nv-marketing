@@ -1,4 +1,5 @@
 @use '../../../styles/abstracts/variables' as v;
+@use '../../abstracts/mixins/mixins' as *;
 
 .form {
 	width: 100%;
@@ -17,8 +18,8 @@
 		border-radius: 5px;
 		background-color: v.$primary-white;
 		font-family: v.$secondary-titles;
-		font-size: 0.875rem;
-		font-weight: 400;
+		@include font-size(14, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 
 		&::placeholder {
 			color: v.$primary-green;
@@ -33,8 +34,8 @@
 		border-radius: 5px;
 		background-color: v.$primary-white;
 		font-family: v.$secondary-titles;
-		font-size: 0.875rem;
-		font-weight: 400;
+		@include font-size(14, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 
 		&::placeholder {
 			color: v.$primary-green;
@@ -50,7 +51,7 @@
 		background-color: v.$primary-yellow;
 		box-shadow: 0 2px 2px v.$box-shadow;
 		cursor: pointer;
-		font-size: 1rem;
+		@include font-size(16, v.$base-font-size-mobile);
 		color: v.$primary-black;
 		letter-spacing: 0.5px;
 		text-transform: uppercase;

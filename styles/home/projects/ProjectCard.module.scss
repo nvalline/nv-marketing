@@ -1,5 +1,5 @@
 @use '../../abstracts/variables' as v;
-@import '../../abstracts/mixins/mixins';
+@use '../../abstracts/mixins/mixins' as *;
 
 .card {
 	margin-bottom: 2.875rem;
@@ -45,8 +45,8 @@
 	}
 
 	&__name {
-		font-size: 1em;
-		font-weight: 400;
+		@include font-size(16, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 		color: v.$primary-gray;
 	}
 
@@ -55,8 +55,8 @@
 		margin: 0 auto;
 		padding: 1.375rem 0 1.6875rem;
 		font-family: v.$secondary-font;
-		font-size: 0.7rem;
-		font-weight: 400;
+		@include font-size(11, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 		color: v.$primary-gray;
 
 		@include breakpoint-up(large) {
@@ -68,8 +68,8 @@
 		padding: 0.8125rem 1.6875rem;
 		border: none;
 		border-radius: 20px;
-		font-size: 0.8rem;
-		font-weight: 400;
+		@include font-size(13, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 		text-transform: uppercase;
 		background-color: v.$primary-teal;
 		color: v.$primary-white;

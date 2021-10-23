@@ -1,16 +1,14 @@
+@use 'sass:math';
+
+/* BREAKPOINTS
+--------------------------------*/
+
 // Breakpoint pixels: 640px, 1024px, 1200px 1340px
 $breakpoints-up: (
 	'medium': '40em',
 	'large': '64em',
 	'large+': '75em',
 	'xlarge': '83.75em'
-);
-// Breakpoint pixels: 639px, 1023px, 1199px, 1339px
-$breakpoints-down: (
-	'small': '39.9375em',
-	'medium': '63.9375em',
-	'large': '74.9375em',
-	'large+': '83.6875em'
 );
 
 @mixin breakpoint-up($size) {
@@ -19,8 +17,24 @@ $breakpoints-down: (
 	}
 }
 
+// Breakpoint pixels: 639px, 1023px, 1199px, 1339px
+$breakpoints-down: (
+	'small': '39.9375em',
+	'medium': '63.9375em',
+	'large': '74.9375em',
+	'large+': '83.6875em'
+);
+
 @mixin breakpoint-down($size) {
 	@media (max-width: map-get($breakpoints-down, $size )) {
 		@content;
 	}
+}
+
+/* FONT SIZE
+--------------------------------*/
+
+@mixin font-size($size: 16, $base: 16) {
+	font-size: $size + px;
+	font-size: math.div($size, $base) * 1rem;
 }

@@ -1,4 +1,5 @@
 @use '../../abstracts/variables' as v;
+@use '../../abstracts/mixins/mixins' as *;
 
 .details {
 	padding: 1.875rem 0 0;
@@ -6,8 +7,13 @@
 
 	&__container {
 		padding: 3.375rem 3.125rem;
+		max-width: 35.5556rem;
 		border-radius: 0 100px 100px 0;
 		background-color: v.$primary-white;
+
+		@include breakpoint-up(medium) {
+			height: 29.3889rem;
+		}
 	}
 
 	&__block {
@@ -17,8 +23,8 @@
 
 	&__title {
 		font-family: v.$secondary-titles;
-		font-size: 1.125rem;
-		font-weight: 400;
+		@include font-size(18, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 		color: v.$primary-black;
 		text-transform: capitalize;
 	}
@@ -34,8 +40,8 @@
 	&__label {
 		margin-top: 1.25rem;
 		font-family: v.$secondary-titles;
-		font-size: 0.75rem;
-		font-weight: 400;
+		@include font-size(12, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 		color: v.$primary-green;
 		text-transform: capitalize;
 	}
@@ -43,8 +49,8 @@
 	&__info {
 		margin-top: 0.5rem;
 		font-family: v.$secondary-titles;
-		font-size: 0.875rem;
-		font-weight: 400;
+		@include font-size(14, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 
 		a {
 			color: v.$primary-black;

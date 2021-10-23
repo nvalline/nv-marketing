@@ -1,12 +1,12 @@
 @use './abstracts/variables' as v;
-@import './abstracts/mixins/mixins';
+@use './abstracts/mixins/mixins' as *;
 
 html,
 body {
 	padding: 0;
 	margin: 0;
 	font-family: v.$primary-font;
-	font-size: 16px;
+	@include font-size(16, v.$base-font-size-mobile);
 	line-height: 1.3;
 	letter-spacing: 0.5px;
 	color: v.$primary-black-text;

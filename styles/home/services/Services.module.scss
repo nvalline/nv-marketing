@@ -1,5 +1,5 @@
 @use '../../abstracts/variables' as v;
-@import '../../abstracts/mixins/mixins';
+@use '../../abstracts/mixins/mixins' as *;
 
 .services {
 	border-radius: 300% / 25%;

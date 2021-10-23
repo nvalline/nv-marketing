@@ -1,5 +1,5 @@
 @use '../../abstracts/variables' as v;
-@import '../../abstracts/mixins/mixins';
+@use '../../abstracts/mixins/mixins' as *;
 
 .articles {
 	&__container {
@@ -56,15 +56,15 @@
 	&__title {
 		margin-bottom: 1.4375rem;
 		font-family: v.$secondary-titles;
-		font-size: 1rem;
-		font-weight: 800;
+		@include font-size(16, v.$base-font-size-mobile);
+		font-weight: v.$bold;
 	}
 
 	&__desc {
 		margin-bottom: 2.1875rem;
 		font-family: v.$secondary-font;
-		font-size: 0.875rem;
-		font-weight: 400;
+		@include font-size(14, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 
 		@include breakpoint-up(large) {
 			margin-bottom: 1.4375rem;

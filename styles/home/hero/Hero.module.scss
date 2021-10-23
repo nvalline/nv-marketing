@@ -1,5 +1,5 @@
 @use '../../abstracts/variables' as v;
-@import '../../abstracts/mixins/mixins';
+@use '../../abstracts/mixins/mixins' as *;
 
 .hero {
 	&__page_container {
@@ -66,8 +66,8 @@
 	&__title {
 		margin-bottom: 2.75rem;
 		font-family: v.$hero-narrow;
-		font-size: 1.3125rem;
-		font-weight: 400;
+		@include font-size(22, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 		text-transform: capitalize;
 
 		> span {
@@ -79,7 +79,7 @@
 	&__content {
 		margin-bottom: 2.75rem;
 		max-width: 28.125rem;
-		font-size: 0.875rem;
+		@include font-size(14, v.$base-font-size-mobile);
 	}
 
 	&__button {

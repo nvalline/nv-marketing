@@ -1,7 +1,36 @@
-// FONTS
+/* FONT FAMILYS
+--------------------------------*/
+
 $primary-font: 'Poppins', sans-serif;
 $secondary-font: 'Montserrat', sans-serif;
 $primary-titles: 'Julius Sans One', sans-serif;
 $secondary-titles: 'Comfortaa', cursive;
 $hero-bold: 'Archivo Black', sans-serif;
 $hero-narrow: 'Archivo Narrow', sans-serif;
+
+/* BASE FONT SIZE
+--------------------------------*/
+
+// Mobile
+$base-font-size-mobile: 16;
+
+// Tablet
+$base-font-size-tablet: 16;
+
+// Desktop
+$base-font-size-desktop: 16;
+
+// Mobile
+$mobile-9: 0.5625rem;
+$mobile-12: 0.75rem;
+$mobile-14: 0.875rem;
+$mobile-16: 1rem;
+$mobile-18: 1.125rem;
+$mobile-20: 1.25rem;
+$mobile-22: 1.375rem;
+
+/* FONT WEIGHTS
+--------------------------------*/
+
+$regular: 400;
+$bold: 800;

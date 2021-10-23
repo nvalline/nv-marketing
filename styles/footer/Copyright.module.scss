@@ -1,12 +1,13 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins/mixins' as *;
 
 .copyright {
 	padding-top: 0.6rem;
 	text-align: center;
 
 	> p {
-		font-size: 0.6rem;
-		font-weight: 400;
+		@include font-size(9, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 		text-transform: capitalize;
 		color: v.$primary-gray;
 	}

@@ -1,11 +1,11 @@
 @use '../abstracts/variables' as v;
-@import '../abstracts/mixins/mixins';
+@use '../abstracts/mixins/mixins' as *;
 
 .block {
 	&__link {
 		font-family: v.$primary-titles;
-		font-size: 0.9474rem;
-		font-weight: 400;
+		@include font-size(15, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 		color: v.$primary-gray;
 
 		&:not(:last-child) {

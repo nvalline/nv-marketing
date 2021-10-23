@@ -1,5 +1,5 @@
 @use '../../abstracts/variables' as v;
-@import '../../abstracts/mixins/mixins';
+@use '../../abstracts/mixins/mixins' as *;
 
 .card {
 	max-width: 25.75rem;
@@ -28,7 +28,7 @@
 	}
 
 	&__content {
-		font-size: 0.8rem;
+		@include font-size(13, v.$base-font-size-mobile);
 		color: v.$primary-black;
 		text-align: center;
 	}
@@ -38,8 +38,8 @@
 	}
 
 	&__name {
-		font-size: 0.875rem;
-		font-weight: 800;
+		@include font-size(14, v.$base-font-size-mobile);
+		font-weight: v.$bold;
 	}
 
 	&__subBlock {
@@ -52,7 +52,7 @@
 
 	&__position,
 	&__company {
-		font-size: 0.75rem;
+		@include font-size(12, v.$base-font-size-mobile);
 		color: v.$primary-green;
 	}
 }

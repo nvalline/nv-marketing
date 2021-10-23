@@ -1,5 +1,5 @@
 @use '../../abstracts/variables' as v;
-@import '../../abstracts/mixins/mixins';
+@use '../../abstracts/mixins/mixins' as *;
 
 .lowerCta {
 	border-top: 3px solid v.$primary-aqua;
@@ -15,8 +15,8 @@
 	> h2 {
 		margin: 0 auto;
 		max-width: 23.75rem;
-		font-size: 1.25rem;
-		font-weight: 800;
+		@include font-size(20, v.$base-font-size-mobile);
+		font-weight: v.$bold;
 		color: v.$primary-black;
 	}
 
@@ -31,8 +31,8 @@
 		box-shadow: 0 2px 2px v.$box-shadow;
 		padding: 1.075rem;
 		background-color: v.$primary-yellow;
-		font-size: 1rem;
-		font-weight: 400;
+		@include font-size(16, v.$base-font-size-mobile);
+		font-weight: v.$regular;
 		text-transform: uppercase;
 		color: v.$primary-black;
 

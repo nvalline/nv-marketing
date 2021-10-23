@@ -1,4 +1,4 @@
-@import '../abstracts/mixins/mixins';
+@use '../abstracts/mixins/mixins' as *;
 
 .circleLineLeft {
 	background-image: url(/images/circle-line-left.svg);
