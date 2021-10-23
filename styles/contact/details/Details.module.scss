@@ -4,10 +4,15 @@
 	padding: 1.875rem 0 0;
 	background-color: v.$primary-aqua;
 
-	&__block {
-		padding: 3.375rem 0 3.375rem 3.125rem;
+	&__container {
+		padding: 3.375rem 3.125rem;
 		border-radius: 0 100px 100px 0;
 		background-color: v.$primary-white;
+	}
+
+	&__block {
+		max-width: 18.75rem;
+		margin: 0 auto;
 	}
 
 	&__title {
@@ -40,6 +45,9 @@
 		font-family: v.$secondary-titles;
 		font-size: 0.875rem;
 		font-weight: 400;
-		color: v.$primary-black;
+
+		a {
+			color: v.$primary-black;
+		}
 	}
 }
