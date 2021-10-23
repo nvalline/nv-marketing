@@ -1,0 +1,27 @@
+@use '../../../styles/abstracts/variables' as v;
+
+.formSection {
+	padding: 2.375rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: v.$primary-aqua;
+
+	&__title {
+		margin-bottom: 1.0625rem;
+		font-size: 1.25rem;
+		font-weight: 800;
+		color: v.$primary-white;
+	}
+
+	&__subTitle {
+		padding: 0 1.75rem;
+		margin-bottom: 2.25rem;
+		font-family: v.$secondary-font;
+		font-size: 1rem;
+		font-weight: 400;
+		color: v.$primary-white;
+	}
+}

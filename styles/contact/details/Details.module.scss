@@ -1,7 +1,7 @@
 @use '../../abstracts/variables' as v;
 
 .details {
-	padding: 1.875rem 0;
+	padding: 1.875rem 0 0;
 	background-color: v.$primary-aqua;
 
 	&__block {
