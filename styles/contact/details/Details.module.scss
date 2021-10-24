@@ -7,13 +7,11 @@
 
 	&__container {
 		padding: 3.375rem 3.125rem;
-		max-width: 35.5556rem;
+		max-width: 63.9375rem;
+		display: flex;
+		align-items: center;
 		border-radius: 0 100px 100px 0;
 		background-color: v.$primary-white;
-
-		@include breakpoint-up(medium) {
-			height: 33.0625rem;
-		}
 	}
 
 	&__block {
@@ -27,6 +25,10 @@
 		font-weight: v.$regular;
 		color: v.$primary-black;
 		text-transform: capitalize;
+
+		@include breakpoint-up(medium) {
+			@include font-size(20, v.$base-font-size);
+		}
 	}
 
 	&__line {
@@ -35,6 +37,10 @@
 		width: 9.375rem;
 		border: none;
 		background-color: v.$primary-teal;
+
+		@include breakpoint-up(medium) {
+			height: 2px;
+		}
 	}
 
 	&__label {
@@ -44,6 +50,10 @@
 		font-weight: v.$regular;
 		color: v.$primary-green;
 		text-transform: capitalize;
+
+		@include breakpoint-up(medium) {
+			@include font-size(14, v.$base-font-size);
+		}
 	}
 
 	&__info {
@@ -51,6 +61,10 @@
 		font-family: v.$secondary-titles;
 		@include font-size(14, v.$base-font-size);
 		font-weight: v.$regular;
+
+		@include breakpoint-up(medium) {
+			@include font-size(16, v.$base-font-size);
+		}
 
 		a {
 			color: v.$primary-black;
