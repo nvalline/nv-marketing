@@ -6,11 +6,11 @@
 	text-align: center;
 
 	@include breakpoint-up(large) {
-		margin-bottom: 5.2632rem;
+		margin-bottom: 6.25rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 35.4211rem;
+		width: 42.0625rem;
 
 		&:nth-child(2) {
 			flex-direction: row-reverse;
@@ -60,7 +60,7 @@
 		color: v.$primary-gray;
 
 		@include breakpoint-up(large) {
-			padding: 1.3158rem 0;
+			padding: 1.5625rem 0;
 		}
 	}
 
@@ -76,7 +76,7 @@
 		cursor: pointer;
 
 		@include breakpoint-up(large) {
-			padding: 0.7rem 2rem;
+			padding: 0.8313rem 2.375rem;
 		}
 
 		&:hover {

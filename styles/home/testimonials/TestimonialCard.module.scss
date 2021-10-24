@@ -2,17 +2,12 @@
 @use '../../abstracts/mixins/mixins' as *;
 
 .card {
-	max-width: 25.75rem;
+	max-width: 23.4rem;
 	margin: 0.78125rem;
 	padding: 0 1.5rem;
 
-	@include breakpoint-up(medium) {
-		max-width: 22.7778rem;
-	}
-
 	@include breakpoint-up(large) {
-		margin: 0.78125rem 0;
-		max-width: 21.6842rem;
+		margin: 0.9375rem 0;
 	}
 
 	&__quoteBlock {

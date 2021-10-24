@@ -8,17 +8,9 @@
 	border-radius: 5px;
 	margin: 0.78125rem;
 	padding: 1.6875rem;
-	max-width: 25.625rem;
+	max-width: 21.625rem;
 	background-color: v.$primary-white;
 	text-align: center;
-
-	@include breakpoint-up(medium) {
-		max-width: 22.7778rem;
-	}
-
-	@include breakpoint-up(large) {
-		max-width: 21.5789rem;
-	}
 
 	.iconWrapper {
 		position: relative;
@@ -27,8 +19,8 @@
 		margin-bottom: 1.25rem;
 
 		@include breakpoint-up(large) {
-			height: 3.1579rem;
-			width: 3.1579rem;
+			height: 3.75rem;
+			width: 3.75rem;
 		}
 
 		> div {

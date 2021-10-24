@@ -43,14 +43,6 @@
 
 	&__contentWrapper {
 		max-width: 32.5rem;
-
-		@include breakpoint-up(medium) {
-			max-width: 28.8889rem;
-		}
-
-		@include breakpoint-up(large) {
-			max-width: 27.3684rem;
-		}
 	}
 
 	&__title {
@@ -67,8 +59,8 @@
 		font-weight: v.$regular;
 
 		@include breakpoint-up(large) {
-			margin-bottom: 1.4375rem;
-			font-size: 0.8rem;
+			margin-bottom: 1.707rem;
+			@include font-size(15, v.$base-font-size);
 		}
 	}
 
@@ -83,8 +75,8 @@
 		text-transform: uppercase;
 
 		@include breakpoint-up(large) {
-			padding: 0.8125rem 2.25rem;
-			font-size: 0.8rem;
+			padding: 0.9648rem 2.6719rem;
+			@include font-size(15, v.$base-font-size);
 		}
 
 		&:hover {
