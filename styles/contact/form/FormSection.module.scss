@@ -2,6 +2,7 @@
 @use '../../abstracts/mixins/mixins' as *;
 
 .formSection {
+	margin: 0 auto;
 	padding: 2.375rem;
 	display: flex;
 	flex-direction: column;
