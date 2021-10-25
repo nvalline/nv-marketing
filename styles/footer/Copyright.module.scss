@@ -10,5 +10,9 @@
 		font-weight: v.$regular;
 		text-transform: capitalize;
 		color: v.$primary-gray;
+
+		@include breakpoint-up(medium) {
+			@include font-size(10, v.$base-font-size);
+		}
 	}
 }

@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins/mixins' as *;
+
+.contact {
+	padding: 1.875rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: v.$primary-aqua;
+
+	@include breakpoint-up(large) {
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+}

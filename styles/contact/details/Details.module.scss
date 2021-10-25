@@ -2,16 +2,17 @@
 @use '../../abstracts/mixins/mixins' as *;
 
 .details {
-	padding: 1.875rem 0 0;
-	background-color: v.$primary-aqua;
+	padding: 3.375rem 0;
+	width: 100%;
+	max-width: 63.9375rem;
+	display: flex;
+	align-items: center;
+	border-radius: 0 100px 100px 0;
+	background-color: v.$primary-white;
 
-	&__container {
-		padding: 3.375rem 3.125rem;
-		max-width: 63.9375rem;
-		display: flex;
-		align-items: center;
-		border-radius: 0 100px 100px 0;
-		background-color: v.$primary-white;
+	@include breakpoint-up(large) {
+		height: 33.0625rem;
+		width: 31.25rem;
 	}
 
 	&__block {

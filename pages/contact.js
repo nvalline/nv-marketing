@@ -3,6 +3,8 @@ import ContactAccent from '../components/misc/contactAccent';
 import Details from '../components/contact/details/Details';
 import FormSection from '../components/contact/form/FormSection';
 
+import styles from '../styles/contact/Contact.module.scss';
+
 export default function Contact() {
 	return (
 		<>
@@ -14,8 +16,10 @@ export default function Contact() {
 			</Head>
 
 			<ContactAccent />
-			<Details />
-			<FormSection />
+			<div className={styles.contact}>
+				<Details />
+				<FormSection />
+			</div>
 			<ContactAccent />
 		</>
 	);
