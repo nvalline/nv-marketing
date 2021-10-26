@@ -5,10 +5,18 @@
 	padding: 3.375rem 0;
 	width: 100%;
 	max-width: 63.9375rem;
+	position: relative;
 	display: flex;
 	align-items: center;
 	border-radius: 0 100px 100px 0;
 	background-color: v.$primary-white;
+
+	@include breakpoint-up(md) {
+		background-image: url('/images/pixels-vert.svg');
+		background-size: auto;
+		background-repeat: repeat-y;
+		width: 100%;
+	}
 
 	@include breakpoint-up(lg) {
 		height: 33.0625rem;
@@ -17,6 +25,10 @@
 
 	@include breakpoint-up(xl) {
 		width: 40.375rem;
+	}
+
+	@include breakpoint-up-cust(90) {
+		border-radius: 10px 100px 100px 10px;
 	}
 
 	&__block {

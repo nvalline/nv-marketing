@@ -14,6 +14,10 @@
 		font-weight: v.$regular;
 		color: v.$primary-gray;
 
+		@include breakpoint-up(lg) {
+			@include font-size(15, v.$base-font-size);
+		}
+
 		&:hover {
 			border-bottom: 1px solid v.$primary-white;
 			color: v.$primary-white;

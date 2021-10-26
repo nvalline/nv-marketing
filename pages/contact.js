@@ -17,8 +17,10 @@ export default function Contact() {
 
 			<ContactAccent />
 			<div className={styles.contact}>
-				<Details />
-				<FormSection />
+				<div className={styles.contact__container}>
+					<Details />
+					<FormSection />
+				</div>
 			</div>
 			<ContactAccent />
 		</>

@@ -4,6 +4,11 @@
 	padding: 4rem 2.75rem;
 	background-color: v.$primary-black;
 
+	&__container {
+		margin: 0 auto;
+		max-width: 90rem;
+	}
+
 	&__line {
 		margin: 1.3125rem auto;
 		height: 1px;

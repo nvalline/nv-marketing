@@ -17,6 +17,13 @@ $breakpoints-up: (
 	}
 }
 
+// Custom breakpoint sizing
+@mixin breakpoint-up-cust($size) {
+	@media (min-width: $size + em) {
+		@content;
+	}
+}
+
 // Breakpoint pixels: 639px, 1023px, 1199px, 1339px
 $breakpoints-down: (
 	'sm': '39.9375em',
@@ -27,6 +34,13 @@ $breakpoints-down: (
 
 @mixin breakpoint-down($size) {
 	@media (max-width: map-get($breakpoints-down, $size )) {
+		@content;
+	}
+}
+
+// Custom breakpoint sizing
+@mixin breakpoint-down-cust($size) {
+	@media (min-width: $size + em) {
 		@content;
 	}
 }

@@ -1,15 +1,22 @@
+@use '../abstracts/mixins/mixins' as *;
+
 .social {
 	width: 8rem;
-	height: 4.875rem;
+	height: 100%;
 	padding: 0.3125rem 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-end;
 
 	&__iconWrapper {
 		height: 1.5625rem;
 		width: 1.5625rem;
+
+		@include breakpoint-up(lg) {
+			height: 1.875rem;
+			width: 1.875rem;
+		}
 
 		> div {
 			position: unset !important;

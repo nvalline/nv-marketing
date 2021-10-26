@@ -2,14 +2,25 @@
 @use '../abstracts/mixins/mixins' as *;
 
 .contact {
-	padding: 1.875rem 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	background-color: v.$primary-aqua;
 
-	@include breakpoint-up(lg) {
-		flex-direction: row;
-		justify-content: flex-start;
+	&__container {
+		margin: 0 auto;
+		padding: 1.875rem 0;
+		width: 100%;
+		max-width: 90rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include breakpoint-up(lg) {
+			padding: 5.625rem 0;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		@include breakpoint-up-cust(90) {
+			justify-content: space-around;
+		}
 	}
 }
