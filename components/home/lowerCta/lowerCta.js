@@ -1,5 +1,5 @@
-import SectionHeader from '../../misc/sectionHeader';
-import Button from '../../misc/buttons';
+import SectionHeader from '../../misc/SectionHeader';
+import Button from '../../misc/Buttons';
 
 import styles from '../../../styles/home/lowerCta/LowerCta.module.scss';
 

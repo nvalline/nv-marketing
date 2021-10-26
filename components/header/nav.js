@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Hamburger from './hamburger';
-import NavLinks from './navLinks';
+import NavLinks from './NavLinks';
 
-import logoImg from '../../public/images/nv_mktg_logo_white.svg';
+import logoImg from '../../public/images/svgs/nv_mktg_logo_white.svg';
 
 import styles from '../../styles/header/Nav.module.scss';
 

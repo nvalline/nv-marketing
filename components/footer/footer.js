@@ -1,7 +1,7 @@
 import Circle from '../misc/circle';
-import Logo from './logo';
-import Links from './links';
-import Social from './social';
+import Logo from './Logo';
+import Links from './Links';
+import Social from './Social';
 import Copyright from './copyright';
 
 import styles from '../../styles/footer/Footer.module.scss';

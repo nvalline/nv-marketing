@@ -1,5 +1,5 @@
-import ServiceCard from './serviceCard';
-import { services } from '../../../data/services';
+import ServiceCard from './ServiceCard';
+import { services } from '../../../data/Services';
 
 import styles from '../../../styles/home/services/Services.module.scss';
 

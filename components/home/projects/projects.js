@@ -1,6 +1,6 @@
-import SectionHeader from '../../misc/sectionHeader';
-import ProjectCard from './projectCard';
-import { projects } from '../../../data/projects';
+import SectionHeader from '../../misc/SectionHeader';
+import ProjectCard from './ProjectCard';
+import { projects } from '../../../data/Projects';
 
 import styles from '../../../styles/home/projects/Projects.module.scss';
 

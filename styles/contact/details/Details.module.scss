@@ -12,7 +12,7 @@
 	background-color: v.$primary-white;
 
 	@include breakpoint-up(md) {
-		background-image: url('/images/pixels-vert.svg');
+		background-image: url('/images/svgs/pixels-vert.svg');
 		background-size: auto;
 		background-repeat: repeat-y;
 		width: 100%;

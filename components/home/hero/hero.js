@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Button from '../../misc/buttons';
+import Button from '../../misc/Buttons';
 
 import heroImg from '../../../public/images/consult.jpg';
 

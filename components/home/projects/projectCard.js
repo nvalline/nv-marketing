@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Button from '../../../components/misc/buttons';
-import CircleLine from '../../misc/circleLine';
+import Button from '../../misc/Buttons';
+import CircleLine from '../../misc/CircleLine';
 
 import styles from '../../../styles/home/projects/ProjectCard.module.scss';
 

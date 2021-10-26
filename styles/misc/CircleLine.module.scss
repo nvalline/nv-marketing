@@ -1,7 +1,7 @@
 @use '../abstracts/mixins/mixins' as *;
 
 .circleLineLeft {
-	background-image: url(/images/circle-line-left.svg);
+	background-image: url('/images/svgs/circle-line-left.svg');
 	background-size: auto;
 	background-repeat: no-repeat;
 	height: 20px;
@@ -16,7 +16,7 @@
 }
 
 .circleLineRight {
-	background-image: url(/images/circle-line-right.svg);
+	background-image: url('/images/svgs/circle-line-right.svg');
 	background-size: auto;
 	background-repeat: no-repeat;
 	height: 20px;

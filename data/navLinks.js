@@ -20,13 +20,13 @@ export const socialLinks = [
 	{
 		id: 1,
 		url: '#',
-		img: require('../public/images/fb_icon.svg'),
+		img: require('../public/images/svgs/fb_icon.svg'),
 		name: 'facebook'
 	},
 	{
 		id: 2,
 		url: '#',
-		img: require('../public/images/ig_icon.svg'),
+		img: require('../public/images/svgs/ig_icon.svg'),
 		name: 'instagram'
 	}
 ];

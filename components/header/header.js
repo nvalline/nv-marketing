@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-import MobileNavLinks from './mobileNavLinks';
-import Nav from './nav';
-import Overlay from './overlay';
+import MobileNavLinks from './MobileNavLinks';
+import Nav from './Nav';
+import Overlay from './Overlay';
 
 import styles from '../../styles/header/Header.module.scss';
 

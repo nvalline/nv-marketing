@@ -11,7 +11,7 @@
 
 	// Hero ellipses styles
 	&__ellipses {
-		background-image: url('/images/ellipses-sm.svg');
+		background-image: url('/images/svgs/ellipses-sm.svg');
 		background-size: auto;
 		background-repeat: no-repeat;
 		position: absolute;
@@ -22,19 +22,19 @@
 		z-index: -1;
 
 		@include breakpoint-up(md) {
-			background-image: url('/images/ellipses-md.svg');
+			background-image: url('/images/svgs/ellipses-md.svg');
 			height: 494px;
 			width: 542px;
 		}
 
 		@include breakpoint-up(lg) {
-			background-image: url('/images/ellipses-lg.svg');
+			background-image: url('/images/svgs/ellipses-lg.svg');
 			height: 754px;
 			width: 563px;
 		}
 
 		@include breakpoint-up(xl) {
-			background-image: url('/images/ellipses-xlg.svg');
+			background-image: url('/images/svgs/ellipses-xlg.svg');
 			height: 754px;
 			width: 563px;
 		}

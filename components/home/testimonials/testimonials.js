@@ -1,7 +1,7 @@
-import PixelBar from '../../misc/pixelBar';
-import SectionHeader from '../../misc/sectionHeader';
-import TestimonialCard from './testimonialCard';
-import { testimonials } from '../../../data/testimonials';
+import PixelBar from '../../misc/PixelBar';
+import SectionHeader from '../../misc/SectionHeader';
+import TestimonialCard from './TestimonialCard';
+import { testimonials } from '../../../data/Testimonials';
 
 import styles from '../../../styles/home/testimonials/Testimonials.module.scss';
 
