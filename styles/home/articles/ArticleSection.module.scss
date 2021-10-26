@@ -11,7 +11,7 @@
 		max-width: 64.5rem;
 		text-align: center;
 
-		@include breakpoint-up(large) {
+		@include breakpoint-up(lg) {
 			flex-direction: row;
 			justify-content: space-around;
 		}
@@ -26,7 +26,7 @@
 		border-radius: 10px;
 		overflow: hidden;
 
-		@include breakpoint-up(large) {
+		@include breakpoint-up(lg) {
 			margin-bottom: 0;
 		}
 
@@ -58,7 +58,7 @@
 		@include font-size(14, v.$base-font-size);
 		font-weight: v.$regular;
 
-		@include breakpoint-up(large) {
+		@include breakpoint-up(lg) {
 			margin-bottom: 1.707rem;
 			@include font-size(15, v.$base-font-size);
 		}
@@ -74,7 +74,7 @@
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
 
-		@include breakpoint-up(large) {
+		@include breakpoint-up(lg) {
 			padding: 0.9648rem 2.6719rem;
 			@include font-size(15, v.$base-font-size);
 		}

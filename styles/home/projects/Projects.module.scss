@@ -20,12 +20,12 @@
 		justify-content: center;
 		align-items: center;
 
-		@include breakpoint-up(medium) {
+		@include breakpoint-up(md) {
 			flex-direction: row;
 			flex-wrap: wrap;
 		}
 
-		@include breakpoint-up(large) {
+		@include breakpoint-up(lg) {
 			max-width: 42.0625rem;
 		}
 	}

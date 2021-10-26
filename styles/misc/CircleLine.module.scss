@@ -10,7 +10,7 @@
 	transform: translateY(300%);
 	left: -100%;
 
-	@include breakpoint-down(medium) {
+	@include breakpoint-down(md) {
 		display: none;
 	}
 }
@@ -25,7 +25,7 @@
 	transform: translateY(300%);
 	right: -100%;
 
-	@include breakpoint-down(medium) {
+	@include breakpoint-down(md) {
 		display: none;
 	}
 }

@@ -21,13 +21,13 @@
 }
 
 .desktop {
-	@include breakpoint-down(medium) {
+	@include breakpoint-down(md) {
 		display: none;
 	}
 }
 
 .mobile {
-	@include breakpoint-up(large) {
+	@include breakpoint-up(lg) {
 		display: none;
 	}
 }

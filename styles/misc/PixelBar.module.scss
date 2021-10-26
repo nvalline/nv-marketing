@@ -18,11 +18,11 @@
 	position: relative;
 	bottom: 0;
 
-	@include breakpoint-up(medium) {
+	@include breakpoint-up(md) {
 		bottom: -10px;
 	}
 
-	@include breakpoint-up(large) {
+	@include breakpoint-up(lg) {
 		bottom: -14px;
 	}
 }

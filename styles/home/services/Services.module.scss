@@ -7,7 +7,7 @@
 	box-shadow: 0 4px 4px v.$box-shadow;
 	background-color: v.$primary-aqua;
 
-	@include breakpoint-up(medium) {
+	@include breakpoint-up(md) {
 		border-radius: unset;
 		padding: 3.375rem 2.6719rem;
 		flex-direction: row;
@@ -22,7 +22,7 @@
 		justify-content: center;
 		align-items: center;
 
-		@include breakpoint-up(medium) {
+		@include breakpoint-up(md) {
 			flex-direction: row;
 			flex-wrap: wrap;
 		}

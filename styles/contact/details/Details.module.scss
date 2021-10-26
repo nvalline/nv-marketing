@@ -10,9 +10,13 @@
 	border-radius: 0 100px 100px 0;
 	background-color: v.$primary-white;
 
-	@include breakpoint-up(large) {
+	@include breakpoint-up(lg) {
 		height: 33.0625rem;
 		width: 31.25rem;
+	}
+
+	@include breakpoint-up(xl) {
+		width: 40.375rem;
 	}
 
 	&__block {
@@ -27,7 +31,7 @@
 		color: v.$primary-black;
 		text-transform: capitalize;
 
-		@include breakpoint-up(medium) {
+		@include breakpoint-up(md) {
 			@include font-size(20, v.$base-font-size);
 		}
 	}
@@ -39,7 +43,7 @@
 		border: none;
 		background-color: v.$primary-teal;
 
-		@include breakpoint-up(medium) {
+		@include breakpoint-up(md) {
 			height: 2px;
 		}
 	}
@@ -52,7 +56,7 @@
 		color: v.$primary-green;
 		text-transform: capitalize;
 
-		@include breakpoint-up(medium) {
+		@include breakpoint-up(md) {
 			@include font-size(14, v.$base-font-size);
 		}
 	}
@@ -63,7 +67,7 @@
 		@include font-size(14, v.$base-font-size);
 		font-weight: v.$regular;
 
-		@include breakpoint-up(medium) {
+		@include breakpoint-up(md) {
 			@include font-size(16, v.$base-font-size);
 		}
 
