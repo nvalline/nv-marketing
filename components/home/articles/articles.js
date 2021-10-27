@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../../misc/Buttons';
 
-import articleImg from '../../../public/images/posts/devices.jpg';
+import articleImg from '../../../public/images/articles/devices.jpg';
 
 import styles from '../../../styles/home/articles/ArticleSection.module.scss';
 

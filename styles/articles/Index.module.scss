@@ -1,0 +1,43 @@
+@use '../abstracts/mixins/mixins' as *;
+
+.articles {
+	// ! REMOVE AFTER INCLUDING ARTICLES
+	min-height: 60vh;
+
+	&__page_container {
+		position: relative;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 90rem;
+	}
+	// Articles ellipses styles
+	&__ellipses {
+		background-image: url('/images/svgs/ellipses-sm.svg');
+		background-size: auto;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 254px;
+		width: 161px;
+		z-index: -1;
+
+		@include breakpoint-up(md) {
+			background-image: url('/images/svgs/ellipses-md.svg');
+			height: 494px;
+			width: 542px;
+		}
+
+		@include breakpoint-up(lg) {
+			background-image: url('/images/svgs/ellipses-lg.svg');
+			height: 754px;
+			width: 563px;
+		}
+
+		@include breakpoint-up(xl) {
+			background-image: url('/images/svgs/ellipses-xlg.svg');
+			height: 754px;
+			width: 563px;
+		}
+	}
+}
