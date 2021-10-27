@@ -6,7 +6,7 @@ export const links = [
 	},
 	{
 		id: 2,
-		url: '#',
+		url: '/articles',
 		name: 'Articles'
 	},
 	{

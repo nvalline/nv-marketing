@@ -1,4 +1,4 @@
-import PixelBar from '../../misc/pixelBar';
+import PixelBar from '../../misc/PixelBar';
 import { contactDetails } from '../../../data/contactDetails';
 
 import styles from '../../../styles/contact/details/Details.module.scss';

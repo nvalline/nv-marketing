@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Hamburger from './hamburger';
+import Hamburger from './Hamburger';
 import NavLinks from './NavLinks';
 
 import logoImg from '../../public/images/svgs/nv_mktg_logo_white.svg';

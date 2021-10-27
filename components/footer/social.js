@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { socialLinks } from '../../data/navLinks';
+import { socialLinks } from '../../data/NavLinks';
 
 import styles from '../../styles/footer/Social.module.scss';
 

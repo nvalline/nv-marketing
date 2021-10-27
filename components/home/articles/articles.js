@@ -1,14 +1,12 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Button from '../../misc/Buttons';
+
 import articleImg from '../../../public/images/posts/devices.jpg';
 
 import styles from '../../../styles/home/articles/ArticleSection.module.scss';
 
 function Articles() {
-	const handleArticleBtnClick = () => {
-		console.log('ARTICLE BTN CLICKED');
-	};
-
 	return (
 		<section className={styles.articles}>
 			<div className={styles.articles__container}>
@@ -30,12 +28,13 @@ function Articles() {
 						semper nulla risus. Venenatis cras sed quam sagittis, iaculis mauris
 						in egestas.
 					</p>
-					<Button
-						type='button'
-						className={styles.articles__button}
-						onClick={handleArticleBtnClick}
-						text='read more'
-					/>
+					<Link href='/articles' passHref>
+						<Button
+							type='button'
+							className={styles.articles__button}
+							text='read more'
+						/>
+					</Link>
 				</div>
 			</div>
 		</section>

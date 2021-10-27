@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { links } from '../../data/navLinks';
+import { links } from '../../data/NavLinks';
 
 import styles from '../../styles/footer/Links.module.scss';
 

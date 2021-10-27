@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import Button from '../../misc/buttons';
+import Button from '../../misc/Buttons';
 import { TextInput, Textarea } from '../../misc/FormItems';
 
 import styles from '../../../styles/contact/form/Form.module.scss';

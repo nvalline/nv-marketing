@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Button from '../../misc/Buttons';
 
 import heroImg from '../../../public/images/consult.jpg';
@@ -26,12 +27,14 @@ function Hero() {
 						We aide small businesses in growing their online presence by
 						providing engaging website design & development and SEO strategies.
 					</p>
-					<Button
-						type='button'
-						className={styles.hero__button}
-						onClick={handleBtnClick}
-						text='learn more'
-					/>
+					<Link href='/contact' passHref>
+						<Button
+							type='button'
+							className={styles.hero__button}
+							onClick={handleBtnClick}
+							text='learn more'
+						/>
+					</Link>
 				</div>
 
 				{/* Hero Image */}

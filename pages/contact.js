@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import ContactAccent from '../components/misc/contactAccent';
+import ContactAccent from '../components/misc/ContactAccent';
 import Details from '../components/contact/details/Details';
-import FormSection from '../components/contact/form/FormSection';
+import FormSection from '../components/contact/form/FormBlock';
 
 import styles from '../styles/contact/Contact.module.scss';
 

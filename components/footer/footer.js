@@ -1,8 +1,8 @@
-import Circle from '../misc/circle';
+import Circle from '../misc/Circle';
 import Logo from './Logo';
 import Links from './Links';
 import Social from './Social';
-import Copyright from './copyright';
+import Copyright from './Copyright';
 
 import styles from '../../styles/footer/Footer.module.scss';
 
