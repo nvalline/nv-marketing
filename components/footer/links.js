@@ -1,20 +1,19 @@
 import Link from 'next/link';
-import { links } from '../../data/NavLinks';
 
 import styles from '../../styles/footer/Links.module.scss';
 
 function Links() {
-	const linksData = links;
-
 	return (
 		<div className={styles.links}>
-			{linksData.map((link) => {
-				return (
-					<Link key={link.id} href={link.url}>
-						<a>{link.name}</a>
-					</Link>
-				);
-			})}
+			<Link href='/#recent_projects'>
+				<a>Recent Projects</a>
+			</Link>
+			<Link href='/articles'>
+				<a>Articles</a>
+			</Link>
+			<Link href='/contact'>
+				<a>Contact</a>
+			</Link>
 		</div>
 	);
 }

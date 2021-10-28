@@ -1,4 +1,6 @@
 import Head from 'next/head';
+
+import Layout from '../components/Layout';
 import Hero from '../components/home/hero/Hero';
 import Services from '../components/home/services/Services';
 import Articles from '../components/home/articles/Articles';
@@ -36,3 +38,7 @@ export default function Home() {
 		</>
 	);
 }
+
+Home.getLayout = function getLayout(page) {
+	return <Layout>{page}</Layout>;
+};

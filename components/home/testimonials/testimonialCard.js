@@ -4,7 +4,7 @@ function TestimonialCard({ id, content, name, position, company }) {
 	return (
 		<div className={styles.card}>
 			<div className={styles.card__quoteBlock}>
-				<p className={styles.card__content}>"{content}"</p>
+				<p className={styles.card__content}>&quot;{content}&quot;</p>
 			</div>
 			<div className={styles.card__block}>
 				<p className={styles.card__name}>{name}</p>

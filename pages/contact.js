@@ -1,4 +1,6 @@
 import Head from 'next/head';
+
+import Layout from '../components/Layout';
 import ContactAccent from '../components/misc/ContactAccent';
 import Details from '../components/contact/details/Details';
 import FormSection from '../components/contact/form/FormBlock';
@@ -26,3 +28,7 @@ export default function Contact() {
 		</>
 	);
 }
+
+Contact.getLayout = function getLayout(page) {
+	return <Layout>{page}</Layout>;
+};

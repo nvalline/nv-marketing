@@ -2,6 +2,8 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
+import Layout from '../../components/Layout';
+
 import styles from '../../styles/articles/Index.module.scss';
 
 export default function Index({ articles }) {
@@ -13,14 +15,18 @@ export default function Index({ articles }) {
 
 				{/* Article Preview */}
 				<div>
-					{articles.map((article) => {
-						return <h3>{article.frontmatter.title}</h3>;
+					{articles.map((article, index) => {
+						return <h3 key={index}>{article.frontmatter.title}</h3>;
 					})}
 				</div>
 			</div>
 		</section>
 	);
 }
+
+Index.getLayout = function getLayout(page) {
+	return <Layout>{page}</Layout>;
+};
 
 export async function getStaticProps() {
 	// Get all article filenames
