@@ -3,10 +3,11 @@ import path from 'path';
 import matter from 'gray-matter';
 
 import Layout from '../../components/Layout';
+import ArticleCard from '../../components/articles/ArticleCard';
 
 import styles from '../../styles/articles/Index.module.scss';
 
-export default function Index({ articles }) {
+export default function Articles({ articles }) {
 	return (
 		<section className={styles.articles}>
 			<div className={styles.articles__container}>
@@ -14,17 +15,15 @@ export default function Index({ articles }) {
 				<div className={styles.articles__ellipses}></div>
 
 				{/* Article Preview */}
-				<div>
-					{articles.map((article, index) => {
-						return <h3 key={index}>{article.frontmatter.title}</h3>;
-					})}
-				</div>
+				{articles.map((article, index) => {
+					return <ArticleCard key={index} {...article} />;
+				})}
 			</div>
 		</section>
 	);
 }
 
-Index.getLayout = function getLayout(page) {
+Articles.getLayout = function getLayout(page) {
 	return <Layout>{page}</Layout>;
 };
 

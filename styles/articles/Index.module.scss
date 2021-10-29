@@ -1,12 +1,9 @@
 @use '../abstracts/mixins/mixins' as *;
 
 .articles {
-	// ! REMOVE AFTER INCLUDING ARTICLES
-	min-height: 60vh;
-
-	&__page_container {
-		position: relative;
+	&__container {
 		margin: 0 auto;
+		padding: 2.1875rem 0;
 		width: 100%;
 		max-width: 90rem;
 	}

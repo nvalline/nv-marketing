@@ -1,0 +1,77 @@
+@use '../abstracts/variables/' as v;
+@use '../abstracts/mixins/mixins' as *;
+
+.articleCard {
+	margin: 0 auto;
+	padding: 2.1875rem 0;
+	width: 18.75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid v.$primary-teal;
+	}
+
+	// Card Image
+	&__imageWrapper {
+		height: 166px;
+		width: 250px;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 0 4px 4px v.$box-shadow;
+
+		> div {
+			position: unset !important;
+
+			.articleCard__image {
+				position: relative !important;
+				width: 100%;
+				height: unset !important;
+			}
+		}
+	}
+
+	// Card Content
+	&__content {
+		text-align: center;
+	}
+
+	&__title {
+		margin-top: 2.3125rem;
+		font-family: v.$secondary-titles;
+		@include font-size(18, v.$base-font-size);
+		font-weight: v.$bold;
+		text-transform: capitalize;
+	}
+
+	&__text {
+		margin: 1.8125rem 0;
+		font-family: v.$secondary-font;
+		@include font-size(14, v.$base-font-size);
+		font-weight: v.$regular;
+	}
+
+	&__button {
+		padding: 0.75rem 1.25rem;
+		border: none;
+		border-radius: 20px;
+		background-color: v.$primary-yellow;
+		box-shadow: 0 2px 2px v.$box-shadow;
+		@include font-size(14, v.$base-font-size);
+		font-weight: v.$regular;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		&:hover {
+			color: v.$primary-aqua;
+		}
+
+		&:active {
+			background-color: v.$primary-aqua;
+			color: v.$primary-gray;
+		}
+	}
+}
