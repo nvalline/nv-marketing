@@ -2,9 +2,9 @@
 @use '../abstracts/mixins/mixins' as *;
 
 .articleCard {
-	margin: 0 auto;
 	padding: 2.1875rem 0;
-	width: 18.75rem;
+	height: 30.625rem;
+	max-width: 18.75rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -12,6 +12,10 @@
 
 	&:not(:last-child) {
 		border-bottom: 1px solid v.$primary-teal;
+	}
+
+	@include breakpoint-up(md) {
+		max-width: 21.875rem;
 	}
 
 	// Card Image
@@ -47,7 +51,7 @@
 	}
 
 	&__text {
-		margin: 1.8125rem 0;
+		margin: 1.5625rem 0;
 		font-family: v.$secondary-font;
 		@include font-size(14, v.$base-font-size);
 		font-weight: v.$regular;

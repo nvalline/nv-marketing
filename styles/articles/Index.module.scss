@@ -2,8 +2,7 @@
 
 .articles {
 	&__container {
-		margin: 0 auto;
-		padding: 2.1875rem 0;
+		padding: 2.1875rem;
 		width: 100%;
 		max-width: 90rem;
 	}
@@ -37,4 +36,13 @@
 			width: 563px;
 		}
 	}
+
+	&__block {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	// ! Add custom breakpoint for card layout
 }

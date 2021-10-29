@@ -15,9 +15,11 @@ export default function Articles({ articles }) {
 				<div className={styles.articles__ellipses}></div>
 
 				{/* Article Preview */}
-				{articles.map((article, index) => {
-					return <ArticleCard key={index} {...article} />;
-				})}
+				<div className={styles.articles__block}>
+					{articles.map((article, index) => {
+						return <ArticleCard key={index} {...article} />;
+					})}
+				</div>
 			</div>
 		</section>
 	);
