@@ -2,20 +2,36 @@
 @use '../abstracts/mixins/mixins' as *;
 
 .articleCard {
-	padding: 2.1875rem 0;
-	height: 30.625rem;
+	padding-top: 2.1875rem;
+	// height: 29.6875rem;
 	max-width: 18.75rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 
-	&:not(:last-child) {
-		border-bottom: 1px solid v.$primary-teal;
+	&:not(:last-child):after {
+		content: '';
+		position: relative;
+		bottom: 0;
+		right: 0;
+		// display: block;
+		margin: 0 auto;
+		// width: 18.75rem;
+		width: 10rem;
+		border-bottom: 2px solid v.$primary-teal;
 	}
 
 	@include breakpoint-up(md) {
 		max-width: 21.875rem;
+	}
+
+	@include breakpoint-up-cust(48.125) {
+		&:first-child {
+			width: 100%;
+			max-width: 56rem;
+			// flex-direction: row;
+		}
 	}
 
 	// Card Image
@@ -39,11 +55,11 @@
 
 	// Card Content
 	&__content {
+		padding: 2.3125rem 0;
 		text-align: center;
 	}
 
 	&__title {
-		margin-top: 2.3125rem;
 		font-family: v.$secondary-titles;
 		@include font-size(18, v.$base-font-size);
 		font-weight: v.$bold;
