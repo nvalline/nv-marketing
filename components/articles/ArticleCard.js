@@ -1,15 +1,13 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Button from '../misc/Buttons';
 
 import styles from '../../styles/articles/ArticleCard.module.scss';
 
 export default function ArticleCard({
-	frontmatter: { title, date, excerpt, cover_img }
+	frontmatter: { title, date, excerpt, cover_img },
+	slug
 }) {
-	const handleBtnClick = (e) => {
-		console.log('ARTICLE BTN CLICKED');
-	};
-
 	return (
 		<div className={styles.articleCard}>
 			<div className={styles.articleCard__imageWrapper}>
@@ -23,12 +21,9 @@ export default function ArticleCard({
 			<div className={styles.articleCard__content}>
 				<h2 className={styles.articleCard__title}>{title}</h2>
 				<p className={styles.articleCard__text}>{excerpt}</p>
-				<Button
-					type='button'
-					className={styles.articleCard__button}
-					onClick={handleBtnClick}
-					text='read more'
-				/>
+				<Link href={`/articles/${slug}`}>
+					<a className={styles.articleCard__button}>read more</a>
+				</Link>
 			</div>
 		</div>
 	);
