@@ -6,13 +6,13 @@ function NavLinks() {
 	return (
 		<div className={styles.block}>
 			<Link href='/#recent_projects'>
-				<a>Recent Projects</a>
+				<a className={styles.block__link}>Recent Projects</a>
 			</Link>
 			<Link href='/articles'>
-				<a>Articles</a>
+				<a className={styles.block__link}>Articles</a>
 			</Link>
 			<Link href='/contact'>
-				<a>Contact</a>
+				<a className={styles.block__link}>Contact</a>
 			</Link>
 		</div>
 	);

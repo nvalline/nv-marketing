@@ -2,10 +2,12 @@
 
 .articles {
 	&__container {
+		margin: 0 auto;
 		padding: 2.1875rem;
 		width: 100%;
 		max-width: 90rem;
 	}
+
 	// Articles ellipses styles
 	&__ellipses {
 		background-image: url('/images/svgs/ellipses-sm.svg');
@@ -39,8 +41,12 @@
 
 	&__block {
 		display: flex;
-		flex-flow: row wrap;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
+		@include breakpoint-up-cust(48.125) {
+			flex-flow: row wrap;
+		}
 	}
 }
