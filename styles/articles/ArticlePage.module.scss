@@ -17,6 +17,10 @@
 		border-radius: 0% 0% 50% 50% / 0% 0% 35% 35%;
 		overflow: hidden;
 
+		@include breakpoint-up(md) {
+			height: 300px;
+		}
+
 		> div {
 			position: unset !important;
 
@@ -29,8 +33,14 @@
 	}
 
 	&__block {
+		margin: 0 auto;
 		padding: 2.5rem;
+		max-width: 35rem;
 		text-align: center;
+
+		@include breakpoint-up(md) {
+			padding: 4.5rem;
+		}
 	}
 
 	&__title {
@@ -54,7 +64,7 @@
 			margin: 1rem 0;
 			@include font-size(16, v.$base-font-size);
 			font-weight: v.$regular;
-			color: v.$primary-gray;
+			color: v.$primary-black;
 		}
 
 		> p {
@@ -87,7 +97,7 @@
 		padding: 0.75rem 1.25rem;
 		border: none;
 		border-radius: 20px;
-		background-color: v.$primary-green;
+		background-color: v.$primary-teal;
 		box-shadow: 0 2px 2px v.$box-shadow;
 		@include font-size(14, v.$base-font-size);
 		font-weight: v.$regular;
