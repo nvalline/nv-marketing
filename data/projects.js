@@ -1,11 +1,11 @@
 export const projects = [
 	{
 		id: 1,
-		img: '/images/barber.jpg',
-		name: "Jeremy's Barbershop",
+		img: '/images/projects/nova-art-restoration.jpeg',
+		name: 'Nova Art Restoration',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',
-		url: 'https://www.google.com',
+			'Nova Art Restoration is a custom Wordpress website for an art restoration company.  Custom CSS was added to the theme to provide the client with the look and feel desired.',
+		url: 'https://www.novaartrestoration.com',
 		accent: 'left'
 	},
 	{

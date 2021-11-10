@@ -26,6 +26,8 @@
 		overflow: hidden;
 
 		@include breakpoint-up(lg) {
+			height: 12.5rem;
+			width: 18.75rem;
 			margin: 0;
 		}
 
@@ -48,6 +50,10 @@
 		@include font-size(16, v.$base-font-size);
 		font-weight: v.$regular;
 		color: v.$primary-gray;
+
+		@include breakpoint-up(lg) {
+			@include font-size(19, v.$base-font-size);
+		}
 	}
 
 	&__description {
@@ -61,6 +67,7 @@
 
 		@include breakpoint-up(lg) {
 			padding: 1.5625rem 0;
+			@include font-size(14, v.$base-font-size);
 		}
 	}
 
