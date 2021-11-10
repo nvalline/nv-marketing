@@ -59,8 +59,6 @@
 		}
 
 		&:first-child {
-			// padding-bottom: 4.375rem;
-
 			.articleCard__imageWrapper {
 				height: 250px;
 				width: 376px;
@@ -79,6 +77,7 @@
 		// Vertical accent line height change
 		&:nth-child(2):before {
 			height: 25rem;
+			z-index: -1;
 		}
 	}
 

@@ -2,7 +2,7 @@
 title: 'Pros and Cons of building your own website'
 date: 'November 1, 2021'
 excerpt: 'Patrem contenta magni margine satis inprudens
-nymphae invito verba saepe.'
+nymphae invito verba saepe. quoque scinditque in.'
 cover_img: '/images/articles/devices.jpg'
 ---
 

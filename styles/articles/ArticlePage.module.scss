@@ -21,6 +21,25 @@
 			height: 300px;
 		}
 
+		// Change image design & layout
+		@include breakpoint-up(lg) {
+			top: 5rem;
+			left: 10%;
+			height: 299px;
+			width: 450px;
+			border-radius: 0% 60% 0% 60% / 0% 60% 0% 60%;
+		}
+
+		@include breakpoint-up(xl) {
+			height: 351px;
+			width: 528px;
+		}
+
+		@include breakpoint-up(xxl) {
+			height: 400px;
+			width: 602px;
+		}
+
 		> div {
 			position: unset !important;
 
@@ -29,6 +48,27 @@
 				width: 100%;
 				height: unset !important;
 			}
+		}
+	}
+
+	&__accentBlock {
+		@include breakpoint-up(lg) {
+			position: relative;
+			top: -6rem;
+			left: 30%;
+			width: 37.5rem;
+			padding: 0.5rem;
+			background-color: v.$primary-gray;
+			border-radius: 10px;
+			box-shadow: 4px 4px 4px v.$box-shadow;
+		}
+
+		@include breakpoint-up(xl) {
+			width: 44.5rem;
+		}
+
+		@include breakpoint-up(xxl) {
+			width: 50.5rem;
 		}
 	}
 
@@ -41,6 +81,15 @@
 		@include breakpoint-up(md) {
 			padding: 4.5rem;
 		}
+
+		@include breakpoint-up(lg) {
+			height: 100%;
+			width: 100%;
+			max-width: unset;
+			border-radius: 10px;
+			background-color: rgba(v.$primary-black, 0.85);
+			box-shadow: 4px 4px 4px v.$box-shadow;
+		}
 	}
 
 	&__title {
@@ -48,29 +97,56 @@
 		@include font-size(18, v.$base-font-size);
 		font-weight: v.$bold;
 		color: v.$primary-white;
+
+		@include breakpoint-up(lg) {
+			margin: 2rem 0;
+		}
 	}
 
 	&__date {
 		margin: 1rem;
+		padding: 0.5rem;
+		border-top: 1px solid v.$primary-green;
+		border-bottom: 1px solid v.$primary-green;
 		@include font-size(14, v.$base-font-size);
 		font-weight: v.$regular;
 		color: v.$primary-green;
+
+		@include breakpoint-up(lg) {
+			border-top: 1px solid v.$primary-teal;
+			border-bottom: 1px solid v.$primary-teal;
+			color: v.$primary-teal;
+		}
 	}
 
 	&__content {
+		padding: 2rem 0;
+		border-bottom: 1px solid v.$primary-green;
 		color: v.$primary-white;
+
+		@include breakpoint-up(lg) {
+			border-bottom: 1px solid v.$primary-teal;
+		}
 
 		> h2 {
 			margin: 1rem 0;
 			@include font-size(16, v.$base-font-size);
 			font-weight: v.$regular;
 			color: v.$primary-black;
+
+			@include breakpoint-up(lg) {
+				color: v.$primary-gray;
+			}
 		}
 
 		> p {
 			margin: 0.75rem 0;
 			@include font-size(14, v.$base-font-size);
 			color: v.$primary-black;
+
+			@include breakpoint-up(lg) {
+				color: v.$primary-aqua;
+			}
 		}
 
 		> blockquote {
@@ -87,6 +163,14 @@
 
 			> li::marker {
 				color: v.$primary-green;
+
+				@include breakpoint-up(lg) {
+					color: v.$primary-teal;
+				}
+
+				@include breakpoint-up(lg) {
+					color: v.$primary-teal;
+				}
 			}
 		}
 	}
