@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
@@ -5,6 +6,8 @@ import matter from 'gray-matter';
 import marked from 'marked';
 
 import Layout from '../../components/Layout';
+import styles from '../../styles/articles/ArticlePage.module.scss';
+import PixelBar from '../../components/misc/PixelBar';
 
 export default function ArticlePage({
 	frontmatter: { title, date, cover_img, excerpt },
@@ -12,14 +15,32 @@ export default function ArticlePage({
 	content
 }) {
 	return (
-		<section>
-			<h3>{title}</h3>
-			<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+		<section className={styles.articlePage}>
+			<div className={styles.articlePage__container}>
+				<div className={styles.articlePage__imageWrapper}>
+					<Image
+						src={cover_img}
+						alt={title}
+						className={styles.articlePage__image}
+						layout='fill'
+						objectFit='cover'
+					/>
+				</div>
+				<div className={styles.articlePage__block}>
+					<h3 className={styles.articlePage__title}>{title}</h3>
+					<p className={styles.articlePage__date}>{date}</p>
+					<div
+						className={styles.articlePage__content}
+						dangerouslySetInnerHTML={{ __html: marked(content) }}
+					></div>
 
-			{/* Return to articles page */}
-			<Link href='/articles'>
-				<a>Go Back</a>
-			</Link>
+					{/* Return to articles page */}
+					<Link href='/articles'>
+						<a className={styles.articlePage__button}>go back</a>
+					</Link>
+				</div>
+			</div>
+			<PixelBar />
 		</section>
 	);
 }
