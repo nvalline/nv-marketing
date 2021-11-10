@@ -6,6 +6,7 @@
 		margin: 0 auto;
 		width: 100%;
 		max-width: 90rem;
+		position: relative;
 	}
 
 	// Hero ellipses styles
@@ -118,11 +119,17 @@
 		transform: rotate(-5deg);
 		box-shadow: 4px 4px 4px v.$box-shadow;
 
-		@include breakpoint-down(lg) {
+		@include breakpoint-down(md) {
 			display: none;
 		}
 
-		@include breakpoint-up(xl) {
+		@include breakpoint-up(md) {
+			height: 262.62px;
+			width: 402.1px;
+			right: 13%;
+		}
+
+		@include breakpoint-up(xxl) {
 			height: 307.33px;
 			width: 470.56px;
 			right: 13%;

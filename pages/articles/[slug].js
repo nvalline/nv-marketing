@@ -24,6 +24,7 @@ export default function ArticlePage({
 						className={styles.articlePage__image}
 						layout='fill'
 						objectFit='cover'
+						priority
 					/>
 				</div>
 				<div className={styles.articlePage__accentBlock}>

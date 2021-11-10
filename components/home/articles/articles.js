@@ -16,6 +16,7 @@ function Articles() {
 						alt='Devices'
 						className={styles.imageWrapper__img}
 						layout='fill'
+						priority
 					/>
 				</div>
 				<div className={styles.articles__contentWrapper}>

@@ -22,6 +22,7 @@ function Logo({ screen }) {
 							alt='NV Marketing, LLC logo'
 							className={styles.logo__image}
 							layout='fill'
+							priority
 						/>
 					</div>
 				</a>

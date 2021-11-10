@@ -16,6 +16,7 @@ export default function ArticleCard({
 					alt={title}
 					className={styles.articleCard__image}
 					layout='fill'
+					priority
 				/>
 			</div>
 			<div className={styles.articleCard__content}>

@@ -13,6 +13,7 @@ function ProjectCard({ id, img, name, description, url, accent }) {
 					alt={name}
 					layout='fill'
 					className={styles.imageWrapper__image}
+					priority
 				/>
 			</div>
 			<div className={styles.card__contentWrapper}>

@@ -14,6 +14,7 @@ function Social() {
 							alt='facebook'
 							className={styles.social__icon}
 							layout='fill'
+							priority
 						/>
 					</div>
 				</a>
@@ -26,6 +27,7 @@ function Social() {
 							alt='instagram'
 							className={styles.social__icon}
 							layout='fill'
+							priority
 						/>
 					</div>
 				</a>

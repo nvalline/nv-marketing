@@ -2,7 +2,7 @@ export const contactDetails = [
 	{
 		id: 1,
 		name: 'NV Marketing, LLC',
-		phone: '+1 (555) 555-5555',
+		phone: '+1 (801) 742-1290',
 		email: 'contact@nv-marketing.com'
 	}
 ];

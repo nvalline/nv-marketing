@@ -11,6 +11,7 @@ function ServiceCard({ id, title, description, img }) {
 					alt={title}
 					layout='fill'
 					className={styles.iconWrapper__icon}
+					priority
 				/>
 			</div>
 			<h2 className={styles.serviceCard__title}>{title}</h2>

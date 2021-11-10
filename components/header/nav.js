@@ -19,6 +19,7 @@ function Nav(props) {
 								alt='NV Marketing, LLC logo'
 								className={styles.nav__logo}
 								layout='fill'
+								priority
 							/>
 						</div>
 					</a>
