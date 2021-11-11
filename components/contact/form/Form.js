@@ -1,17 +1,33 @@
 import { useRef } from 'react';
+import emailjs from 'emailjs-com';
+
 import Button from '../../misc/Buttons';
 import { TextInput, Textarea } from '../../misc/FormItems';
 
 import styles from '../../../styles/contact/form/Form.module.scss';
 
-function Form() {
+function Form({ setShowForm }) {
 	const form = useRef();
 
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		// ! ENTER EMAIL JS
-		console.log('FORM SUBMITTED');
+		emailjs
+			.sendForm(
+				'service_i0z7d5s',
+				'template_2uzc9ip',
+				form.current,
+				process.env.REACT_APP_USER_ID
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+					setShowForm(false);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
 	};
 
 	return (
