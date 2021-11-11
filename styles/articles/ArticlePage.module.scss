@@ -93,38 +93,26 @@
 	}
 
 	&__title {
+		padding: 0.5rem;
+		margin: 1rem 0 2rem 0;
 		font-family: v.$secondary-titles;
 		@include font-size(18, v.$base-font-size);
 		font-weight: v.$bold;
 		color: v.$primary-white;
 
 		@include breakpoint-up(lg) {
-			margin: 2rem 0;
-		}
-	}
-
-	&__date {
-		margin: 1rem;
-		padding: 0.5rem;
-		border-top: 1px solid v.$primary-green;
-		border-bottom: 1px solid v.$primary-green;
-		@include font-size(14, v.$base-font-size);
-		font-weight: v.$regular;
-		color: v.$primary-green;
-
-		@include breakpoint-up(lg) {
-			border-top: 1px solid v.$primary-teal;
-			border-bottom: 1px solid v.$primary-teal;
-			color: v.$primary-teal;
+			margin: 2rem 0 2rem 0;
 		}
 	}
 
 	&__content {
 		padding: 2rem 0;
+		border-top: 1px solid v.$primary-green;
 		border-bottom: 1px solid v.$primary-green;
 		color: v.$primary-white;
 
 		@include breakpoint-up(lg) {
+			border-top: 1px solid v.$primary-teal;
 			border-bottom: 1px solid v.$primary-teal;
 		}
 

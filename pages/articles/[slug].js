@@ -30,7 +30,6 @@ export default function ArticlePage({
 				<div className={styles.articlePage__accentBlock}>
 					<div className={styles.articlePage__block}>
 						<h3 className={styles.articlePage__title}>{title}</h3>
-						<p className={styles.articlePage__date}>{date}</p>
 						<div
 							className={styles.articlePage__content}
 							dangerouslySetInnerHTML={{ __html: marked(content) }}

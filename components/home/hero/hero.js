@@ -25,7 +25,8 @@ function Hero() {
 					</h1>
 					<p className={styles.hero__content}>
 						We aide small businesses in growing their online presence by
-						providing engaging website design & development and SEO strategies.
+						providing engaging website design & development and SEO strategies
+						to attract more customers and increase sales.
 					</p>
 					<Link href='/contact' passHref>
 						<Button
