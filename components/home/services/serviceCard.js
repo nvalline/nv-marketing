@@ -3,7 +3,6 @@
 import styles from '../../../styles/home/services/ServiceCard.module.scss';
 
 function ServiceCard({ id, title, description, img }) {
-	console.log(img);
 	return (
 		<div className={styles.serviceCard}>
 			<div className={styles.serviceCard__iconWrapper}>
