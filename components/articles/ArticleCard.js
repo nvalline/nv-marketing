@@ -1,6 +1,5 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
-import Button from '../misc/Buttons';
 
 import styles from '../../styles/articles/ArticleCard.module.scss';
 

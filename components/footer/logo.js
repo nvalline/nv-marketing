@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 
 import logoImg from '../../public/images/svgs/nv_mktg_logo_white.svg';

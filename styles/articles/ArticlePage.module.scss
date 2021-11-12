@@ -10,7 +10,8 @@
 	}
 
 	// Article Image
-	&__imageWrapper {
+	// &__imageWrapper {
+	&__image {
 		height: 228px;
 		width: 100%;
 		position: relative;
@@ -40,15 +41,15 @@
 			width: 602px;
 		}
 
-		> div {
-			position: unset !important;
+		// > div {
+		// 	position: unset !important;
 
-			.articleCard__image {
-				position: relative !important;
-				width: 100%;
-				height: unset !important;
-			}
-		}
+		// 	.articleCard__image {
+		// 		position: relative !important;
+		// 		width: 100%;
+		// 		height: unset !important;
+		// 	}
+		// }
 	}
 
 	&__accentBlock {
