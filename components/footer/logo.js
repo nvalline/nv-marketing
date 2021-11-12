@@ -17,12 +17,17 @@ function Logo({ screen }) {
 			<Link href='/'>
 				<a>
 					<div className={styles.logo__wrapper}>
-						<Image
+						{/* <Image
 							src={logoImg}
 							alt='NV Marketing, LLC logo'
 							className={styles.logo__image}
 							layout='fill'
 							priority
+						/> */}
+						<img
+							src={logoImg.src}
+							alt='NV Marketing, LLC logo'
+							className={styles.logo__image}
 						/>
 					</div>
 				</a>

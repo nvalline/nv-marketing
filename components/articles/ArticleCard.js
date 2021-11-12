@@ -11,12 +11,17 @@ export default function ArticleCard({
 	return (
 		<div className={styles.articleCard}>
 			<div className={styles.articleCard__imageWrapper}>
-				<Image
+				{/* <Image
 					src={cover_img}
 					alt={title}
 					className={styles.articleCard__image}
 					layout='fill'
 					priority
+				/> */}
+				<img
+					src={cover_img}
+					alt={title}
+					className={styles.articleCard__image}
 				/>
 			</div>
 			<div className={styles.articleCard__content}>

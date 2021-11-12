@@ -9,12 +9,17 @@ function Social() {
 			<Link href='#'>
 				<a className={styles.social__link}>
 					<div className={styles.social__iconWrapper}>
-						<Image
+						{/* <Image
 							src='/images/svgs/fb_icon.svg'
 							alt='facebook'
 							className={styles.social__icon}
 							layout='fill'
 							priority
+						/> */}
+						<img
+							src='/images/svgs/fb_icon.svg'
+							alt='facebook'
+							className={styles.social__icon}
 						/>
 					</div>
 				</a>
@@ -22,12 +27,17 @@ function Social() {
 			<Link href='#'>
 				<a className={styles.social__link}>
 					<div className={styles.social__iconWrapper}>
-						<Image
+						{/* <Image
 							src='/images/svgs/ig_icon.svg'
 							alt='instagram'
 							className={styles.social__icon}
 							layout='fill'
 							priority
+						/> */}
+						<img
+							src='/images/svgs/ig_icon.svg'
+							alt='instagram'
+							className={styles.social__icon}
 						/>
 					</div>
 				</a>

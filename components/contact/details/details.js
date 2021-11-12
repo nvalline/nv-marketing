@@ -1,4 +1,3 @@
-import PixelBar from '../../misc/PixelBar';
 import { contactDetails } from '../../../data/contactDetails';
 
 import styles from '../../../styles/contact/details/Details.module.scss';
@@ -8,7 +7,6 @@ function Details() {
 
 	return (
 		<div className={styles.details}>
-			{/* <div className={styles.details__pixelBar}></div> */}
 			<div className={styles.details__block}>
 				<h1 className={styles.details__title}>get in touch</h1>
 				<hr className={styles.details__line} />

@@ -40,13 +40,14 @@ function Hero() {
 
 				{/* Hero Image */}
 				<div className={styles.hero__imageWrapper}>
-					<Image
+					{/* <Image
 						src={heroImg}
 						alt='consult'
 						className={styles.hero__image}
 						layout='fill'
 						priority
-					/>
+					/> */}
+					<img src={heroImg.src} alt='consult' className={styles.hero__image} />
 				</div>
 			</div>
 		</section>

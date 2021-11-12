@@ -10,13 +10,18 @@ function Articles() {
 	return (
 		<section className={styles.articles}>
 			<div className={styles.articles__container}>
-				<div className={styles.imageWrapper}>
-					<Image
+				<div className={styles.articles__imageWrapper}>
+					{/* <Image
 						src={articleImg}
 						alt='Devices'
 						className={styles.imageWrapper__img}
 						layout='fill'
 						priority
+					/> */}
+					<img
+						src={articleImg.src}
+						alt='Devices'
+						className={styles.articles__img}
 					/>
 				</div>
 				<div className={styles.articles__contentWrapper}>

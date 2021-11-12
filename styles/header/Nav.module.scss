@@ -5,18 +5,19 @@
 	align-items: center;
 	justify-content: space-between;
 
-	&__logoWrapper {
+	// &__logoWrapper {
+	&__logo {
 		height: 3.5263rem;
 		width: 11.5263rem;
 
-		> div {
-			position: unset !important;
+		// > div {
+		// 	position: unset !important;
 
-			.nav__logo {
-				position: relative !important;
-				width: 100%;
-				height: unset !important;
-			}
-		}
+		// 	.nav__logo {
+		// 		position: relative !important;
+		// 		width: 100%;
+		// 		height: unset !important;
+		// 	}
+		// }
 	}
 }

@@ -14,12 +14,17 @@ function Nav(props) {
 				<Link href='/'>
 					<a>
 						<div className={styles.nav__logoWrapper}>
-							<Image
+							{/* <Image
 								src={logoImg}
 								alt='NV Marketing, LLC logo'
 								className={styles.nav__logo}
 								layout='fill'
 								priority
+							/> */}
+							<img
+								src={logoImg.src}
+								alt='NV Marketing, LLC logo'
+								className={styles.nav__logo}
 							/>
 						</div>
 					</a>
