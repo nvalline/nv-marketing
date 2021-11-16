@@ -2,9 +2,15 @@
 @use '../abstracts/mixins/mixins' as *;
 
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	padding: 0.5rem 1rem;
+	transition: top 300ms;
 	box-shadow: 0 4px 4px v.$box-shadow;
 	background-color: v.$primary-black;
+	z-index: 5;
 
 	@include breakpoint-up(md) {
 		padding: 0.5625rem 2.25rem;
@@ -13,4 +19,13 @@
 	@include breakpoint-up(xl) {
 		padding: 0.5937rem 5.9375rem;
 	}
+}
+
+.animate {
+	top: -6.25rem;
+}
+
+.sticky {
+	top: 0;
+	z-index: 99;
 }

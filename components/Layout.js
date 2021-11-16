@@ -3,11 +3,11 @@ import Footer from './footer/Footer';
 
 function Layout({ children }) {
 	return (
-		<>
+		<div style={{ position: 'relative' }}>
 			<Header />
 			<main>{children}</main>
 			<Footer />
-		</>
+		</div>
 	);
 }
 
