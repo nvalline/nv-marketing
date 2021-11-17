@@ -4,6 +4,7 @@ date: 'October 23, 2021'
 excerpt: 'Patrem contenta magni margine satis inprudens
 nymphae invito verba saepe contenta magni margine.'
 cover_img: '/images/articles/devices.jpg'
+keywords: 'what makes a good website, how to design a website for a small business, what to put on a website for business'
 ---
 
 ## Turpius Aegides membris colat volentes fallere
