@@ -1,4 +1,4 @@
-// import Image from 'next/image';
+import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
@@ -15,10 +15,17 @@ export default function ArticlePage({
 	content
 }) {
 	return (
-		<section className={styles.articlePage}>
-			<div className={styles.articlePage__container}>
-				<div className={styles.articlePage__imageWrapper}>
-					{/* <Image
+		<>
+			<Head>
+				{/* Page Title */}
+				<title>{title} | NV Marketing, LLC</title>
+				{/* Page Description */}
+				<meta name='description' content={excerpt} />
+			</Head>
+			<section className={styles.articlePage}>
+				<div className={styles.articlePage__container}>
+					<div className={styles.articlePage__imageWrapper}>
+						{/* <Image
 						src={cover_img}
 						alt={title}
 						className={styles.articlePage__image}
@@ -26,29 +33,30 @@ export default function ArticlePage({
 						objectFit='cover'
 						priority
 					/> */}
-					<img
-						src={cover_img}
-						alt={title}
-						className={styles.articlePage__image}
-					/>
-				</div>
-				<div className={styles.articlePage__accentBlock}>
-					<div className={styles.articlePage__block}>
-						<h3 className={styles.articlePage__title}>{title}</h3>
-						<div
-							className={styles.articlePage__content}
-							dangerouslySetInnerHTML={{ __html: marked(content) }}
-						></div>
+						<img
+							src={cover_img}
+							alt={title}
+							className={styles.articlePage__image}
+						/>
+					</div>
+					<div className={styles.articlePage__accentBlock}>
+						<div className={styles.articlePage__block}>
+							<h3 className={styles.articlePage__title}>{title}</h3>
+							<div
+								className={styles.articlePage__content}
+								dangerouslySetInnerHTML={{ __html: marked(content) }}
+							></div>
 
-						{/* Return to articles page */}
-						<Link href='/articles'>
-							<a className={styles.articlePage__button}>go back</a>
-						</Link>
+							{/* Return to articles page */}
+							<Link href='/articles'>
+								<a className={styles.articlePage__button}>go back</a>
+							</Link>
+						</div>
 					</div>
 				</div>
-			</div>
-			<PixelBar />
-		</section>
+				<PixelBar />
+			</section>
+		</>
 	);
 }
 

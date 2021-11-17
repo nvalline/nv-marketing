@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { promises as fs } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -9,19 +10,30 @@ import styles from '../../styles/articles/Index.module.scss';
 
 export default function Articles({ articles }) {
 	return (
-		<section className={styles.articles}>
-			<div className={styles.articles__container}>
-				{/* Ellipses background image */}
-				<div className={styles.articles__ellipses}></div>
+		<>
+			<Head>
+				{/* Page Title */}
+				<title>Articles | NV Marketing, LLC</title>
+				{/* Page Description */}
+				<meta
+					name='description'
+					content='NV Marketing, LLC provides website design services for small business. Website design packages include design & development and SEO to increase traffic'
+				/>
+			</Head>
+			<section className={styles.articles}>
+				<div className={styles.articles__container}>
+					{/* Ellipses background image */}
+					<div className={styles.articles__ellipses}></div>
 
-				{/* Article Preview */}
-				<div className={styles.articles__block}>
-					{articles.map((article, index) => {
-						return <ArticleCard key={index} {...article} />;
-					})}
+					{/* Article Preview */}
+					<div className={styles.articles__block}>
+						{articles.map((article, index) => {
+							return <ArticleCard key={index} {...article} />;
+						})}
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</>
 	);
 }
 
