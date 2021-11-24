@@ -60,8 +60,8 @@
 
 		&:first-child {
 			.articleCard__imageWrapper {
-				height: 250px;
-				width: 376px;
+				height: 15.625rem;
+				width: 23.5rem;
 			}
 
 			.articleCard__content:nth-child(2) {
@@ -84,15 +84,15 @@
 	// Card Image
 	// &__imageWrapper {
 	&__image {
-		height: 166px;
-		width: 250px;
+		height: 10.375rem;
+		width: 15.625rem;
 		border-radius: 10px;
 		overflow: hidden;
 		box-shadow: 0 4px 4px v.$box-shadow;
 
 		@include breakpoint-up(lg) {
-			height: 200px;
-			width: 301px;
+			height: 12.5rem;
+			width: 18.8125rem;
 		}
 
 		// > div {

@@ -17,26 +17,26 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		height: 254px;
-		width: 161px;
+		height: 15.875rem;
+		width: 10.0625rem;
 		z-index: -1;
 
 		@include breakpoint-up(md) {
 			background-image: url('/images/svgs/ellipses-md.svg');
-			height: 494px;
-			width: 542px;
+			height: 30.875rem;
+			width: 33.875rem;
 		}
 
 		@include breakpoint-up(lg) {
 			background-image: url('/images/svgs/ellipses-lg.svg');
-			height: 754px;
-			width: 563px;
+			height: 47.125rem;
+			width: 35.1875rem;
 		}
 
 		@include breakpoint-up(xl) {
 			background-image: url('/images/svgs/ellipses-xlg.svg');
-			height: 754px;
-			width: 563px;
+			height: 47.125rem;
+			width: 35.1875rem;
 		}
 	}
 
@@ -110,8 +110,8 @@
 	// Hero image styles
 	// &__imageWrapper {
 	&__image {
-		height: 251.08px;
-		width: 375.01px;
+		height: 50.88rem;
+		width: 23.438125rem;
 		position: absolute;
 		top: 8.8421rem;
 		right: 15%;
@@ -125,14 +125,14 @@
 		}
 
 		@include breakpoint-up(md) {
-			height: 262.62px;
-			width: 402.1px;
+			height: 16.41375rem;
+			width: 25.13125rem;
 			right: 13%;
 		}
 
 		@include breakpoint-up(xxl) {
-			height: 307.33px;
-			width: 470.56px;
+			height: 19.208125rem;
+			width: 29.41rem;
 			right: 13%;
 		}
 

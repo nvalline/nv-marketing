@@ -2,6 +2,8 @@
 @use '../abstracts/mixins/mixins' as *;
 
 .articlePage {
+	margin-top: -4.75rem;
+	padding-top: 4.75rem;
 	background-color: v.$primary-aqua;
 
 	&__container {
@@ -12,31 +14,31 @@
 	// Article Image
 	&__imageWrapper {
 		position: relative;
-		height: 228px;
+		height: 14.25rem;
 		border-radius: 0% 0% 50% 50% / 0% 0% 35% 35%;
 		overflow: hidden;
 
 		@include breakpoint-up(md) {
-			height: 300px;
+			height: 18.75rem;
 		}
 
 		// Change image design & layout
 		@include breakpoint-up(lg) {
 			top: 5rem;
 			left: 10%;
-			height: 299px;
-			width: 450px;
+			height: 18.6875rem;
+			width: 28.125rem;
 			border-radius: 0% 60% 0% 60% / 0% 60% 0% 60%;
 		}
 
 		@include breakpoint-up(xl) {
-			height: 351px;
-			width: 528px;
+			height: 21.9375rem;
+			width: 33rem;
 		}
 
 		@include breakpoint-up(xxl) {
-			height: 400px;
-			width: 602px;
+			height: 25rem;
+			width: 37.625rem;
 		}
 	}
 

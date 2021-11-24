@@ -1,7 +1,13 @@
 import styles from '../../styles/misc/ContactAccent.module.scss';
 
-function ContactAccent() {
-	return <div className={styles.contactAccent}></div>;
+function ContactAccent({ top }) {
+	return (
+		<div
+			className={
+				top === 'top' ? `${styles.contactAccentTop}` : `${styles.contactAccent}`
+			}
+		></div>
+	);
 }
 
 export default ContactAccent;

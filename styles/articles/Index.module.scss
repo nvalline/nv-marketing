@@ -16,26 +16,26 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		height: 254px;
-		width: 161px;
+		height: 15.875rem;
+		width: 10.0625rem;
 		z-index: -1;
 
 		@include breakpoint-up(md) {
 			background-image: url('/images/svgs/ellipses-md.svg');
-			height: 494px;
-			width: 542px;
+			height: 30.875rem;
+			width: 33.875rem;
 		}
 
 		@include breakpoint-up(lg) {
 			background-image: url('/images/svgs/ellipses-lg.svg');
-			height: 754px;
-			width: 563px;
+			height: 47.125rem;
+			width: 35.1875rem;
 		}
 
 		@include breakpoint-up(xl) {
 			background-image: url('/images/svgs/ellipses-xlg.svg');
-			height: 754px;
-			width: 563px;
+			height: 47.125rem;
+			width: 35.1875rem;
 		}
 	}
 

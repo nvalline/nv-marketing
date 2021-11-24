@@ -20,7 +20,7 @@ export default function Contact() {
 				/>
 			</Head>
 
-			<ContactAccent />
+			<ContactAccent top='top' />
 			<div className={styles.contact}>
 				<div className={styles.contact__container}>
 					<Details />
