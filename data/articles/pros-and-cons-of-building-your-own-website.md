@@ -2,7 +2,7 @@
 title: 'Pros and Cons of Building Your Own Website'
 date: 'December 1, 2021'
 excerpt: 'You may be able to create your own small business website for little to no expense, but should you? I recommend considering these pros and cons first.'
-cover_img: '/images/articles/devices.jpg'
+cover_img: '/images/articles/website_builder.jpg'
 keywords: 'can you build your own website, best website builder for small business, web design services'
 ---
 
