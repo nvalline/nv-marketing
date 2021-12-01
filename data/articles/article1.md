@@ -4,7 +4,7 @@ date: 'October 26, 2021'
 excerpt: 'Patrem contenta magni margine satis inprudens
 nymphae invito verba saepe.'
 cover_img: '/images/articles/devices.jpg'
-keywords: 'seo company near me, how to get more website traffic, what is seo and how it works'
+keywords: 'seo service for small business, how to get more website traffic, what is seo and how it works'
 ---
 
 ## Turpius Aegides membris colat volentes fallere

@@ -126,7 +126,7 @@
 			margin: 1rem 0;
 			@include font-size(16, v.$base-font-size);
 			font-weight: v.$regular;
-			color: v.$primary-black;
+			color: v.$primary-gray;
 
 			@include breakpoint-up(lg) {
 				color: v.$primary-gray;
@@ -154,6 +154,34 @@
 		> ol {
 			text-align: left;
 			color: v.$primary-gray;
+
+			> li::marker {
+				color: v.$primary-green;
+
+				@include breakpoint-up(lg) {
+					color: v.$primary-teal;
+				}
+
+				@include breakpoint-up(lg) {
+					color: v.$primary-teal;
+				}
+			}
+		}
+
+		> ul {
+			text-align: left;
+			list-style: circle;
+			color: v.$primary-gray;
+
+			> li {
+				margin-bottom: 10px;
+				@include font-size(14, v.$base-font-size);
+				color: v.$primary-black;
+
+				@include breakpoint-up(lg) {
+					color: v.$primary-aqua;
+				}
+			}
 
 			> li::marker {
 				color: v.$primary-green;
