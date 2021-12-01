@@ -10,14 +10,14 @@ export const services = [
 		id: 2,
 		title: 'Web Development',
 		description:
-			'High performance and secure website will never let your visitors down just because they had to wait too long for the website to load.',
+			'A high performing and securely developed website will ensure that your visitors will stay on your website.',
 		img: '/images/svgs/web_dev_icon.svg'
 	},
 	{
 		id: 3,
 		title: 'Search Engine Optimization (SEO)',
 		description:
-			'On-page and Off-page SEO will rank your website to the top of the most popular search engine Google which helps you get more visitors.',
+			'On-page and Off-page SEO will rank your website to the top of Google, which helps you get more visitors.',
 		img: '/images/svgs/seo_icon.svg'
 	}
 ];
