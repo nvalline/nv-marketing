@@ -1,0 +1,21 @@
+@use '../../abstracts/variables/' as v;
+@use '../../abstracts/mixins/mixins' as *;
+
+.testimonialDefault {
+	padding: 0 1.25rem;
+	text-align: center;
+
+	&__header {
+		margin: 0 auto 1.25rem;
+		max-width: 38.75rem;
+		@include font-size(18, v.$base-font-size);
+		font-weight: v.$regular;
+		color: v.$primary-black;
+	}
+
+	&__text {
+		margin: 0 auto;
+		max-width: 32.5rem;
+		color: v.$primary-black;
+	}
+}
