@@ -150,6 +150,10 @@
 			border-radius: 5px;
 			@include font-size(15, v.$base-font-size);
 			font-style: italic;
+
+			> p {
+				color: v.$primary-gray;
+			}
 		}
 
 		> ol {
