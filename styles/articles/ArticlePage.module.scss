@@ -147,6 +147,7 @@
 			margin: 1rem 0;
 			padding: 1rem;
 			background-color: rgba(v.$primary-gray, 0.25);
+			border-radius: 5px;
 			@include font-size(15, v.$base-font-size);
 			font-style: italic;
 		}
