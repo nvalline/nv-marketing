@@ -7,10 +7,6 @@ import heroImg from '../../../public/images/consult.jpg';
 import styles from '../../../styles/home/hero/Hero.module.scss';
 
 function Hero() {
-	const handleBtnClick = () => {
-		console.log('HERO BTN CLICKED');
-	};
-
 	return (
 		<section className={styles.hero}>
 			<div className={styles.hero__page_container}>
@@ -29,12 +25,13 @@ function Hero() {
 						to attract more customers and increase sales.
 					</p>
 					<Link href='/contact' passHref>
-						<Button
-							type='button'
-							className={styles.hero__button}
-							onClick={handleBtnClick}
-							text='learn more'
-						/>
+						<>
+							<Button
+								type='button'
+								className={styles.hero__button}
+								text='learn more'
+							/>
+						</>
 					</Link>
 				</div>
 
