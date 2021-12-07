@@ -16,7 +16,11 @@ export default function Contact() {
 				{/* Page Description */}
 				<meta
 					name='description'
-					content='NV Marketing, LLC provides website design services for small business. Website design packages include design & development and SEO to increase traffic'
+					content='Contact NV Marketing, LLC for website design services for small business. Website design packages include design & development and SEO to increase traffic'
+				/>
+				<meta
+					name='keywords'
+					content='website design, website development, seo, digital presence, design agency, freelance, web builder, small business website'
 				/>
 			</Head>
 

@@ -19,6 +19,10 @@ export default function Home() {
 					name='description'
 					content='NV Marketing, LLC provides website design services for small business. Website design packages include design & development and SEO to increase traffic'
 				/>
+				<meta
+					name='keywords'
+					content='website design, website development, seo, digital presence, design agency, freelance, web builder, small business website'
+				/>
 			</Head>
 
 			{/* Main Hero Section */}

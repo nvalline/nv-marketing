@@ -10,7 +10,7 @@ import styles from '../../styles/articles/ArticlePage.module.scss';
 import PixelBar from '../../components/misc/PixelBar';
 
 export default function ArticlePage({
-	frontmatter: { title, date, cover_img, excerpt },
+	frontmatter: { title, date, cover_img, excerpt, keywords },
 	slug,
 	content
 }) {
@@ -21,6 +21,7 @@ export default function ArticlePage({
 				<title>{title} | NV Marketing, LLC</title>
 				{/* Page Description */}
 				<meta name='description' content={excerpt} />
+				<meta name='keywords' content={keywords} />
 			</Head>
 			<section className={styles.articlePage}>
 				<div className={styles.articlePage__container}>
