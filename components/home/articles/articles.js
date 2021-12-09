@@ -34,13 +34,13 @@ function Articles() {
 						keep current ones.
 					</p>
 					<p className={styles.articles__desc}>
-						A digital presence will help market your company's brand. It will
-						improve the ease of showcasing products and services. Customers will
-						be able to easily find you. And you will be able to build lasting
-						relationships with your customers.
+						A digital presence will help market your company&aposs brand. It
+						will improve the ease of showcasing products and services. Customers
+						will be able to easily find you. And you will be able to build
+						lasting relationships with your customers.
 					</p>
 					<p className={styles.articles__desc}>
-						There are several ways to build a digital presence and it won't
+						There are several ways to build a digital presence and it won&apost
 						happen overnight. It is best to put a plan in place, stick to it and
 						set attainable goals.
 					</p>

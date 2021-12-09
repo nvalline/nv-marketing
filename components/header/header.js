@@ -9,7 +9,7 @@ import styles from '../../styles/header/Header.module.scss';
 import { Slugger } from 'marked';
 
 function Header() {
-	let oldScrollY = 0;
+	// let oldScrollY = 0;
 
 	const router = useRouter();
 
@@ -76,10 +76,12 @@ function Header() {
 				window.removeEventListener('scroll');
 			};
 		});
-	}, []);
+	}, [headerHeight]);
 
 	// Scroll direction
 	useEffect(() => {
+		let oldScrollY = 0;
+
 		window.addEventListener('scroll', () => {
 			if (window.scrollY < oldScrollY) {
 				setDirection('up');
