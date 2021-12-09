@@ -13,8 +13,8 @@
 	background-color: v.$primary-white;
 	text-align: center;
 
-	// &__iconWrapper {
-	&__icon {
+	&__iconWrapper {
+		// &__icon {
 		position: relative;
 		height: 2.5rem;
 		width: 2.5rem;
@@ -25,15 +25,15 @@
 			width: 3.75rem;
 		}
 
-		// > div {
-		// 	position: unset !important;
+		> div {
+			position: unset !important;
 
-		// 	&__icon {
-		// 		position: relative !important;
-		// 		height: unset !important;
-		// 		width: 100%;
-		// 	}
-		// }
+			&__icon {
+				position: relative !important;
+				height: unset !important;
+				width: 100%;
+			}
+		}
 	}
 
 	&__title {

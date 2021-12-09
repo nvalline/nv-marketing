@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
@@ -26,19 +27,19 @@ export default function ArticlePage({
 			<section className={styles.articlePage}>
 				<div className={styles.articlePage__container}>
 					<div className={styles.articlePage__imageWrapper}>
-						{/* <Image
-						src={cover_img}
-						alt={title}
-						className={styles.articlePage__image}
-						layout='fill'
-						objectFit='cover'
-						priority
-					/> */}
-						<img
+						<Image
 							src={cover_img}
 							alt={title}
 							className={styles.articlePage__image}
+							layout='fill'
+							objectFit='cover'
+							priority
 						/>
+						{/* <img
+							src={cover_img}
+							alt={title}
+							className={styles.articlePage__image}
+						/> */}
 					</div>
 					<div className={styles.articlePage__accentBlock}>
 						<div className={styles.articlePage__block}>

@@ -1,4 +1,4 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from '../../styles/articles/ArticleCard.module.scss';
@@ -10,18 +10,18 @@ export default function ArticleCard({
 	return (
 		<div className={styles.articleCard}>
 			<div className={styles.articleCard__imageWrapper}>
-				{/* <Image
+				<Image
 					src={cover_img}
 					alt={title}
 					className={styles.articleCard__image}
 					layout='fill'
 					priority
-				/> */}
-				<img
+				/>
+				{/* <img
 					src={cover_img}
 					alt={title}
 					className={styles.articleCard__image}
-				/>
+				/> */}
 			</div>
 			<div className={styles.articleCard__content}>
 				<h2 className={styles.articleCard__title}>{title}</h2>

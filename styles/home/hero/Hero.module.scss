@@ -108,8 +108,8 @@
 	}
 
 	// Hero image styles
-	// &__imageWrapper {
-	&__image {
+	&__imageWrapper {
+		// &__image {
 		height: 50.88rem;
 		width: 23.438125rem;
 		position: absolute;
@@ -136,14 +136,14 @@
 			right: 13%;
 		}
 
-		// > div {
-		// 	position: unset !important;
+		> div {
+			position: unset !important;
 
-		// 	.hero__image {
-		// 		position: relative !important;
-		// 		width: 100%;
-		// 		height: unset !important;
-		// 	}
-		// }
+			.hero__image {
+				position: relative !important;
+				width: 100%;
+				height: unset !important;
+			}
+		}
 	}
 }

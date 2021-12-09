@@ -1,4 +1,4 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../../misc/Buttons';
 
@@ -11,18 +11,18 @@ function Articles() {
 		<section className={styles.articles}>
 			<div className={styles.articles__container}>
 				<div className={styles.articles__imageWrapper}>
-					{/* <Image
+					<Image
 						src={articleImg}
 						alt='Devices'
 						className={styles.imageWrapper__img}
 						layout='fill'
 						priority
-					/> */}
-					<img
+					/>
+					{/* <img
 						src={articleImg.src}
 						alt='Devices'
 						className={styles.articles__img}
-					/>
+					/> */}
 				</div>
 				<div className={styles.articles__contentWrapper}>
 					<h2 className={styles.articles__title}>
