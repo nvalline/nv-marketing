@@ -45,13 +45,11 @@ function Articles() {
 						set attainable goals.
 					</p>
 					<Link href='/articles' passHref>
-						<>
-							<Button
-								type='button'
-								className={styles.articles__button}
-								text='explore more'
-							/>
-						</>
+						<Button
+							type='button'
+							className={styles.articles__button}
+							text='explore more'
+						/>
 					</Link>
 				</div>
 			</div>

@@ -25,13 +25,11 @@ function Hero() {
 						to attract more customers and increase sales.
 					</p>
 					<Link href='/contact' passHref>
-						{/* <> */}
 						<Button
 							type='button'
 							className={styles.hero__button}
 							text='learn more'
 						/>
-						{/* </> */}
 					</Link>
 				</div>
 
