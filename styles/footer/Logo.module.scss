@@ -8,16 +8,17 @@
 		// &__image {
 		height: 3.125rem;
 		width: 9.375rem;
+		position: relative;
 
-		> div {
-			position: unset !important;
+		// > div {
+		// 	position: unset !important;
 
-			.logo__image {
-				position: relative !important;
-				width: 100%;
-				height: unset !important;
-			}
-		}
+		// 	.logo__image {
+		// 		position: relative !important;
+		// 		width: 100%;
+		// 		height: unset !important;
+		// 	}
+		// }
 	}
 }
 

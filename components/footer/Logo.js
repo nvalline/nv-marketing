@@ -1,5 +1,7 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
+
+import { ImageFillPriority } from '../misc/Images';
 
 import logoImg from '../../public/images/svgs/nv_mktg_logo_white.svg';
 
@@ -17,13 +19,18 @@ function Logo({ screen }) {
 			<Link href='/'>
 				<a>
 					<div className={styles.logo__wrapper}>
-						<Image
+						<ImageFillPriority
+							src={logoImg}
+							alt='NV Marketing, LLC logo'
+							className={styles.logo__image}
+						/>
+						{/* <Image
 							src={logoImg}
 							alt='NV Marketing, LLC logo'
 							className={styles.logo__image}
 							layout='fill'
 							priority
-						/>
+						/> */}
 						{/* <img
 							src={logoImg.src}
 							alt='NV Marketing, LLC logo'

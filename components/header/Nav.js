@@ -1,6 +1,8 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
+
 import Hamburger from './Hamburger';
+import { ImageFillPriority } from '../misc/Images';
 import NavLinks from './NavLinks';
 
 import logoImg from '../../public/images/svgs/nv_mktg_logo_white.svg';
@@ -14,13 +16,18 @@ function Nav(props) {
 				<Link href='/'>
 					<a>
 						<div className={styles.nav__logoWrapper}>
-							<Image
+							<ImageFillPriority
+								src={logoImg}
+								alt='NV Marketing, LLC logo'
+								className={styles.nav__logo}
+							/>
+							{/* <Image
 								src={logoImg}
 								alt='NV Marketing, LLC logo'
 								className={styles.nav__logo}
 								layout='fill'
 								priority
-							/>
+							/> */}
 							{/* <img
 								src={logoImg.src}
 								alt='NV Marketing, LLC logo'

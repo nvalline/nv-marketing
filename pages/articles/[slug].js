@@ -1,11 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import marked from 'marked';
 
+import { ImageFillPriority } from '../../components/misc/Images';
 import Layout from '../../components/Layout';
 import styles from '../../styles/articles/ArticlePage.module.scss';
 import PixelBar from '../../components/misc/PixelBar';
@@ -27,14 +28,20 @@ export default function ArticlePage({
 			<section className={styles.articlePage}>
 				<div className={styles.articlePage__container}>
 					<div className={styles.articlePage__imageWrapper}>
-						<Image
+						<ImageFillPriority
+							src={cover_img}
+							alt={title}
+							className={styles.articlePage__image}
+							objectFit='cover'
+						/>
+						{/* <Image
 							src={cover_img}
 							alt={title}
 							className={styles.articlePage__image}
 							layout='fill'
 							objectFit='cover'
 							priority
-						/>
+						/> */}
 						{/* <img
 							src={cover_img}
 							alt={title}

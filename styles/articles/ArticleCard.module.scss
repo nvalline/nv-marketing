@@ -84,6 +84,7 @@
 	// Card Image
 	&__imageWrapper {
 		// &__image {
+		position: relative;
 		height: 10.375rem;
 		width: 15.625rem;
 		border-radius: 10px;
@@ -95,15 +96,15 @@
 			width: 18.8125rem;
 		}
 
-		> div {
-			position: unset !important;
+		// > div {
+		// 	position: unset !important;
 
-			.articleCard__image {
-				position: relative !important;
-				width: 100%;
-				height: unset !important;
-			}
-		}
+		// 	.articleCard__image {
+		// 		position: relative !important;
+		// 		width: 100%;
+		// 		height: unset !important;
+		// 	}
+		// }
 	}
 
 	// Card Content

@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
+
+import { ImageFillPriority } from '../misc/Images';
 
 import styles from '../../styles/articles/ArticleCard.module.scss';
 
@@ -10,13 +11,18 @@ export default function ArticleCard({
 	return (
 		<div className={styles.articleCard}>
 			<div className={styles.articleCard__imageWrapper}>
-				<Image
+				<ImageFillPriority
+					src={cover_img}
+					alt={title}
+					className={styles.articleCard__image}
+				/>
+				{/* <Image
 					src={cover_img}
 					alt={title}
 					className={styles.articleCard__image}
 					layout='fill'
 					priority
-				/>
+				/> */}
 				{/* <img
 					src={cover_img}
 					alt={title}

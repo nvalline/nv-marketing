@@ -1,6 +1,7 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../../misc/Buttons';
+import { ImageFill } from '../../misc/Images';
 
 import articleImg from '../../../public/images/articles/digital_world.png';
 
@@ -11,13 +12,18 @@ function Articles() {
 		<section className={styles.articles}>
 			<div className={styles.articles__container}>
 				<div className={styles.articles__imageWrapper}>
-					<Image
+					<ImageFill
+						src={articleImg}
+						alt='Devices'
+						className={styles.imageWrapper__img}
+					/>
+					{/* <Image
 						src={articleImg}
 						alt='Devices'
 						className={styles.imageWrapper__img}
 						layout='fill'
 						priority
-					/>
+					/> */}
 					{/* <img
 						src={articleImg.src}
 						alt='Devices'

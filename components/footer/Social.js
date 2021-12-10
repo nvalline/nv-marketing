@@ -1,5 +1,6 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 // import Link from 'next/link';
+import { ImageFillPriority } from '../misc/Images';
 
 import styles from '../../styles/footer/Social.module.scss';
 
@@ -14,13 +15,18 @@ function Social() {
 				className={styles.social__link}
 			>
 				<div className={styles.social__iconWrapper}>
-					<Image
+					<ImageFillPriority
+						src='/images/svgs/fb_icon.svg'
+						alt='facebook'
+						className={styles.social__icon}
+					/>
+					{/* <Image
 						src='/images/svgs/fb_icon.svg'
 						alt='facebook'
 						className={styles.social__icon}
 						layout='fill'
 						priority
-					/>
+					/> */}
 					{/* <img
 						src='/images/svgs/fb_icon.svg'
 						alt='facebook'
@@ -37,13 +43,18 @@ function Social() {
 				className={styles.social__link}
 			>
 				<div className={styles.social__iconWrapper}>
-					<Image
+					<ImageFillPriority
+						src='/images/svgs/ig_icon.svg'
+						alt='instagram'
+						className={styles.social__icon}
+					/>
+					{/* <Image
 						src='/images/svgs/ig_icon.svg'
 						alt='instagram'
 						className={styles.social__icon}
 						layout='fill'
 						priority
-					/>
+					/> */}
 					{/* <img
 						src='/images/svgs/ig_icon.svg'
 						alt='instagram'

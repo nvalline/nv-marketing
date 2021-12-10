@@ -1,5 +1,7 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
+
+import { ImageFillPriority } from '../../misc/Images';
 import Button from '../../misc/Buttons';
 
 import heroImg from '../../../public/images/consult.jpg';
@@ -35,13 +37,18 @@ function Hero() {
 
 				{/* Hero Image */}
 				<div className={styles.hero__imageWrapper}>
-					<Image
+					<ImageFillPriority
+						src={heroImg}
+						alt='consult'
+						className={styles.hero__image}
+					/>
+					{/* <Image
 						src={heroImg}
 						alt='consult'
 						className={styles.hero__image}
 						layout='fill'
 						priority
-					/>
+					/> */}
 					{/* <img src={heroImg.src} alt='consult' className={styles.hero__image} /> */}
 				</div>
 			</div>

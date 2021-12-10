@@ -9,15 +9,16 @@
 		// &__logo {
 		height: 3.5263rem;
 		width: 11.5263rem;
+		position: relative;
 
-		> div {
-			position: unset !important;
+		// > div {
+		// 	position: unset !important;
 
-			.nav__logo {
-				position: relative !important;
-				width: 100%;
-				height: unset !important;
-			}
-		}
+		// 	.nav__logo {
+		// 		position: relative !important;
+		// 		width: 100%;
+		// 		height: unset !important;
+		// 	}
+		// }
 	}
 }

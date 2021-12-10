@@ -1,4 +1,5 @@
-import Image from 'next/image';
+// import Image from 'next/image';
+import { ImageFillPriority } from '../../misc/Images';
 
 import styles from '../../../styles/home/services/ServiceCard.module.scss';
 
@@ -6,13 +7,18 @@ function ServiceCard({ id, title, description, img }) {
 	return (
 		<div className={styles.serviceCard}>
 			<div className={styles.serviceCard__iconWrapper}>
-				<Image
+				<ImageFillPriority
+					src={img}
+					alt={title}
+					className={styles.serviceCard__icon}
+				/>
+				{/* <Image
 					src={img}
 					alt={title}
 					className={styles.serviceCard__icon}
 					layout='fill'
 					priority
-				/>
+				/> */}
 				{/* <img src={img} alt={title} className={styles.serviceCard__icon} /> */}
 			</div>
 			<h2 className={styles.serviceCard__title}>{title}</h2>
