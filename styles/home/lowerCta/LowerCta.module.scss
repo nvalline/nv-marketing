@@ -36,9 +36,9 @@
 		text-transform: uppercase;
 		color: v.$primary-black;
 
-		@include breakpoint-up(lg) {
-			@include font-size(17, v.$base-font-size);
-		}
+		// @include breakpoint-up(lg) {
+		// 	@include font-size(17, v.$base-font-size);
+		// }
 
 		&:hover {
 			color: v.$primary-aqua;

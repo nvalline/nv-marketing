@@ -1,7 +1,7 @@
 // import Image from 'next/image';
 import Button from '../../misc/Buttons';
 import CircleLine from '../../misc/CircleLine';
-import { ImageFill } from '../../misc/Images';
+import { ImageFillPriority } from '../../misc/Images';
 
 import styles from '../../../styles/home/projects/ProjectCard.module.scss';
 
@@ -9,7 +9,7 @@ function ProjectCard({ id, img, name, description, url, accent }) {
 	return (
 		<div className={styles.card}>
 			<div className={styles.card__imageWrapper}>
-				<ImageFill
+				<ImageFillPriority
 					src={img}
 					alt={name}
 					className={styles.imageWrapper__image}
