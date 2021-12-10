@@ -93,9 +93,9 @@
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
 
-		@include breakpoint-up(lg) {
-			@include font-size(18, v.$base-font-size);
-		}
+		// @include breakpoint-up(lg) {
+		// 	@include font-size(18, v.$base-font-size);
+		// }
 
 		&:hover {
 			color: v.$primary-aqua;
