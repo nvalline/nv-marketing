@@ -1,4 +1,4 @@
-import { contactDetails } from '../../../data/contactDetails';
+import { contactDetails } from '../../../data/ContactDetails';
 
 import styles from '../../../styles/contact/details/Details.module.scss';
 
