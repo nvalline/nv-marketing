@@ -19,7 +19,7 @@ $breakpoints-up: (
 
 // Custom breakpoint sizing
 @mixin breakpoint-up-cust($size) {
-	@media (min-width: $size + em) {
+	@media (min-width: #{$size}em) {
 		@content;
 	}
 }
@@ -40,7 +40,7 @@ $breakpoints-down: (
 
 // Custom breakpoint sizing
 @mixin breakpoint-down-cust($size) {
-	@media (min-width: $size + em) {
+	@media (min-width: #{$size}em) {
 		@content;
 	}
 }

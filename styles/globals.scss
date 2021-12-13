@@ -42,5 +42,13 @@ ul {
 }
 
 main {
-	margin-top: 4.75rem;
+	margin-top: 4.5rem;
+
+	@include breakpoint-up(md) {
+		margin-top: 4.625rem;
+	}
+
+	@include breakpoint-up(lg) {
+		margin-top: 4.75rem;
+	}
 }
