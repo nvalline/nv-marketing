@@ -13,11 +13,12 @@ export default function MyApp({ Component, pageProps }) {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 			</Head>
 			<Script
+				id='ga-tag-url'
 				strategy='lazyOnload'
 				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
 			/>
 
-			<Script strategy='lazyOnload'>
+			<Script id='ga-datalayer' strategy='lazyOnload'>
 				{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
