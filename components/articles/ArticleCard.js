@@ -10,28 +10,21 @@ export default function ArticleCard({
 }) {
 	return (
 		<div className={styles.articleCard}>
+			{/* Article Image */}
 			<div className={styles.articleCard__imageWrapper}>
 				<ImageFillPriority
 					src={cover_img}
 					alt={title}
 					className={styles.articleCard__image}
 				/>
-				{/* <Image
-					src={cover_img}
-					alt={title}
-					className={styles.articleCard__image}
-					layout='fill'
-					priority
-				/> */}
-				{/* <img
-					src={cover_img}
-					alt={title}
-					className={styles.articleCard__image}
-				/> */}
 			</div>
+
+			{/* Article Content */}
 			<div className={styles.articleCard__content}>
 				<h2 className={styles.articleCard__title}>{title}</h2>
 				<p className={styles.articleCard__text}>{excerpt}</p>
+
+				{/* Link to Article */}
 				<Link href={`/articles/${slug}`}>
 					<a className={styles.articleCard__button}>read more</a>
 				</Link>

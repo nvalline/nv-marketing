@@ -5,9 +5,11 @@ import ContactAccent from '../components/misc/ContactAccent';
 import Details from '../components/contact/details/Details';
 import FormSection from '../components/contact/form/FormBlock';
 
+import { contactDetails } from '../data/ContactDetails';
+
 import styles from '../styles/contact/Contact.module.scss';
 
-export default function Contact() {
+export default function Contact({ details }) {
 	return (
 		<>
 			<Head>
@@ -27,7 +29,7 @@ export default function Contact() {
 			<ContactAccent top='top' />
 			<div className={styles.contact}>
 				<div className={styles.contact__container}>
-					<Details />
+					<Details contactDetails={details} />
 					<FormSection />
 				</div>
 			</div>
@@ -39,3 +41,11 @@ export default function Contact() {
 Contact.getLayout = function getLayout(page) {
 	return <Layout>{page}</Layout>;
 };
+
+export async function getStaticProps() {
+	return {
+		props: {
+			details: contactDetails
+		}
+	};
+}

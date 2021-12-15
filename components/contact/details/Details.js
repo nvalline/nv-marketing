@@ -1,8 +1,6 @@
-import { contactDetails } from '../../../data/ContactDetails';
-
 import styles from '../../../styles/contact/details/Details.module.scss';
 
-function Details() {
+function Details({ contactDetails }) {
 	const details = contactDetails;
 
 	return (
