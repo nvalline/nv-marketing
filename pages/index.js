@@ -8,7 +8,11 @@ import Testimonials from '../components/home/testimonials/Testimonials';
 import Projects from '../components/home/projects/Projects';
 import LowerCta from '../components/home/lowerCta/LowerCta';
 
-export default function Home() {
+import { projects } from '../data/Projects';
+import { services } from '../data/Services';
+import { testimonials } from '../data/Testimonials';
+
+export default function Home({ projectInfo, serviceInfo, testimonialInfo }) {
 	return (
 		<>
 			<Head>
@@ -29,16 +33,16 @@ export default function Home() {
 			<Hero />
 
 			{/* Services Offered Section */}
-			<Services />
+			<Services services={serviceInfo} />
 
 			{/* Blog Articles Section */}
 			<Articles />
 
 			{/* Client Testimonials Section */}
-			<Testimonials />
+			<Testimonials testimonials={testimonialInfo} />
 
 			{/* Recent Client Projects Section */}
-			<Projects />
+			<Projects projects={projectInfo} />
 
 			{/* Below Fold CTA Section */}
 			<LowerCta />
@@ -49,3 +53,13 @@ export default function Home() {
 Home.getLayout = function getLayout(page) {
 	return <Layout>{page}</Layout>;
 };
+
+export async function getStaticProps() {
+	return {
+		props: {
+			projectInfo: projects,
+			serviceInfo: services,
+			testimonialInfo: testimonials
+		}
+	};
+}

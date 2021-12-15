@@ -1,9 +1,8 @@
 import ServiceCard from './ServiceCard';
-import { services } from '../../../data/Services';
 
 import styles from '../../../styles/home/services/Services.module.scss';
 
-function Services() {
+function Services({ services }) {
 	const serviceData = services;
 
 	return (

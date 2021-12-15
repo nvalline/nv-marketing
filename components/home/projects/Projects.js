@@ -1,10 +1,10 @@
 import SectionHeader from '../../misc/SectionHeader';
 import ProjectCard from './ProjectCard';
-import { projects } from '../../../data/Projects';
+// import { projects } from '../../../data/Projects';
 
 import styles from '../../../styles/home/projects/Projects.module.scss';
 
-function Projects() {
+function Projects({ projects }) {
 	const projectsData = projects;
 
 	return (

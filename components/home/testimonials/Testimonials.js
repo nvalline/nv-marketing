@@ -2,15 +2,11 @@ import PixelBar from '../../misc/PixelBar';
 import SectionHeader from '../../misc/SectionHeader';
 import TestimonialCard from './TestimonialCard';
 import TestimonialDefault from './TestimonialDefault';
-import { testimonials } from '../../../data/Testimonials';
 
 import styles from '../../../styles/home/testimonials/Testimonials.module.scss';
 
-function Testimonials() {
+function Testimonials({ testimonials }) {
 	const testimonialData = testimonials;
-	if (testimonialData.length < 1) {
-		console.log('NO TESTIMONIALS');
-	}
 
 	return (
 		<section className={styles.testimonials}>
@@ -25,11 +21,6 @@ function Testimonials() {
 					})
 				)}
 			</div>
-			{/* <div className={styles.testimonials__block}>
-				{testimonialData.map((testimonial) => {
-					return <TestimonialCard key={testimonial.id} {...testimonial} />;
-				})}
-			</div> */}
 			<PixelBar position='bottom' />
 		</section>
 	);
