@@ -1,34 +1,102 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NV Marketing, LLC
 
-## Getting Started
+<img src="./git_img/nv_marketing_design.png" alt="NV Marketing Design" height="500px">
 
-First, run the development server:
+> NV Marketing, LLC is a web development & SEO service provider. This app has been built with Next.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+#### [View The Site](https://nv-marketing.com) - This app is live.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- Badge(s) Here -->
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Table of Contents
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [Description](#description)
+- [Technologies](#technologies)
+- [How To Use](#how-to-use)
+- [Installation](#installation)
+- [References](#references)
+- [License](#license)
+- [Contributors](#contributors)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Description
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This app was developed for NV Marketing, LLC to create a conversion-centric and mobile responsive website showcasing the services provided by the company.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This Next.js app is fully custom to the requirements of NV Marketing, LLC.
 
-## Deploy on Vercel
+[Back To The Top](#project-name)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Technologies
+
+- Next.js
+- React.js
+- Javascript
+- HTML
+- SCSS
+- Email.js
+
+[Back To The Top](#project-name)
+
+---
+
+## How To Use
+
+View The Live Site - https://nv-marketing.com
+
+[Back To The Top](#project-name)
+
+---
+
+#### Installation
+
+Not applicable
+
+[Back To The Top](#project-name)
+
+---
+
+## References
+
+Not applicable
+
+[Back To The Top](#project-name)
+
+---
+
+## License
+
+Copyright (c) NV Marketing, LLC
+
+[Back To The Top](#project-name)
+
+---
+
+## Contributors
+
+- Nate Valline
+
+[Back To The Top](#project-name)
+
+## Tests
+
+Not applicable
+
+[Back To The Top](#project-name)
+
+---
+
+## Questions
+
+Please contact the following for any questions.
+
+<img src="https://avatars3.githubusercontent.com/u/58278138?v=4" alt="User Image" width="35px"> => contact@natevalline.com
+
+[Back To The Top](#project-name)
+
+---
