@@ -14,6 +14,7 @@ function Articles() {
 					<ImageFill
 						src={articleImg}
 						alt='Devices'
+						placeholder='blur'
 						className={styles.imageWrapper__img}
 					/>
 				</div>

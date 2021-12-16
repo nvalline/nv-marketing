@@ -11,7 +11,7 @@ import styles from '../../styles/articles/ArticlePage.module.scss';
 import PixelBar from '../../components/misc/PixelBar';
 
 export default function ArticlePage({
-	frontmatter: { title, date, cover_img, excerpt, keywords },
+	frontmatter: { title, date, cover_img, img_blur, excerpt, keywords },
 	slug,
 	content
 }) {
@@ -30,6 +30,8 @@ export default function ArticlePage({
 						<ImageFillPriority
 							src={cover_img}
 							alt={title}
+							placeholder='blur'
+							blurDataURL={img_blur}
 							className={styles.articlePage__image}
 							objectFit='cover'
 						/>

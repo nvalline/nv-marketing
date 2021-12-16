@@ -4,13 +4,15 @@ import { ImageFillPriority } from '../../misc/Images';
 
 import styles from '../../../styles/home/projects/ProjectCard.module.scss';
 
-function ProjectCard({ id, img, name, description, url, accent }) {
+function ProjectCard({ id, img, img_blur, name, description, url, accent }) {
 	return (
 		<div className={styles.card}>
 			<div className={styles.card__imageWrapper}>
 				<ImageFillPriority
 					src={img}
 					alt={name}
+					placeholder='blur'
+					blurDataURL={img_blur}
 					className={styles.imageWrapper__image}
 				/>
 			</div>

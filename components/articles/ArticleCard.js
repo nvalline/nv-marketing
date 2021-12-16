@@ -5,7 +5,7 @@ import { ImageFillPriority } from '../misc/Images';
 import styles from '../../styles/articles/ArticleCard.module.scss';
 
 export default function ArticleCard({
-	frontmatter: { title, date, excerpt, cover_img },
+	frontmatter: { title, date, excerpt, cover_img, img_blur },
 	slug
 }) {
 	return (
@@ -15,6 +15,8 @@ export default function ArticleCard({
 				<ImageFillPriority
 					src={cover_img}
 					alt={title}
+					placeholder='blur'
+					blurDataURL={img_blur}
 					className={styles.articleCard__image}
 				/>
 			</div>

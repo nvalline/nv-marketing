@@ -3,6 +3,7 @@ title: 'What Is SEO, and Why Does My Website Need It?'
 date: 'December 7, 2021'
 excerpt: 'Are you wondering what is SEO and how it works? Learn all about SEO and why your small business website needs an effective SEO strategy.'
 cover_img: '/images/articles/google_seo.jpg'
+img_blur: '|HEfKS8^02U].8R%xUXoMxI8S7I9.TNajFkXVrt7DiK7.7-pH=i{RlVr%g?cMHS%bwo}Ndr;o$oy%#XmIA-BIVnMtSt7Rkr=Z$Nbt+ofoNS2NFs:?aJ:VXRk$|XARPjYt6RowtR.s+OGt2e:oMbbX9R*xtaeaKW=jEbIof'
 keywords: 'seo service for small business, how to get more website traffic, what is seo and how it works'
 ---
 

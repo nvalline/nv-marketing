@@ -3,6 +3,7 @@ title: 'What makes a good small business website?'
 date: 'December 14, 2021'
 excerpt: 'Thinking about how to design a website for a small business? Take a look at the 12 easy steps to help decide what makes a good small business website.'
 cover_img: '/images/articles/website_design.jpg'
+img_blur: '|OMQCq0000o~f5e.s:t7e-_4-pMwITRjtRofjZj[MI.8aKt6RPRPozoffkW=RiRjtR%MM{RjWBj[VsoKX8M{x]WCozRjRjRjRjM{xuflj]ozkCWAnOWAofR*t7ozRjt7WBM{s:Rjs:ozjZt7ofWBV@oeoekCoKozaeV@of'
 keywords: 'what makes a good website, how to design a website for a small business, what to put on a website for business'
 ---
 

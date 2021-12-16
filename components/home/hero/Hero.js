@@ -39,6 +39,7 @@ function Hero() {
 					<ImageFillPriority
 						src={heroImg}
 						alt='consult'
+						placeholder='blur'
 						className={styles.hero__image}
 					/>
 				</div>
