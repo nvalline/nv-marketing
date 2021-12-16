@@ -11,6 +11,7 @@ function Form({ setShowForm }) {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+		console.log(process.env.NEXT_PUBLIC_EMAILJS_USER_ID);
 
 		emailjs
 			.sendForm(
