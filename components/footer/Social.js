@@ -6,7 +6,7 @@ function Social() {
 	return (
 		<div className={styles.social}>
 			<a
-				href='https://facebook.com'
+				href='https://www.facebook.com/nvmarketingllc'
 				target='_blank'
 				rel='noopener noreferrer'
 				className={styles.social__link}
@@ -20,7 +20,7 @@ function Social() {
 				</div>
 			</a>
 			<a
-				href='https://instagram.com'
+				href='https://www.instagram.com/nv_marketing_llc/'
 				target='_blank'
 				rel='noopener noreferrer'
 				className={styles.social__link}
