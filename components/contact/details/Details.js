@@ -6,8 +6,11 @@ function Details({ contactDetails }) {
 	return (
 		<div className={styles.details}>
 			<div className={styles.details__block}>
+				{/* Block Title */}
 				<h1 className={styles.details__title}>get in touch</h1>
 				<hr className={styles.details__line} />
+
+				{/* Block Content */}
 				{details.map((info) => {
 					return (
 						<div key={info.id}>

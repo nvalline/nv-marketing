@@ -1,4 +1,3 @@
-// import Image from 'next/image';
 import Link from 'next/link';
 
 import { ImageFillPriority } from '../../misc/Images';
@@ -42,14 +41,6 @@ function Hero() {
 						alt='consult'
 						className={styles.hero__image}
 					/>
-					{/* <Image
-						src={heroImg}
-						alt='consult'
-						className={styles.hero__image}
-						layout='fill'
-						priority
-					/> */}
-					{/* <img src={heroImg.src} alt='consult' className={styles.hero__image} /> */}
 				</div>
 			</div>
 		</section>

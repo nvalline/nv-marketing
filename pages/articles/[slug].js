@@ -1,5 +1,4 @@
 import Head from 'next/head';
-// import Image from 'next/image';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
@@ -34,19 +33,6 @@ export default function ArticlePage({
 							className={styles.articlePage__image}
 							objectFit='cover'
 						/>
-						{/* <Image
-							src={cover_img}
-							alt={title}
-							className={styles.articlePage__image}
-							layout='fill'
-							objectFit='cover'
-							priority
-						/> */}
-						{/* <img
-							src={cover_img}
-							alt={title}
-							className={styles.articlePage__image}
-						/> */}
 					</div>
 					<div className={styles.articlePage__accentBlock}>
 						<div className={styles.articlePage__block}>

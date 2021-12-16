@@ -14,10 +14,10 @@ function Form({ setShowForm }) {
 
 		emailjs
 			.sendForm(
-				'service_i0z7d5s',
-				'template_2uzc9ip',
+				process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+				process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
 				form.current,
-				process.env.REACT_APP_USER_ID
+				process.env.NEXT_PUBLIC_EMAILJS_USER_ID
 			)
 			.then(
 				(result) => {

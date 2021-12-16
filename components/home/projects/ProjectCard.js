@@ -1,4 +1,3 @@
-// import Image from 'next/image';
 import Button from '../../misc/Buttons';
 import CircleLine from '../../misc/CircleLine';
 import { ImageFillPriority } from '../../misc/Images';
@@ -14,14 +13,6 @@ function ProjectCard({ id, img, name, description, url, accent }) {
 					alt={name}
 					className={styles.imageWrapper__image}
 				/>
-				{/* <Image
-					src={img}
-					alt={name}
-					className={styles.imageWrapper__image}
-					layout='fill'
-					priority
-				/> */}
-				{/* <img src={img} alt={name} className={styles.card__image} /> */}
 			</div>
 			<div className={styles.card__contentWrapper}>
 				<h3 className={styles.card__name}>{name}</h3>

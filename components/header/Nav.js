@@ -1,4 +1,3 @@
-// import Image from 'next/image';
 import Link from 'next/link';
 
 import Hamburger from './Hamburger';
@@ -21,18 +20,6 @@ function Nav(props) {
 								alt='NV Marketing, LLC logo'
 								className={styles.nav__logo}
 							/>
-							{/* <Image
-								src={logoImg}
-								alt='NV Marketing, LLC logo'
-								className={styles.nav__logo}
-								layout='fill'
-								priority
-							/> */}
-							{/* <img
-								src={logoImg.src}
-								alt='NV Marketing, LLC logo'
-								className={styles.nav__logo}
-							/> */}
 						</div>
 					</a>
 				</Link>

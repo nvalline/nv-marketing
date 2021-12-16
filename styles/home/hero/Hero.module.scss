@@ -93,10 +93,6 @@
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
 
-		// @include breakpoint-up(lg) {
-		// 	@include font-size(18, v.$base-font-size);
-		// }
-
 		&:hover {
 			color: v.$primary-aqua;
 		}
@@ -109,7 +105,6 @@
 
 	// Hero image styles
 	&__imageWrapper {
-		// &__image {
 		height: 50.88rem;
 		width: 23.438125rem;
 		position: absolute;
@@ -135,15 +130,5 @@
 			width: 29.41rem;
 			right: 13%;
 		}
-
-		// > div {
-		// 	position: unset !important;
-
-		// 	.hero__image {
-		// 		position: relative !important;
-		// 		width: 100%;
-		// 		height: unset !important;
-		// 	}
-		// }
 	}
 }

@@ -1,4 +1,3 @@
-// import Image from 'next/image';
 import Link from 'next/link';
 
 import { ImageFillPriority } from '../misc/Images';
@@ -24,18 +23,6 @@ function Logo({ screen }) {
 							alt='NV Marketing, LLC logo'
 							className={styles.logo__image}
 						/>
-						{/* <Image
-							src={logoImg}
-							alt='NV Marketing, LLC logo'
-							className={styles.logo__image}
-							layout='fill'
-							priority
-						/> */}
-						{/* <img
-							src={logoImg.src}
-							alt='NV Marketing, LLC logo'
-							className={styles.logo__image}
-						/> */}
 					</div>
 				</a>
 			</Link>

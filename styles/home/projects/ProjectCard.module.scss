@@ -18,7 +18,6 @@
 	}
 
 	&__imageWrapper {
-		// &__image {
 		position: relative;
 		height: 10.4375rem;
 		width: 15.625rem;
@@ -31,16 +30,6 @@
 			width: 18.75rem;
 			margin: 0;
 		}
-
-		// > div {
-		// 	position: unset !important;
-
-		// 	.card__image {
-		// 		position: relative !important;
-		// 		width: 100%;
-		// 		height: unset !important;
-		// 	}
-		// }
 	}
 
 	&__contentWrapper {

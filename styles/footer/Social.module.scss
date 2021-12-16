@@ -10,7 +10,6 @@
 	align-items: flex-end;
 
 	&__iconWrapper {
-		// &__icon {
 		height: 1.5625rem;
 		width: 1.5625rem;
 		position: relative;
@@ -19,15 +18,5 @@
 			height: 1.875rem;
 			width: 1.875rem;
 		}
-
-		// > div {
-		// 	position: unset !important;
-
-		// 	.social__icon {
-		// 		position: relative !important;
-		// 		width: 100%;
-		// 		height: unset !important;
-		// 	}
-		// }
 	}
 }

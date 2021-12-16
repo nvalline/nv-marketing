@@ -14,6 +14,7 @@ function FormSection() {
 			<h3 className={styles.formSection__subTitle}>
 				Send us a message and we’ll get in touch
 			</h3>
+			{/* Display Form or Success */}
 			{showForm === true ? <Form setShowForm={setShowForm} /> : <Success />}
 		</div>
 	);
