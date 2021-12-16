@@ -18,7 +18,16 @@ export const TextInput = ({
 	);
 };
 
-export const Textarea = ({ id, name, cols, rows, placeholder, className }) => {
+export const Textarea = ({
+	id,
+	name,
+	cols,
+	rows,
+	placeholder,
+	className,
+	value,
+	onChange
+}) => {
 	return (
 		<textarea
 			id={id}
@@ -27,6 +36,8 @@ export const Textarea = ({ id, name, cols, rows, placeholder, className }) => {
 			rows={rows}
 			placeholder={placeholder}
 			className={className}
+			value={value}
+			onChange={onChange}
 		></textarea>
 	);
 };
