@@ -8,14 +8,13 @@ import Testimonials from '../components/home/testimonials/Testimonials';
 import Projects from '../components/home/projects/Projects';
 import LowerCta from '../components/home/lowerCta/LowerCta';
 
+import { og_data } from '../data/Og_data';
 import { projects } from '../data/Projects';
 import { services } from '../data/Services';
 import { testimonials } from '../data/Testimonials';
 
-import og_img_file from '../git_img/og_website_image_fb.png';
-
 export default function Home({
-	og_img,
+	og,
 	projectInfo,
 	serviceInfo,
 	testimonialInfo
@@ -37,8 +36,12 @@ export default function Home({
 				{/* Open Graph Protocol */}
 				<meta property='og:title' content='NV Marketing, LLC' />
 				<meta property='og:type' content='website' />
-				<meta property='og:image' content={og_img} />
+				<meta property='og:image' content={og.img_url} />
 				<meta property='og:url' content='https://nv-marketing.com' />
+				<meta
+					property='og:description'
+					content='NV Marketing, LLC provides website design services for small business. Website design packages include design & development and SEO to increase traffic'
+				/>
 			</Head>
 
 			{/* Main Hero Section */}
@@ -69,7 +72,7 @@ Home.getLayout = function getLayout(page) {
 export async function getStaticProps() {
 	return {
 		props: {
-			og_img: og_img_file,
+			og: og_data,
 			projectInfo: projects,
 			serviceInfo: services,
 			testimonialInfo: testimonials
