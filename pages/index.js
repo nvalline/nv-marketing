@@ -15,6 +15,7 @@ import { testimonials } from '../data/Testimonials';
 export default function Home({ projectInfo, serviceInfo, testimonialInfo }) {
 	const metaDescription =
 		'NV Marketing, LLC provides website design services for small business. Website design packages include design & development and SEO to increase traffic';
+
 	return (
 		<>
 			<Head>

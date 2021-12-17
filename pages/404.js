@@ -7,19 +7,37 @@ import PixelBar from '../components/misc/PixelBar';
 import styles from '../styles/404.module.scss';
 
 export default function Custom404() {
+	const metaDescription =
+		'This page does not exist for NV Marketing, LLC. NV Marketing, LLC provides website design & seo service for small business.';
+
 	return (
 		<>
 			<Head>
 				{/* Page Title */}
 				<title>404 | NV Marketing, LLC</title>
 				{/* Page Description */}
-				<meta
-					name='description'
-					content='This page does not exist for NV Marketing, LLC. NV Marketing, LLC provides website design & seo service for small business.'
-				/>
+				<meta name='description' content={metaDescription} />
 				<meta
 					name='keywords'
 					content='website design, website development, seo, digital presence, design agency, freelance, web builder, small business website'
+				/>
+				{/* Open Graph Protocol */}
+				<meta property='og:title' content='NV Marketing, LLC' />
+				<meta property='og:type' content='website' />
+				<meta
+					property='og:image'
+					content='https://nv-marketing.com/images/og/og_website_image_fb.png'
+				/>
+				<meta property='og:url' content='https://nv-marketing.com' />
+				<meta property='og:description' content={metaDescription} />
+				{/* Twitter Card */}
+				<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:creator' content='@Nate_Valline' />
+				<meta name='twitter:title' content='NV Marketing, LLC' />
+				<meta name='twitter:description' content={metaDescription} />
+				<meta
+					name='twitter:image'
+					content='https://nv-marketing.com/images/og/og_website_image_twitter.png'
 				/>
 			</Head>
 			<section className={styles.custom404}>

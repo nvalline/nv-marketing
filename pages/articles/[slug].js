@@ -15,14 +15,32 @@ export default function ArticlePage({
 	slug,
 	content
 }) {
+	const metaDescription = excerpt;
+	console.log(slug);
+
 	return (
 		<>
 			<Head>
 				{/* Page Title */}
 				<title>{title} | NV Marketing, LLC</title>
 				{/* Page Description */}
-				<meta name='description' content={excerpt} />
+				<meta name='description' content={metaDescription} />
 				<meta name='keywords' content={keywords} />
+				{/* Open Graph Protocol */}
+				<meta property='og:title' content={title} />
+				<meta property='og:type' content='article' />
+				<meta property='og:image' content={cover_img} />
+				<meta
+					property='og:url'
+					content={`https://nv-marketing.com/articles/${slug}`}
+				/>
+				<meta property='og:description' content={metaDescription} />
+				{/* Twitter Card */}
+				<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:creator' content='@Nate_Valline' />
+				<meta name='twitter:title' content={title} />
+				<meta name='twitter:description' content={metaDescription} />
+				<meta name='twitter:image' content={cover_img} />
 			</Head>
 			<section className={styles.articlePage}>
 				<div className={styles.articlePage__container}>
