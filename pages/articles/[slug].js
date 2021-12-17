@@ -40,7 +40,10 @@ export default function ArticlePage({
 				<meta name='twitter:creator' content='@Nate_Valline' />
 				<meta name='twitter:title' content={title} />
 				<meta name='twitter:description' content={metaDescription} />
-				<meta name='twitter:image' content={cover_img} />
+				<meta
+					name='twitter:image'
+					content={`https://nv-marketing.com${cover_img}`}
+				/>
 			</Head>
 			<section className={styles.articlePage}>
 				<div className={styles.articlePage__container}>
