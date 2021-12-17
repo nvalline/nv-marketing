@@ -36,7 +36,7 @@ export default function ArticlePage({
 				/>
 				<meta property='og:description' content={metaDescription} />
 				{/* Twitter Card */}
-				<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:card' content='summary' />
 				<meta name='twitter:creator' content='@Nate_Valline' />
 				<meta name='twitter:title' content={title} />
 				<meta name='twitter:description' content={metaDescription} />
