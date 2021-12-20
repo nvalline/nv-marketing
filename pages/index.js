@@ -33,7 +33,7 @@ export default function Home({ projectInfo, serviceInfo, testimonialInfo }) {
 				<meta
 					name='og:image'
 					property='og:image'
-					content='https://nv-marketing.com/images/og/og_website_image_fb.png'
+					content='https://nv-marketing.com/images/og/og_website_image_fb.jpg'
 				/>
 				<meta property='og:url' content='https://nv-marketing.com' />
 				<meta property='og:description' content={metaDescription} />

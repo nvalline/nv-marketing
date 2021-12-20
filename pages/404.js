@@ -26,7 +26,7 @@ export default function Custom404() {
 				<meta property='og:type' content='website' />
 				<meta
 					property='og:image'
-					content='https://nv-marketing.com/images/og/og_website_image_fb.png'
+					content='https://nv-marketing.com/images/og/og_website_image_fb.jpg'
 				/>
 				<meta property='og:url' content='https://nv-marketing.com' />
 				<meta property='og:description' content={metaDescription} />
