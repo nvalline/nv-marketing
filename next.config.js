@@ -6,5 +6,9 @@ module.exports = {
 			process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
 		NEXT_PUBLIC_EMAILJS_USER_ID: process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
 		NEXT_PUBLIC_GOOGLE_ANALYTICS: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS
+	},
+	i18n: {
+		locales: ['en-US'],
+		defaultLocale: 'en-US'
 	}
 };
