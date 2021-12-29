@@ -12,24 +12,24 @@ export const projects = [
 	},
 	{
 		id: 2,
-		img: '/images/yard.jpg',
+		img: '/images/projects/nv-portfolio.jpg',
 		img_blur:
-			'|KECtCHtnzxIRjxuS}NGah=$IAxaj?D%kVt8bIWU_NMxRjxtaKWXt6RnR*%gIUozs:M_s;xaW-R*x]IoR+t6RkW,WBozj[%3RQt7bFWnn+WnRkWBt7NEt7oNV@RjofxaWBxajZoNWTt7f8RjkBazspNGt6j?WEa_WXjbbF',
-		name: 'Valley Landscaping',
+			'|NEMOMa|bGj[fQj[fkj[ay00ayayayfQa|fQayfQ~qj[ayfQfQj[aya|j[ITazj[fQfQfQfQfQfQj[j[j[ayfQa|j[j[fQoLj[a|fQfkjtfQa|fQofayf6j[fQa|fQfQfQWBa|fQayayayfQj[j@oej[aya{fQj[fQfQjt',
+		name: 'Nate Valline',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',
-		url: 'https://www.google.com',
+			"This custom portfolio was designed to be an eye catching showcase of the owner's work and style.  Created with Next.js and Sanity.io, this is fully responsive for mobile.",
+		url: 'https://natevalline.com',
 		accent: 'right'
-	},
-	{
-		id: 3,
-		img: '/images/marina.jpg',
-		img_blur:
-			'|+H{i^%2WBt8WBaeaybHae_Ns:WBjZWBayaej[j[%MoekCoej]j[ayfQfkoeV@WBWVjsj[j[j[jtM{azfkaxoefkayayayNGjtayj[j@a|f6j[j@ogt7j[fQa{ayayayfQayWBayayayayfkj[j[oLayj[oLayj[j[j[ay',
-		name: 'Santa Marina Boatyard',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',
-		url: 'https://www.google.com',
-		accent: 'none'
 	}
+	// {
+	// 	id: 3,
+	// 	img: '/images/marina.jpg',
+	// 	img_blur:
+	// 		'|+H{i^%2WBt8WBaeaybHae_Ns:WBjZWBayaej[j[%MoekCoej]j[ayfQfkoeV@WBWVjsj[j[j[jtM{azfkaxoefkayayayNGjtayj[j@a|f6j[j@ogt7j[fQa{ayayayfQayWBayayayayfkj[j[oLayj[oLayj[j[j[ay',
+	// 	name: 'Santa Marina Boatyard',
+	// 	description:
+	// 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',
+	// 	url: 'https://www.google.com',
+	// 	accent: 'none'
+	// }
 ];
