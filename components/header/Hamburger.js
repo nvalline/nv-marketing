@@ -4,6 +4,7 @@ function Hamburger({ hamburgerIsActive, toggleHamburger }) {
 	return (
 		<div className={styles.hamburger}>
 			<button
+				aria-label='toggle menu'
 				className={
 					hamburgerIsActive
 						? `${styles.hamburger__icon} ${styles.hamburger__icon___open}`
