@@ -2,8 +2,7 @@ export const projects = [
 	{
 		id: 1,
 		img: '/images/projects/high-mtn-hp.png',
-		img_blur:
-			'|+H{i^%2WBt8WBaeaybHae_Ns:WBjZWBayaej[j[%MoekCoej]j[ayfQfkoeV@WBWVjsj[j[j[jtM{azfkaxoefkayayayNGjtayj[j@a|f6j[j@ogt7j[fQa{ayayayfQayWBayayayayfkj[j[oLayj[oLayj[j[j[ay',
+		img_blur: 'LjR3Weof^+j[~qay9Fj[D%j[%2ay',
 		name: 'High Mountain Home Professionals',
 		description:
 			"This website for High Mountain Home Professionals was created with Next.js and Sanity.io.  This site was custom designed to meet the business owner's goal of increasing their interent presence while also generating more leads.",
