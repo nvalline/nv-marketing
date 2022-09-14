@@ -4,7 +4,8 @@ export const TextInput = ({
 	value,
 	onChange,
 	className,
-	placeholder
+	placeholder,
+	required
 }) => {
 	return (
 		<input
@@ -14,6 +15,7 @@ export const TextInput = ({
 			onChange={onChange}
 			className={className}
 			placeholder={placeholder}
+			required={required}
 		/>
 	);
 };
@@ -26,7 +28,8 @@ export const Textarea = ({
 	placeholder,
 	className,
 	value,
-	onChange
+	onChange,
+	required
 }) => {
 	return (
 		<textarea
@@ -36,6 +39,7 @@ export const Textarea = ({
 			rows={rows}
 			placeholder={placeholder}
 			className={className}
+			required={required}
 			value={value}
 			onChange={onChange}
 		></textarea>
