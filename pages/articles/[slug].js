@@ -3,7 +3,7 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import marked from 'marked';
+import { marked } from 'marked';
 
 import { ImageFillPriority } from '../../components/misc/Images';
 import Layout from '../../components/Layout';

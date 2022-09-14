@@ -1,4 +1,15 @@
 export const projects = [
+	// {
+	// 	id: 1,
+	// 	img: '/images/projects/high-mtn-hp.png',
+	// 	img_blur:
+	// 		'|+H{i^%2WBt8WBaeaybHae_Ns:WBjZWBayaej[j[%MoekCoej]j[ayfQfkoeV@WBWVjsj[j[j[jtM{azfkaxoefkayayayNGjtayj[j@a|f6j[j@ogt7j[fQa{ayayayfQayWBayayayayfkj[j[oLayj[oLayj[j[j[ay',
+	// 	name: 'High Mountain Home Professionals',
+	// 	description:
+	// 		'This website for High Mountain Home Professionals was created with Next.js and Sanity.io.  This site was custom designed to meet the business owner's goal of increasing their interent presence while also generating more leads.',
+	// 	url: 'https://highmnthp.com',
+	// 	accent: 'right'
+	// },
 	{
 		id: 1,
 		img: '/images/projects/nova-art-restoration.jpeg',
@@ -6,7 +17,7 @@ export const projects = [
 			'|IHU2ox^02IUEhxt%LoejE0Vx[~Txtw]V[NHWBW=NeR*IpxutRWCn%jZsoMyEMxDRQR-ogbIt6X8V[M|M|t5W=ofe:RjjF%2%1IoM{smW=R+SeWVj]t7xZWBnhnhoJofSNbHWX%1t6RjRjo0xZofSNW;WBocbbt6WCV[xF',
 		name: 'Nova Art Restoration',
 		description:
-			'Nova Art Restoration is a custom Wordpress website for an art restoration company.  Custom CSS was added to the theme to provide the client with the look and feel desired.',
+			'Nova Art Restoration is a custom website for an art restoration company.  Created with Next.js and Sanity.is, this is a fast and responsive site with the objective to create more leads for art restoration services.',
 		url: 'https://www.novaartrestoration.com',
 		accent: 'left'
 	},
@@ -21,15 +32,4 @@ export const projects = [
 		url: 'https://natevalline.com',
 		accent: 'right'
 	}
-	// {
-	// 	id: 3,
-	// 	img: '/images/marina.jpg',
-	// 	img_blur:
-	// 		'|+H{i^%2WBt8WBaeaybHae_Ns:WBjZWBayaej[j[%MoekCoej]j[ayfQfkoeV@WBWVjsj[j[j[jtM{azfkaxoefkayayayNGjtayj[j@a|f6j[j@ogt7j[fQa{ayayayfQayWBayayayayfkj[j[oLayj[oLayj[j[j[ay',
-	// 	name: 'Santa Marina Boatyard',
-	// 	description:
-	// 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in arcu venenatis est laoreet habitant nibh.',
-	// 	url: 'https://www.google.com',
-	// 	accent: 'none'
-	// }
 ];
