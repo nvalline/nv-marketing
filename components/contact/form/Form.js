@@ -37,12 +37,14 @@ function Form({ setShowForm }) {
 				name='from_name'
 				className={styles.form__input}
 				placeholder='Name'
+				required={true}
 			/>
 			<TextInput
 				type='email'
 				name='from_email'
 				className={styles.form__input}
 				placeholder='Email'
+				required={true}
 			/>
 			<Textarea
 				id='message'
@@ -50,6 +52,7 @@ function Form({ setShowForm }) {
 				rows='5'
 				placeholder='Your Message'
 				className={styles.form__textarea}
+				required={true}
 			/>
 			<Button
 				type='submit'
