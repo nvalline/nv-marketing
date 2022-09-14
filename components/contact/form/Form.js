@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
 
@@ -9,6 +9,16 @@ import styles from '../../../styles/contact/form/Form.module.scss';
 
 function Form({ setShowForm }) {
 	const form = useRef();
+	const [values, setValues] = useState({
+		from_name: '',
+		from_email: '',
+		message: ''
+	});
+
+	// Update form input values
+	const onChange = (e) => {
+		setValues({ ...values, [e.target.name]: e.target.value });
+	};
 
 	// hCaptcha Consts
 	const hcaptchaRef = useRef(null);
@@ -47,6 +57,11 @@ function Form({ setShowForm }) {
 					.then(
 						(result) => {
 							console.log(result.text);
+							setValues({
+								from_name: '',
+								from_email: '',
+								message: ''
+							});
 						},
 						(error) => {
 							console.log(error.text);
@@ -60,6 +75,12 @@ function Form({ setShowForm }) {
 			}
 		} catch (error) {
 			console.log(error?.message || 'Something went wrong');
+		} finally {
+			setValues({
+				from_name: '',
+				from_email: '',
+				message: ''
+			});
 		}
 	};
 
