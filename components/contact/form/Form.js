@@ -90,6 +90,7 @@ function Form({ setShowForm }) {
 				type='text'
 				name='from_name'
 				className={styles.form__input}
+				onChange={onChange}
 				placeholder='Name'
 				required={true}
 			/>
@@ -97,6 +98,7 @@ function Form({ setShowForm }) {
 				type='email'
 				name='from_email'
 				className={styles.form__input}
+				onChange={onChange}
 				placeholder='Email'
 				required={true}
 			/>
@@ -104,6 +106,7 @@ function Form({ setShowForm }) {
 				id='message'
 				name='message'
 				rows='5'
+				onChange={onChange}
 				placeholder='Your Message'
 				className={styles.form__textarea}
 				required={true}
