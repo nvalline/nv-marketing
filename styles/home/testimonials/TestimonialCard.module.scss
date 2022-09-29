@@ -13,8 +13,8 @@
 	&__quoteBlock {
 		min-height: 10.3125rem;
 		border-radius: 25px;
-		padding: 1.125rem;
-		background-color: rgba($color: v.$primary-white, $alpha: 0.25);
+		padding: 1.25rem;
+		background-color: rgba($color: v.$primary-white, $alpha: 0.75);
 		box-shadow: 4px 4px 4px v.$box-shadow;
 		margin-bottom: 1.3125rem;
 		display: flex;
@@ -25,6 +25,7 @@
 	&__content {
 		@include font-size(13, v.$base-font-size);
 		color: v.$primary-black;
+		line-height: 1.4;
 		text-align: center;
 	}
 
