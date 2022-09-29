@@ -16,7 +16,7 @@ export const projects = [
 			'|IHU2ox^02IUEhxt%LoejE0Vx[~Txtw]V[NHWBW=NeR*IpxutRWCn%jZsoMyEMxDRQR-ogbIt6X8V[M|M|t5W=ofe:RjjF%2%1IoM{smW=R+SeWVj]t7xZWBnhnhoJofSNbHWX%1t6RjRjo0xZofSNW;WBocbbt6WCV[xF',
 		name: 'Nova Art Restoration',
 		description:
-			'Nova Art Restoration is a custom website for an art restoration company.  Created with Next.js and Sanity.is, this is a fast and responsive site with the objective to create more leads for art restoration services.',
+			'Nova Art Restoration is a custom website for an art restoration company.  Created with Next.js and Sanity.io, this is a fast and responsive site with the objective to create more leads for art restoration services.',
 		url: 'https://www.novaartrestoration.com',
 		accent: 'right'
 	},
