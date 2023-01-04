@@ -28,7 +28,7 @@ export const projects = [
 		name: 'Nate Valline',
 		description:
 			"This custom portfolio was designed to be an eye catching showcase of the owner's work and style.  Created with Next.js and Sanity.io, this is fully responsive for mobile.",
-		url: 'https://natevalline.com',
+		url: 'https://natevalline.dev',
 		accent: 'left'
 	}
 ];
