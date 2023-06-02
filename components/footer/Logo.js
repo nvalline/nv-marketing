@@ -15,16 +15,14 @@ function Logo({ screen }) {
 					: `${styles.logo} ${styles.mobile}`
 			}
 		>
-			<Link href='/'>
-				<a>
-					<div className={styles.logo__wrapper}>
-						<ImageFillPriority
-							src={logoImg}
-							alt='NV Marketing, LLC logo'
-							className={styles.logo__image}
-						/>
-					</div>
-				</a>
+			<Link href='/' passHref>
+				<div className={styles.logo__wrapper}>
+					<ImageFillPriority
+						src={logoImg}
+						alt='NV Marketing, LLC logo'
+						className={styles.logo__image}
+					/>
+				</div>
 			</Link>
 		</div>
 	);

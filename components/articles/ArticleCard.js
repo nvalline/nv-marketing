@@ -27,8 +27,8 @@ export default function ArticleCard({
 				<p className={styles.articleCard__text}>{excerpt}</p>
 
 				{/* Link to Article */}
-				<Link href={`/articles/${slug}`}>
-					<a className={styles.articleCard__button}>read more</a>
+				<Link href={`/articles/${slug}`} className={styles.articleCard__button}>
+					read more
 				</Link>
 			</div>
 		</div>

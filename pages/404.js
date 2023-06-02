@@ -48,10 +48,8 @@ export default function Custom404() {
 						<h2 className={styles.custom404__title}>
 							404 | This page does not exist...
 						</h2>
-						<Link href='/'>
-							<a className={styles.custom404__button}>
-								Return to NV Marketing, LLC
-							</a>
+						<Link href='/' className={styles.custom404__button}>
+							Return to NV Marketing, LLC
 						</Link>
 					</div>
 				</div>

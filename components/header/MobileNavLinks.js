@@ -11,15 +11,9 @@ function MobileNavLinks({ hamburgerIsActive }) {
 					: `${styles.block} ${styles.block___fadeOut}`
 			}
 		>
-			<Link href='/#recent_projects'>
-				<a>Recent Projects</a>
-			</Link>
-			<Link href='/articles'>
-				<a>Articles</a>
-			</Link>
-			<Link href='/contact'>
-				<a>Contact</a>
-			</Link>
+			<Link href='/#recent_projects'>Recent Projects</Link>
+			<Link href='/articles'>Articles</Link>
+			<Link href='/contact'>Contact</Link>
 		</div>
 	);
 }
