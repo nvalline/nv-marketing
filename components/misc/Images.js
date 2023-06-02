@@ -34,11 +34,11 @@ export const ImageFill = ({
 		<Image
 			src={src}
 			alt={alt}
-			objectFit={objectFit}
+			object-fit={objectFit}
 			placeholder={placeholder}
 			blurDataURL={blurDataURL}
 			className={className}
-			layout='fill'
+			fill='true'
 		/>
 	);
 };
@@ -55,11 +55,11 @@ export const ImageFillPriority = ({
 		<Image
 			src={src}
 			alt={alt}
-			objectFit={objectFit}
+			object-fit={objectFit}
 			placeholder={placeholder}
 			blurDataURL={blurDataURL}
 			className={className}
-			layout='fill'
+			fill='true'
 			priority
 		/>
 	);

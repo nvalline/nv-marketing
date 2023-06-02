@@ -12,16 +12,14 @@ function Nav(props) {
 	return (
 		<nav className={styles.nav}>
 			<div className={styles.nav__logoBlock}>
-				<Link href='/'>
-					<a>
-						<div className={styles.nav__logoWrapper}>
-							<ImageFillPriority
-								src={logoImg}
-								alt='NV Marketing, LLC logo'
-								className={styles.nav__logo}
-							/>
-						</div>
-					</a>
+				<Link href='/' passHref>
+					<div className={styles.nav__logoWrapper}>
+						<ImageFillPriority
+							src={logoImg}
+							alt='NV Marketing, LLC logo'
+							className={styles.nav__logo}
+						/>
+					</div>
 				</Link>
 			</div>
 			<Hamburger {...props} />

@@ -16,13 +16,12 @@ export default function ArticlePage({
 	content
 }) {
 	const metaDescription = excerpt;
-	console.log(slug);
 
 	return (
 		<>
 			<Head>
 				{/* Page Title */}
-				<title>{title} | NV Marketing, LLC</title>
+				<title>{`${title} | NV Marketing, LLC`}</title>
 				{/* Page Description */}
 				<meta name='description' content={metaDescription} />
 				<meta name='keywords' content={keywords} />
@@ -66,8 +65,8 @@ export default function ArticlePage({
 							></div>
 
 							{/* Return to articles page */}
-							<Link href='/articles'>
-								<a className={styles.articlePage__button}>go back</a>
+							<Link href='/articles' className={styles.articlePage__button}>
+								go back
 							</Link>
 						</div>
 					</div>

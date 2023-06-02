@@ -5,14 +5,14 @@ import styles from '../../styles/header/NavLinks.module.scss';
 function NavLinks() {
 	return (
 		<div className={styles.block}>
-			<Link href='/#recent_projects'>
-				<a className={styles.block__link}>Recent Projects</a>
+			<Link href='/#recent_projects' className={styles.block__link}>
+				Recent Projects
 			</Link>
-			<Link href='/articles'>
-				<a className={styles.block__link}>Articles</a>
+			<Link href='/articles' className={styles.block__link}>
+				Articles
 			</Link>
-			<Link href='/contact'>
-				<a className={styles.block__link}>Contact</a>
+			<Link href='/contact' className={styles.block__link}>
+				Contact
 			</Link>
 		</div>
 	);
