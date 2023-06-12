@@ -11,10 +11,12 @@
 	}
 
 	&__quoteBlock {
-		min-height: 10.3125rem;
+		// min-height: 10.3125rem;
+		height: 300px;
 		border-radius: 25px;
 		padding: 1.25rem;
-		background-color: rgba($color: v.$primary-white, $alpha: 0.75);
+		// background-color: rgba($color: v.$primary-white, $alpha: 0.75);
+		background-color: rgba($color: v.$primary-white, $alpha: 1);
 		box-shadow: 4px 4px 4px v.$box-shadow;
 		margin-bottom: 1.3125rem;
 		display: flex;

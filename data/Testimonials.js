@@ -6,15 +6,15 @@ export const testimonials = [
 		name: 'Connor Z.',
 		position: 'Owner',
 		company: 'High Mountain Home Professionals'
+	},
+	{
+		id: 2,
+		content:
+			'I am so pleased with NV Marketing. Nate listened so carefully and really understood my needs. He was then able to create a beautiful website that worked seamlessly from the moment it went live. I would highly recommend his web design services. He is also knowledgeable and helpful with sales and marketing strategies and was able to provide helpful and practical advice.',
+		name: 'Carrie P.',
+		position: 'Owner/Teacher',
+		company: 'Elevated Barre Studio'
 	}
-	// {
-	// 	id: 2,
-	// 	content:
-	// 		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas iure quod nihil, eum alias rem autem expedita veniam explicabo sed est corporis nulla aliquam dolore aliquid laudantium similique accusamus",
-	// 	name: 'Ricky Bobby',
-	// 	position: 'Owner/Driver',
-	// 	company: 'ME Racing Team'
-	// },
 	// {
 	// 	id: 3,
 	// 	content:
