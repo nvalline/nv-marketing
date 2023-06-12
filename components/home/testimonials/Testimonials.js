@@ -6,7 +6,7 @@ import TestimonialDefault from './TestimonialDefault';
 import styles from '../../../styles/home/testimonials/Testimonials.module.scss';
 
 function Testimonials({ testimonials }) {
-	const testimonialData = testimonials;
+	const testimonialData = testimonials.reverse();
 
 	return (
 		<section className={styles.testimonials}>
