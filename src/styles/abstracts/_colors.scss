@@ -1,0 +1,69 @@
+/* COLORS
+--------------------------------*/
+
+$colors: (
+	// Brand Colors
+	bd:
+		(
+			// #CCAE33
+			gold: hsl(48, 60%, 50%),
+			//  #999173
+			taupe: hsl(47, 16%, 53%),
+			// 	#febd59
+			orange: hsl(36, 99%, 67%),
+			// 	#99eeff
+			blue: hsl(190, 100%, 80%),
+			// #33ccbc
+			green: hsl(174, 60%, 50%),
+			// 	#218c90
+			dark-green: hsl(182, 63%, 35%)
+		),
+	// Brand Hover Colors
+	bd-hvr:
+		(
+			// #fba31d
+			orange: hsl(36, 97%, 55%),
+			// #fff3e1
+			light-orange: hsl(36, 100%, 94%),
+			// 	#a7f5b4
+			green: hsl(130, 80%, 81%)
+		),
+	// Background Colors
+	bg:
+		(
+			// 	#fafafa
+			white: hsl(0, 0%, 98%),
+			// #f4f4f4
+			gray: hsl(0, 0%, 96%)
+		),
+	// Background Gradient Colors
+	grad:
+		(
+			// 	#a2d6ab
+			green: hsla(130, 39%, 74%, 0.47),
+			// 	#febd59
+			orange: hsla(36, 99%, 67%, 0.47)
+		),
+	// Box Shadows
+	shadow:
+		(
+			// #000000 0.25%
+			black: hsla(0, 0%, 0%, 0.25)
+		),
+	// Text Colors
+	txt:
+		(
+			// 	#000000
+			black: hsl(0, 0%, 0%),
+			// #3d3d3d
+			charcoal: hsl(0, 0%, 24%),
+			// 	#febd59
+			orange: hsl(36, 99%, 67%),
+			// 	#218c90
+			dark-green: hsl(182, 63%, 35%),
+			// 	#858585
+			gray: hsl(0, 0%, 52%),
+			// 	#9e9e9e
+			dark-gray: hsl(0, 0%, 62%)
+		)
+);

@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+/* FONT SIZE
+--------------------------------*/
+
+@mixin font-size($size: 16, $base: 16) {
+	font-size: $size + px;
+	font-size: math.div($size, $base) * 1rem;
+}
+
+/* LINEAR GRADIENT
+--------------------------------*/
+@mixin gradient($direction, $color1, $color2) {
+	background: -webkit-linear-gradient($direction, $color1, $color2);
+	background: -moz-linear-gradient($direction, $color1, $color2);
+	background: -o-linear-gradient($direction, $color1, $color2);
+	background: linear-gradient($direction, $color1, $color2);
+}
