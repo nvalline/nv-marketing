@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-import Layout from '../components/Layout';
-import PixelBar from '../components/misc/PixelBar';
+import Layout from '../../components/Layout';
+import PixelBar from '../../components/misc/PixelBar';
 
 import styles from '../styles/404.module.scss';
 
