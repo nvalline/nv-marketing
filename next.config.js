@@ -1,4 +1,6 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+
+const NextConfig = {
 	reactStrictMode: true,
 	env: {
 		NEXT_PUBLIC_EMAILJS_SERVICE_ID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -9,8 +11,17 @@ module.exports = {
 		NEXT_PUBLIC_HCAPTCHA_SITE_KEY: process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY,
 		NEXT_PUBLIC_HCAPTCHA_SECRET: process.env.NEXT_PUBLIC_HCAPTCHA_SECRET
 	},
-	i18n: {
-		locales: ['en-US'],
-		defaultLocale: 'en-US'
+	images: {
+		domains: ['cdn.sanity.io'],
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'cdn.sanity.io',
+				port: '',
+				pathname: '/images/**'
+			}
+		]
 	}
 };
+
+module.exports = NextConfig;
