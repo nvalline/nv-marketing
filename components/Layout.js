@@ -4,9 +4,9 @@ import Footer from './footer/Footer';
 function Layout({ children }) {
 	return (
 		<div style={{ position: 'relative' }}>
-			<Header />
+			{/* <Header /> */}
 			<main>{children}</main>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }
