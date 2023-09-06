@@ -1,9 +1,9 @@
 import Head from 'next/head';
 
-import Layout from '../components/Layout';
-import ContactAccent from '../components/misc/ContactAccent';
-import Details from '../components/contact/details/Details';
-import FormSection from '../components/contact/form/FormBlock';
+import Layout from '../../components/Layout';
+import ContactAccent from '../../components/misc/ContactAccent';
+import Details from '../../components/contact/details/Details';
+import FormSection from '../../components/contact/form/FormBlock';
 
 import { contactDetails } from '../data/ContactDetails';
 
