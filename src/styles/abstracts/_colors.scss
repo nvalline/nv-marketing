@@ -1,0 +1,39 @@
+/* COLORS
+--------------------------------*/
+
+$colors: (
+	// Green Colors
+	green:
+		(
+			light: #03a6a6,
+			mid-light: #0396a6,
+			mid-dark: #025951,
+			dark: #012623
+		),
+	// Blue Colors
+	blue:
+		(
+			light: #69d6f9,
+			dark: #0e2142
+		),
+	// Orange Colors
+	orange:
+		(
+			light: #f5b372,
+			dark: #f19a43
+		),
+	// Yellow Colors
+	yellow: #f19a43,
+	// White Colors
+	white:
+		(
+			light: #f1f1f1,
+			dark: #d8d9d7
+		),
+	// Box Shadows
+	shadow:
+		(
+			// #000000 0.25%
+			black: hsla(0, 0%, 0%, 0.25)
+		)
+);
