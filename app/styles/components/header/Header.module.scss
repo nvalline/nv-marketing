@@ -1,0 +1,29 @@
+/* ----- Header Nav Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	box-shadow: 0 2px 6px var(--clr-shadow-black);
+	z-index: 10;
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		padding: 1rem;
+		max-width: 1440px;
+	}
+
+	&__logo___wrapper {
+		height: 47px;
+		width: 152px;
+		position: relative;
+	}
+}

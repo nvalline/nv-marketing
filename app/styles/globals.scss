@@ -3,7 +3,12 @@
 @use 'base';
 
 html {
+	background-color: #fff;
 	font-family: var(--font-montserrat);
+}
+
+body {
+	margin-top: 80px;
 }
 
 h1,

@@ -7,14 +7,4 @@
 			--clr-#{$color-type}-#{$color}: #{$value};
 		}
 	}
-
-	/* Loop to declare font variables */
-	@each $font, $value in $fonts {
-		--font-#{$font}: #{$value};
-	}
-
-	/* Loop to declare font weights */
-	@each $font-weight, $value in $font-weights {
-		--fw-#{$font-weight}: #{$value};
-	}
 }
