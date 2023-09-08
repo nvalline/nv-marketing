@@ -23,7 +23,10 @@ $colors: (
 			dark: #f19a43
 		),
 	// Yellow Colors
-	yellow: #f19a43,
+	yellow:
+		(
+			accent: #d9d114
+		),
 	// White Colors
 	white:
 		(
