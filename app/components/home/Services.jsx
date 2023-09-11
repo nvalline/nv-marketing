@@ -24,7 +24,7 @@ export default async function Services() {
 					<h2 className={styles.services__header}>
 						Our Services, Your Success
 					</h2>
-					<p className={styles.services__subHeader}>
+					<p className={styles.services__sub_header}>
 						We specialize in crafting custom web solutions that not only
 						showcase the uniqueness of your business but also{' '}
 						<span>drive results</span>.

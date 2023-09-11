@@ -2,3 +2,31 @@
 ----- */
 
 @use '../../abstracts/' as *;
+
+.services {
+	padding: 3rem 1rem;
+
+	&__header___block {
+		text-align: center;
+	}
+
+	&__header {
+		@include font_size(20);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+
+	&__sub_header {
+		margin-top: 2rem;
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+
+		> span {
+			font-weight: 700;
+		}
+	}
+
+	// &__cards {
+	// 	margin-top: 2rem;
+	// }
+}
