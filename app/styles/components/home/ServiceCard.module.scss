@@ -1,0 +1,31 @@
+/* ----- Service Card Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.service_card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+	text-align: center;
+
+	&__icon {
+		position: relative;
+		height: 60px;
+		width: 60px;
+	}
+
+	&__header {
+		margin-top: 1rem;
+		@include font_size(18);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+
+	&__excerpt {
+		margin-top: 1rem;
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+}
