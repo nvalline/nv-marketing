@@ -1,8 +1,48 @@
-/* ----- Header Nav Styles 
+/* ----- Hero Section Styles 
 ----- */
 
 @use '../../abstracts/' as *;
 
 .hero {
-	// background-color: aqua;
+	padding: 3rem 1rem;
+
+	&__content {
+		text-align: center;
+	}
+
+	&__header {
+		@include font_size(24);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+
+		> span {
+			text-decoration: underline;
+		}
+	}
+
+	&__sub_header {
+		margin-top: 2rem;
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+
+		> span {
+			font-weight: 700;
+		}
+	}
+
+	&__btn {
+		margin-top: 2.5rem;
+		padding: 0.625rem 3.375rem;
+		border: none;
+		background-color: var(--clr-green-light);
+		box-shadow: 0px 4px 4px 0px var(--clr-shadow-black);
+		@include font-size(16);
+		font-weight: 700;
+		color: var(--clr-white-light);
+		text-transform: capitalize;
+	}
+
+	&__img {
+		display: none;
+	}
 }
