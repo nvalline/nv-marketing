@@ -32,7 +32,14 @@ section {
 
 .leftAccentLines {
 	position: relative;
-	left: -25%;
+	left: 0;
 	height: 30px;
 	width: 452px;
+}
+
+.rightAccentLines {
+	position: absolute;
+	right: 0;
+	height: 30px;
+	width: 324px;
 }
