@@ -1,0 +1,31 @@
+/* ----- Testimonials Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.testimonials {
+	padding: 3rem 1rem;
+
+	&__header___block {
+		color: var(--clr-blue-dark);
+		text-align: center;
+	}
+
+	&__header {
+		@include font-size(20);
+		font-weight: 700;
+	}
+
+	&__sub_header {
+		margin-top: 2rem;
+		opacity: 0.9;
+
+		> span {
+			font-weight: 700;
+		}
+	}
+
+	&__card___block {
+		margin-top: 3rem;
+	}
+}
