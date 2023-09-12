@@ -43,9 +43,9 @@ export default function TestimonialCard({
 					);
 				})}
 			</div>
-			<p>{content}</p>
-			<h4>{author}</h4>
-			<p>
+			<p className={styles.testimonial_card__content}>{content}</p>
+			<h4 className={styles.testimonial_card__author}>{author}</h4>
+			<p className={styles.testimonial_card__details}>
 				{position}, {company}
 			</p>
 			<div className={styles.testimonial_card__accent___lower}>
