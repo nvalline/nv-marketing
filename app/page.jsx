@@ -3,6 +3,7 @@ import Hero from './components/home/Hero';
 import LeftLines from './components/images/LeftLines';
 import RightLines from './components/images/RightLines';
 import Services from './components/home/Services';
+import Testimonials from './components/home/Testimonials';
 import ValueProps from './components/home/ValueProps';
 
 export const metadata = {
@@ -26,6 +27,7 @@ export default async function Home() {
 					</div>
 				</div>
 				<ValueProps />
+				<Testimonials />
 			</div>
 		</main>
 	);
