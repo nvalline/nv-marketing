@@ -3,6 +3,7 @@ import Hero from './components/home/Hero';
 import LeftLines from './components/images/LeftLines';
 import RightLines from './components/images/RightLines';
 import Services from './components/home/Services';
+import ValueProps from './components/home/ValueProps';
 
 export const metadata = {
 	title: 'NV Marketing',
@@ -13,17 +14,18 @@ export const metadata = {
 export default async function Home() {
 	return (
 		<main>
-			<div
-				style={{ position: 'relative', maxWidth: '1290px', margin: '0 auto' }}
-			>
+			<div className='container'>
 				<Hero />
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>
 				<Services />
-				<div className='rightAccentLines'>
-					<RightLines />
+				<div className='rightAccentBlock'>
+					<div className='rightAccentLines'>
+						<RightLines />
+					</div>
 				</div>
+				<ValueProps />
 			</div>
 		</main>
 	);

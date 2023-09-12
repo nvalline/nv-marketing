@@ -1,0 +1,63 @@
+/* ----- Value Propositions Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.value_props {
+	padding: 3rem 1rem;
+
+	&__img___block {
+		position: relative;
+		margin: 0 auto;
+		height: 301px;
+		width: 201px;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	&__cells {
+		margin-top: 2rem;
+		width: 100%;
+		box-shadow: 0 4px 4px var(--clr-shadow-black);
+		text-align: center;
+	}
+
+	&__texture___bg {
+		position: relative;
+		min-height: 92px;
+		width: 100%;
+		padding: 1rem;
+		background-image: url('/images/texture_rectangle.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 20px 20px 0 0;
+		overflow: hidden;
+	}
+
+	&__header {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		@include font-size(20);
+		font-weight: 700;
+		color: var(--clr-white-light);
+	}
+
+	&__props {
+		padding: 1rem;
+	}
+
+	&__props h4 {
+		@include font-size(18);
+		color: var(--clr-blue-dark);
+		font-weight: 700;
+	}
+
+	&__props p {
+		margin-top: 1rem;
+		@include font-size(16);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+}

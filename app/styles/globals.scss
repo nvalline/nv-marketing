@@ -25,7 +25,8 @@ p {
 	line-height: 1.464rem;
 }
 
-section {
+.container {
+	position: relative;
 	margin: 0 auto;
 	max-width: 1290px;
 }
@@ -34,7 +35,13 @@ section {
 	position: relative;
 	left: 0;
 	height: 30px;
-	width: 452px;
+	width: 100%;
+	max-width: 452px;
+	overflow: hidden;
+}
+
+.rightAccentBlock {
+	height: 30px;
 }
 
 .rightAccentLines {
