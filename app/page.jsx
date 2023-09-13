@@ -1,5 +1,7 @@
 // Components
+import CallToAction from './components/home/callToAction';
 import Hero from './components/home/Hero';
+import FullLines from './components/images/FullLinesUpper';
 import LeftLines from './components/images/LeftLines';
 import RightLines from './components/images/RightLines';
 import Services from './components/home/Services';
@@ -28,6 +30,7 @@ export default async function Home() {
 				</div>
 				<ValueProps />
 				<Testimonials />
+				<CallToAction />
 			</div>
 		</main>
 	);
