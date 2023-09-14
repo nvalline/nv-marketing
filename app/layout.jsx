@@ -1,9 +1,12 @@
-import './styles/globals.scss';
-import { Montserrat } from 'next/font/google';
 import GoogleAnalytics from './GoogleAnalytics';
 
 // Components
+import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
+
+// Styles
+import './styles/globals.scss';
+import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({
 	display: 'swap',
@@ -27,6 +30,7 @@ export default function RootLayout({
 				<GoogleAnalytics />
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

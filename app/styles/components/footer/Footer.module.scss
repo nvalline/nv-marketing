@@ -1,0 +1,31 @@
+/* ----- Footer Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.footer {
+	padding: 3rem 1rem;
+
+	&__nav___block {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__logo___wrapper {
+		position: relative;
+		height: 46px;
+		width: 150px;
+		margin: 2rem auto 0;
+	}
+
+	&__copyright___block {
+		margin-top: 2rem;
+		text-align: center;
+	}
+
+	&__copyright {
+		@include font-size(10);
+		color: var(--clr-blue-dark);
+	}
+}
