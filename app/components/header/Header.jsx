@@ -1,6 +1,6 @@
 // Components
 import DesktopNav from './DesktopNav';
-import Logo from '../images/Logo';
+import Logo from '../misc/Logo';
 import MobileNav from './MobileNav';
 
 // Styles

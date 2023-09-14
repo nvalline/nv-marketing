@@ -1,7 +1,8 @@
 // Components
+import CtaSection from './components/misc/CtaSection';
 import Hero from './components/home/Hero';
-import LeftLines from './components/images/LeftLines';
-import RightLines from './components/images/RightLines';
+import LeftLines from './components/misc/LeftLines';
+import RightLines from './components/misc/RightLines';
 import Services from './components/home/Services';
 import Testimonials from './components/home/Testimonials';
 import ValueProps from './components/home/ValueProps';
@@ -28,6 +29,7 @@ export default async function Home() {
 				</div>
 				<ValueProps />
 				<Testimonials />
+				<CtaSection />
 			</div>
 		</main>
 	);

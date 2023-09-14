@@ -1,0 +1,16 @@
+/* ----- Primary Button Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.primary_btn {
+	padding: 0.625rem 3.375rem;
+	border: none;
+	background-color: var(--clr-green-light);
+	box-shadow: 0px 4px 4px 0px var(--clr-shadow-black);
+	@include font-size(16);
+	font-weight: 700;
+	color: var(--clr-white-light);
+	text-align: center;
+	text-transform: capitalize;
+}
