@@ -12,8 +12,11 @@
 		margin-top: 0.5rem;
 	}
 
-	> a {
+	> li {
 		display: block;
+	}
+
+	> li a {
 		@include font-size(14);
 		color: var(--clr-blue-dark);
 	}
