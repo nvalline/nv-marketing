@@ -1,0 +1,20 @@
+/* ----- Navigation Links Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.nav_links {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	:not(:first-child) {
+		margin-top: 0.5rem;
+	}
+
+	> a {
+		display: block;
+		@include font-size(14);
+		color: var(--clr-blue-dark);
+	}
+}

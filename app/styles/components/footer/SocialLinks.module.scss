@@ -1,0 +1,17 @@
+/* ----- Social Links Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.social_links {
+	display: flex;
+	flex-direction: column;
+
+	:not(:first-child) {
+		margin-top: 0.5rem;
+	}
+
+	&__icon {
+		color: var(--clr-blue-dark);
+	}
+}
