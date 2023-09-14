@@ -6,7 +6,7 @@ import ServiceCard from './ServiceCard';
 // Styles
 import styles from '../../styles/components/home/Services.module.scss';
 
-const getData = async () => {
+const getServices = async () => {
 	const query = `*[_type == 'services']`;
 
 	const data = await sanityClient.fetch(query);
@@ -15,7 +15,7 @@ const getData = async () => {
 };
 
 export default async function Services() {
-	const data = await getData();
+	const services = await getServices();
 
 	return (
 		<section className={styles.services}>
@@ -31,7 +31,7 @@ export default async function Services() {
 					</p>
 				</div>
 				<div className={styles.services__cards}>
-					{data.map((service) => {
+					{services.map((service) => {
 						return (
 							<ServiceCard
 								key={service._key}
