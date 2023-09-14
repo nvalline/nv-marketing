@@ -1,3 +1,8 @@
+import Link from 'next/link';
+
+// Components
+import PrimaryBtn from '../misc/PrimaryBtn';
+
 // Styles
 import styles from '@/app/styles/components/home/Hero.module.scss';
 
@@ -20,9 +25,9 @@ export default function Hero() {
 						Our expertise <span>transforms your vision</span> into a stunning
 						reality, all within the reach of your budget.
 					</p>
-					<button type='button' className={styles.hero__btn}>
-						Get In Touch
-					</button>
+					<Link href={'/contact'}>
+						<PrimaryBtn text='Get In Touch' classname={styles.hero__btn} />
+					</Link>
 				</div>
 				{/* Image */}
 				<div className={styles.hero__img}></div>
