@@ -53,6 +53,9 @@ export default function MobileNav() {
 				<div className={styles.mobile_nav__links}>
 					<ul className={styles.mobile_nav__linksList}>
 						<li className={styles.mobile_nav__link}>
+							<Link href='/'>Home</Link>
+						</li>
+						<li className={styles.mobile_nav__link}>
 							<Link href='/about'>About</Link>
 						</li>
 						<li className={styles.mobile_nav__link}>
