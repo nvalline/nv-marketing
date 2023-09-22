@@ -1,5 +1,6 @@
 // Components
 import Bio from '../components/about/Bio';
+import CoreValues from '../components/about/CoreValues';
 import Hero from '../components/about/Hero';
 import LeftLines from '../components/misc/LeftLines';
 import RightLines from '../components/misc/RightLines';
@@ -24,6 +25,7 @@ export default function Home() {
 						<RightLines />
 					</div>
 				</div>
+				<CoreValues />
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>
