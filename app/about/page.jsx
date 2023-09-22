@@ -1,4 +1,5 @@
 // Components
+import Bio from '../components/about/Bio';
 import Hero from '../components/about/Hero';
 import LeftLines from '../components/misc/LeftLines';
 import RightLines from '../components/misc/RightLines';
@@ -17,6 +18,7 @@ export default function Home() {
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>
+				<Bio />
 				<div className='rightAccentBlock'>
 					<div className='rightAccentLines'>
 						<RightLines />
