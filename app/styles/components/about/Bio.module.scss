@@ -1,0 +1,47 @@
+/* ----- About Page - Bio Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.bio {
+	padding: 3rem 1rem;
+
+	&__headers {
+		text-align: center;
+	}
+
+	&__header {
+		@include font-size(22);
+		color: var(--clr-blue-dark);
+		font-weight: 700;
+	}
+
+	&__sub_header {
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+
+		&:nth-child(2) {
+			@include font-size(20);
+			margin-top: 1rem;
+		}
+	}
+
+	&__img___mobile {
+		margin: 3rem auto;
+		position: relative;
+		height: 240px;
+		width: 226px;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	&__content___block {
+		text-align: center;
+	}
+
+	&__content {
+		margin-top: 1rem;
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+}
