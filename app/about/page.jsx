@@ -1,5 +1,6 @@
 // Components
 import Bio from '../components/about/Bio';
+import Commitments from '../components/about/Commitments';
 import CoreValues from '../components/about/CoreValues';
 import Hero from '../components/about/Hero';
 import LeftLines from '../components/misc/LeftLines';
@@ -29,6 +30,7 @@ export default function Home() {
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>
+				<Commitments />
 			</div>
 		</main>
 	);
