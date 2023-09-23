@@ -2,6 +2,7 @@
 import Bio from '../components/about/Bio';
 import Commitments from '../components/about/Commitments';
 import CoreValues from '../components/about/CoreValues';
+import CtaSection from '../components/misc/CtaSection';
 import Hero from '../components/about/Hero';
 import LeftLines from '../components/misc/LeftLines';
 import RightLines from '../components/misc/RightLines';
@@ -31,6 +32,7 @@ export default function Home() {
 					<LeftLines />
 				</div>
 				<Commitments />
+				<CtaSection />
 			</div>
 		</main>
 	);
