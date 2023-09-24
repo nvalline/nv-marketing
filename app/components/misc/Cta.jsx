@@ -1,5 +1,7 @@
+'use client';
+
 import Link from 'next/link';
-import { sanityClient } from '../../lib/sanity';
+import { usePathname } from 'next/navigation';
 
 // Components
 import PrimaryBtn from './PrimaryBtn';
@@ -7,21 +9,33 @@ import PrimaryBtn from './PrimaryBtn';
 // Styles
 import styles from '../../styles/components/misc/Cta.module.scss';
 
-const getCta = async () => {
-	const query = `*[_type == 'callToActions']`;
-
-	const data = await sanityClient.fetch(query);
-
-	return data;
-};
-
-const filterCta = async (page, unfilteredCta) => {
+const filterCta = (page, unfilteredCta) => {
 	return unfilteredCta.find((cta) => cta.page.includes(page));
 };
 
-export default async function Cta({ page }) {
-	const unfilteredCta = await getCta();
-	const cta = await filterCta(page, unfilteredCta);
+export default function Cta({ unfilteredCta }) {
+	let currentPage = '';
+
+	const pathname = usePathname();
+
+	switch (pathname) {
+		case '/about':
+			if (pathname === '/about') {
+				currentPage = 'about';
+			}
+			break;
+
+		case '/':
+			if (pathname === '/') {
+				currentPage = 'home';
+			}
+			break;
+
+		default:
+			currentPage = 'home';
+	}
+
+	const cta = filterCta(currentPage, unfilteredCta);
 
 	return (
 		<section className={styles.cta}>
