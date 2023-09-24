@@ -1,39 +1,27 @@
-'use client';
-
-import { usePathname } from 'next/navigation';
+import { sanityClient } from '../../lib/sanity';
 
 // Components
+import Cta from './Cta';
 import FullLinesLower from './FullLinesLower';
 import FullLinesUpper from './FullLinesUpper';
-import Cta from './Cta';
 
-export default function CtaSection() {
-	const pathname = usePathname();
-	let page = '';
+const getCta = async () => {
+	const query = `*[_type == 'callToActions']`;
 
-	switch (pathname) {
-		case '/about':
-			if (pathname === '/about') {
-				page = 'about';
-			}
-			break;
+	const data = await sanityClient.fetch(query);
 
-		case '/':
-			if (pathname === '/') {
-				page = 'home';
-			}
-			break;
+	return data;
+};
 
-		default:
-			page = 'home';
-	}
+export default async function CtaSection() {
+	const unfilteredCta = await getCta();
 
 	return (
 		<>
 			<div className='fullAccentLines'>
 				<FullLinesUpper />
 			</div>
-			<Cta page={page} />
+			<Cta unfilteredCta={unfilteredCta} />
 			<div className='fullAccentLines'>
 				<FullLinesLower />
 			</div>
