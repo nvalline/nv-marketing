@@ -1,0 +1,62 @@
+/* ----- Services Page - Hero Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.hero {
+	padding: 3rem 1rem;
+
+	&__headers {
+		text-align: center;
+	}
+
+	&__header {
+		@include font_size(24);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+		text-decoration: underline;
+	}
+
+	&__sub_header {
+		margin-top: 2rem;
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+
+		> span {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+
+	&__block {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	&__content___block {
+		text-align: center;
+	}
+
+	&__content___text {
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+
+		&:nth-child(2) {
+			margin-top: 1rem;
+		}
+	}
+
+	&__btn {
+		margin-top: 2rem;
+	}
+
+	&__img___mobile {
+		margin: 0 auto;
+		position: relative;
+		height: 140px;
+		width: 272px;
+	}
+}

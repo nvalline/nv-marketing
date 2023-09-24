@@ -12,9 +12,9 @@ export default function Hero() {
 				<div className={styles.hero__title___block}>
 					{/* Headers */}
 					<div className={styles.hero__content___headers}>
-						<h2 className={styles.hero__content___header}>
+						<h1 className={styles.hero__content___header}>
 							Discover NV Marketing: <span>Your Digital Success Partner</span>
-						</h2>
+						</h1>
 						<p className={styles.hero__content___sub_header}>
 							Unleash Your Business&apos;s Potential in the Digital Frontier
 						</p>
