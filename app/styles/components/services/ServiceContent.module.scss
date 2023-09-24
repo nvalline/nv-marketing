@@ -1,0 +1,29 @@
+/* ----- Services Page - Services Content Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.img__wrapper {
+	margin: 0 auto;
+	position: relative;
+	height: 125px;
+	width: 125px;
+}
+
+.content {
+	margin-top: 2rem;
+	text-align: center;
+	color: var(--clr-blue-dark);
+
+	&__header {
+		@include font-size(22);
+	}
+
+	&__text {
+		margin-top: 1rem;
+
+		> span {
+			font-weight: 700;
+		}
+	}
+}
