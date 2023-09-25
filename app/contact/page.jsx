@@ -1,3 +1,7 @@
+// Components
+import Hero from '../components/contact/Hero';
+import LeftLines from '../components/misc/LeftLines';
+
 export const metadata = {
 	title: 'NV Marketing | Contact',
 	description:
@@ -7,7 +11,12 @@ export const metadata = {
 export default function Home() {
 	return (
 		<main>
-			<h2>Contact Page</h2>
+			<div className='container'>
+				<Hero />
+				<div className='leftAccentLines'>
+					<LeftLines />
+				</div>
+			</div>
 		</main>
 	);
 }
