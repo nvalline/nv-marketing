@@ -1,0 +1,50 @@
+/* ----- Contact Page - Hero Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.hero {
+	margin-bottom: 1rem;
+	padding: 3rem 1rem;
+	height: 300px;
+	background-image: url('/images/mountain_scape.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+
+	&__block {
+		padding: 1.5rem;
+		background-color: var(--clr-blue-dark);
+		border-left: 8px solid var(--clr-orange-dark);
+		border-radius: 10px;
+	}
+
+	&__title {
+		display: inline-block;
+		border-bottom: 2px solid var(--clr-white-light);
+		@include font-size(24);
+		color: var(--clr-white-light);
+		font-weight: 400;
+	}
+
+	&__address {
+		margin-top: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__contact_info {
+		color: var(--clr-white-light);
+		opacity: 0.9;
+	}
+
+	&__phone {
+		display: flex;
+		align-items: center;
+
+		> img {
+			margin-right: 5px;
+		}
+	}
+}
