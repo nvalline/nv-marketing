@@ -1,4 +1,5 @@
 // Components
+import Clients from '../components/services/Clients';
 import Hero from '../components/services/Hero';
 import LeftLines from '../components/misc/LeftLines';
 import RightLines from '../components/misc/RightLines';
@@ -40,6 +41,7 @@ export default function Services() {
 						<RightLines />
 					</div>
 				</div>
+				<Clients />
 			</div>
 		</main>
 	);
