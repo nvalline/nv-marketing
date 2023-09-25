@@ -40,6 +40,11 @@ export default {
       title: 'Excerpt',
     },
     {
+      name: 'title',
+      type: 'string',
+      title: 'Page Detail Service Name',
+    },
+    {
       name: 'description',
       type: 'array',
       title: 'Services Description',

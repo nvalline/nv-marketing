@@ -15,7 +15,7 @@ const getService = async (query) => {
 export default async function ServiceDetail({ query }) {
 	const service = await getService(query);
 
-	const serviceName = service.name;
+	const serviceTitle = service.title;
 	const serviceDesc = service.description;
 	const serviceImg = service.image;
 
@@ -23,7 +23,7 @@ export default async function ServiceDetail({ query }) {
 		<section className={styles.service_detail}>
 			<div className={styles.service_detail__wrapper}>
 				<ServiceContent
-					name={serviceName}
+					name={serviceTitle}
 					description={serviceDesc}
 					image={serviceImg}
 				/>
