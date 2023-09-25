@@ -25,6 +25,12 @@ export default function Cta({ unfilteredCta }) {
 			}
 			break;
 
+		case '/services':
+			if (pathname === '/services') {
+				currentPage = 'services';
+			}
+			break;
+
 		case '/':
 			if (pathname === '/') {
 				currentPage = 'home';
