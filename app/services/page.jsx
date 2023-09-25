@@ -34,6 +34,7 @@ export default function Services() {
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>
+				<ServiceDetail query={sanityQueries[2].query} />
 				<div className='rightAccentBlock'>
 					<div className='rightAccentLines'>
 						<RightLines />
