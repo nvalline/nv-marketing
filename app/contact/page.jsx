@@ -1,4 +1,5 @@
 // Components
+import Contact from '../components/contact/Contact';
 import Hero from '../components/contact/Hero';
 import LeftLines from '../components/misc/LeftLines';
 
@@ -16,6 +17,7 @@ export default function Home() {
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>
+				<Contact />
 			</div>
 		</main>
 	);
