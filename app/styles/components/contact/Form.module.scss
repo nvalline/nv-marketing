@@ -1,0 +1,26 @@
+/* ----- Contact Page - Form Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.form {
+	&__input,
+	&__textarea {
+		margin-top: 1rem;
+		padding: 0.75rem 1.5rem;
+		width: 100%;
+		background-color: var(--clr-white-light);
+		border: none;
+		border-radius: 10px;
+
+		&::placeholder {
+			color: var(--clr-blue-dark);
+			opacity: 0.7;
+		}
+	}
+
+	&__btn {
+		margin: 2rem auto 0;
+		width: 180px;
+	}
+}
