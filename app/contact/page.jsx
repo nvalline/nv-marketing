@@ -1,5 +1,6 @@
 // Components
 import Contact from '../components/contact/Contact';
+import CtaSection from '../components/misc/CtaSection';
 import Hero from '../components/contact/Hero';
 import LeftLines from '../components/misc/LeftLines';
 
@@ -18,6 +19,7 @@ export default function Home() {
 					<LeftLines />
 				</div>
 				<Contact />
+				<CtaSection />
 			</div>
 		</main>
 	);

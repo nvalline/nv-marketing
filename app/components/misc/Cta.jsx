@@ -25,6 +25,12 @@ export default function Cta({ unfilteredCta }) {
 			}
 			break;
 
+		case '/contact':
+			if (pathname === '/contact') {
+				currentPage = 'contact';
+			}
+			break;
+
 		case '/services':
 			if (pathname === '/services') {
 				currentPage = 'services';
@@ -51,7 +57,7 @@ export default function Cta({ unfilteredCta }) {
 					<p className={styles.cta__sub_header}>{cta.subHeader}</p>
 				</div>
 				<div className={styles.cta__btn___block}>
-					<Link href={'/contact'}>
+					<Link href={currentPage === 'contact' ? '/services' : '/contact'}>
 						<PrimaryBtn text={cta.btnText} classname={styles.cta__btn} />
 					</Link>
 				</div>
