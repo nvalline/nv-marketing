@@ -11,6 +11,7 @@
 	},
 	"dependencies": {
 		"@hcaptcha/react-hcaptcha": "^1.8.1",
+		"@portabletext/react": "^3.0.7",
 		"@sanity/image-url": "^1.0.2",
 		"emailjs-com": "^3.2.0",
 		"next": "^13.4.19",

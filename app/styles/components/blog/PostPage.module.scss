@@ -1,0 +1,71 @@
+/* ----- Blog Post Page Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.hero {
+	padding: 3rem 1rem;
+	text-align: center;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		margin-top: 2rem;
+		@include font-size(22);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+}
+
+.post {
+	padding: 3rem 1rem;
+
+	&__article {
+		color: var(--clr-blue-dark);
+		text-align: center;
+
+		> h2 {
+			@include font-size(20);
+			font-weight: 700;
+		}
+
+		> h3 {
+			@include font-size(18);
+			font-weight: 400;
+		}
+
+		> p {
+			opacity: 0.9;
+		}
+
+		> ul {
+			padding-left: 20px;
+		}
+	}
+
+	&__date,
+	&__author {
+		@include font-size(14);
+		opacity: 0.9;
+	}
+
+	&__details {
+		margin-top: 1rem;
+	}
+
+	&__btns {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	&__btn___primary,
+	&__btn___secondary {
+		width: 250px;
+	}
+}
