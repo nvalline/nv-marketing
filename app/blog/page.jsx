@@ -1,6 +1,8 @@
 // Components
+import Archives from '../components/blog/Archives';
 import Hero from '../components/blog/Hero';
 import LeftLines from '../components/misc/LeftLines';
+import RightLines from '../components/misc/RightLines';
 
 export const metadata = {
 	title: 'NV Marketing | Blog',
@@ -15,6 +17,12 @@ export default function Home() {
 				<Hero />
 				<div className='leftAccentLines'>
 					<LeftLines />
+				</div>
+				<Archives />
+				<div className='rightAccentBlock'>
+					<div className='rightAccentLines'>
+						<RightLines />
+					</div>
 				</div>
 			</div>
 		</main>
