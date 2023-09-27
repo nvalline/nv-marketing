@@ -1,5 +1,6 @@
 // Components
 import Hero from '../components/blog/Hero';
+import LeftLines from '../components/misc/LeftLines';
 
 export const metadata = {
 	title: 'NV Marketing | Blog',
@@ -12,6 +13,9 @@ export default function Home() {
 		<main>
 			<div className='container'>
 				<Hero />
+				<div className='leftAccentLines'>
+					<LeftLines />
+				</div>
 			</div>
 		</main>
 	);
