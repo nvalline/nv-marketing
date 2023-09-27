@@ -16,6 +16,7 @@ const NextConfig = {
 	},
 	images: {
 		domains: ['cdn.sanity.io'],
+		formats: ['image/avif', 'image/webp'],
 		remotePatterns: [
 			{
 				protocol: 'https',
