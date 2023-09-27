@@ -1,3 +1,6 @@
+// Components
+import Hero from '../components/blog/Hero';
+
 export const metadata = {
 	title: 'NV Marketing | Blog',
 	description:
@@ -7,7 +10,9 @@ export const metadata = {
 export default function Home() {
 	return (
 		<main>
-			<h2>Blog Page</h2>
+			<div className='container'>
+				<Hero />
+			</div>
 		</main>
 	);
 }
