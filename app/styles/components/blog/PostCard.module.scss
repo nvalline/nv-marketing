@@ -1,0 +1,44 @@
+/* ----- Blog Archives Page - Post Card Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.post_card {
+	margin-top: 2rem;
+	padding: 2rem;
+	max-width: 410px;
+	position: relative;
+	text-align: center;
+
+	&__accent___upper {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__accent___lower {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	&__image {
+		margin: 0 auto;
+		position: relative;
+		height: 149px;
+		width: 223px;
+	}
+
+	&__title {
+		margin-top: 2rem;
+		@include font-size(18);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+
+	&__excerpt {
+		margin-top: 1rem;
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+}
