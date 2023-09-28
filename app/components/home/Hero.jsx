@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import mainImg from './main_image.png';
 
 // Components
 import PrimaryBtn from '../misc/PrimaryBtn';
@@ -30,7 +32,15 @@ export default function Hero() {
 					</Link>
 				</div>
 				{/* Image */}
-				<div className={styles.hero__img}></div>
+				<div className={styles.hero__img}>
+					<Image
+						src={mainImg}
+						alt='Web Design, Development, & SEO'
+						height={507}
+						width={422}
+						style={{ maxWidth: '100%', height: 'auto' }}
+					/>
+				</div>
 			</div>
 		</section>
 	);

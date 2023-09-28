@@ -1,6 +1,7 @@
 /*----- Global, base, and utility Scss code used here. Component and layout Scss used as module code for each individual item. -----*/
 
 @use 'base';
+@use './abstracts/' as *;
 
 html {
 	background-color: #fff;
@@ -33,7 +34,12 @@ p {
 
 section {
 	margin: 0 auto;
+	padding: 3rem 1rem;
 	max-width: 1290px;
+
+	@include breakpoint-up(md) {
+		padding: 4rem 1rem;
+	}
 }
 
 .leftAccentLines {

@@ -4,9 +4,14 @@
 @use '../../abstracts/' as *;
 
 .services {
-	padding: 3rem 1rem;
+	&__wrapper {
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
 
 	&__header___block {
+		margin: 0 auto;
+		max-width: 614px;
 		text-align: center;
 	}
 
@@ -26,7 +31,11 @@
 		}
 	}
 
-	// &__cards {
-	// 	margin-top: 2rem;
-	// }
+	&__cards {
+		@include breakpoint-up(lg) {
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+		}
+	}
 }

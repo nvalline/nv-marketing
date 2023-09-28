@@ -28,6 +28,9 @@ export default async function Home() {
 					</div>
 				</div>
 				<ValueProps />
+				<div className='leftAccentLines'>
+					<LeftLines />
+				</div>
 				<Testimonials />
 				<CtaSection />
 			</div>

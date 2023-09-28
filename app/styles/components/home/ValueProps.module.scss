@@ -4,7 +4,20 @@
 @use '../../abstracts/' as *;
 
 .value_props {
-	padding: 3rem 1rem;
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1134px;
+
+		@include breakpoint-up(lg) {
+			padding: 0 1rem;
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-areas:
+				'img cell1 cell2'
+				'img cell3 cell4';
+			grid-template-columns: 201px 1fr 1fr;
+		}
+	}
 
 	&__img___block {
 		position: relative;
@@ -13,13 +26,30 @@
 		width: 201px;
 		border-radius: 20px;
 		overflow: hidden;
+
+		@include breakpoint-up(lg) {
+			grid-area: img;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			border-radius: 20px 0 0 20px;
+		}
 	}
 
 	&__cells {
-		margin-top: 2rem;
+		margin: 2rem auto 0;
 		width: 100%;
+		max-width: 414px;
 		box-shadow: 0 4px 4px var(--clr-shadow-black);
 		text-align: center;
+
+		@include breakpoint-up(lg) {
+			margin: unset;
+
+			&:nth-child(4) {
+				border-radius: 0 0 0 60px;
+			}
+		}
 	}
 
 	&__texture___bg {
@@ -32,6 +62,10 @@
 		background-repeat: no-repeat;
 		border-radius: 20px 20px 0 0;
 		overflow: hidden;
+
+		@include breakpoint-up(lg) {
+			border-radius: 60px 0 0 0;
+		}
 	}
 
 	&__header {
