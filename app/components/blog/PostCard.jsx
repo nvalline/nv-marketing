@@ -22,9 +22,14 @@ export default function PostCard({ coverImage, excerpt, slug, title }) {
 				/>
 			</div>
 			<Link href={`/blog/${slug.current}`}>
-				<div className={styles.post_card__image}>
-					<Image src={postImage} alt={title} quality={100} fill />
-				</div>
+				<Image
+					src={postImage}
+					alt={title}
+					height={250}
+					width={375}
+					quality={100}
+					style={{ maxWidth: '100%', height: 'auto' }}
+				/>
 			</Link>
 			<Link href={`/blog/${slug.current}`}>
 				<h3 className={styles.post_card__title}>{title}</h3>

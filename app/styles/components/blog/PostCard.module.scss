@@ -22,13 +22,6 @@
 		right: 0;
 	}
 
-	&__image {
-		margin: 0 auto;
-		position: relative;
-		height: 149px;
-		width: 223px;
-	}
-
 	&__title {
 		margin-top: 2rem;
 		@include font-size(18);
