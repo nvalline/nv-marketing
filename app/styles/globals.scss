@@ -55,6 +55,16 @@ section {
 	width: 100%;
 	max-width: 452px;
 	overflow: hidden;
+
+	@include breakpoint-up(lg) {
+		height: 39px;
+		width: 586px;
+	}
+
+	@include breakpoint-up(xl) {
+		height: 48px;
+		width: 721px;
+	}
 }
 
 .rightAccentBlock {
@@ -66,6 +76,16 @@ section {
 	right: 0;
 	height: 30px;
 	width: 324px;
+
+	@include breakpoint-up(lg) {
+		height: 39px;
+		width: 448px;
+	}
+
+	@include breakpoint-up(xl) {
+		height: 48px;
+		width: 573px;
+	}
 }
 
 .fullAccentLines {
@@ -73,4 +93,12 @@ section {
 	left: 0;
 	height: 30px;
 	width: 100%;
+
+	@include breakpoint-up(lg) {
+		height: 35px;
+	}
+
+	@include breakpoint-up(xl) {
+		height: 40px;
+	}
 }

@@ -6,6 +6,18 @@
 .cta {
 	padding: 3rem 1rem;
 
+	@include breakpoint-up(md) {
+		padding: 4rem 1rem;
+	}
+
+	@include breakpoint-up(lg) {
+		padding: 5rem 2rem;
+	}
+
+	@include breakpoint-up(xl) {
+		padding: 6rem 2rem;
+	}
+
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
