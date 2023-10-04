@@ -4,15 +4,23 @@
 @use '../../abstracts/' as *;
 
 .testimonials {
-	padding: 3rem 1rem;
+	&__wrapper {
+		margin: 0 auto;
+
+		@include breakpoint-up(lg) {
+			padding: 0 1rem;
+		}
+	}
 
 	&__header___block {
+		margin: 0 auto;
+		max-width: 800px;
 		color: var(--clr-blue-dark);
 		text-align: center;
 	}
 
 	&__header {
-		@include font-size(20);
+		font-size: var(--fs-h2);
 		font-weight: 700;
 	}
 
@@ -27,5 +35,12 @@
 
 	&__card___block {
 		margin-top: 3rem;
+
+		@include breakpoint-up(lg) {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 1rem;
+		}
 	}
 }

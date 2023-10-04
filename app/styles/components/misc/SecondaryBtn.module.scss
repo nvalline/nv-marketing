@@ -8,7 +8,7 @@
 	border: 3px solid var(--clr-green-light);
 	background-color: transparent;
 	box-shadow: 0px 4px 4px 0px var(--clr-shadow-black);
-	@include font-size(16);
+	font-size: var(--fs-btn);
 	font-weight: 400;
 	color: var(--clr-blue-dark);
 	text-align: center;

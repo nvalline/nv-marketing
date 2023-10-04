@@ -5,8 +5,9 @@
 
 .testimonial_card {
 	position: relative;
-	margin-top: 2rem;
+	margin: 2rem auto 0;
 	padding: 1.5rem;
+	max-width: 375px;
 
 	&__accent___upper {
 		position: absolute;
@@ -22,19 +23,25 @@
 
 	&__content {
 		margin-top: 1rem;
+		padding: 0.5rem 0;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		font-size: var(--fs-p);
 		color: var(--clr-blue-dark);
 		text-align: center;
 	}
 
 	&__author {
 		margin-top: 1rem;
+		font-size: var(--fs-h4);
 		font-weight: 700;
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
 	}
 
 	&__details {
-		@include font-size(12);
+		font-size: var(--fs-p-sm);
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
 	}

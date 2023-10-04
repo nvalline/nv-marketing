@@ -4,7 +4,25 @@
 @use '../../abstracts/' as *;
 
 .value_props {
-	padding: 3rem 1rem;
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1134px;
+
+		@include breakpoint-up(lg) {
+			padding: 0 1rem;
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-areas:
+				'img cell1 cell2'
+				'img cell3 cell4';
+			grid-template-columns: 201px 1fr 1fr;
+		}
+
+		@include breakpoint-up(xl) {
+			grid-gap: 2rem;
+			grid-template-columns: 242px 1fr 1fr;
+		}
+	}
 
 	&__img___block {
 		position: relative;
@@ -13,13 +31,35 @@
 		width: 201px;
 		border-radius: 20px;
 		overflow: hidden;
+
+		@include breakpoint-up(lg) {
+			grid-area: img;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			border-radius: 20px 0 0 20px;
+		}
+
+		@include breakpoint-up(xl) {
+			height: 362px;
+			width: 242px;
+		}
 	}
 
 	&__cells {
-		margin-top: 2rem;
+		margin: 2rem auto 0;
 		width: 100%;
+		max-width: 414px;
 		box-shadow: 0 4px 4px var(--clr-shadow-black);
 		text-align: center;
+
+		@include breakpoint-up(lg) {
+			margin: unset;
+
+			&:nth-child(4) {
+				border-radius: 0 0 0 60px;
+			}
+		}
 	}
 
 	&__texture___bg {
@@ -32,6 +72,10 @@
 		background-repeat: no-repeat;
 		border-radius: 20px 20px 0 0;
 		overflow: hidden;
+
+		@include breakpoint-up(lg) {
+			border-radius: 60px 0 0 0;
+		}
 	}
 
 	&__header {
@@ -39,24 +83,28 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		@include font-size(20);
+		font-size: var(--fs-h2);
 		font-weight: 700;
 		color: var(--clr-white-light);
 	}
 
 	&__props {
 		padding: 1rem;
+
+		@include breakpoint-up(lg) {
+			padding: 2rem;
+		}
 	}
 
-	&__props h4 {
-		@include font-size(18);
+	&__props h3 {
+		font-size: var(--fs-h3);
 		color: var(--clr-blue-dark);
 		font-weight: 700;
 	}
 
 	&__props p {
 		margin-top: 1rem;
-		@include font-size(16);
+		font-size: var(--fs-p);
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
 	}
