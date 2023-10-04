@@ -19,14 +19,14 @@
 	}
 
 	&__header {
-		@include font-size(24);
+		font-size: var(--fs-h2);
 		font-weight: 700;
 		color: var(--clr-blue-dark);
 	}
 
 	&__sub_header {
 		margin-top: 1rem;
-		@include font-size(16);
+		font-size: var(--fs-p);
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
 	}

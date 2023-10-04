@@ -17,6 +17,11 @@
 				'img cell3 cell4';
 			grid-template-columns: 201px 1fr 1fr;
 		}
+
+		@include breakpoint-up(xl) {
+			grid-gap: 2rem;
+			grid-template-columns: 242px 1fr 1fr;
+		}
 	}
 
 	&__img___block {
@@ -33,6 +38,11 @@
 			top: 50%;
 			transform: translateY(-50%);
 			border-radius: 20px 0 0 20px;
+		}
+
+		@include breakpoint-up(xl) {
+			height: 362px;
+			width: 242px;
 		}
 	}
 
@@ -73,24 +83,28 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		@include font-size(20);
+		font-size: var(--fs-h2);
 		font-weight: 700;
 		color: var(--clr-white-light);
 	}
 
 	&__props {
 		padding: 1rem;
+
+		@include breakpoint-up(lg) {
+			padding: 2rem;
+		}
 	}
 
-	&__props h4 {
-		@include font-size(18);
+	&__props h3 {
+		font-size: var(--fs-h3);
 		color: var(--clr-blue-dark);
 		font-weight: 700;
 	}
 
 	&__props p {
 		margin-top: 1rem;
-		@include font-size(16);
+		font-size: var(--fs-p);
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
 	}

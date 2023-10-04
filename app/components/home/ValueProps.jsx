@@ -19,14 +19,14 @@ export default function ValueProps() {
 				<div
 					className={`${styles.value_props__cells} ${styles.value_props__texture___bg}`}
 				>
-					<h4 className={styles.value_props__header}>
+					<h2 className={styles.value_props__header}>
 						Why Choose NV Marketing?
-					</h4>
+					</h2>
 				</div>
 				<div
 					className={`${styles.value_props__cells} ${styles.value_props__props}`}
 				>
-					<h4>Enterprise Impact, Small Business Values</h4>
+					<h3>Enterprise Impact, Small Business Values</h3>
 					<p>
 						Unlock enterprise-quality websites that captivate your audience and
 						drive growth. We specialize in delivering premium solutions at small
@@ -36,7 +36,7 @@ export default function ValueProps() {
 				<div
 					className={`${styles.value_props__cells} ${styles.value_props__props}`}
 				>
-					<h4>Rooted in the Rockies, Connecting the World</h4>
+					<h3>Rooted in the Rockies, Connecting the World</h3>
 					<p>
 						From the picturesque Intermountain region to the global stage,
 						we&apos;re your bridge to a worldwide audience. Our local roots
@@ -46,7 +46,7 @@ export default function ValueProps() {
 				<div
 					className={`${styles.value_props__cells} ${styles.value_props__props}`}
 				>
-					<h4>Innovate. Collaborate. Succeed.</h4>
+					<h3>Innovate. Collaborate. Succeed.</h3>
 					<p>
 						Join hands with a team that thrives on collaboration and innovation.
 						We&apos;re not just web developers; we&apos;re your partners in

@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { useEffect } from 'react';
 import lowerRightCorner from './bottom_right_corner.png';
 import starImg from './star.png';
 import upperLeftCorner from './upper_left_corner.png';
@@ -19,8 +22,26 @@ export default function TestimonialCard({
 		(_, index) => index
 	);
 
+	useEffect(() => {
+		const cards = document.querySelectorAll('#card-container');
+		let maxHeight = 0;
+
+		cards.forEach((card) => {
+			const cardContent = card.querySelector('#card-content');
+			const cardContentHeight = cardContent.offsetHeight;
+
+			if (cardContentHeight > maxHeight) {
+				maxHeight = cardContentHeight;
+			}
+		});
+
+		cards.forEach((card) => {
+			card.querySelector('#card-content').style.height = maxHeight + 'px';
+		});
+	}, [content]);
+
 	return (
-		<div className={styles.testimonial_card}>
+		<div id='card-container' className={styles.testimonial_card}>
 			<div className={styles.testimonial_card__accent___upper}>
 				<Image
 					src={upperLeftCorner}
@@ -43,7 +64,9 @@ export default function TestimonialCard({
 					);
 				})}
 			</div>
-			<p className={styles.testimonial_card__content}>{content}</p>
+			<p id='card-content' className={styles.testimonial_card__content}>
+				{content}
+			</p>
 			<h4 className={styles.testimonial_card__author}>{author}</h4>
 			<p className={styles.testimonial_card__details}>
 				{position}, {company}

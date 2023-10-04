@@ -15,11 +15,16 @@
 		position: relative;
 		height: 60px;
 		width: 60px;
+
+		@include breakpoint-up(xl) {
+			height: 70px;
+			width: 70px;
+		}
 	}
 
 	&__header {
 		margin-top: 1rem;
-		@include font_size(18);
+		font-size: var(--fs-h3);
 		font-weight: 700;
 		color: var(--clr-blue-dark);
 	}

@@ -20,7 +20,7 @@
 	}
 
 	&__header {
-		@include font-size(20);
+		font-size: var(--fs-h2);
 		font-weight: 700;
 	}
 
