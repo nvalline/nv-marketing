@@ -1,11 +1,11 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 // Components
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import Links from './Links';
 
 // Styles
 import styles from '@/app/styles/components/header/MobileNav.module.scss';
@@ -33,7 +33,7 @@ export default function MobileNav() {
 	}, [pathname]);
 
 	return (
-		<div>
+		<div className={styles.mobile_nav}>
 			{/* OnClick Change Icon */}
 			<div onClick={handleIconToggle}>
 				{showIcon ? (
@@ -50,27 +50,12 @@ export default function MobileNav() {
 						: `${styles.mobile_nav__overlay} ${styles.mobile_nav__fadeOut}`
 				}
 			>
-				<div className={styles.mobile_nav__links}>
-					<ul className={styles.mobile_nav__linksList}>
-						<li className={styles.mobile_nav__link}>
-							<Link href='/'>Home</Link>
-						</li>
-						<li className={styles.mobile_nav__link}>
-							<Link href='/about'>About</Link>
-						</li>
-						<li className={styles.mobile_nav__link}>
-							<Link href='/services'>Services</Link>
-						</li>
-						<li className={styles.mobile_nav__link}>
-							<Link href='/blog'>Blog</Link>
-						</li>
-					</ul>
-					<Link href='/contact'>
-						<button type='button' className={styles.mobile_nav__button}>
-							Contact
-						</button>
-					</Link>
-				</div>
+				<Links
+					divClass={styles.mobile_nav__links}
+					ulClass={styles.mobile_nav__linksList}
+					liClass={styles.mobile_nav__link}
+					btnClass={styles.mobile_nav__button}
+				/>
 			</div>
 		</div>
 	);
