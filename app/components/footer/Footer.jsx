@@ -14,9 +14,12 @@ export default function Footer() {
 			<div className={styles.footer__wrapper}>
 				<div className={styles.footer__nav___block}>
 					<NavLinks />
+					<div className={styles.footer__logo___desktop}>
+						<Logo />
+					</div>
 					<SocialLinks />
 				</div>
-				<div className={styles.footer__logo___wrapper}>
+				<div className={styles.footer__logo___mobile}>
 					<Logo />
 				</div>
 				<div className={styles.footer__copyright___block}>
