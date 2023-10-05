@@ -4,6 +4,10 @@
 @use '../../abstracts/' as *;
 
 .mobile_nav {
+	@include breakpoint-up(lg) {
+		display: none;
+	}
+
 	&__icons {
 		color: var(--clr-blue-dark);
 	}
