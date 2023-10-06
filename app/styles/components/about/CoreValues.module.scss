@@ -4,22 +4,34 @@
 @use '../../abstracts/' as *;
 
 .coreValues {
-	padding: 3rem 1rem;
-
 	&__header {
-		@include font_size(24);
+		font-size: var(--fs-h2);
 		font-weight: 700;
 		color: var(--clr-blue-dark);
 		text-align: center;
 	}
 
 	&__value___block {
-		margin-top: 2rem;
+		margin: 2rem auto 0;
+		max-width: 952px;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
 		align-items: center;
 		justify-content: space-evenly;
+
+		@include breakpoint-up(lg) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		@include breakpoint-up(xl) {
+			gap: 3rem;
+		}
+
+		@include breakpoint-up(xxl) {
+			gap: 4rem;
+		}
 	}
 
 	&__value {
@@ -34,6 +46,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 9;
+		font-size: var(--fs-p);
 		font-weight: 700;
 		color: var(--clr-white-light);
 		text-transform: capitalize;

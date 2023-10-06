@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import largeMap from './map_lg.png';
 import smallMap from './map_sm.png';
 
 // Styles
@@ -26,14 +27,16 @@ export default function Hero() {
 							<Image src={smallMap} alt='Service Map' fill />
 						</div>
 						{/* Desktop Image */}
-						<div className={styles.hero__img___desktop}></div>
+						<div className={styles.hero__img___desktop}>
+							<Image src={largeMap} alt='Service Map' fill />
+						</div>
 					</div>
 				</div>
 				{/* Hero Impact Section */}
 				<div className={styles.hero__impact___block}>
-					<h3 className={styles.hero__impact___header}>
+					<h2 className={styles.hero__impact___header}>
 						NV Marketing: Where Small Business Meets Big Impact
-					</h3>
+					</h2>
 					<p className={styles.hero__impact___content}>
 						At NV Marketing, our mission is to empower small businesses with the
 						digital tools they need to thrive in an ever-evolving online

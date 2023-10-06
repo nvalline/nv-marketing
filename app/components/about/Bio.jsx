@@ -8,14 +8,17 @@ export default function Bio() {
 	return (
 		<section className={styles.bio}>
 			<div className={styles.bio__wrapper}>
+				<div className={styles.bio__img___desktop}>
+					<Image src={founderImg} alt='Founder & CEO' fill quality={100} />
+				</div>
 				{/* Mobile Bio */}
-				<div className={styles.bio__mobile}>
+				<div className={styles.bio__content___wrapper}>
 					<div className={styles.bio__headers}>
-						<h3 className={styles.bio__header}>
+						<h2 className={styles.bio__header}>
 							Meet the Visionary Behind NV Marketing
-						</h3>
-						<p className={styles.bio__sub_header}>Nate Valline</p>
-						<p className={styles.bio__sub_header}>Founder & CEO</p>
+						</h2>
+						<p className={styles.bio__author}>Nate Valline</p>
+						<p className={styles.bio__details}>Founder & CEO</p>
 					</div>
 					<div className={styles.bio__img___mobile}>
 						<Image src={founderImg} alt='Founder & CEO' fill quality={100} />
@@ -51,7 +54,7 @@ export default function Bio() {
 					</div>
 				</div>
 				{/* Desktop Bio */}
-				<div className={styles.bio__desktop}></div>
+				{/* <div className={styles.bio__desktop}></div> */}
 			</div>
 		</section>
 	);

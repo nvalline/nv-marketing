@@ -4,25 +4,78 @@
 @use '../../abstracts/' as *;
 
 .bio {
-	padding: 3rem 1rem;
+	&__wrapper {
+		@include breakpoint-up(lg) {
+			margin: 0 auto;
+			max-width: 880px;
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 2rem;
+		}
+
+		@include breakpoint-up(xl) {
+			max-width: 1070px;
+		}
+	}
+
+	&__img___desktop {
+		display: none;
+
+		@include breakpoint-up(lg) {
+			display: block;
+			position: relative;
+			height: 319px;
+			width: 300px;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		@include breakpoint-up(xl) {
+			height: 436px;
+			width: 410px;
+		}
+	}
+
+	&__content___wrapper {
+		@include breakpoint-up(lg) {
+			width: 430px;
+		}
+
+		@include breakpoint-up(xl) {
+			width: unset;
+			max-width: 520px;
+		}
+	}
 
 	&__headers {
 		text-align: center;
 	}
 
 	&__header {
-		@include font-size(22);
+		font-size: var(--fs-h2);
 		color: var(--clr-blue-dark);
 		font-weight: 700;
 	}
 
-	&__sub_header {
+	&__author {
+		margin-top: 1rem;
+		font-size: var(--fs-p-lg);
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
 
-		&:nth-child(2) {
-			@include font-size(20);
-			margin-top: 1rem;
+		@include breakpoint-up(xl) {
+			margin-top: 2rem;
+		}
+	}
+
+	&__details {
+		font-size: var(--fs-p-sm);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+
+		@include breakpoint-up(xl) {
+			margin-top: 0.5rem;
 		}
 	}
 
@@ -33,14 +86,25 @@
 		width: 226px;
 		border-radius: 10px;
 		overflow: hidden;
+
+		@include breakpoint-up(lg) {
+			display: none;
+		}
 	}
 
 	&__content___block {
+		margin: 0 auto;
 		text-align: center;
+
+		@include breakpoint-up(xl) {
+			margin: 2rem auto 0;
+		}
 	}
 
 	&__content {
 		margin-top: 1rem;
+		max-width: 520px;
+		font-size: var(--fs-p);
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
 	}
