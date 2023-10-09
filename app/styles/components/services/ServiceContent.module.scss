@@ -8,19 +8,47 @@
 	position: relative;
 	height: 125px;
 	width: 125px;
+
+	@include breakpoint-up(lg) {
+		height: 187px;
+		width: 187px;
+	}
+
+	@include breakpoint-up(xl) {
+		margin: 3.5rem auto 0;
+	}
+
+	@include breakpoint-up(xxl) {
+		height: 250px;
+		width: 250px;
+	}
 }
 
 .content {
-	margin-top: 2rem;
+	margin: 2rem auto 0;
+	max-width: 619px;
 	text-align: center;
 	color: var(--clr-blue-dark);
 
+	@include breakpoint-up(xl) {
+		margin: 0 auto;
+	}
+
 	&__header {
-		@include font-size(22);
+		font-size: var(--fs-h2);
 	}
 
 	&__text {
 		margin-top: 1rem;
+		font-size: var(--fs-p);
+
+		@include breakpoint-up(lg) {
+			margin-top: 2rem;
+		}
+
+		@include breakpoint-up(xl) {
+			text-align: left;
+		}
 
 		> span {
 			font-weight: 700;

@@ -32,7 +32,7 @@ export default function Services() {
 						<RightLines />
 					</div>
 				</div>
-				<ServiceDetail query={sanityQueries[1].query} />
+				<ServiceDetail query={sanityQueries[1].query} rowReverse='reverse' />
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>

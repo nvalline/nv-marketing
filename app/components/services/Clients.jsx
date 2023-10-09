@@ -46,17 +46,7 @@ export default async function Clients() {
 						<>
 							{/* Mobile */}
 							<ClientLogo
-								className={styles.clients__logo___mobile}
-								clientName={client.clientName}
-								height={client.mobileHeight}
-								image={client.logo}
-								key={client._key}
-								url={client.url}
-								width={client.mobileWidth}
-							/>
-							{/* Desktop */}
-							<ClientLogo
-								className={styles.clients__logo___desktop}
+								className={styles.clients__logo}
 								clientName={client.clientName}
 								height={client.desktopHeight}
 								image={client.logo}
