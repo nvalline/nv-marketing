@@ -5,8 +5,7 @@
 
 .post_card {
 	margin-top: 2rem;
-	padding: 2rem;
-	max-width: 410px;
+	padding: 1.5rem;
 	position: relative;
 	text-align: center;
 
@@ -22,16 +21,53 @@
 		right: 0;
 	}
 
+	&__img {
+		position: relative;
+		height: 170px;
+		width: 255px;
+		border-radius: 10px;
+		overflow: hidden;
+
+		@include breakpoint-up-cust(75) {
+			height: 200px;
+			width: 300px;
+		}
+
+		@include breakpoint-up(xxl) {
+			height: 250px;
+			width: 375px;
+		}
+	}
+
 	&__title {
 		margin-top: 2rem;
-		@include font-size(18);
+		max-width: 255px;
+		font-size: var(--fs-h3);
 		font-weight: 700;
 		color: var(--clr-blue-dark);
+
+		@include breakpoint-up(75) {
+			max-width: 300px;
+		}
+
+		@include breakpoint-up(xxl) {
+			max-width: 375px;
+		}
 	}
 
 	&__excerpt {
 		margin-top: 1rem;
+		max-width: 255px;
+		font-size: var(--fs-p);
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
+
+		@include breakpoint-up(75) {
+			max-width: 300px;
+		}
+
+		@include breakpoint-up(xxl) {
+			max-width: 375px;
+		}
 	}
 }

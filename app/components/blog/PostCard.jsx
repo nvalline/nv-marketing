@@ -9,7 +9,6 @@ import styles from '../../styles/components/blog/PostCard.module.scss';
 
 export default function PostCard({ coverImage, excerpt, slug, title }) {
 	const postImage = urlFor(coverImage).url();
-	const postUrl = `/${slug}`;
 
 	return (
 		<div className={styles.post_card}>
@@ -22,14 +21,9 @@ export default function PostCard({ coverImage, excerpt, slug, title }) {
 				/>
 			</div>
 			<Link href={`/blog/${slug.current}`}>
-				<Image
-					src={postImage}
-					alt={title}
-					height={250}
-					width={375}
-					quality={100}
-					style={{ maxWidth: '100%', height: 'auto' }}
-				/>
+				<div className={styles.post_card__img}>
+					<Image src={postImage} alt={title} fill quality={100} />
+				</div>
 			</Link>
 			<Link href={`/blog/${slug.current}`}>
 				<h3 className={styles.post_card__title}>{title}</h3>
