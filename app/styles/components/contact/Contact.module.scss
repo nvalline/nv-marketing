@@ -4,12 +4,11 @@
 @use '../../abstracts/' as *;
 
 .contact {
-	padding: 3rem 1rem;
 	text-align: center;
 
 	&__title {
 		margin: 0 auto;
-		@include font-size(22);
+		font-size: var(--fs-h1);
 		font-weight: 700;
 		display: inline-block;
 		border-bottom: 2px solid var(--clr-blue-dark);
@@ -18,27 +17,57 @@
 	}
 
 	&__wrapper {
-		margin-top: 1rem;
+		margin: 1rem auto 0;
+		position: relative;
+
+		@include breakpoint-up(xl) {
+			max-width: 1200px;
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-evenly;
+			gap: 10rem;
+		}
 	}
 
 	&__block {
 		padding: 1rem 0;
+		margin: 0 auto;
+		max-width: 500px;
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
 		text-align: center;
+
+		@include breakpoint-up(xl) {
+			max-width: 400px;
+		}
+
+		@include breakpoint-up(xxl) {
+			max-width: 500px;
+		}
 	}
 
 	&__header {
-		@include font-size(18);
+		font-size: var(--fs-h2);
 		font-weight: 400;
 	}
 
 	&__text {
 		margin-top: 1rem;
+		font-size: var(--fs-p);
+
+		@include breakpoint-up(xl) {
+			margin-top: 2rem;
+		}
 	}
 
 	&__btn {
-		margin-top: 2rem;
+		margin: 2rem auto 0;
+		max-width: 425px;
+
+		@include breakpoint-up(xl) {
+			margin: 3rem auto 0;
+			max-width: 430px;
+		}
 	}
 
 	&__arrows {
@@ -46,5 +75,17 @@
 		position: relative;
 		height: 120px;
 		width: 120px;
+
+		@include breakpoint-up(lg) {
+			height: 150px;
+			width: 150px;
+		}
+
+		@include breakpoint-up(xl) {
+			margin: 0 auto;
+			position: absolute;
+			top: 35%;
+			transform: translateY(-50%) rotate(90deg);
+		}
 	}
 }

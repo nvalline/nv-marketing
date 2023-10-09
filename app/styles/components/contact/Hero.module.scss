@@ -5,18 +5,46 @@
 
 .hero {
 	margin-bottom: 1rem;
-	padding: 3rem 1rem;
 	height: 300px;
 	background-image: url('/images/mountain_scape.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position-y: bottom;
 
+	@include breakpoint-up(md) {
+		height: 350px;
+	}
+
+	@include breakpoint-up(md) {
+		height: 410px;
+	}
+
+	&__wrapper {
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+
 	&__block {
+		margin: 0 auto;
 		padding: 1.5rem;
+		max-width: 425px;
 		background-color: var(--clr-blue-dark);
 		border-left: 8px solid var(--clr-orange-dark);
 		border-radius: 10px;
+
+		@include breakpoint-up(md) {
+			padding: 2rem;
+			width: 425px;
+			position: absolute;
+			top: 30%;
+			left: 15%;
+		}
+
+		@include breakpoint-up(xl) {
+			top: 20%;
+			left: 17%;
+		}
 	}
 
 	&__title {
@@ -32,6 +60,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+
+		@include breakpoint-up(md) {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
 	}
 
 	&__contact_info {
@@ -43,6 +77,10 @@
 		margin-top: 0.5rem;
 		display: flex;
 		align-items: center;
+
+		@include breakpoint-up(md) {
+			margin-top: 0;
+		}
 
 		> img {
 			margin-right: 5px;
