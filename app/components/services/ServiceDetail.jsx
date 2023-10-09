@@ -12,7 +12,7 @@ const getService = async (query) => {
 	return data;
 };
 
-export default async function ServiceDetail({ query }) {
+export default async function ServiceDetail({ query, rowReverse }) {
 	const service = await getService(query);
 
 	const serviceTitle = service.title;
@@ -21,7 +21,13 @@ export default async function ServiceDetail({ query }) {
 
 	return (
 		<section className={styles.service_detail}>
-			<div className={styles.service_detail__wrapper}>
+			<div
+				className={
+					rowReverse === 'reverse'
+						? `${styles.service_detail__wrapper} ${styles.reverse}`
+						: styles.service_detail__wrapper
+				}
+			>
 				<ServiceContent
 					name={serviceTitle}
 					description={serviceDesc}

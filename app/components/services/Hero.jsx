@@ -46,7 +46,7 @@ export default function Hero() {
 					</div>
 					{/* Image */}
 					<div className={styles.hero__img___block}>
-						<div className={styles.hero__img___mobile}>
+						<div className={styles.hero__img}>
 							<Image src={webServices} alt='Web Services' fill />
 						</div>
 					</div>

@@ -12,14 +12,20 @@ export default function ClientLogo({
 }) {
 	const logo = urlFor(image).url();
 	return (
-		<a href={url} target='_blank' rel='noopenner noreferrer' key={key}>
+		<a
+			href={url}
+			target='_blank'
+			rel='noopenner noreferrer'
+			key={key}
+			className={className}
+		>
 			<Image
 				src={logo}
 				alt={clientName}
 				height={height}
 				width={width}
 				quality={100}
-				className={className}
+				style={{ maxWidth: '100%', height: 'auto' }}
 			/>
 		</a>
 	);

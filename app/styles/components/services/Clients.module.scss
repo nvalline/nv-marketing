@@ -4,31 +4,60 @@
 @use '../../abstracts/' as *;
 
 .clients {
-	padding: 3rem 1rem;
-
 	&__content {
+		margin: 0 auto;
+		max-width: 750px;
 		text-align: center;
 		color: var(--clr-blue-dark);
 	}
 
 	&__header {
+		font-size: var(--fs-h2);
 		font-weight: 700;
 	}
 
 	&__text {
 		margin-top: 1rem;
+		font-size: var(--fs-p);
 		opacity: 0.9;
+
+		@include breakpoint-up(lg) {
+			margin-top: 2rem;
+		}
 	}
 
 	&__logos {
 		margin-top: 2rem;
+		max-width: 859px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 1rem;
+
+		@include breakpoint-up(md) {
+			margin: 2rem auto 0;
+			max-width: 550px;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		@include breakpoint-up(lg) {
+			margin: 3rem auto 0;
+			max-width: 754px;
+		}
+
+		@include breakpoint-up(xl) {
+			margin: 4rem auto 0;
+			max-width: 859px;
+		}
 	}
 
-	&__logo___desktop {
-		display: none;
+	&__logo {
+		position: relative;
+		width: 150px;
+
+		@include breakpoint-up(xl) {
+			width: 201px;
+		}
 	}
 }

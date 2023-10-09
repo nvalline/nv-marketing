@@ -4,5 +4,20 @@
 @use '../../abstracts/' as *;
 
 .service_detail {
-	padding: 3rem 1rem;
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1048px;
+
+		@include breakpoint-up(xl) {
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+		}
+	}
+}
+
+.reverse {
+	@include breakpoint-up(xl) {
+		flex-direction: row-reverse;
+	}
 }
