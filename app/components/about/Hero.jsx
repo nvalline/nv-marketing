@@ -1,9 +1,75 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import largeMap from './map_lg.png';
 import smallMap from './map_sm.png';
 
 // Styles
 import styles from '../../styles/components/about/Hero.module.scss';
+
+const heroImgVars = {
+	hidden: {
+		x: '5vw',
+		y: '5vh',
+		opacity: 0,
+		scale: 0.75
+	},
+	show: {
+		x: 1,
+		y: 1,
+		opacity: 1,
+		scale: 1,
+		transition: {
+			duration: 0.5,
+			ease: 'easeOut'
+		}
+	}
+};
+
+const heroContainerVars = {
+	hidden: {
+		opacity: 0
+	},
+	show: {
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.09,
+			staggerDirection: 1
+		}
+	}
+};
+
+const heroContentVars = {
+	hidden: {
+		opacity: 0,
+		y: '5vh'
+	},
+	show: {
+		opacity: 1,
+		y: 1,
+		transition: {
+			duration: 0.5,
+			ease: 'easeInOut'
+		}
+	}
+};
+
+const descVars = {
+	hidden: {
+		opacity: 0,
+		scale: 0.75
+	},
+	show: {
+		opacity: 1,
+		scale: 1,
+		transition: {
+			delay: 0.5,
+			duration: 0.5,
+			ease: 'easeOut'
+		}
+	}
+};
 
 export default function Hero() {
 	return (
@@ -12,14 +78,25 @@ export default function Hero() {
 				{/* Content */}
 				<div className={styles.hero__title___block}>
 					{/* Headers */}
-					<div className={styles.hero__content___headers}>
-						<h1 className={styles.hero__content___header}>
+					<motion.div
+						variants={heroContainerVars}
+						initial='hidden'
+						animate='show'
+						className={styles.hero__content___headers}
+					>
+						<motion.h1
+							variants={heroContentVars}
+							className={styles.hero__content___header}
+						>
 							Discover NV Marketing: <span>Your Digital Success Partner</span>
-						</h1>
-						<p className={styles.hero__content___sub_header}>
+						</motion.h1>
+						<motion.p
+							variants={heroContentVars}
+							className={styles.hero__content___sub_header}
+						>
 							Unleash Your Business&apos;s Potential in the Digital Frontier
-						</p>
-					</div>
+						</motion.p>
+					</motion.div>
 					{/* Hero Image */}
 					<div className={styles.hero__img___block}>
 						{/* Mobile Image */}
@@ -27,13 +104,23 @@ export default function Hero() {
 							<Image src={smallMap} alt='Service Map' fill />
 						</div>
 						{/* Desktop Image */}
-						<div className={styles.hero__img___desktop}>
+						<motion.div
+							variants={heroImgVars}
+							initial='hidden'
+							animate='show'
+							className={styles.hero__img___desktop}
+						>
 							<Image src={largeMap} alt='Service Map' fill />
-						</div>
+						</motion.div>
 					</div>
 				</div>
 				{/* Hero Impact Section */}
-				<div className={styles.hero__impact___block}>
+				<motion.div
+					variants={descVars}
+					initial='hidden'
+					animate='show'
+					className={styles.hero__impact___block}
+				>
 					<h2 className={styles.hero__impact___header}>
 						NV Marketing: Where Small Business Meets Big Impact
 					</h2>
@@ -57,7 +144,7 @@ export default function Hero() {
 						relationships grounded in{' '}
 						<span>trust, creativity, and results</span>.
 					</p>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

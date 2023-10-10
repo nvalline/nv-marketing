@@ -19,7 +19,7 @@ export default async function TestimonialList() {
 			{testimonials.map((testimonial) => {
 				return (
 					<TestimonialCard
-						key={testimonial._key}
+						key={testimonial._id}
 						author={testimonial.author}
 						company={testimonial.company}
 						content={testimonial.content}

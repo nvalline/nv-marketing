@@ -4,11 +4,11 @@ import { urlFor } from '@/app/lib/sanity';
 // Styles
 import styles from '../../styles/components/home/ServiceCard.module.scss';
 
-export default function ServiceCard({ key, name, icon, excerpt }) {
+export default function ServiceCard({ name, icon, excerpt }) {
 	const serviceIcon = urlFor(icon).url();
 
 	return (
-		<div key={key} className={styles.service_card}>
+		<div className={styles.service_card}>
 			<div className={styles.service_card__icon}>
 				<Image src={serviceIcon} alt='icon' fill />
 			</div>
