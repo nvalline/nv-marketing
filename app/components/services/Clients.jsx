@@ -42,20 +42,19 @@ export default async function Clients() {
 				</div>
 				{/* Logos */}
 				<div className={styles.clients__logos}>
-					{clients.map((client) => (
-						<>
-							{/* Mobile */}
+					{clients.map((client) => {
+						return (
 							<ClientLogo
 								className={styles.clients__logo}
 								clientName={client.clientName}
 								height={client.desktopHeight}
 								image={client.logo}
-								key={client._key}
+								key={client._id}
 								url={client.url}
 								width={client.desktopWidth}
 							/>
-						</>
-					))}
+						);
+					})}
 				</div>
 			</div>
 		</section>

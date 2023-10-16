@@ -1,4 +1,8 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { bioImgVars } from './MotionVars';
 import founderImg from './founder_at_desk.png';
 
 // Styles
@@ -8,10 +12,15 @@ export default function Bio() {
 	return (
 		<section className={styles.bio}>
 			<div className={styles.bio__wrapper}>
-				<div className={styles.bio__img___desktop}>
+				<motion.div
+					variants={bioImgVars}
+					initial='hidden'
+					whileInView='show'
+					viewport={{ once: true }}
+					className={styles.bio__img___desktop}
+				>
 					<Image src={founderImg} alt='Founder & CEO' fill quality={100} />
-				</div>
-				{/* Mobile Bio */}
+				</motion.div>
 				<div className={styles.bio__content___wrapper}>
 					<div className={styles.bio__headers}>
 						<h2 className={styles.bio__header}>
@@ -20,9 +29,15 @@ export default function Bio() {
 						<p className={styles.bio__author}>Nate Valline</p>
 						<p className={styles.bio__details}>Founder & CEO</p>
 					</div>
-					<div className={styles.bio__img___mobile}>
+					<motion.div
+						variants={bioImgVars}
+						initial='hidden'
+						whileInView='show'
+						viewport={{ once: true }}
+						className={styles.bio__img___mobile}
+					>
 						<Image src={founderImg} alt='Founder & CEO' fill quality={100} />
-					</div>
+					</motion.div>
 					<div className={styles.bio__content___block}>
 						<p className={styles.bio__content}>
 							Nate Valline is an industry veteran with a deep-rooted passion for
@@ -53,8 +68,6 @@ export default function Bio() {
 						</p>
 					</div>
 				</div>
-				{/* Desktop Bio */}
-				{/* <div className={styles.bio__desktop}></div> */}
 			</div>
 		</section>
 	);

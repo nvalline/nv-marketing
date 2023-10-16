@@ -51,10 +51,10 @@ export default function TestimonialCard({
 				/>
 			</div>
 			<div className={styles.testimonial_card__rating}>
-				{imageArray.map((star) => {
+				{imageArray.map((star, index) => {
 					return (
 						<Image
-							key={star.index}
+							key={index}
 							src={starImg}
 							alt='Star'
 							height={20}

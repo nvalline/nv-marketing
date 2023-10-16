@@ -1,47 +1,47 @@
-import { sanityClient } from '../../lib/sanity';
+'use client';
+
+import { motion } from 'framer-motion';
+import { serviceHeader, serviceVars } from './MotionVars';
 
 // Components
-import ServiceCard from './ServiceCard';
 
 // Styles
 import styles from '../../styles/components/home/Services.module.scss';
 
-const getServices = async () => {
-	const query = `*[_type == 'services']`;
-
-	const data = await sanityClient.fetch(query);
-
-	return data;
-};
-
-export default async function Services() {
-	const services = await getServices();
-
+export default function Services({ children }) {
 	return (
 		<section className={styles.services}>
 			<div className={styles.services__wrapper}>
 				<div className={styles.services__header___block}>
-					<h2 className={styles.services__header}>
+					<motion.h2
+						variants={serviceHeader}
+						initial='hidden'
+						animate='show'
+						className={styles.services__header}
+					>
 						Our Services, Your Success
-					</h2>
-					<p className={styles.services__sub_header}>
+					</motion.h2>
+					<motion.p
+						variants={serviceVars}
+						initial='hidden'
+						whileInView='show'
+						viewport={{ once: true }}
+						className={styles.services__sub_header}
+					>
 						We specialize in crafting custom web solutions that not only
 						showcase the uniqueness of your business but also{' '}
 						<span>drive results</span>.
-					</p>
+					</motion.p>
 				</div>
-				<div className={styles.services__cards}>
-					{services.map((service) => {
-						return (
-							<ServiceCard
-								key={service._id}
-								name={service.name}
-								icon={service.icon}
-								excerpt={service.excerpt}
-							/>
-						);
-					})}
-				</div>
+				<motion.div
+					variants={serviceVars}
+					initial='hidden'
+					whileInView='show'
+					viewport={{ once: true }}
+					className={styles.services__cards}
+				>
+					{children}
+				</motion.div>
 			</div>
 		</section>
 	);

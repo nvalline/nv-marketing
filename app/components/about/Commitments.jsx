@@ -29,7 +29,7 @@ export default async function Commitments() {
 					{commitments.map((commitment) => {
 						return (
 							<div
-								key={commitment._key}
+								key={commitment._id}
 								className={styles.commitments__list___item}
 							>
 								<p className={styles.commitments__content}>

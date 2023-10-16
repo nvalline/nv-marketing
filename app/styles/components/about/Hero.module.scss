@@ -109,5 +109,9 @@
 		font-size: var(--fs-p);
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
+
+		> span {
+			font-weight: 700;
+		}
 	}
 }
