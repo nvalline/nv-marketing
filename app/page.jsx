@@ -4,7 +4,9 @@ import Hero from './components/home/Hero';
 import LeftLines from './components/misc/LeftLines';
 import RightLines from './components/misc/RightLines';
 import Services from './components/home/Services';
+import ServiceList from './components/home/ServiceList';
 import Testimonials from './components/home/Testimonials';
+import TestimonialList from './components/home/TestimonialList';
 import ValueProps from './components/home/ValueProps';
 
 export const metadata = {
@@ -21,7 +23,9 @@ export default async function Home() {
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>
-				<Services />
+				<Services>
+					<ServiceList />
+				</Services>
 				<div className='rightAccentBlock'>
 					<div className='rightAccentLines'>
 						<RightLines />
@@ -31,7 +35,9 @@ export default async function Home() {
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>
-				<Testimonials />
+				<Testimonials>
+					<TestimonialList />
+				</Testimonials>
 				<CtaSection />
 			</div>
 		</main>

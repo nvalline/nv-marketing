@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { heroContainerVars, heroContentVars, heroImg } from './MotionVars';
 import mainImg from './main_image.png';
 
 // Components
@@ -10,34 +11,6 @@ import PrimaryBtn from '../misc/PrimaryBtn';
 
 // Styles
 import styles from '@/app/styles/components/home/Hero.module.scss';
-
-const heroContainerVars = {
-	hidden: {
-		opacity: 0
-	},
-	show: {
-		opacity: 1,
-		transition: {
-			staggerChildren: 0.09,
-			staggerDirection: 1
-		}
-	}
-};
-
-const heroContentVars = {
-	hidden: {
-		opacity: 0,
-		y: '5vh'
-	},
-	show: {
-		opacity: 1,
-		y: 1,
-		transition: {
-			duration: 0.5,
-			ease: 'easeInOut'
-		}
-	}
-};
 
 export default function Hero() {
 	return (
@@ -77,9 +50,9 @@ export default function Hero() {
 				</motion.div>
 				{/* Image */}
 				<motion.div
-					initial={{ opacity: 0, scale: 0.75 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{ delay: 0.5, duration: 0.5, ease: 'easeOut' }}
+					variants={heroImg}
+					initial='hidden'
+					animate='show'
 					className={styles.hero__img}
 				>
 					<Image

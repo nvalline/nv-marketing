@@ -1,29 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
-// Components
-import TestimonialList from './TestimonialList';
+import { testimonialVars } from './MotionVars';
 
 // Styles
 import styles from '../../styles/components/home/Testimonials.module.scss';
 
-const testimonialVars = {
-	hidden: {
-		y: '5vh',
-		opacity: 0
-	},
-	show: {
-		y: 1,
-		opacity: 1,
-		transition: {
-			delay: 0.3,
-			ease: 'easeOut'
-		}
-	}
-};
-
-export default function Testimonials() {
+export default function Testimonials({ children }) {
 	return (
 		<section className={styles.testimonials}>
 			<div className={styles.testimonials__wrapper}>
@@ -69,7 +52,7 @@ export default function Testimonials() {
 					viewport={{ once: true }}
 					className={styles.testimonials__card___block}
 				>
-					<TestimonialList />
+					{children}
 				</motion.div>
 			</div>
 		</section>

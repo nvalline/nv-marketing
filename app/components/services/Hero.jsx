@@ -1,5 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { contentContainer, heroContent, heroImg } from './MotionVars';
 import webServices from './web_services.png';
 
 // Components
@@ -22,33 +26,51 @@ export default function Hero() {
 				</div>
 				<div className={styles.hero__block}>
 					{/* Content */}
-					<div className={styles.hero__content___block}>
-						<p className={styles.hero__content___text}>
+					<motion.div
+						variants={contentContainer}
+						initial='hidden'
+						animate='show'
+						className={styles.hero__content___block}
+					>
+						<motion.p
+							variants={heroContent}
+							className={styles.hero__content___text}
+						>
 							NV Marketing empowers businesses to rise above the digital noise
 							and make a lasting impact. Whether you&apos;re looking to
 							captivate your audience with stunning web design, turn your ideas
 							into functional digital solutions, or enhance your visibility in
 							the digital realm, NV Marketing is your trusted partner on this
 							journey.
-						</p>
-						<p className={styles.hero__content___text}>
+						</motion.p>
+						<motion.p
+							variants={heroContent}
+							className={styles.hero__content___text}
+						>
 							Explore our array of services tailored to your unique needs, and
 							let&apos;s{' '}
 							<span>unlock your business&apos;s full online potential</span>{' '}
 							together.
-						</p>
-						<Link href={'/contact'}>
-							<PrimaryBtn
-								text='Schedule a Call Now'
-								classname={styles.hero__btn}
-							/>
-						</Link>
-					</div>
+						</motion.p>
+						<motion.div variants={heroContent}>
+							<Link href={'/contact'}>
+								<PrimaryBtn
+									text='Schedule a Call Now'
+									classname={styles.hero__btn}
+								/>
+							</Link>
+						</motion.div>
+					</motion.div>
 					{/* Image */}
 					<div className={styles.hero__img___block}>
-						<div className={styles.hero__img}>
+						<motion.div
+							variants={heroImg}
+							initial='hidden'
+							animate='show'
+							className={styles.hero__img}
+						>
 							<Image src={webServices} alt='Web Services' fill />
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</div>

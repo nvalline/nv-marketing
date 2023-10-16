@@ -2,74 +2,18 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import {
+	heroMobileImg,
+	heroImgVars,
+	heroContainerVars,
+	heroContentVars,
+	descVars
+} from './MotionVars';
 import largeMap from './map_lg.png';
 import smallMap from './map_sm.png';
 
 // Styles
 import styles from '../../styles/components/about/Hero.module.scss';
-
-const heroImgVars = {
-	hidden: {
-		x: '5vw',
-		y: '5vh',
-		opacity: 0,
-		scale: 0.75
-	},
-	show: {
-		x: 1,
-		y: 1,
-		opacity: 1,
-		scale: 1,
-		transition: {
-			duration: 0.5,
-			ease: 'easeOut'
-		}
-	}
-};
-
-const heroContainerVars = {
-	hidden: {
-		opacity: 0
-	},
-	show: {
-		opacity: 1,
-		transition: {
-			staggerChildren: 0.09,
-			staggerDirection: 1
-		}
-	}
-};
-
-const heroContentVars = {
-	hidden: {
-		opacity: 0,
-		y: '5vh'
-	},
-	show: {
-		opacity: 1,
-		y: 1,
-		transition: {
-			duration: 0.5,
-			ease: 'easeInOut'
-		}
-	}
-};
-
-const descVars = {
-	hidden: {
-		opacity: 0,
-		scale: 0.75
-	},
-	show: {
-		opacity: 1,
-		scale: 1,
-		transition: {
-			delay: 0.5,
-			duration: 0.5,
-			ease: 'easeOut'
-		}
-	}
-};
 
 export default function Hero() {
 	return (
@@ -100,9 +44,14 @@ export default function Hero() {
 					{/* Hero Image */}
 					<div className={styles.hero__img___block}>
 						{/* Mobile Image */}
-						<div className={styles.hero__img___mobile}>
+						<motion.div
+							variants={heroMobileImg}
+							initial='hidden'
+							animate='show'
+							className={styles.hero__img___mobile}
+						>
 							<Image src={smallMap} alt='Service Map' fill />
-						</div>
+						</motion.div>
 						{/* Desktop Image */}
 						<motion.div
 							variants={heroImgVars}

@@ -1,4 +1,9 @@
+'use client';
+
 import Image from 'next/image';
+import { useIsSmall } from '@/app/utils/MediaListenerHook';
+import { motion } from 'framer-motion';
+import { dividerImgLg, dividerImgSm } from './MotionVars';
 import arrows from './arrows.png';
 
 // Components
@@ -9,6 +14,8 @@ import PrimaryBtn from '../misc/PrimaryBtn';
 import styles from '../../styles/components/contact/Contact.module.scss';
 
 export default function Contact() {
+	const isSmall = useIsSmall();
+
 	return (
 		<section className={styles.contact}>
 			<h1 className={styles.contact__title}>Contact Us</h1>
@@ -33,9 +40,15 @@ export default function Contact() {
 						/>
 					</a>
 				</div>
-				<div className={styles.contact__arrows}>
+				<motion.div
+					variants={isSmall ? dividerImgSm : dividerImgLg}
+					initial='hidden'
+					whileInView='finish'
+					viewport={{ once: true }}
+					className={styles.contact__arrows}
+				>
 					<Image src={arrows} alt='arrows' fill />
-				</div>
+				</motion.div>
 				{/* Form */}
 				<div className={styles.contact__block}>
 					<h2 className={styles.contact__header}>Send A Message</h2>

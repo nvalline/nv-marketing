@@ -2,23 +2,9 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { valueVars } from './MotionVars';
 import circle1 from './value_circle_1.png';
 import circle2 from './value_circle_2.png';
-
-const valueVars = {
-	initial: {
-		opacity: 0,
-		rotate: '270deg'
-	},
-	finish: (index) => ({
-		opacity: 1,
-		rotate: '0deg',
-		transition: {
-			delay: 0.1 * index,
-			duration: 0.5
-		}
-	})
-};
 
 export default function ValueList({
 	coreValues,

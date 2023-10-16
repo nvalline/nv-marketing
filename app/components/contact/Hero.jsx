@@ -1,4 +1,8 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { addressBlock } from './MotionVars';
 import phone from './phone.png';
 
 // Styles
@@ -9,7 +13,12 @@ export default function Hero() {
 		<section className={styles.hero}>
 			<div className={styles.hero__wrapper}>
 				{/* Address */}
-				<div className={styles.hero__block}>
+				<motion.div
+					variants={addressBlock}
+					initial='hidden'
+					animate='show'
+					className={styles.hero__block}
+				>
 					<h2 className={styles.hero__title}>Home Base</h2>
 					<div className={styles.hero__address}>
 						<p className={styles.hero__contact_info}>Midway, UT</p>
@@ -20,7 +29,7 @@ export default function Hero() {
 							</a>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

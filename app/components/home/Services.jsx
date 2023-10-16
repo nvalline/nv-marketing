@@ -1,38 +1,22 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { serviceHeader, serviceVars } from './MotionVars';
 
 // Components
-import ServiceList from './ServiceList';
 
 // Styles
 import styles from '../../styles/components/home/Services.module.scss';
 
-const serviceVars = {
-	hidden: {
-		y: '5vh',
-		opacity: 0
-	},
-	show: {
-		y: 1,
-		opacity: 1,
-		transition: {
-			delay: 0.3,
-			ease: 'easeOut'
-		}
-	}
-};
-
-export default function Services({ services }) {
+export default function Services({ children }) {
 	return (
 		<section className={styles.services}>
 			<div className={styles.services__wrapper}>
 				<div className={styles.services__header___block}>
 					<motion.h2
-						variants={serviceVars}
+						variants={serviceHeader}
 						initial='hidden'
-						whileInView='show'
-						viewport={{ once: true }}
+						animate='show'
 						className={styles.services__header}
 					>
 						Our Services, Your Success
@@ -56,7 +40,7 @@ export default function Services({ services }) {
 					viewport={{ once: true }}
 					className={styles.services__cards}
 				>
-					<ServiceList />
+					{children}
 				</motion.div>
 			</div>
 		</section>

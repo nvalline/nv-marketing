@@ -2,25 +2,11 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { bioImgVars } from './MotionVars';
 import founderImg from './founder_at_desk.png';
 
 // Styles
 import styles from '../../styles/components/about/Bio.module.scss';
-
-const bioImgVars = {
-	hidden: {
-		opacity: 0,
-		scale: 0.5
-	},
-	show: {
-		opacity: 1,
-		scale: 1,
-		transition: {
-			duration: 0.5,
-			ease: 'easeOut'
-		}
-	}
-};
 
 export default function Bio() {
 	return (

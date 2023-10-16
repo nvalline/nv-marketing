@@ -1,4 +1,8 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { heroImgVars } from './MotionVars';
 import heroImg from './puzzle_pieces.png';
 
 // Styles
@@ -11,9 +15,14 @@ export default function Hero() {
 				<div className={styles.hero__content}>
 					<h1 className={styles.hero__header}>Welcome to Our Blog</h1>
 					{/* Mobile Image */}
-					<div className={styles.hero__img___mobile}>
+					<motion.div
+						variants={heroImgVars}
+						initial='hidden'
+						animate='show'
+						className={styles.hero__img___mobile}
+					>
 						<Image src={heroImg} alt='Puzzle Pieces' fill />
-					</div>
+					</motion.div>
 					<p className={styles.hero__text}>
 						Dive into a world of insights, knowledge, and inspiration. Our blog
 						archive is a treasure trove of articles, each crafted to empower,
@@ -31,9 +40,14 @@ export default function Hero() {
 					</p>
 				</div>
 				{/* Desktop Image */}
-				<div className={styles.hero__img___desktop}>
+				<motion.div
+					variants={heroImgVars}
+					initial='hidden'
+					animate='show'
+					className={styles.hero__img___desktop}
+				>
 					<Image src={heroImg} alt='Puzzle Pieces' fill />
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);
