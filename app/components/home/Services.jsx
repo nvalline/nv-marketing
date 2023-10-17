@@ -22,10 +22,9 @@ export default function Services({ children }) {
 						Our Services, Your Success
 					</motion.h2>
 					<motion.p
-						variants={serviceVars}
+						variants={serviceHeader}
 						initial='hidden'
-						whileInView='show'
-						viewport={{ once: true }}
+						animate='show'
 						className={styles.services__sub_header}
 					>
 						We specialize in crafting custom web solutions that not only
