@@ -1,62 +1,89 @@
 'use client';
 
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { linkContainer, linkVars, navOverlay } from './MotionVars';
+import { linkList } from './LinkDataList';
 
 // Components
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import Links from './Links';
 
 // Styles
 import styles from '@/app/styles/components/header/MobileNav.module.scss';
 
 export default function MobileNav() {
 	const pathname = usePathname();
-	const [showIcon, setShowIcon] = useState(false);
+	const [isVisible, setIsVisible] = useState(false);
 
 	const handleIconToggle = () => {
-		setShowIcon(!showIcon);
+		setIsVisible(!isVisible);
 	};
 
 	// Disable scroll when overlay is active
 	useEffect(() => {
-		if (showIcon) {
+		if (isVisible) {
 			document.body.style.overflow = 'hidden';
 		} else {
 			document.body.style.overflow = 'unset';
 		}
-	}, [showIcon]);
+	}, [isVisible]);
 
 	// Update icon state on route change
 	useEffect(() => {
-		setShowIcon(false);
+		setIsVisible(false);
 	}, [pathname]);
 
 	return (
 		<div className={styles.mobile_nav}>
 			{/* OnClick Change Icon */}
 			<div onClick={handleIconToggle}>
-				{showIcon ? (
+				{isVisible ? (
 					<AiOutlineClose size={20} className={styles.mobile_nav__icons} />
 				) : (
 					<AiOutlineMenu size={20} className={styles.mobile_nav__icons} />
 				)}
 			</div>
-
-			<div
-				className={
-					showIcon
-						? `${styles.mobile_nav__overlay} ${styles.mobile_nav__fadeIn}`
-						: `${styles.mobile_nav__overlay} ${styles.mobile_nav__fadeOut}`
-				}
-			>
-				<Links
-					divClass={styles.mobile_nav__links}
-					ulClass={styles.mobile_nav__linksList}
-					liClass={styles.mobile_nav__link}
-					btnClass={styles.mobile_nav__button}
-				/>
-			</div>
+			<AnimatePresence>
+				{isVisible && (
+					<motion.div
+						variants={navOverlay}
+						initial='hidden'
+						animate='show'
+						exit='exit'
+						className={styles.mobile_nav__overlay}
+					>
+						<div className={styles.mobile_nav__links}>
+							<motion.ul
+								variants={linkContainer}
+								initial='hidden'
+								animate='show'
+								exit='hidden'
+								className={styles.mobile_nav__linksList}
+							>
+								{linkList.map((link, index) => {
+									return (
+										<div key={index} style={{ overflow: 'hidden' }}>
+											<motion.li
+												variants={linkVars}
+												className={styles.mobile_nav__link}
+											>
+												<Link href={link.href}>{link.title}</Link>
+											</motion.li>
+										</div>
+									);
+								})}
+							</motion.ul>
+							<Link href='/contact'>
+								<button type='button' className={styles.mobile_nav__button}>
+									Contact
+								</button>
+							</Link>
+						</div>
+					</motion.div>
+				)}
+			</AnimatePresence>
 		</div>
 	);
 }
