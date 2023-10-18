@@ -50,7 +50,7 @@
 	&__title {
 		display: inline-block;
 		border-bottom: 2px solid var(--clr-white-light);
-		@include font-size(24);
+		font-size: var(--fs-h2);
 		color: var(--clr-white-light);
 		font-weight: 400;
 	}
