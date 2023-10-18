@@ -66,7 +66,7 @@
 	}
 
 	&__copyright {
-		@include font-size(10);
+		font-size: 0.625rem;
 		color: var(--clr-blue-dark);
 	}
 }

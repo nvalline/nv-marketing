@@ -8,12 +8,9 @@
 	margin: 2rem auto 0;
 	padding: 1.5rem;
 	max-width: 375px;
-
-	&__accent___upper {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+	border: 3px solid var(--clr-green-light);
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px var(--clr-shadow-black);
 
 	&__rating {
 		display: flex;
@@ -44,11 +41,5 @@
 		font-size: var(--fs-p-sm);
 		color: var(--clr-blue-dark);
 		opacity: 0.9;
-	}
-
-	&__accent___lower {
-		position: absolute;
-		bottom: 0;
-		right: 0;
 	}
 }

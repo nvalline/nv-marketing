@@ -2,9 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect } from 'react';
-import lowerRightCorner from './assets/bottom_right_corner.png';
 import starImg from './assets/star.png';
-import upperLeftCorner from './assets/upper_left_corner.png';
 
 // Styles
 import styles from '../../styles/components/home/TestimonialCard.module.scss';
@@ -42,14 +40,6 @@ export default function TestimonialCard({
 
 	return (
 		<div id='card-container' className={styles.testimonial_card}>
-			<div className={styles.testimonial_card__accent___upper}>
-				<Image
-					src={upperLeftCorner}
-					alt='Corner Accent'
-					height={48}
-					width={48}
-				/>
-			</div>
 			<div className={styles.testimonial_card__rating}>
 				{imageArray.map((star, index) => {
 					return (
@@ -71,14 +61,6 @@ export default function TestimonialCard({
 			<p className={styles.testimonial_card__details}>
 				{position}, {company}
 			</p>
-			<div className={styles.testimonial_card__accent___lower}>
-				<Image
-					src={lowerRightCorner}
-					alt='Corner Accent'
-					height={48}
-					width={48}
-				/>
-			</div>
 		</div>
 	);
 }
