@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { heroContainerVars, heroContentVars, heroImg } from './MotionVars';
-import mainImg from './main_image.png';
+import mainImg from './assets/main_image.png';
 
 // Components
 import PrimaryBtn from '../misc/PrimaryBtn';

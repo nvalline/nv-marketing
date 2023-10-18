@@ -9,8 +9,8 @@ import {
 	heroContentVars,
 	descVars
 } from './MotionVars';
-import largeMap from './map_lg.png';
-import smallMap from './map_sm.png';
+import largeMap from './assets/map_lg.png';
+import smallMap from './assets/map_sm.png';
 
 // Styles
 import styles from '../../styles/components/about/Hero.module.scss';

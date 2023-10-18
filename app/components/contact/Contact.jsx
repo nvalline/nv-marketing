@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useIsSmall } from '@/app/utils/MediaListenerHook';
 import { motion } from 'framer-motion';
 import { dividerImgLg, dividerImgSm } from './MotionVars';
-import arrows from './arrows.png';
+import arrows from './assets/arrows.png';
 
 // Components
 import Form from './Form';

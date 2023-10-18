@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import fullLinesUpper from './full_lines_upper.png';
+import fullLinesUpper from './assets/full_lines_upper.png';
 
 export default function FullLinesUpper() {
 	return (

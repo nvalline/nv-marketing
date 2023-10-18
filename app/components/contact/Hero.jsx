@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { addressBlock } from './MotionVars';
-import phone from './phone.png';
+import phone from './assets/phone.png';
 
 // Styles
 import styles from '../../styles/components/contact/Hero.module.scss';

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { bioImgVars } from './MotionVars';
-import founderImg from './founder_at_desk.png';
+import founderImg from './assets/founder_at_desk.png';
 
 // Styles
 import styles from '../../styles/components/about/Bio.module.scss';
