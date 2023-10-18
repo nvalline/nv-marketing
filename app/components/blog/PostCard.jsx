@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { urlFor } from '@/app/lib/sanity';
-import lowerRightCorner from '../home/bottom_right_corner.png';
-import upperLeftCorner from '../home/upper_left_corner.png';
+import lowerRightCorner from '../home/assets/bottom_right_corner.png';
+import upperLeftCorner from '../home/assets/upper_left_corner.png';
 
 // Styles
 import styles from '../../styles/components/blog/PostCard.module.scss';

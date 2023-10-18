@@ -2,9 +2,9 @@
 
 import Image from 'next/image';
 import { useEffect } from 'react';
-import lowerRightCorner from './bottom_right_corner.png';
-import starImg from './star.png';
-import upperLeftCorner from './upper_left_corner.png';
+import lowerRightCorner from './assets/bottom_right_corner.png';
+import starImg from './assets/star.png';
+import upperLeftCorner from './assets/upper_left_corner.png';
 
 // Styles
 import styles from '../../styles/components/home/TestimonialCard.module.scss';

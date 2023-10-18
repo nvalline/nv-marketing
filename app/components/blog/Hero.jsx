@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { heroImgVars } from './MotionVars';
-import heroImg from './puzzle_pieces.png';
+import heroImg from './assets/puzzle_pieces.png';
 
 // Styles
 import styles from '../../styles/components/blog/Hero.module.scss';

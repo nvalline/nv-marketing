@@ -3,8 +3,8 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { valueVars } from './MotionVars';
-import circle1 from './value_circle_1.png';
-import circle2 from './value_circle_2.png';
+import circle1 from './assets/value_circle_1.png';
+import circle2 from './assets/value_circle_2.png';
 
 export default function ValueList({
 	coreValues,

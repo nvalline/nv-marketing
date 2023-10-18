@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import photo from './standing_image.png';
+import photo from './assets/standing_image.png';
 
 // Styles
 import styles from '../../styles/components/home/ValueProps.module.scss';
