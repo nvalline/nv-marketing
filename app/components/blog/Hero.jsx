@@ -21,7 +21,13 @@ export default function Hero() {
 						animate='show'
 						className={styles.hero__img___mobile}
 					>
-						<Image src={heroImg} alt='Puzzle Pieces' fill />
+						<Image
+							src={heroImg}
+							alt='Puzzle Pieces'
+							fill
+							sizes='(max-width: 859px) 250px'
+							priority='true'
+						/>
 					</motion.div>
 					<p className={styles.hero__text}>
 						Dive into a world of insights, knowledge, and inspiration. Our blog
@@ -46,7 +52,13 @@ export default function Hero() {
 					animate='show'
 					className={styles.hero__img___desktop}
 				>
-					<Image src={heroImg} alt='Puzzle Pieces' fill />
+					<Image
+						src={heroImg}
+						alt='Puzzle Pieces'
+						fill
+						sizes='(min-width: 860px) 317px, (min-width: 1024px) 400px, (min-width: 1440px) 438px'
+						priority='true'
+					/>
 				</motion.div>
 			</div>
 		</section>

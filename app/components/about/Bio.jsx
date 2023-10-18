@@ -19,7 +19,13 @@ export default function Bio() {
 					viewport={{ once: true }}
 					className={styles.bio__img___desktop}
 				>
-					<Image src={founderImg} alt='Founder & CEO' fill quality={100} />
+					<Image
+						src={founderImg}
+						alt='Founder & CEO'
+						fill
+						sizes='(min-width: 860px) 300px, (min-width: 1024px) 410px'
+						quality={100}
+					/>
 				</motion.div>
 				<div className={styles.bio__content___wrapper}>
 					<div className={styles.bio__headers}>
@@ -36,7 +42,13 @@ export default function Bio() {
 						viewport={{ once: true }}
 						className={styles.bio__img___mobile}
 					>
-						<Image src={founderImg} alt='Founder & CEO' fill quality={100} />
+						<Image
+							src={founderImg}
+							alt='Founder & CEO'
+							fill
+							sizes='(max-width: 859px) 226px'
+							quality={100}
+						/>
 					</motion.div>
 					<div className={styles.bio__content___block}>
 						<p className={styles.bio__content}>

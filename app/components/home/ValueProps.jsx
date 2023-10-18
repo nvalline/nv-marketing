@@ -13,6 +13,7 @@ export default function ValueProps() {
 						src={photo}
 						alt='NV Marketing Web Developer'
 						fill
+						sizes='(max-width: 1023px) 201px, 242px'
 						quality={100}
 					/>
 				</div>

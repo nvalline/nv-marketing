@@ -21,7 +21,12 @@ export default function ServiceContent({ name, description, image }) {
 				viewport={{ once: true }}
 				className={styles.img__wrapper}
 			>
-				<Image src={serviceImg} alt={name} fill />
+				<Image
+					src={serviceImg}
+					alt={name}
+					fill
+					sizes='(max-width: 859px) 125px, (max-width: 1439px) 187px, 250px'
+				/>
 			</motion.div>
 			{/* Content */}
 			<div className={styles.content}>

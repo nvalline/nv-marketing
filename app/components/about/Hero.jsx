@@ -50,7 +50,13 @@ export default function Hero() {
 							animate='show'
 							className={styles.hero__img___mobile}
 						>
-							<Image src={smallMap} alt='Service Map' fill />
+							<Image
+								src={smallMap}
+								alt='Service Map'
+								fill
+								sizes='(max-width: 859px) 100px'
+								priority='true'
+							/>
 						</motion.div>
 						{/* Desktop Image */}
 						<motion.div
@@ -59,7 +65,13 @@ export default function Hero() {
 							animate='show'
 							className={styles.hero__img___desktop}
 						>
-							<Image src={largeMap} alt='Service Map' fill />
+							<Image
+								src={largeMap}
+								alt='Service Map'
+								fill
+								sizes='(min-width: 860px) 400px, (min-width: 1024px) 515px, (min-width: 1440px) 630px'
+								priority='true'
+							/>
 						</motion.div>
 					</div>
 				</div>

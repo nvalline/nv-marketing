@@ -66,6 +66,7 @@
 		display: none;
 
 		@include breakpoint-up-cust(46.875) {
+			height: auto;
 			width: 220px;
 			display: flex;
 			align-items: center;

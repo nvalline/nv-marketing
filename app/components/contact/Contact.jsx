@@ -47,7 +47,12 @@ export default function Contact() {
 					viewport={{ once: true }}
 					className={styles.contact__arrows}
 				>
-					<Image src={arrows} alt='arrows' fill />
+					<Image
+						src={arrows}
+						alt='arrows'
+						fill
+						sizes='(max-width: 859px) 120px, 150px'
+					/>
 				</motion.div>
 				{/* Form */}
 				<div className={styles.contact__block}>

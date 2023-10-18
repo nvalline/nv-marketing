@@ -69,7 +69,13 @@ export default function Hero() {
 							animate='show'
 							className={styles.hero__img}
 						>
-							<Image src={webServices} alt='Web Services' fill />
+							<Image
+								src={webServices}
+								alt='Web Services'
+								fill
+								sizes='(max-width: 859px) 272px, (max-width: 1023px) 372px, (max-width: 1439px) 450px, 630px'
+								priority='true'
+							/>
 						</motion.div>
 					</div>
 				</div>
