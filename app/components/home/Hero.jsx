@@ -61,6 +61,7 @@ export default function Hero() {
 						height={507}
 						width={422}
 						style={{ maxWidth: '100%', height: 'auto' }}
+						priority='true'
 					/>
 				</motion.div>
 			</div>

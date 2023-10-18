@@ -22,7 +22,13 @@ export default function PostCard({ coverImage, excerpt, slug, title }) {
 			</div>
 			<Link href={`/blog/${slug.current}`}>
 				<div className={styles.post_card__img}>
-					<Image src={postImage} alt={title} fill quality={100} />
+					<Image
+						src={postImage}
+						alt={title}
+						fill
+						sizes='(max-width: 1200px) 255px, (max-width: 1439px) 300px, 375px'
+						quality={100}
+					/>
 				</div>
 			</Link>
 			<Link href={`/blog/${slug.current}`}>
