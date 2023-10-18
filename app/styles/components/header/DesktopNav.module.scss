@@ -45,7 +45,7 @@
 		border: none;
 		border-radius: 10px;
 		background-color: var(--clr-orange-light);
-		@include font-size(16);
+		font-size: var(--fs-p);
 		color: var(--clr-blue-dark);
 		cursor: pointer;
 		transition: all 300ms ease-out;
