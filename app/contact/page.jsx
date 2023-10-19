@@ -5,9 +5,8 @@ import Hero from '../components/contact/Hero';
 import LeftLines from '../components/misc/LeftLines';
 
 export const metadata = {
-	title: 'NV Marketing | Contact',
-	description:
-		'NV Marketing provides enterprise website services for the local budget.'
+	title: 'Contact',
+	description: 'Contact NV Marketing today to discuss your online presence.'
 };
 
 export default function Home() {

@@ -15,15 +15,25 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-	title: 'Home',
-	description: 'Welcome to Next.js'
+	metadataBase: new URL('https://nv-marketing.com'),
+	title: {
+		default: 'NV Marketing',
+		template: `%s | NV Marketing`
+	},
+	description:
+		'NV Marketing provides enterprise website services for the local budget.',
+	openGraph: {
+		title: 'NV Marketing, LLC',
+		description:
+			'NV Marketing provides enterprise website services for the local budget.',
+		url: 'https://nv-marketing.com',
+		locale: 'en_US'
+	}
 };
 
-export default function RootLayout({
-	// Layouts must accept a children prop.
-	// This will be populated with nested layouts or pages
-	children
-}) {
+// Layouts must accept a children prop.
+// This will be populated with nested layouts or pages
+export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body className={montserrat.className}>

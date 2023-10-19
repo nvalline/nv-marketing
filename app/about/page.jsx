@@ -8,9 +8,9 @@ import LeftLines from '../components/misc/LeftLines';
 import RightLines from '../components/misc/RightLines';
 
 export const metadata = {
-	title: 'NV Marketing | About',
+	title: 'About',
 	description:
-		'NV Marketing provides enterprise website services for the local budget.'
+		'NV Marketing was born in the heart of the Rocky Mountains and strives to serve all.'
 };
 
 export default function Home() {

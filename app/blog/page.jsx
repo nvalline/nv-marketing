@@ -5,9 +5,9 @@ import Hero from '../components/blog/Hero';
 import LeftLines from '../components/misc/LeftLines';
 
 export const metadata = {
-	title: 'NV Marketing | Blog',
+	title: 'Blog',
 	description:
-		'NV Marketing provides enterprise website services for the local budget.'
+		'NV Marketing believes in shared knowledge. This blog is to help educate to help make more informed decisions.'
 };
 
 export default function Home() {

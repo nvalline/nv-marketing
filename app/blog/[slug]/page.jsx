@@ -12,14 +12,33 @@ import SecondaryBtn from '@/app/components/misc/SecondaryBtn';
 // Styles
 import styles from '../../styles/components/blog/PostPage.module.scss';
 
-export const metadata = {
-	title: `NV Marketing | Post`,
-	description:
-		'NV Marketing provides enterprise website services for the local budget.'
-};
+// export const metadata = {
+// 	title: `NV Marketing | Post`,
+// 	description:
+// 		'NV Marketing provides enterprise website services for the local budget.'
+// };
+
+export async function generateMetadata({ params, searchParams }, parent) {
+	try {
+		const postData = await getPost(params.slug);
+
+		return {
+			title: postData.title,
+			description: postData.excerpt,
+			alternates: {
+				canonical: `/blog/${params.slug}`
+			}
+		};
+	} catch (error) {
+		return {
+			title: 'Page Not Found',
+			description: 'The page you are looking for is not found.'
+		};
+	}
+}
 
 const getPost = async (slug) => {
-	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, author, content, coverImage, date, title}`;
+	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, author, content, coverImage, date, title, excerpt}`;
 
 	const data = await sanityClient.fetch(query);
 
@@ -50,7 +69,7 @@ function formatDate(inputDate) {
 	return `${month}. ${parseInt(day, 10)}, ${year}`;
 }
 
-export default async function page({ params }) {
+export default async function page({ params, searchParams }) {
 	const post = await getPost(params.slug);
 	const postImage = urlFor(post.coverImage).url();
 

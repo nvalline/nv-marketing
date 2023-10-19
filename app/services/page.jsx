@@ -7,9 +7,9 @@ import RightLines from '../components/misc/RightLines';
 import ServiceDetail from '../components/services/ServiceDetail';
 
 export const metadata = {
-	title: 'NV Marketing | Services',
+	title: 'Services',
 	description:
-		'NV Marketing provides enterprise website services for the local budget.'
+		'NV Marketing provides high quality web design, web development, & SEO services to fit your budget.'
 };
 
 export default function Services() {
