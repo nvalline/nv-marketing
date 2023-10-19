@@ -9,12 +9,6 @@ import Testimonials from './components/home/Testimonials';
 import TestimonialList from './components/home/TestimonialList';
 import ValueProps from './components/home/ValueProps';
 
-export const metadata = {
-	title: 'NV Marketing',
-	description:
-		'NV Marketing provides enterprise website services for the local budget.'
-};
-
 export default async function Home() {
 	return (
 		<main>
