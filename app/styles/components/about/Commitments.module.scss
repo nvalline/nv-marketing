@@ -1,0 +1,44 @@
+/* ----- About Page - Our Commitments Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.commitments {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 820px;
+	}
+
+	&__header___block {
+		text-align: center;
+	}
+
+	&__header {
+		font-size: var(--fs-h2);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+
+	&__sub_header {
+		margin-top: 1rem;
+		font-size: var(--fs-p);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+
+	&__list___block {
+		margin-top: 2rem;
+	}
+
+	&__content {
+		margin-top: 1rem;
+		font-size: var(--fs-p);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+
+	&__content___header {
+		margin-right: 5px;
+		font-weight: 700;
+	}
+}

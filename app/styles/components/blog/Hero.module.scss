@@ -1,0 +1,87 @@
+/* ----- Blog Archives Page - Hero Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.hero {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1190px;
+		display: flex;
+		flex-direction: column-reverse;
+
+		@include breakpoint-up(lg) {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+
+	&__content {
+		margin: 0 auto;
+		max-width: 619px;
+		color: var(--clr-blue-dark);
+		text-align: center;
+
+		@include breakpoint-up(lg) {
+			max-width: 400px;
+		}
+
+		@include breakpoint-up(xl) {
+			max-width: 510px;
+		}
+
+		@include breakpoint-up(xxl) {
+			max-width: 619px;
+		}
+	}
+
+	&__header {
+		display: inline-block;
+		border-bottom: 2px solid var(--clr-blue-dark);
+		font-size: var(--fs-h1);
+		font-weight: 700;
+	}
+
+	&__img___mobile {
+		margin: 2rem auto;
+		position: relative;
+		height: 182px;
+		width: 250px;
+
+		@include breakpoint-up(lg) {
+			display: none;
+		}
+	}
+
+	&__text {
+		margin-top: 1rem;
+		font-size: var(--fs-p);
+		opacity: 0.9;
+
+		@include breakpoint-up(lg) {
+			margin-top: 2rem;
+		}
+	}
+
+	&__img___desktop {
+		display: none;
+
+		@include breakpoint-up(lg) {
+			display: block;
+			margin: 2rem auto;
+			position: relative;
+			height: 230px;
+			width: 317px;
+		}
+
+		@include breakpoint-up(xl) {
+			height: 290px;
+			width: 400px;
+		}
+
+		@include breakpoint-up(xxl) {
+			height: 318px;
+			width: 438px;
+		}
+	}
+}

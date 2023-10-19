@@ -1,0 +1,104 @@
+/*----- Global, base, and utility Scss code used here. Component and layout Scss used as module code for each individual item. -----*/
+
+@use 'base';
+@use './abstracts/' as *;
+
+html {
+	background-color: #fff;
+}
+
+body {
+	margin-top: 80px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	letter-spacing: 0.035em;
+}
+
+p {
+	line-height: 1.464rem;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1440px;
+}
+
+section {
+	margin: 0 auto;
+	padding: 3rem 1rem;
+
+	@include breakpoint-up(md) {
+		padding: 4rem 1rem;
+	}
+
+	@include breakpoint-up(lg) {
+		padding: 5rem 2rem;
+	}
+
+	@include breakpoint-up(xl) {
+		padding: 6rem 2rem;
+	}
+}
+
+.leftAccentLines {
+	position: relative;
+	left: 0;
+	height: 30px;
+	width: 100%;
+	max-width: 452px;
+	overflow: hidden;
+
+	@include breakpoint-up(lg) {
+		height: 39px;
+		width: 586px;
+	}
+
+	@include breakpoint-up(xl) {
+		height: 48px;
+		width: 721px;
+	}
+}
+
+.rightAccentBlock {
+	height: 30px;
+}
+
+.rightAccentLines {
+	position: absolute;
+	right: 0;
+	height: 30px;
+	width: 324px;
+
+	@include breakpoint-up(lg) {
+		height: 39px;
+		width: 448px;
+	}
+
+	@include breakpoint-up(xl) {
+		height: 48px;
+		width: 573px;
+	}
+}
+
+.fullAccentLines {
+	position: relative;
+	left: 0;
+	height: 30px;
+	width: 100%;
+
+	@include breakpoint-up(lg) {
+		height: 35px;
+	}
+
+	@include breakpoint-up(xl) {
+		height: 40px;
+	}
+}

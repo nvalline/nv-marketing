@@ -1,0 +1,105 @@
+/* ----- Services Page - Hero Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.hero {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1290px;
+	}
+
+	&__headers {
+		margin: 0 auto;
+		max-width: 520px;
+		text-align: center;
+	}
+
+	&__header {
+		font-size: var(--fs-h1);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+		text-decoration: underline;
+	}
+
+	&__sub_header {
+		margin-top: 2rem;
+		font-size: var(--fs-p-lg);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+
+		> span {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+
+	&__block {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+
+		@include breakpoint-up(lg) {
+			margin-top: 3rem;
+			gap: 3rem;
+		}
+
+		@include breakpoint-up(xl) {
+			flex-direction: row;
+			gap: 2rem;
+		}
+
+		@include breakpoint-up(xxl) {
+			gap: 1rem;
+		}
+	}
+
+	&__content___block {
+		max-width: 619px;
+		text-align: center;
+	}
+
+	&__content___text {
+		font-size: var(--fs-p);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+
+		&:nth-child(2) {
+			margin-top: 1rem;
+
+			@include breakpoint-up(xl) {
+				margin-top: 2rem;
+			}
+		}
+	}
+
+	&__btn {
+		margin: 2rem auto 0;
+		width: 342px;
+	}
+
+	&__img {
+		margin: 0 auto;
+		position: relative;
+		height: 140px;
+		width: 272px;
+
+		@include breakpoint-up(lg) {
+			height: 191px;
+			width: 372px;
+		}
+
+		@include breakpoint-up(xl) {
+			height: 231px;
+			width: 450px;
+		}
+
+		@include breakpoint-up(xxl) {
+			height: 324px;
+			width: 630px;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+/* ----- Services Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.services {
+	&__wrapper {
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	&__header___block {
+		margin: 0 auto;
+		max-width: 614px;
+		text-align: center;
+	}
+
+	&__header {
+		font-size: var(--fs-h2);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+
+	&__sub_header {
+		margin-top: 2rem;
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+
+		> span {
+			font-weight: 700;
+		}
+	}
+
+	&__cards {
+		margin-top: 1rem;
+
+		@include breakpoint-up(lg) {
+			margin-top: 2rem;
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+		}
+	}
+}

@@ -1,0 +1,85 @@
+/* ----- Hero Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.hero {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1151px;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 3rem;
+
+		@include breakpoint-up(lg) {
+			padding: 0 2rem;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: none;
+		}
+	}
+
+	&__content {
+		max-width: 585px;
+		text-align: center;
+
+		@include breakpoint-up(lg) {
+			width: 50%;
+		}
+	}
+
+	&__header {
+		font-size: var(--fs-h1);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+
+		> span {
+			text-decoration: underline;
+		}
+	}
+
+	&__sub_header {
+		margin-top: 2rem;
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+
+		> span {
+			font-weight: 700;
+		}
+	}
+
+	&__btn {
+		margin: 2.5rem auto 0;
+		padding: 0.625rem 3.375rem;
+		max-width: 258px;
+		border: none;
+		background-color: var(--clr-green-light);
+		box-shadow: 0px 4px 4px 0px var(--clr-shadow-black);
+		font-size: var(--fs-btn);
+		font-weight: 700;
+		color: var(--clr-white-light);
+		text-transform: capitalize;
+	}
+
+	&__img {
+		display: none;
+
+		@include breakpoint-up-cust(46.875) {
+			height: auto;
+			width: 220px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		@include breakpoint-up(lg) {
+			width: 50%;
+			max-width: 300px;
+		}
+
+		@include breakpoint-up(xl) {
+			max-width: 422px;
+		}
+	}
+}
