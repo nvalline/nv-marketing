@@ -1,0 +1,55 @@
+/* ----- About Page - Core Values Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.coreValues {
+	&__header {
+		font-size: var(--fs-h2);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+		text-align: center;
+	}
+
+	&__value___block {
+		margin: 2rem auto 0;
+		max-width: 952px;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		align-items: center;
+		justify-content: space-evenly;
+
+		@include breakpoint-up(lg) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		@include breakpoint-up(xl) {
+			gap: 3rem;
+		}
+
+		@include breakpoint-up(xxl) {
+			gap: 4rem;
+		}
+	}
+
+	&__value {
+		position: relative;
+		height: 190px;
+		width: 190px;
+	}
+
+	&__title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 9;
+		font-size: var(--fs-p);
+		font-weight: 700;
+		color: var(--clr-white-light);
+		text-transform: capitalize;
+		letter-spacing: 0.08rem;
+	}
+}

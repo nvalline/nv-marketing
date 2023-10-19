@@ -1,0 +1,72 @@
+/* ----- Footer Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.footer {
+	padding: 3rem 1rem;
+
+	@include breakpoint-up(md) {
+		padding: 4rem 1rem;
+	}
+
+	@include breakpoint-up(lg) {
+		padding: 5rem 2rem;
+	}
+
+	@include breakpoint-up(xl) {
+		padding: 6rem 2rem;
+	}
+
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1290px;
+	}
+
+	&__nav___block {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		@include breakpoint-up(lg) {
+			align-items: center;
+		}
+	}
+
+	&__logo___desktop {
+		display: none;
+
+		@include breakpoint-up(lg) {
+			display: unset;
+			position: relative;
+			height: 46px;
+			width: 150px;
+		}
+
+		@include breakpoint-up(xl) {
+			height: 67px;
+			width: 219px;
+		}
+	}
+
+	&__logo___mobile {
+		position: relative;
+		height: 46px;
+		width: 150px;
+		margin: 2rem auto 0;
+
+		@include breakpoint-up(lg) {
+			display: none;
+		}
+	}
+
+	&__copyright___block {
+		margin-top: 2rem;
+		text-align: center;
+	}
+
+	&__copyright {
+		font-size: 0.625rem;
+		color: var(--clr-blue-dark);
+	}
+}

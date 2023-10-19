@@ -1,0 +1,38 @@
+/* ----- Header Nav Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	box-shadow: 0 2px 6px var(--clr-shadow-black);
+	z-index: 10;
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		padding: 1rem;
+		max-width: 1290px;
+
+		@include breakpoint-up(xl) {
+			padding: 1rem 3rem;
+		}
+	}
+
+	&__logo___wrapper {
+		position: relative;
+		height: 47px;
+		width: 152px;
+
+		@include breakpoint-up(xl) {
+			height: 67px;
+			width: 219px;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+/* ----- Testimonial Card Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.testimonial_card {
+	position: relative;
+	margin: 2rem auto 0;
+	padding: 1.5rem;
+	max-width: 375px;
+	border: 3px solid var(--clr-green-light);
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px var(--clr-shadow-black);
+
+	&__rating {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&__content {
+		margin-top: 1rem;
+		padding: 0.5rem 0;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		font-size: var(--fs-p);
+		color: var(--clr-blue-dark);
+		text-align: center;
+	}
+
+	&__author {
+		margin-top: 1rem;
+		font-size: var(--fs-h4);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+
+	&__details {
+		font-size: var(--fs-p-sm);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+}

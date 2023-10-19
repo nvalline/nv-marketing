@@ -1,0 +1,34 @@
+/* ----- Navigation Links Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.nav_links {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	:not(:first-child) {
+		margin-top: 0.5rem;
+	}
+
+	> li {
+		display: block;
+		border-bottom: 2px solid transparent;
+		transition: all 300ms ease-out;
+
+		&:hover {
+			border-bottom: 2px solid var(--clr-orange-dark);
+		}
+	}
+
+	> li a {
+		font-size: 0.85rem;
+		color: var(--clr-blue-dark);
+		transition: all 300ms ease-out;
+
+		&:hover {
+			color: var(--clr-orange-dark);
+		}
+	}
+}

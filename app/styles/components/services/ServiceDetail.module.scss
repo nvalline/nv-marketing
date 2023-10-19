@@ -1,0 +1,23 @@
+/* ----- Services Page - Services Details Section Styles 
+----- */
+
+@use '../../abstracts/' as *;
+
+.service_detail {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1048px;
+
+		@include breakpoint-up(xl) {
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+		}
+	}
+}
+
+.reverse {
+	@include breakpoint-up(xl) {
+		flex-direction: row-reverse;
+	}
+}

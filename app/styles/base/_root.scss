@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+
+:root {
+	--fs-h1: 1.5rem;
+	--fs-h2: 1.25rem;
+	--fs-h3: 1.125rem;
+	--fs-h4: 0.875rem;
+	--fs-p: 1rem;
+	--fs-p-lg: 1rem;
+	--fs-p-sm: 0.75rem;
+	--fs-btn: 1rem;
+
+	@include breakpoint-up(lg) {
+		--fs-h1: 1.75rem;
+		--fs-h2: 1.5rem;
+		--fs-h3: 1.25rem;
+		--fs-h4: 1rem;
+		--fs-p-lg: 1.25rem;
+		--fs-p-sm: 1rem;
+		--fs-btn: 1.25rem;
+	}
+
+	/* Loop to declare color variables */
+	@each $color-type, $shade in $colors {
+		@each $color, $value in $shade {
+			--clr-#{$color-type}-#{$color}: #{$value};
+		}
+	}
+}
