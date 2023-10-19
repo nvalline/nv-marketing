@@ -1,8 +1,9 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
+import handler from '@/app/utils/VerifyForm';
 
 // Components
 import PrimaryBtn from '../misc/PrimaryBtn';
@@ -42,15 +43,9 @@ export default function Form() {
 		}
 
 		try {
-			const response = await fetch('/api/verify-form', {
-				method: 'POST',
-				body: JSON.stringify({ token }),
-				headers: {
-					'Content-Type': 'application/json'
-				}
-			});
+			const response = await handler(JSON.stringify(token));
 
-			if (response.ok) {
+			if (response === 'OK') {
 				emailjs
 					.sendForm(
 						process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -61,26 +56,24 @@ export default function Form() {
 					.then(
 						(result) => {
 							console.log(result.text);
-							setValues({
+							setFormValues({
 								from_name: '',
 								from_email: '',
 								message: ''
 							});
+							console.log('STATE', formValues);
 						},
 						(error) => {
 							console.log(error.text);
 						}
 					);
-
-				setShowForm(false);
 			} else {
-				const error = await response.json();
-				throw new Error(error.message);
+				throw new Error(response);
 			}
 		} catch (error) {
 			console.log(error?.message || 'Something went wrong');
 		} finally {
-			setValues({
+			setFormValues({
 				from_name: '',
 				from_email: '',
 				message: ''
@@ -92,15 +85,19 @@ export default function Form() {
 		<form ref={form} onSubmit={handleSubmit} className={styles.form}>
 			<input
 				type='text'
+				name='from_name'
 				placeholder='Full Name'
 				onChange={handleChange}
 				className={styles.form__input}
+				required
 			/>
 			<input
 				type='email'
+				name='from_email'
 				placeholder='Email'
 				onChange={handleChange}
 				className={styles.form__input}
+				required
 			/>
 			<textarea
 				name='message'
@@ -109,6 +106,7 @@ export default function Form() {
 				onChange={handleChange}
 				placeholder='Message'
 				className={styles.form__textarea}
+				required
 			></textarea>
 			<HCaptcha
 				id='test'
@@ -117,7 +115,7 @@ export default function Form() {
 				sitekey={SITE_KEY}
 				onVerify={(token) => handleVerificationSuccess(token)}
 			/>
-			<PrimaryBtn text='Submit' classname={styles.form__btn} />
+			<PrimaryBtn text='Submit' type='submit' classname={styles.form__btn} />
 		</form>
 	);
 }
