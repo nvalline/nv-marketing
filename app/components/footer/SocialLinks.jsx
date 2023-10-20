@@ -9,6 +9,7 @@ export default function SocialLinks() {
 		<div className={styles.social_links}>
 			<a
 				href='https://www.facebook.com/nvmarketingllc'
+				aria-label='Facebook'
 				target='_blank'
 				rel='noopener noreferrer'
 			>
@@ -16,6 +17,7 @@ export default function SocialLinks() {
 			</a>
 			<a
 				href='https://www.instagram.com/nv_marketing_llc/'
+				aria-label='Instagram'
 				target='_blank'
 				rel='noopener noreferrer'
 			>
