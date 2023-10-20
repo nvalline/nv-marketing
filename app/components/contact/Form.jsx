@@ -1,9 +1,8 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
-import handler from '@/app/utils/VerifyForm';
 
 // Components
 import PrimaryBtn from '../misc/PrimaryBtn';
@@ -13,6 +12,9 @@ import styles from '../../styles/components/contact/Form.module.scss';
 
 export default function Form() {
 	const form = useRef();
+	const [loading, setLoading] = useState(false);
+	const [success, setSuccess] = useState(false);
+	const [error, setError] = useState(false);
 	const [formValues, setFormValues] = useState({
 		from_name: '',
 		from_email: '',
@@ -34,6 +36,8 @@ export default function Form() {
 
 		// Execute the hCaptcha when the form is submitted
 		hcaptchaRef.current.execute();
+
+		setLoading(true);
 	};
 
 	const handleVerificationSuccess = async (token) => {
@@ -43,9 +47,15 @@ export default function Form() {
 		}
 
 		try {
-			const response = await handler(JSON.stringify(token));
+			const response = await fetch('/api/verify-form', {
+				method: 'POST',
+				body: JSON.stringify({ token }),
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			});
 
-			if (response === 'OK') {
+			if (response.ok) {
 				emailjs
 					.sendForm(
 						process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -55,29 +65,34 @@ export default function Form() {
 					)
 					.then(
 						(result) => {
-							console.log(result.text);
-							setFormValues({
+							setFormValues((prev) => ({
+								...prev,
 								from_name: '',
 								from_email: '',
 								message: ''
-							});
-							console.log('STATE', formValues);
+							}));
+
+							setLoading(false);
+
+							setSuccess(true);
 						},
 						(error) => {
 							console.log(error.text);
 						}
 					);
 			} else {
-				throw new Error(response);
+				setError(true);
 			}
 		} catch (error) {
 			console.log(error?.message || 'Something went wrong');
+			setError(true);
 		} finally {
 			setFormValues({
 				from_name: '',
 				from_email: '',
 				message: ''
 			});
+			setLoading(false);
 		}
 	};
 
@@ -86,6 +101,7 @@ export default function Form() {
 			<input
 				type='text'
 				name='from_name'
+				value={formValues.from_name}
 				placeholder='Full Name'
 				onChange={handleChange}
 				className={styles.form__input}
@@ -94,14 +110,16 @@ export default function Form() {
 			<input
 				type='email'
 				name='from_email'
+				value={formValues.from_email}
 				placeholder='Email'
 				onChange={handleChange}
 				className={styles.form__input}
 				required
 			/>
 			<textarea
-				name='message'
 				id='message'
+				name='message'
+				value={formValues.message}
 				rows='5'
 				onChange={handleChange}
 				placeholder='Message'
@@ -115,7 +133,21 @@ export default function Form() {
 				sitekey={SITE_KEY}
 				onVerify={(token) => handleVerificationSuccess(token)}
 			/>
-			<PrimaryBtn text='Submit' type='submit' classname={styles.form__btn} />
+			<PrimaryBtn
+				type='submit'
+				text={loading === true ? '. . .' : 'Submit'}
+				classname={styles.form__btn}
+			/>
+			{success && (
+				<p className={styles.success}>
+					Your message was successfully submitted.
+				</p>
+			)}
+			{error && (
+				<p className={styles.error}>
+					Oops, something went wrong. Please try again later.
+				</p>
+			)}
 		</form>
 	);
 }

@@ -24,3 +24,15 @@
 		width: 180px;
 	}
 }
+
+.success {
+	margin-top: 1rem;
+	font-size: var(--fs-p);
+	color: var(--clr-green-mid-light);
+}
+
+.error {
+	margin-top: 1rem;
+	font-size: var(--fs-p);
+	color: red;
+}
