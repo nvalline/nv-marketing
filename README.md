@@ -1,6 +1,6 @@
 # NV Marketing, LLC
 
-<img src="./git_img/nv_marketing_design.png" alt="NV Marketing Design" height="500px">
+<img src="./git_img/nv_marketing_design_v2.png" alt="NV Marketing Design" height="500px">
 
 > NV Marketing, LLC is a web development & SEO service provider. This app has been built with Next.js and Sanity.io.
 
