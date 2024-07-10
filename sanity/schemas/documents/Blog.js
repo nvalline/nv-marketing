@@ -39,6 +39,12 @@ export default {
       title: 'Cover Image',
     },
     {
+      name: 'caption',
+      type: 'array',
+      title: 'Caption',
+      of: [{type: 'block'}],
+    },
+    {
       name: 'content',
       type: 'array',
       title: 'Content',

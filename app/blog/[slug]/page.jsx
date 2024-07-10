@@ -38,7 +38,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 }
 
 const getPost = async (slug) => {
-	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, author, content, coverImage, date, title, excerpt}`;
+	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, author, content, coverImage, date, title, excerpt, caption}`;
 
 	const data = await sanityClient.fetch(query);
 
@@ -81,20 +81,23 @@ export default async function page({ params, searchParams }) {
 			<div className='container'>
 				<section className={styles.hero}>
 					<div className={styles.hero__wrapper}>
-						<Image
-							src={postImage}
-							alt={post.title}
-							sizes='90vw'
-							height={347}
-							width={520}
-							quality={100}
-							style={{
-								margin: '0 auto',
-								maxWidth: '100%',
-								height: 'auto',
-								borderRadius: '10px'
-							}}
-						/>
+						<div>
+							<Image
+								src={postImage}
+								alt={post.title}
+								sizes='90vw'
+								height={347}
+								width={520}
+								quality={100}
+								style={{
+									margin: '0 auto',
+									maxWidth: '100%',
+									height: 'auto',
+									borderRadius: '10px'
+								}}
+							/>
+							<PortableText value={post.caption} />
+						</div>
 						<h1 className={styles.hero__title}>{post.title}</h1>
 					</div>
 				</section>
