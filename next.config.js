@@ -15,7 +15,7 @@ const NextConfig = {
 		NEXT_PUBLIC_SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET
 	},
 	images: {
-		domains: ['cdn.sanity.io'],
+		qualities: [75, 100],
 		formats: ['image/avif', 'image/webp'],
 		remotePatterns: [
 			{

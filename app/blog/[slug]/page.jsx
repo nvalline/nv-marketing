@@ -20,13 +20,14 @@ import styles from '../../styles/components/blog/PostPage.module.scss';
 
 export async function generateMetadata({ params, searchParams }, parent) {
 	try {
-		const postData = await getPost(params.slug);
+		const { slug } = await params;
+		const postData = await getPost(slug);
 
 		return {
 			title: postData.title,
 			description: postData.excerpt,
 			alternates: {
-				canonical: `/blog/${params.slug}`
+				canonical: `/blog/${slug}`
 			}
 		};
 	} catch (error) {
@@ -70,7 +71,8 @@ function formatDate(inputDate) {
 }
 
 export default async function page({ params, searchParams }) {
-	const post = await getPost(params.slug);
+	const { slug } = await params;
+	const post = await getPost(slug);
 	const postImage = urlFor(post.coverImage).url();
 
 	const inputDate = post.date;
@@ -81,7 +83,7 @@ export default async function page({ params, searchParams }) {
 			<div className='container'>
 				<section className={styles.hero}>
 					<div className={styles.hero__wrapper}>
-						<div>
+						<div className={styles.hero__img_wrapper}>
 							<Image
 								src={postImage}
 								alt={post.title}
@@ -91,8 +93,6 @@ export default async function page({ params, searchParams }) {
 								quality={100}
 								style={{
 									margin: '0 auto',
-									maxWidth: '100%',
-									height: 'auto',
 									borderRadius: '10px'
 								}}
 							/>

@@ -60,7 +60,7 @@ export default function Hero() {
 						alt='Web Design, Development, & SEO'
 						height={507}
 						width={422}
-						style={{ maxWidth: '100%', height: 'auto' }}
+						// style={{ width: '100%', height: 'auto' }}
 						priority='true'
 					/>
 				</motion.div>

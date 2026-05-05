@@ -34,7 +34,7 @@ export default async function Services() {
 					{services.map((service) => {
 						return (
 							<ServiceCard
-								key={service._key}
+								key={service._id}
 								name={service.name}
 								icon={service.icon}
 								excerpt={service.excerpt}
