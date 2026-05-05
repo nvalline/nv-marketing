@@ -4,17 +4,18 @@ import logo from './assets/logo_dark.png';
 
 export default function Logo() {
 	return (
-		<>
-			<Link href='/'>
-				<Image
-					src={logo}
-					alt='NV Marketing Logo'
-					fill
-					sizes='(max-width: 1023px) 152px, 219px'
-					quality={100}
-					priortiy='true'
-				/>
-			</Link>
-		</>
+		<Link
+			href='/'
+			style={{ position: 'relative', display: 'block', height: '100%', width: '100%' }}
+		>
+			<Image
+				src={logo}
+				alt='NV Marketing Logo'
+				fill
+				sizes='(max-width: 1023px) 152px, 219px'
+				quality={100}
+				priority
+			/>
+		</Link>
 	);
 }

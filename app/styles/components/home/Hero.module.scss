@@ -59,15 +59,10 @@
 
 		@include breakpoint-up-cust(46.875) {
 			height: auto;
-			width: 220px;
+			width: fit;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-		}
-
-		@include breakpoint-up(lg) {
-			width: 50%;
-			max-width: 300px;
 		}
 
 		@include breakpoint-up(xl) {

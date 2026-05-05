@@ -25,7 +25,7 @@ export default function ValueList({
 						custom={index}
 						className={divClassname2}
 					>
-						<Image src={index % 2 ? circle2 : circle1} alt='Core Values' fill />
+						<Image src={index % 2 ? circle2 : circle1} alt='Core Values' fill sizes='190px' />
 						<p className={titleClassname}>{value.title}</p>
 					</motion.div>
 				);

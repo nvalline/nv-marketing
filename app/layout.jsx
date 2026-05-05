@@ -25,7 +25,7 @@ export default function RootLayout({
 	children
 }) {
 	return (
-		<html lang='en'>
+		<html lang='en' data-scroll-behavior='smooth'>
 			<body className={montserrat.className}>
 				{process.env.NEXT_PUBLIC_GOOGLE_ID ? (
 					<GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ID} />
