@@ -14,7 +14,7 @@ export const metadata = {
 		absolute: 'NV Marketing | Web Design, Development & SEO — Intermountain Region'
 	},
 	description:
-		'NV Marketing helps small businesses in the Intermountain region build high-performance websites and grow organic traffic. Web design, development, and SEO at small-business prices.',
+		'NV Marketing helps small businesses in the Intermountain region build websites and grow organic traffic with web design, development, and SEO.',
 	alternates: {
 		canonical: '/'
 	}
