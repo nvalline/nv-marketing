@@ -15,8 +15,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-	title: 'Home',
-	description: 'Welcome to Next.js'
+	title: {
+		template: '%s | NV Marketing',
+		default: 'NV Marketing | Web Design, Development & SEO — Intermountain Region'
+	},
+	description:
+		'NV Marketing helps small businesses in the Intermountain region build websites and grow organic traffic with web design, development, and SEO.',
+	metadataBase: new URL('https://nv-marketing.com')
 };
 
 export default function RootLayout({

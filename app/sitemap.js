@@ -9,7 +9,7 @@ const getAllPosts = async () => {
 };
 
 export default async function sitemap() {
-	const baseUrl = 'https://nv-merkting.com';
+	const baseUrl = 'https://nv-markting.com';
 
 	const posts = await getAllPosts();
 

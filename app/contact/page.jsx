@@ -6,7 +6,11 @@ import LeftLines from '../components/misc/LeftLines';
 
 export const metadata = {
 	title: 'Contact',
-	description: 'Contact NV Marketing today to discuss your online presence.'
+	description:
+		'Get in touch with NV Marketing to discuss your website, SEO strategy, or digital marketing. Serving small businesses in the Intermountain region.',
+	alternates: {
+		canonical: '/contact'
+	}
 };
 
 export default function Home() {
