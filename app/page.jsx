@@ -9,6 +9,17 @@ import Testimonials from './components/home/Testimonials';
 import TestimonialList from './components/home/TestimonialList';
 import ValueProps from './components/home/ValueProps';
 
+export const metadata = {
+	title: {
+		absolute: 'NV Marketing | Web Design, Development & SEO — Intermountain Region'
+	},
+	description:
+		'NV Marketing helps small businesses in the Intermountain region build high-performance websites and grow organic traffic. Web design, development, and SEO at small-business prices.',
+	alternates: {
+		canonical: '/'
+	}
+};
+
 export default async function Home() {
 	return (
 		<main>
