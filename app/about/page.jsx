@@ -10,7 +10,10 @@ import RightLines from '../components/misc/RightLines';
 export const metadata = {
 	title: 'About',
 	description:
-		'NV Marketing was born in the heart of the Rocky Mountains and strives to serve all.'
+		'Learn about NV Marketing — a Rocky Mountain agency dedicated to helping small businesses succeed online with honest, high-performance web design, development, and SEO.',
+	alternates: {
+		canonical: '/about'
+	}
 };
 
 export default function Home() {
