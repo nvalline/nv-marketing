@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import GoogleAnalytics from './GoogleAnalytics';
 
 // Components
@@ -61,7 +62,8 @@ export default function RootLayout({
 				{process.env.NEXT_PUBLIC_GOOGLE_ID ? (
 					<GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ID} />
 				) : null}
-				<script
+				<Script
+					id='organization-schema'
 					type='application/ld+json'
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
 				/>

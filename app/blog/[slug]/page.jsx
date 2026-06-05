@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Script from 'next/script';
 import Link from 'next/link';
 import { sanityClient, urlFor } from '@/app/lib/sanity';
 import { PortableText } from '@portabletext/react';
@@ -95,7 +96,8 @@ export default async function page({ params, searchParams }) {
 
 	return (
 		<main>
-			<script
+			<Script
+				id='blog-posting-schema'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
 			/>

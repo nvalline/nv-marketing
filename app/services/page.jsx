@@ -53,6 +53,7 @@ const servicesSchema = {
 };
 
 // Components
+import Script from 'next/script';
 import Clients from '../components/services/Clients';
 import CtaSection from '../components/misc/CtaSection';
 import Hero from '../components/services/Hero';
@@ -78,7 +79,8 @@ export default function Services() {
 
 	return (
 		<main>
-			<script
+			<Script
+				id='services-schema'
 				type='application/ld+json'
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
 			/>
