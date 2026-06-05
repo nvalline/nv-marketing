@@ -9,7 +9,7 @@ import ServiceDetail from '../components/services/ServiceDetail';
 export const metadata = {
 	title: 'Services',
 	description:
-		'Explore NV Marketing services: custom web design, full-stack web development, and SEO — all priced for small-business budgets in the Intermountain region.',
+		'Explore NV Marketing services: custom web design, web development, and SEO — all priced for small-business budgets in the Intermountain region.',
 	alternates: {
 		canonical: '/services'
 	}
