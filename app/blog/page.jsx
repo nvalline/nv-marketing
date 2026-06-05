@@ -7,7 +7,10 @@ import LeftLines from '../components/misc/LeftLines';
 export const metadata = {
 	title: 'Blog',
 	description:
-		'NV Marketing believes in shared knowledge. This blog is to help educate to help make more informed decisions.'
+		'Web design, development, and SEO insights from NV Marketing — practical guides to help small businesses grow their online presence.',
+	alternates: {
+		canonical: '/blog'
+	}
 };
 
 export default function Home() {
