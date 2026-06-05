@@ -1,3 +1,57 @@
+const servicesSchema = {
+	'@context': 'https://schema.org',
+	'@graph': [
+		{
+			'@type': 'Service',
+			name: 'Web Design',
+			description:
+				'Custom website design tailored to small businesses in the Intermountain region, focused on user experience, brand identity, and conversion.',
+			provider: {
+				'@type': 'Organization',
+				name: 'NV Marketing',
+				url: 'https://nv-marketing.com'
+			},
+			areaServed: {
+				'@type': 'AdministrativeArea',
+				name: 'Intermountain Region, US'
+			},
+			url: 'https://nv-marketing.com/services'
+		},
+		{
+			'@type': 'Service',
+			name: 'Web Development',
+			description:
+				'Professional web development for small businesses, building fast, accessible, and scalable websites in the Intermountain region.',
+			provider: {
+				'@type': 'Organization',
+				name: 'NV Marketing',
+				url: 'https://nv-marketing.com'
+			},
+			areaServed: {
+				'@type': 'AdministrativeArea',
+				name: 'Intermountain Region, US'
+			},
+			url: 'https://nv-marketing.com/services'
+		},
+		{
+			'@type': 'Service',
+			name: 'SEO',
+			description:
+				'Search engine optimization services to help small businesses in the Intermountain region grow organic traffic and improve search visibility.',
+			provider: {
+				'@type': 'Organization',
+				name: 'NV Marketing',
+				url: 'https://nv-marketing.com'
+			},
+			areaServed: {
+				'@type': 'AdministrativeArea',
+				name: 'Intermountain Region, US'
+			},
+			url: 'https://nv-marketing.com/services'
+		}
+	]
+};
+
 // Components
 import Clients from '../components/services/Clients';
 import CtaSection from '../components/misc/CtaSection';
@@ -24,6 +78,10 @@ export default function Services() {
 
 	return (
 		<main>
+			<script
+				type='application/ld+json'
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+			/>
 			<div className='container'>
 				<Hero />
 				<div className='leftAccentLines'>
