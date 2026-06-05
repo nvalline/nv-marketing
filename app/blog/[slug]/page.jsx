@@ -39,7 +39,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 }
 
 const getPost = async (slug) => {
-	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, author, content, coverImage, date, title, excerpt, caption}`;
+	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, _updatedAt, author, content, coverImage, date, title, excerpt, caption}`;
 
 	const data = await sanityClient.fetch(query);
 
@@ -78,8 +78,27 @@ export default async function page({ params, searchParams }) {
 	const inputDate = post.date;
 	const formattedDate = formatDate(inputDate);
 
+	const blogPostingSchema = {
+		'@context': 'https://schema.org',
+		'@type': 'BlogPosting',
+		headline: post.title,
+		description: post.excerpt,
+		author: {
+			'@type': 'Person',
+			name: 'Nate Valline'
+		},
+		datePublished: post.date,
+		dateModified: post._updatedAt,
+		url: `https://nv-marketing.com/blog/${slug}`,
+		image: postImage
+	};
+
 	return (
 		<main>
+			<script
+				type='application/ld+json'
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+			/>
 			<div className='container'>
 				<section className={styles.hero}>
 					<div className={styles.hero__wrapper}>
