@@ -8,6 +8,32 @@ import Header from './components/header/Header';
 import './styles/globals.scss';
 import { Montserrat } from 'next/font/google';
 
+const organizationSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Organization',
+	name: 'NV Marketing',
+	url: 'https://nv-marketing.com',
+	logo: 'https://nv-marketing.com/_next/static/media/logo_dark.0d6f6727.png',
+	description:
+		'Web design, development, and SEO for small businesses in the Intermountain region.',
+	address: {
+		'@type': 'PostalAddress',
+		addressLocality: 'Midway',
+		addressRegion: 'UT',
+		addressCountry: 'US'
+	},
+	telephone: '+18017421290',
+	sameAs: [
+		'https://www.facebook.com/nvmarketingllc',
+		'https://www.instagram.com/nv_marketing_llc/'
+	],
+	founder: {
+		'@type': 'Person',
+		name: 'Nate Valline',
+		jobTitle: 'Founder & CEO'
+	}
+};
+
 const montserrat = Montserrat({
 	display: 'swap',
 	subsets: ['latin'],
@@ -35,6 +61,10 @@ export default function RootLayout({
 				{process.env.NEXT_PUBLIC_GOOGLE_ID ? (
 					<GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ID} />
 				) : null}
+				<script
+					type='application/ld+json'
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+				/>
 				<Header />
 				{children}
 				<Footer />
