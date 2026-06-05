@@ -32,7 +32,7 @@ export default function Contact() {
 					<a
 						href='https://calendly.com/nv-marketing-llc'
 						target='_blank'
-						rel='noopenner noreferrer'
+						rel='noopener noreferrer'
 					>
 						<PrimaryBtn
 							text='Click Here to Schedule a Time'
