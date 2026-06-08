@@ -1,6 +1,7 @@
 // Components
 import CtaSection from './components/misc/CtaSection';
 import Hero from './components/home/Hero';
+import HowItWorks from './components/home/HowItWorks';
 import LeftLines from './components/misc/LeftLines';
 import RightLines from './components/misc/RightLines';
 import Services from './components/home/Services';
@@ -36,6 +37,7 @@ export default async function Home() {
 						<RightLines />
 					</div>
 				</div>
+				<HowItWorks />
 				<ValueProps />
 				<div className='leftAccentLines'>
 					<LeftLines />
