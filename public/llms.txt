@@ -1,0 +1,22 @@
+# NV Marketing
+
+> Web design, development, and SEO agency for small businesses — Midway, Utah. Serving the Intermountain region including Utah, Idaho, Nevada, and surrounding states.
+
+## Pages
+
+- [Home](https://nv-marketing.com/): NV Marketing helps small businesses in the Intermountain region build websites and grow organic traffic with web design, development, and SEO.
+- [About](https://nv-marketing.com/about/): Learn about NV Marketing — a Rocky Mountain agency helping small businesses succeed online with web design, development, and SEO.
+- [Services](https://nv-marketing.com/services/): Web design, web development, and SEO services for small businesses.
+- [Web Design](https://nv-marketing.com/services/web-design/): Custom website design for small businesses in the Intermountain region. Focused on brand identity, user experience, and driving conversions.
+- [Web Development](https://nv-marketing.com/services/web-development/): Professional web development for small businesses in the Intermountain region. Fast, accessible, and scalable websites built to perform.
+- [SEO](https://nv-marketing.com/services/seo/): Search engine optimization for small businesses in the Intermountain region. Grow organic traffic, rank for the right keywords, and turn searchers into customers.
+- [Blog](https://nv-marketing.com/blog/): Web design, development, and SEO articles for small business owners.
+- [Contact](https://nv-marketing.com/contact/): Get in touch with NV Marketing to start a project or ask a question.
+
+## Key Facts
+
+- Agency type: Full-service digital agency (web design, development, SEO)
+- Location: Midway, Utah
+- Service area: Intermountain region (Utah, Idaho, Nevada, and surrounding states)
+- Clients: Small businesses
+- Contact: contact@nv-marketing.com
