@@ -1,0 +1,50 @@
+/* ----- Blog Post CTA Styles
+----- */
+
+@use '../../abstracts/' as *;
+
+.blog_cta {
+	padding: 3rem 1rem;
+
+	@include breakpoint-up(md) {
+		padding: 4rem 1rem;
+	}
+
+	@include breakpoint-up(lg) {
+		padding: 5rem 2rem;
+	}
+
+	@include breakpoint-up(xl) {
+		padding: 6rem 2rem;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	&__content {
+		max-width: 656px;
+		text-align: center;
+	}
+
+	&__header {
+		font-size: var(--fs-h2);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+
+	&__sub_header {
+		margin-top: 1rem;
+		font-size: var(--fs-p);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+
+	&__btn {
+		margin-top: 2.5rem;
+		width: 290px;
+	}
+}
