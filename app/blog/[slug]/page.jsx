@@ -5,6 +5,7 @@ import { PortableText } from '@portabletext/react';
 
 // Components
 import BlogPostCta from '@/app/components/blog/BlogPostCta';
+import AuthorBio from '@/app/components/blog/AuthorBio';
 import FullLinesLower from '@/app/components/misc/FullLinesLower';
 import RightLines from '@/app/components/misc/RightLines';
 
@@ -84,7 +85,8 @@ export default async function page({ params, searchParams }) {
 		description: post.excerpt,
 		author: {
 			'@type': 'Person',
-			name: 'Nate Valline'
+			name: 'Nate Valline',
+			url: 'https://nv-marketing.com/about'
 		},
 		datePublished: post.date,
 		dateModified: post._updatedAt,
@@ -133,6 +135,7 @@ export default async function page({ params, searchParams }) {
 							<p className={styles.post__author}>Nate Valline</p>
 						</div>
 					</article>
+					<AuthorBio />
 					<BlogPostCta />
 				</section>
 				<div className='fullAccentLines'>
