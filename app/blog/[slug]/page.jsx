@@ -1,14 +1,12 @@
 import Image from 'next/image';
 import Script from 'next/script';
-import Link from 'next/link';
 import { sanityClient, urlFor } from '@/app/lib/sanity';
 import { PortableText } from '@portabletext/react';
 
 // Components
+import BlogPostCta from '@/app/components/blog/BlogPostCta';
 import FullLinesLower from '@/app/components/misc/FullLinesLower';
-import PrimaryBtn from '@/app/components/misc/PrimaryBtn';
 import RightLines from '@/app/components/misc/RightLines';
-import SecondaryBtn from '@/app/components/misc/SecondaryBtn';
 
 // Styles
 import styles from '../../styles/components/blog/PostPage.module.scss';
@@ -135,20 +133,7 @@ export default async function page({ params, searchParams }) {
 							<p className={styles.post__author}>{post.author}</p>
 						</div>
 					</article>
-					<div className={styles.post__btns}>
-						<Link href={'/'}>
-							<PrimaryBtn
-								text='Return Home'
-								classname={styles.post__btn___primary}
-							/>
-						</Link>
-						<Link href={'/blog'}>
-							<SecondaryBtn
-								text='Read more Posts'
-								classname={styles.post__btn___secondary}
-							/>
-						</Link>
-					</div>
+					<BlogPostCta />
 				</section>
 				<div className='fullAccentLines'>
 					<FullLinesLower />
