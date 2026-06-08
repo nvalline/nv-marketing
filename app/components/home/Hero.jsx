@@ -24,23 +24,16 @@ export default function Hero() {
 					className={styles.hero__content}
 				>
 					<motion.h1 variants={heroContentVars} className={styles.hero__header}>
-						Unleash Your <span>Business&apos;s Potential</span>
+						Web Design, Development &amp; SEO for <span>Small Businesses</span>{' '}
+						in the Intermountain West
 					</motion.h1>
 					<motion.p
 						variants={heroContentVars}
 						className={styles.hero__sub_header}
 					>
-						Welcome to NV Marketing, where digital innovation meets
-						affordability. We&apos;re on a mission to{' '}
-						<span>empower small businesses</span> like yours with the online
-						presence of giants.{' '}
-					</motion.p>
-					<motion.p
-						variants={heroContentVars}
-						className={styles.hero__sub_header}
-					>
-						Our expertise <span>transforms your vision</span> into a stunning
-						reality, all within the reach of your budget.
+						<span>Unleash your business&apos;s potential</span>. NV Marketing
+						delivers enterprise-quality websites and organic growth strategies
+						built for small businesses, all within the reach of your budget.
 					</motion.p>
 					<motion.div variants={heroContentVars}>
 						<Link href={'/contact'}>
