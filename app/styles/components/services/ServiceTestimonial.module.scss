@@ -1,0 +1,65 @@
+/* ----- Individual Service Page - Testimonial Section Styles
+----- */
+
+@use '../../abstracts/' as *;
+
+.testimonial {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 620px;
+		text-align: center;
+	}
+
+	&__header {
+		font-size: var(--fs-h2);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+		margin-bottom: 2rem;
+	}
+
+	&__card {
+		background: var(--clr-white-light);
+		border-radius: 20px;
+		padding: 2rem 1.5rem;
+		box-shadow: 0 4px 4px var(--clr-shadow-black);
+		text-align: left;
+	}
+
+	&__card_wrapper {
+		& > * {
+			max-width: 100%;
+		}
+	}
+
+	&__stars {
+		display: flex;
+		gap: 0.25rem;
+		margin-bottom: 1rem;
+	}
+
+	&__star {
+		color: var(--clr-orange-dark);
+		font-size: 1.1rem;
+	}
+
+	&__content {
+		font-size: var(--fs-p);
+		color: var(--clr-blue-dark);
+		line-height: 1.6;
+		opacity: 0.9;
+		margin-bottom: 1.25rem;
+	}
+
+	&__author {
+		font-size: var(--fs-p);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+
+	&__details {
+		font-size: var(--fs-p-sm);
+		color: var(--clr-blue-dark);
+		opacity: 0.7;
+		margin-top: 0.25rem;
+	}
+}

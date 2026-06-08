@@ -16,6 +16,7 @@ import styles from '@/app/styles/components/header/MobileNav.module.scss';
 export default function MobileNav() {
 	const pathname = usePathname();
 	const [isVisible, setIsVisible] = useState(false);
+	const [openDropdown, setOpenDropdown] = useState(null);
 
 	const handleIconToggle = () => {
 		setIsVisible(!isVisible);
@@ -33,6 +34,7 @@ export default function MobileNav() {
 	// Update icon state on route change
 	useEffect(() => {
 		setIsVisible(false);
+		setOpenDropdown(null);
 	}, [pathname]);
 
 	return (
@@ -63,6 +65,39 @@ export default function MobileNav() {
 								className={styles.mobile_nav__linksList}
 							>
 								{linkList.map((link, index) => {
+									if (link.children) {
+										const isOpen = openDropdown === index;
+										return (
+											<div key={index} style={{ overflow: 'hidden' }}>
+												<motion.li
+													variants={linkVars}
+													className={styles.mobile_nav__link}
+												>
+													<div className={styles.mobile_nav__link_row}>
+														<Link href={link.href}>{link.title}</Link>
+														<button
+															type='button'
+															className={styles.mobile_nav__chevron}
+															onClick={() => setOpenDropdown(isOpen ? null : index)}
+															aria-label={isOpen ? 'Collapse services menu' : 'Expand services menu'}
+														>
+															{isOpen ? '▲' : '▼'}
+														</button>
+													</div>
+													{isOpen && (
+														<ul className={styles.mobile_nav__sub_links}>
+															{link.children.map((child, childIndex) => (
+																<li key={childIndex} className={styles.mobile_nav__sub_link}>
+																	<Link href={child.href}>{child.title}</Link>
+																</li>
+															))}
+														</ul>
+													)}
+												</motion.li>
+											</div>
+										);
+									}
+
 									return (
 										<div key={index} style={{ overflow: 'hidden' }}>
 											<motion.li

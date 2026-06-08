@@ -1,0 +1,37 @@
+/* ----- Individual Service Page - Hero Section Styles
+----- */
+
+@use '../../abstracts/' as *;
+
+.hero {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 760px;
+		text-align: center;
+	}
+
+	&__header {
+		font-size: var(--fs-h1);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+		text-decoration: underline;
+	}
+
+	&__sub_header {
+		margin-top: 1.5rem;
+		font-size: var(--fs-p-lg);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+		line-height: 1.6;
+
+		> span {
+			font-weight: 700;
+		}
+	}
+
+	&__cta {
+		margin-top: 2rem;
+		display: flex;
+		justify-content: center;
+	}
+}

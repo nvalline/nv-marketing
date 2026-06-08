@@ -1,0 +1,91 @@
+/* ----- Services Hub Page - Service Cards Section Styles
+----- */
+
+@use '../../abstracts/' as *;
+
+.hub {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1134px;
+		text-align: center;
+	}
+
+	&__header {
+		font-size: var(--fs-h2);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+		margin-bottom: 0.75rem;
+	}
+
+	&__sub_header {
+		font-size: var(--fs-p);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+		max-width: 614px;
+		margin: 0 auto 3rem;
+	}
+
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		@include breakpoint-up(lg) {
+			flex-direction: row;
+			align-items: stretch;
+		}
+	}
+
+	&__card {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		background: var(--clr-white-light);
+		border-radius: 20px;
+		padding: 2rem 1.5rem;
+		box-shadow: 0 4px 4px var(--clr-shadow-black);
+		text-decoration: none;
+		transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+
+		&:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 8px 12px var(--clr-shadow-black);
+		}
+	}
+
+	&__icon {
+		position: relative;
+		height: 60px;
+		width: 60px;
+
+		@include breakpoint-up(xl) {
+			height: 70px;
+			width: 70px;
+		}
+	}
+
+	&__card_title {
+		margin-top: 1rem;
+		font-size: var(--fs-h3);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+
+	&__card_excerpt {
+		margin-top: 0.75rem;
+		font-size: var(--fs-p);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+		line-height: 1.6;
+		flex: 1;
+	}
+
+	&__card_cta {
+		margin-top: 1.5rem;
+		font-size: var(--fs-p);
+		font-weight: 700;
+		color: var(--clr-green-light);
+	}
+}

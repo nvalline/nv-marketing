@@ -10,6 +10,21 @@ export default function DesktopNav() {
 			<div className={styles.desktop_nav__links}>
 				<ul className={styles.desktop_nav__linksList}>
 					{linkList.map((link, index) => {
+						if (link.children) {
+							return (
+								<li key={index} className={`${styles.desktop_nav__link} ${styles.desktop_nav__link_wrapper}`}>
+									<Link href={link.href}>{link.title}</Link>
+									<ul className={styles.desktop_nav__dropdown}>
+										{link.children.map((child, childIndex) => (
+											<li key={childIndex} className={styles.desktop_nav__dropdown_item}>
+												<Link href={child.href}>{child.title}</Link>
+											</li>
+										))}
+									</ul>
+								</li>
+							);
+						}
+
 						return (
 							<li key={index} className={styles.desktop_nav__link}>
 								<Link href={link.href}>{link.title}</Link>
