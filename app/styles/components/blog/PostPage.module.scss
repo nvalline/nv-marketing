@@ -93,23 +93,4 @@
 	&__details {
 		margin-top: 1rem;
 	}
-
-	&__btns {
-		margin-top: 2rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 2rem;
-
-		@include breakpoint-up(xl) {
-			margin: 5rem auto 0;
-			flex-direction: row;
-			justify-content: center;
-		}
-	}
-
-	&__btn___primary,
-	&__btn___secondary {
-		width: 290px;
-	}
 }
