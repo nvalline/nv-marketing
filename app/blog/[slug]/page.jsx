@@ -130,7 +130,7 @@ export default async function page({ params, searchParams }) {
 						<PortableText value={post.content} />
 						<div className={styles.post__details}>
 							<p className={styles.post__date}>{formattedDate}</p>
-							<p className={styles.post__author}>{post.author}</p>
+							<p className={styles.post__author}>Nate Valline</p>
 						</div>
 					</article>
 					<BlogPostCta />
