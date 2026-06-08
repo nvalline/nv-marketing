@@ -10,7 +10,7 @@ export default function ServiceCard({ name, icon, excerpt, id }) {
 	return (
 		<div key={id} className={styles.service_card}>
 			<div className={styles.service_card__icon}>
-				<Image src={serviceIcon} alt='icon' fill />
+				<Image src={serviceIcon} alt={`${name} service icon`} fill />
 			</div>
 			<h3 className={styles.service_card__header}>{name}</h3>
 			<p className={styles.service_card__excerpt}>{excerpt}</p>
