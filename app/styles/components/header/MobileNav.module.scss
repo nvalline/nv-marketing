@@ -49,6 +49,43 @@
 		color: var(--clr-white-light);
 	}
 
+	&__link_row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75rem;
+	}
+
+	&__chevron {
+		background: none;
+		border: none;
+		color: var(--clr-white-light);
+		font-size: 0.65rem;
+		cursor: pointer;
+		padding: 0;
+		line-height: 1;
+	}
+
+	&__sub_links {
+		list-style: none;
+		padding: 0;
+		margin-top: 0.5rem;
+	}
+
+	&__sub_link {
+		padding: 0.5rem 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		> a {
+			font-size: var(--fs-p-sm);
+			color: var(--clr-green-light);
+		}
+	}
+
 	&__button {
 		padding: 0.5rem 1.25rem;
 		margin-top: 1rem;

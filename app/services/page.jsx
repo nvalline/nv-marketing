@@ -1,3 +1,13 @@
+import Script from 'next/script';
+
+// Components
+import Clients from '../components/services/Clients';
+import CtaSection from '../components/misc/CtaSection';
+import Hero from '../components/services/Hero';
+import LeftLines from '../components/misc/LeftLines';
+import RightLines from '../components/misc/RightLines';
+import ServiceHubSection from '../components/services/ServiceHubSection';
+
 const servicesSchema = {
 	'@context': 'https://schema.org',
 	'@graph': [
@@ -15,7 +25,7 @@ const servicesSchema = {
 				'@type': 'AdministrativeArea',
 				name: 'Intermountain Region, US'
 			},
-			url: 'https://nv-marketing.com/services'
+			url: 'https://nv-marketing.com/services/web-design'
 		},
 		{
 			'@type': 'Service',
@@ -31,7 +41,7 @@ const servicesSchema = {
 				'@type': 'AdministrativeArea',
 				name: 'Intermountain Region, US'
 			},
-			url: 'https://nv-marketing.com/services'
+			url: 'https://nv-marketing.com/services/web-development'
 		},
 		{
 			'@type': 'Service',
@@ -47,19 +57,10 @@ const servicesSchema = {
 				'@type': 'AdministrativeArea',
 				name: 'Intermountain Region, US'
 			},
-			url: 'https://nv-marketing.com/services'
+			url: 'https://nv-marketing.com/services/seo'
 		}
 	]
 };
-
-// Components
-import Script from 'next/script';
-import Clients from '../components/services/Clients';
-import CtaSection from '../components/misc/CtaSection';
-import Hero from '../components/services/Hero';
-import LeftLines from '../components/misc/LeftLines';
-import RightLines from '../components/misc/RightLines';
-import ServiceDetail from '../components/services/ServiceDetail';
 
 export const metadata = {
 	title: 'Services',
@@ -71,12 +72,6 @@ export const metadata = {
 };
 
 export default function Services() {
-	const sanityQueries = [
-		{ service: 'web design', query: "*[_type == 'services'][0]" },
-		{ service: 'web development', query: "*[_type == 'services'][1]" },
-		{ service: 'seo services', query: "*[_type == 'services'][2]" }
-	];
-
 	return (
 		<main>
 			<Script
@@ -89,17 +84,7 @@ export default function Services() {
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>
-				<ServiceDetail query={sanityQueries[0].query} />
-				<div className='rightAccentBlock'>
-					<div className='rightAccentLines'>
-						<RightLines />
-					</div>
-				</div>
-				<ServiceDetail query={sanityQueries[1].query} rowReverse='reverse' />
-				<div className='leftAccentLines'>
-					<LeftLines />
-				</div>
-				<ServiceDetail query={sanityQueries[2].query} />
+				<ServiceHubSection />
 				<div className='rightAccentBlock'>
 					<div className='rightAccentLines'>
 						<RightLines />

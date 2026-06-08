@@ -1,0 +1,53 @@
+/* ----- Individual Service Page - Deliverables Section Styles
+----- */
+
+@use '../../abstracts/' as *;
+
+.deliverables {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 800px;
+		text-align: center;
+	}
+
+	&__header {
+		font-size: var(--fs-h2);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+		margin-bottom: 2rem;
+	}
+
+	&__list {
+		list-style: none;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+
+		@include breakpoint-up(md) {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	&__item {
+		background: var(--clr-white-light);
+		border-radius: 12px;
+		padding: 1.25rem 1.5rem;
+		box-shadow: 0 4px 4px var(--clr-shadow-black);
+		display: flex;
+		align-items: flex-start;
+		gap: 0.75rem;
+		text-align: left;
+		font-size: var(--fs-p);
+		color: var(--clr-blue-dark);
+		line-height: 1.5;
+	}
+
+	&__check {
+		flex-shrink: 0;
+		color: var(--clr-green-light);
+		font-weight: 700;
+		font-size: 1.1rem;
+		line-height: 1.5;
+	}
+}
