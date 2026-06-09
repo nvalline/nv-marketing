@@ -35,6 +35,21 @@ const organizationSchema = {
 	}
 };
 
+const websiteSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'WebSite',
+	name: 'NV Marketing',
+	url: 'https://nv-marketing.com',
+	potentialAction: {
+		'@type': 'SearchAction',
+		target: {
+			'@type': 'EntryPoint',
+			urlTemplate: 'https://nv-marketing.com/?s={search_term_string}'
+		},
+		'query-input': 'required name=search_term_string'
+	}
+};
+
 const montserrat = Montserrat({
 	display: 'swap',
 	subsets: ['latin'],
@@ -66,6 +81,11 @@ export default function RootLayout({
 					id='organization-schema'
 					type='application/ld+json'
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+				/>
+				<Script
+					id='website-schema'
+					type='application/ld+json'
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
 				/>
 				<Header />
 				{children}
