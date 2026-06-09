@@ -49,6 +49,8 @@ export default function Cta({ unfilteredCta }) {
 
 	const cta = filterCta(currentPage, unfilteredCta);
 
+	if (!cta) return null;
+
 	return (
 		<section className={styles.cta}>
 			<div className={styles.cta__wrapper}>
