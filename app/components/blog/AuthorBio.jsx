@@ -6,7 +6,9 @@ export default function AuthorBio({ author }) {
 		<div className={styles.author_bio}>
 			<div className={styles.author_bio__wrapper}>
 				<p className={styles.author_bio__name}>{author.name}</p>
-				<p className={styles.author_bio__credentials}>{author.bio}</p>
+				<p className={styles.author_bio__credentials}>
+					{author.bio || 'A guest contributor to the NV Marketing blog.'}
+				</p>
 				{author.url && (
 					<Link href={author.url} className={styles.author_bio__link}>
 						About {author.name}
