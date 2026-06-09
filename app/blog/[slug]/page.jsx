@@ -12,12 +12,6 @@ import RightLines from '@/app/components/misc/RightLines';
 // Styles
 import styles from '../../styles/components/blog/PostPage.module.scss';
 
-// export const metadata = {
-// 	title: `NV Marketing | Post`,
-// 	description:
-// 		'NV Marketing provides enterprise website services for the local budget.'
-// };
-
 export async function generateMetadata({ params, searchParams }, parent) {
 	try {
 		const { slug } = await params;
@@ -39,7 +33,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 }
 
 const getPost = async (slug) => {
-	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, _updatedAt, author, content, coverImage, date, title, excerpt, caption}`;
+	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, _updatedAt, author->{ name, bio, url }, content, coverImage, date, title, excerpt, caption}`;
 
 	const data = await sanityClient.fetch(query);
 
@@ -78,16 +72,18 @@ export default async function page({ params, searchParams }) {
 	const inputDate = post.date;
 	const formattedDate = formatDate(inputDate);
 
+	const authorSchema = {
+		'@type': 'Person',
+		name: post.author.name,
+		...(post.author.url && { url: post.author.url })
+	};
+
 	const blogPostingSchema = {
 		'@context': 'https://schema.org',
 		'@type': 'BlogPosting',
 		headline: post.title,
 		description: post.excerpt,
-		author: {
-			'@type': 'Person',
-			name: 'Nate Valline',
-			url: 'https://nv-marketing.com/about'
-		},
+		author: authorSchema,
 		datePublished: post.date,
 		dateModified: post._updatedAt,
 		url: `https://nv-marketing.com/blog/${slug}`,
@@ -132,10 +128,10 @@ export default async function page({ params, searchParams }) {
 						<PortableText value={post.content} />
 						<div className={styles.post__details}>
 							<p className={styles.post__date}>{formattedDate}</p>
-							<p className={styles.post__author}>Nate Valline</p>
+							<p className={styles.post__author}>{post.author.name}</p>
 						</div>
 					</article>
-					<AuthorBio />
+					<AuthorBio author={post.author} />
 					<BlogPostCta />
 				</section>
 				<div className='fullAccentLines'>
