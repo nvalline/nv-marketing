@@ -12,7 +12,7 @@ import RightLines from '@/app/components/misc/RightLines';
 // Styles
 import styles from '../../styles/components/blog/PostPage.module.scss';
 
-export async function generateMetadata({ params, searchParams }, parent) {
+export async function generateMetadata({ params }) {
 	try {
 		const { slug } = await params;
 		const postData = await getPost(slug);
@@ -64,7 +64,7 @@ function formatDate(inputDate) {
 	return `${month}. ${parseInt(day, 10)}, ${year}`;
 }
 
-export default async function page({ params, searchParams }) {
+export default async function page({ params }) {
 	const { slug } = await params;
 	const post = await getPost(slug);
 	const postImage = urlFor(post.coverImage).url();
