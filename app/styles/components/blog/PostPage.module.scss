@@ -72,6 +72,12 @@
 			font-weight: 400;
 		}
 
+		a,
+		a:visited {
+			color: var(--clr-green-light);
+			text-decoration: underline;
+		}
+
 		> p {
 			font-size: var(--fs-p);
 			opacity: 0.9;
