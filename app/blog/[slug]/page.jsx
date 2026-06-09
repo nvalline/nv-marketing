@@ -5,19 +5,14 @@ import { PortableText } from '@portabletext/react';
 
 // Components
 import BlogPostCta from '@/app/components/blog/BlogPostCta';
+import AuthorBio from '@/app/components/blog/AuthorBio';
 import FullLinesLower from '@/app/components/misc/FullLinesLower';
 import RightLines from '@/app/components/misc/RightLines';
 
 // Styles
 import styles from '../../styles/components/blog/PostPage.module.scss';
 
-// export const metadata = {
-// 	title: `NV Marketing | Post`,
-// 	description:
-// 		'NV Marketing provides enterprise website services for the local budget.'
-// };
-
-export async function generateMetadata({ params, searchParams }, parent) {
+export async function generateMetadata({ params }) {
 	try {
 		const { slug } = await params;
 		const postData = await getPost(slug);
@@ -38,7 +33,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 }
 
 const getPost = async (slug) => {
-	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, _updatedAt, author, content, coverImage, date, title, excerpt, caption}`;
+	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, _updatedAt, author->{ name, bio, url }, content, coverImage, date, title, excerpt, caption}`;
 
 	const data = await sanityClient.fetch(query);
 
@@ -69,7 +64,7 @@ function formatDate(inputDate) {
 	return `${month}. ${parseInt(day, 10)}, ${year}`;
 }
 
-export default async function page({ params, searchParams }) {
+export default async function page({ params }) {
 	const { slug } = await params;
 	const post = await getPost(slug);
 	const postImage = urlFor(post.coverImage).url();
@@ -77,15 +72,18 @@ export default async function page({ params, searchParams }) {
 	const inputDate = post.date;
 	const formattedDate = formatDate(inputDate);
 
+	const authorSchema = {
+		'@type': 'Person',
+		name: post.author.name,
+		...(post.author.url && { url: post.author.url })
+	};
+
 	const blogPostingSchema = {
 		'@context': 'https://schema.org',
 		'@type': 'BlogPosting',
 		headline: post.title,
 		description: post.excerpt,
-		author: {
-			'@type': 'Person',
-			name: 'Nate Valline'
-		},
+		author: authorSchema,
 		datePublished: post.date,
 		dateModified: post._updatedAt,
 		url: `https://nv-marketing.com/blog/${slug}`,
@@ -130,9 +128,10 @@ export default async function page({ params, searchParams }) {
 						<PortableText value={post.content} />
 						<div className={styles.post__details}>
 							<p className={styles.post__date}>{formattedDate}</p>
-							<p className={styles.post__author}>{post.author}</p>
+							<p className={styles.post__author}>{post.author.name}</p>
 						</div>
 					</article>
+					<AuthorBio author={post.author} />
 					<BlogPostCta />
 				</section>
 				<div className='fullAccentLines'>

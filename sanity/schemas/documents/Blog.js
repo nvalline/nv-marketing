@@ -20,8 +20,9 @@ export default {
     },
     {
       name: 'author',
-      type: 'string',
+      type: 'reference',
       title: 'Author',
+      to: [{ type: 'author' }],
     },
     {
       name: 'date',

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(app/blog/[slug]/page.jsx)"
+    ]
+  }
+}

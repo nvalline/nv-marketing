@@ -1,0 +1,47 @@
+/* ----- Author Bio Styles
+----- */
+
+@use '../../abstracts/' as *;
+
+.author_bio {
+	margin: 2rem auto 0;
+	max-width: 800px;
+	padding: 1.5rem;
+	border-top: 2px solid var(--clr-green-light);
+	border-radius: 0 0 8px 8px;
+
+	@include breakpoint-up(md) {
+		padding: 2rem;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	&__name {
+		font-size: var(--fs-p);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+
+	&__credentials {
+		font-size: var(--fs-p-sm);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+		line-height: 1.6;
+	}
+
+	&__link {
+		align-self: flex-start;
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: var(--clr-green-light);
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

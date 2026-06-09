@@ -1,3 +1,4 @@
+import Author from './documents/Author'
 import Blog from './documents/Blog'
 import CallToActions from './documents/CallToActions'
 import Clients from './documents/Clients'
@@ -8,6 +9,7 @@ import Services from './documents/Services'
 import Testimonials from './documents/Testimonials'
 
 export const schemaTypes = [
+  Author,
   Blog,
   CallToActions,
   Clients,
