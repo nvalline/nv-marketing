@@ -95,4 +95,13 @@
 		font-size: var(--fs-p);
 		color: var(--clr-blue-dark);
 	}
+
+	&__phone {
+		display: flex;
+		align-items: center;
+		gap: 0.4rem;
+		margin-top: 0.75rem;
+		font-size: var(--fs-p);
+		color: var(--clr-green-light);
+	}
 }
