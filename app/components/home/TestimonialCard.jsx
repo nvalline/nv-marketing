@@ -57,7 +57,7 @@ export default function TestimonialCard({
 			<p id='card-content' className={styles.testimonial_card__content}>
 				{content}
 			</p>
-			<h4 className={styles.testimonial_card__author}>{author}</h4>
+			<cite className={styles.testimonial_card__author}>{author}</cite>
 			<p className={styles.testimonial_card__details}>
 				{position}, {company}
 			</p>
