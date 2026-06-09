@@ -8,7 +8,7 @@ export default function LeftLines() {
 			alt='Line Accents'
 			fill
 			sizes='(max-width: 859px) 100vw, (max-width: 1023px) 586px, 721px'
-			quality={100}
+			quality={75}
 		/>
 	);
 }
