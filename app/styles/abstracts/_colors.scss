@@ -3,7 +3,7 @@
 
 $colors: (
 	// Green Colors
-	green:
+	'green':
 		(
 			light: #03a6a6,
 			mid-light: #0396a6,
@@ -11,38 +11,38 @@ $colors: (
 			dark: #012623
 		),
 	// Blue Colors
-	blue:
+	'blue':
 		(
 			light: #69d6f9,
 			dark: #0e2142
 		),
 	// Orange Colors
-	orange:
+	'orange':
 		(
 			light: #f5b372,
 			dark: #f19a43
 		),
 	// Yellow Colors
-	yellow:
+	'yellow':
 		(
 			accent: #d9d114
 		),
 	// White Colors
-	white:
+	'white':
 		(
 			light: #f1f1f1,
 			dark: #d8d9d7,
 			pure: #ffffff
 		),
 	// Black Colors
-	black:
+	'black':
 		(
 			pure: #000000
 		),
 	// Box Shadows
-	shadow:
+	'shadow':
 		(
 			// #000000 0.25%
-			black: hsla(0, 0%, 0%, 0.25)
+			'black': hsla(0, 0%, 0%, 0.25)
 		)
 );
