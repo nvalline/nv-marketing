@@ -8,7 +8,7 @@ export default function RightLines() {
 			alt='Line Accents'
 			fill
 			sizes='(max-width: 859px) 324px, (max-width: 1023px) 448px, 573px'
-			quality={100}
+			quality={75}
 		/>
 	);
 }
