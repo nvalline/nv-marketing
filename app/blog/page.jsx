@@ -13,7 +13,9 @@ export const metadata = {
 	}
 };
 
-export default function Home() {
+export default async function Home({ searchParams }) {
+	const { category } = await searchParams;
+
 	return (
 		<main>
 			<div className='container'>
@@ -21,7 +23,7 @@ export default function Home() {
 				<div className='leftAccentLines'>
 					<LeftLines />
 				</div>
-				<Archives />
+				<Archives categorySlug={category ?? null} />
 				<div className='fullAccentLines'>
 					<FullLinesLower />
 				</div>

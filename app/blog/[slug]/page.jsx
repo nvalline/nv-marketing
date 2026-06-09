@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Script from 'next/script';
 import { sanityClient, urlFor } from '@/app/lib/sanity';
 import { PortableText } from '@portabletext/react';
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }) {
 }
 
 const getPost = async (slug) => {
-	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, _updatedAt, author->{ name, bio, url }, content, coverImage, date, title, excerpt, caption}`;
+	const query = `*[_type == 'posts' && slug.current == '${slug}']{_id, _updatedAt, author->{ name, bio, url }, content, coverImage, date, title, excerpt, caption, "category": category->{title, slug}, tags}`;
 
 	const data = await sanityClient.fetch(query);
 
@@ -115,7 +116,21 @@ export default async function page({ params }) {
 							/>
 							<PortableText value={post.caption} />
 						</div>
-						<h1 className={styles.hero__title}>{post.title}</h1>
+						<div className={styles.hero__text_block}>
+							<h1 className={styles.hero__title}>{post.title}</h1>
+							{post.category && (
+								<Link href={`/blog?category=${post.category.slug.current}`} className={styles.post__category}>
+									{post.category.title}
+								</Link>
+							)}
+							{post.tags?.length > 0 && (
+								<div className={styles.post__tags}>
+									{post.tags.map((tag) => (
+										<span key={tag} className={styles.post__tag}>{tag}</span>
+									))}
+								</div>
+							)}
+						</div>
 					</div>
 				</section>
 				<div className='rightAccentBlock'>

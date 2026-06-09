@@ -55,6 +55,21 @@
 		}
 	}
 
+	&__category {
+		display: inline-block;
+		margin-top: 0.5rem;
+		padding: 0.2rem 0.75rem;
+		border-radius: 20px;
+		background-color: var(--clr-green-light);
+		font-size: var(--fs-p-sm);
+		color: var(--clr-white-pure);
+		transition: background-color 300ms ease-out;
+
+		&:hover {
+			background-color: var(--clr-green-mid-dark);
+		}
+	}
+
 	&__excerpt {
 		margin-top: 1rem;
 		max-width: 255px;

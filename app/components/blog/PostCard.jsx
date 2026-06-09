@@ -7,7 +7,7 @@ import upperLeftCorner from '../home/assets/upper_left_corner.png';
 // Styles
 import styles from '../../styles/components/blog/PostCard.module.scss';
 
-export default function PostCard({ coverImage, excerpt, slug, title }) {
+export default function PostCard({ coverImage, excerpt, slug, title, category }) {
 	const postImage = urlFor(coverImage).url();
 
 	return (
@@ -34,6 +34,11 @@ export default function PostCard({ coverImage, excerpt, slug, title }) {
 			<Link href={`/blog/${slug.current}`}>
 				<h3 className={styles.post_card__title}>{title}</h3>
 			</Link>
+			{category && (
+				<Link href={`/blog?category=${category.slug.current}`}>
+					<span className={styles.post_card__category}>{category.title}</span>
+				</Link>
+			)}
 			<p className={styles.post_card__excerpt}>{excerpt}</p>
 			<div className={styles.post_card__accent___lower}>
 				<Image

@@ -40,6 +40,21 @@ export default {
       title: 'Cover Image',
     },
     {
+      name: 'category',
+      type: 'reference',
+      title: 'Category',
+      to: [{ type: 'category' }],
+    },
+    {
+      name: 'tags',
+      type: 'array',
+      title: 'Tags',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'tags',
+      },
+    },
+    {
       name: 'caption',
       type: 'array',
       title: 'Caption',

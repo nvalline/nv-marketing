@@ -18,6 +18,29 @@
 		padding: 4rem 2rem 6rem;
 	}
 
+	&__filter {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.5rem;
+		margin-bottom: 2rem;
+	}
+
+	&__filter_link {
+		padding: 0.35rem 1rem;
+		border-radius: 20px;
+		border: 2px solid var(--clr-green-light);
+		font-size: var(--fs-p-sm);
+		color: var(--clr-green-light);
+		transition: all 300ms ease-out;
+
+		&:hover,
+		&___active {
+			background-color: var(--clr-green-light);
+			color: var(--clr-white-pure);
+		}
+	}
+
 	&__wrapper {
 		display: flex;
 		flex-wrap: wrap;
