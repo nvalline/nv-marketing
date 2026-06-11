@@ -1,0 +1,67 @@
+/* ----- Pricing Page - Trust Bar Section Styles
+----- */
+
+@use '../../abstracts/' as *;
+
+.trust_bar {
+	padding-top: 0;
+
+	@include breakpoint-up(md) {
+		padding-top: 0;
+	}
+
+	@include breakpoint-up(lg) {
+		padding-top: 0;
+	}
+
+	@include breakpoint-up(xl) {
+		padding-top: 0;
+	}
+
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 975px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+
+		@include breakpoint-up(md) {
+			flex-direction: row;
+			justify-content: center;
+			gap: 0;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	&__check {
+		flex-shrink: 0;
+		color: var(--clr-green-light);
+		font-size: 1.125rem;
+		line-height: 1;
+	}
+
+	&__text {
+		font-size: var(--fs-p);
+		font-weight: 600;
+		color: var(--clr-blue-dark);
+	}
+
+	&__divider {
+		display: none;
+
+		@include breakpoint-up(md) {
+			display: block;
+			width: 1px;
+			height: 1.25rem;
+			background-color: var(--clr-blue-dark);
+			opacity: 0.25;
+			margin: 0 1.5rem;
+		}
+	}
+}

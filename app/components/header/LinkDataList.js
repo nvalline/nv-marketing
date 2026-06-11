@@ -13,5 +13,6 @@ export const linkList = [
 			{ title: 'SEO', href: '/services/seo' }
 		]
 	},
+	{ title: 'Plans', href: '/plans' },
 	{ title: 'Blog', href: '/blog' }
 ];
