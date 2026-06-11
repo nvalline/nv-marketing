@@ -1,0 +1,42 @@
+/* ----- Pricing Page - Hero Section Styles
+----- */
+
+@use '../../abstracts/' as *;
+
+.hero {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 760px;
+		text-align: center;
+	}
+
+	&__eyebrow {
+		display: inline-block;
+		font-size: var(--fs-p-sm);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--clr-green-light);
+		margin-bottom: 1.25rem;
+	}
+
+	&__header {
+		font-size: var(--fs-h1);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+	}
+
+	&__sub_header {
+		margin-top: 1.5rem;
+		font-size: var(--fs-p-lg);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+		line-height: 1.6;
+	}
+
+	&__cta {
+		margin-top: 2rem;
+		display: flex;
+		justify-content: center;
+	}
+}

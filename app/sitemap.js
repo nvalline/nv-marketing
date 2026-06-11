@@ -49,6 +49,11 @@ export default async function sitemap() {
 			priority: 0.8
 		},
 		{
+			url: `${BASE_URL}/plans`,
+			changeFrequency: 'monthly',
+			priority: 0.8
+		},
+		{
 			url: `${BASE_URL}/contact`,
 			changeFrequency: 'monthly',
 			priority: 0.8

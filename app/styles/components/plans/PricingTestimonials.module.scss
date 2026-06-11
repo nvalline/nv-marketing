@@ -1,0 +1,94 @@
+/* ----- Pricing Page - Testimonials Section Styles
+----- */
+
+@use '../../abstracts/' as *;
+
+.testimonials {
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1134px;
+
+		@include breakpoint-up(lg) {
+			padding: 0 1rem;
+		}
+	}
+
+	&__header_block {
+		margin: 0 auto;
+		max-width: 800px;
+		text-align: center;
+		color: var(--clr-blue-dark);
+	}
+
+	&__heading {
+		font-size: var(--fs-h2);
+		font-weight: 700;
+	}
+
+	&__subheading {
+		margin-top: 1rem;
+		opacity: 0.9;
+		line-height: 1.6;
+	}
+
+	&__cards {
+		margin-top: 3rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
+
+		@include breakpoint-up(lg) {
+			flex-direction: row;
+			align-items: stretch;
+		}
+	}
+
+	&__card {
+		position: relative;
+		width: 100%;
+		max-width: 375px;
+		padding: 1.5rem;
+		border: 3px solid var(--clr-green-light);
+		border-radius: 5px;
+		box-shadow: 2px 2px 5px var(--clr-shadow-black);
+		display: flex;
+		flex-direction: column;
+
+		@include breakpoint-up(lg) {
+			max-width: none;
+			flex: 1;
+		}
+	}
+
+	&__stars {
+		display: flex;
+		align-items: center;
+		gap: 2px;
+	}
+
+	&__quote {
+		margin-top: 1rem;
+		flex: 1;
+		font-size: var(--fs-p);
+		color: var(--clr-blue-dark);
+		line-height: 1.6;
+		text-align: center;
+	}
+
+	&__author {
+		display: block;
+		margin-top: 1rem;
+		font-size: var(--fs-h4);
+		font-weight: 700;
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+
+	&__title {
+		margin-top: 0.25rem;
+		font-size: var(--fs-p-sm);
+		color: var(--clr-blue-dark);
+		opacity: 0.9;
+	}
+}

@@ -17,6 +17,9 @@ export default function NavLinks() {
 					<Link href={'/services'}>Services</Link>
 				</li>
 				<li>
+					<Link href={'/plans'}>Plans</Link>
+				</li>
+				<li>
 					<Link href={'/blog'}>Blog</Link>
 				</li>
 				<li>
