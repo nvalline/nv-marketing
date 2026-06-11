@@ -6,6 +6,7 @@ import PricingFootnotes from '../components/plans/PricingFootnotes';
 import PricingHero from '../components/plans/PricingHero';
 import PricingHowItWorks from '../components/plans/PricingHowItWorks';
 import PricingTestimonials from '../components/plans/PricingTestimonials';
+import PlansFAQ from '../components/plans/PlansFAQ';
 import PricingTiers from '../components/plans/PricingTiers';
 import TrustBar from '../components/plans/TrustBar';
 import FullLinesLower from '../components/misc/FullLinesLower';
@@ -43,6 +44,7 @@ export default function Plans() {
 				</div>
 				<PricingHowItWorks />
 				<PricingTestimonials />
+				<PlansFAQ />
 				<div className='fullAccentLines'>
 					<FullLinesUpper />
 				</div>
