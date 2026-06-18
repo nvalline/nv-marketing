@@ -2,7 +2,7 @@ const BREVO_API_URL = 'https://api.brevo.com/v3';
 const NOTIFICATION_EMAIL = 'contact@nv-marketing.com';
 
 export async function POST(req) {
-	const { first_name, last_name, from_email, service_type, message, website } =
+	const { first_name, last_name, from_email, phone, service_type, message, website } =
 		await req.json();
 
 	if (!first_name || !last_name || !from_email || !service_type || !message) {
@@ -30,6 +30,7 @@ export async function POST(req) {
 				attributes: {
 					FIRSTNAME: first_name,
 					LASTNAME: last_name,
+					SMS: phone,
 					SERVICE_TYPE: service_type,
 					MESSAGE: message
 				},

@@ -12,6 +12,7 @@ const EMPTY_FORM = {
 	first_name: '',
 	last_name: '',
 	from_email: '',
+	phone: '',
 	service_type: '',
 	message: '',
 	website: ''
@@ -93,21 +94,31 @@ export default function Form() {
 				className={styles.form__input}
 				required
 			/>
-			<select
-				name='service_type'
-				value={formValues.service_type}
-				onChange={handleChange}
-				className={styles.form__select}
-				data-placeholder={formValues.service_type === '' ? 'true' : undefined}
-				required
-			>
-				<option value='' disabled>
-					Service Inquiry
-				</option>
-				<option value='Web Design/Development'>Web Design/Development</option>
-				<option value='SEO'>SEO</option>
-				<option value='Other'>Other</option>
-			</select>
+			<div className={styles.form__nameRow}>
+				<input
+					type='tel'
+					name='phone'
+					value={formValues.phone}
+					placeholder='Phone Number'
+					onChange={handleChange}
+					className={styles.form__input}
+				/>
+				<select
+					name='service_type'
+					value={formValues.service_type}
+					onChange={handleChange}
+					className={styles.form__select}
+					data-placeholder={formValues.service_type === '' ? 'true' : undefined}
+					required
+				>
+					<option value='' disabled>
+						Service Inquiry
+					</option>
+					<option value='Web Design/Development'>Web Design/Development</option>
+					<option value='SEO'>SEO</option>
+					<option value='Other'>Other</option>
+				</select>
+			</div>
 			<textarea
 				id='message'
 				name='message'
