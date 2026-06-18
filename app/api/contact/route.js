@@ -19,7 +19,7 @@ export async function POST(req) {
 	try {
 		const captchaRes = await fetch(HCAPTCHA_VERIFY_URL, {
 			method: 'POST',
-			body: `response=${token}&secret=${process.env.NEXT_PUBLIC_HCAPTCHA_SECRET}`,
+			body: `response=${token}&secret=${process.env.HCAPTCHA_SECRET}`,
 			headers: {
 				'Content-type': 'application/x-www-form-urlencoded; charset=utf-8'
 			}
