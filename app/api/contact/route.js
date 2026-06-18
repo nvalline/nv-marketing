@@ -29,7 +29,9 @@ export async function POST(req) {
 				email: from_email,
 				attributes: {
 					FIRSTNAME: first_name,
-					LASTNAME: last_name
+					LASTNAME: last_name,
+					SERVICE_TYPE: service_type,
+					MESSAGE: message
 				},
 				updateEnabled: true
 			})
