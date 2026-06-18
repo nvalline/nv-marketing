@@ -1,7 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
-import HCaptcha from '@hcaptcha/react-hcaptcha';
+import { useState } from 'react';
 
 // Components
 import PrimaryBtn from '../misc/PrimaryBtn';
@@ -14,7 +13,8 @@ const EMPTY_FORM = {
 	last_name: '',
 	from_email: '',
 	service_type: '',
-	message: ''
+	message: '',
+	website: ''
 };
 
 export default function Form() {
@@ -23,26 +23,18 @@ export default function Form() {
 	const [error, setError] = useState(false);
 	const [formValues, setFormValues] = useState(EMPTY_FORM);
 
-	const hcaptchaRef = useRef(null);
-	const SITE_KEY = process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY;
-
 	const handleChange = (e) => {
 		setFormValues({ ...formValues, [e.target.name]: e.target.value });
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		hcaptchaRef.current.execute();
 		setLoading(true);
-	};
-
-	const handleVerificationSuccess = async (token) => {
-		if (!token) return;
 
 		try {
 			const response = await fetch('/api/contact', {
 				method: 'POST',
-				body: JSON.stringify({ ...formValues, token }),
+				body: JSON.stringify(formValues),
 				headers: { 'Content-Type': 'application/json' }
 			});
 
@@ -61,6 +53,17 @@ export default function Form() {
 
 	return (
 		<form onSubmit={handleSubmit} className={styles.form}>
+			{/* Honeypot — hidden from humans, bots fill it in */}
+			<input
+				type='text'
+				name='website'
+				value={formValues.website}
+				onChange={handleChange}
+				className={styles.form__honeypot}
+				tabIndex={-1}
+				autoComplete='off'
+				aria-hidden='true'
+			/>
 			<div className={styles.form__nameRow}>
 				<input
 					type='text'
@@ -115,13 +118,6 @@ export default function Form() {
 				className={styles.form__textarea}
 				required
 			></textarea>
-			<HCaptcha
-				id='test'
-				ref={hcaptchaRef}
-				size='invisible'
-				sitekey={SITE_KEY}
-				onVerify={(token) => handleVerificationSuccess(token)}
-			/>
 			<PrimaryBtn
 				type='submit'
 				text={loading === true ? '. . .' : 'Submit'}

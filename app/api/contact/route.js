@@ -1,41 +1,18 @@
 const BREVO_API_URL = 'https://api.brevo.com/v3';
-const HCAPTCHA_VERIFY_URL = 'https://hcaptcha.com/siteverify';
 const NOTIFICATION_EMAIL = 'contact@nv-marketing.com';
 
-const sleep = () =>
-	new Promise((resolve) => {
-		setTimeout(resolve, 350);
-	});
-
 export async function POST(req) {
-	const { first_name, last_name, from_email, service_type, message, token } =
+	const { first_name, last_name, from_email, service_type, message, website } =
 		await req.json();
 
-	if (!token || !first_name || !last_name || !from_email || !service_type || !message) {
+	if (!first_name || !last_name || !from_email || !service_type || !message) {
 		return new Response('Missing required fields', { status: 422 });
 	}
 
-	// Verify hCaptcha
-	try {
-		const captchaRes = await fetch(HCAPTCHA_VERIFY_URL, {
-			method: 'POST',
-			body: `response=${token}&secret=${process.env.HCAPTCHA_SECRET}`,
-			headers: {
-				'Content-type': 'application/x-www-form-urlencoded; charset=utf-8'
-			}
-		});
-
-		const captchaValidation = await captchaRes.json();
-
-		if (!captchaValidation.success) {
-			return new Response('Invalid captcha', { status: 422 });
-		}
-	} catch (err) {
-		console.error('hCaptcha verification error:', err);
-		return new Response('Captcha verification failed', { status: 500 });
+	// Honeypot check — bots fill this in, humans leave it empty
+	if (website) {
+		return new Response('OK', { status: 200 });
 	}
-
-	await sleep();
 
 	const brevoHeaders = {
 		'api-key': process.env.BREVO_API_KEY,
