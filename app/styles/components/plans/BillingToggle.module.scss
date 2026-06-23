@@ -14,12 +14,12 @@
 
 	@include breakpoint-up(lg) {
 		padding-top: 2rem;
-		padding-bottom: 0.75rem;
+		padding-bottom: 2rem;
 	}
 
 	@include breakpoint-up(xl) {
 		padding-top: 2rem;
-		padding-bottom: 0.75rem;
+		padding-bottom: 2rem;
 	}
 
 	&__wrapper {
