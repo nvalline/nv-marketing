@@ -69,4 +69,18 @@
 		font-size: 0.625rem;
 		color: var(--clr-blue-dark);
 	}
+
+	&__terms {
+		display: inline-block;
+		margin-top: 0.5rem;
+		font-size: 0.625rem;
+		color: var(--clr-blue-dark);
+		text-decoration: underline;
+		text-underline-offset: 3px;
+		opacity: 0.7;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
 }

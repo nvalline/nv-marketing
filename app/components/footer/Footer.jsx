@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 // Components
 import Logo from '../misc/Logo';
 import NavLinks from './NavLinks';
@@ -27,6 +29,9 @@ export default function Footer() {
 						Copyright &copy; {year} | NV Marketing, LLC
 					</p>
 					<p className={styles.footer__copyright}>All Rights Reserved</p>
+					<Link href='/terms' className={styles.footer__terms}>
+						Terms of Use
+					</Link>
 				</div>
 			</div>
 		</footer>
