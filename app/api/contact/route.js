@@ -34,6 +34,7 @@ export async function POST(req) {
 					SERVICE_TYPE: service_type,
 					MESSAGE: message
 				},
+				listIds: [6],
 				updateEnabled: true
 			})
 		});
