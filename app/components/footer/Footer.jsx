@@ -29,9 +29,14 @@ export default function Footer() {
 						Copyright &copy; {year} | NV Marketing, LLC
 					</p>
 					<p className={styles.footer__copyright}>All Rights Reserved</p>
-					<Link href='/terms' className={styles.footer__terms}>
-						Terms of Use
-					</Link>
+					<div className={styles.footer__legal___links}>
+						<Link href='/terms' className={styles.footer__legal___link}>
+							Terms of Use
+						</Link>
+						<Link href='/privacy' className={styles.footer__legal___link}>
+							Privacy Policy
+						</Link>
+					</div>
 				</div>
 			</div>
 		</footer>

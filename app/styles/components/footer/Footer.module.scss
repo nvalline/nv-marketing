@@ -70,9 +70,14 @@
 		color: var(--clr-blue-dark);
 	}
 
-	&__terms {
-		display: inline-block;
+	&__legal___links {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
 		margin-top: 0.5rem;
+	}
+
+	&__legal___link {
 		font-size: 0.625rem;
 		color: var(--clr-blue-dark);
 		text-decoration: underline;

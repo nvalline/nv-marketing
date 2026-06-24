@@ -64,6 +64,11 @@ export default async function sitemap() {
 			priority: 0.3
 		},
 		{
+			url: `${BASE_URL}/privacy`,
+			changeFrequency: 'yearly',
+			priority: 0.3
+		},
+		{
 			url: `${BASE_URL}/blog`,
 			...(latestPostDate && { lastModified: latestPostDate }),
 			changeFrequency: 'weekly',
